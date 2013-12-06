@@ -1,0 +1,7 @@
+[ui]
+username = aliva <ali.vakilzade@gmail.com>
+ignore = ~/.hgignore_global
+verbose = True
+
+[extensions]
+progress =

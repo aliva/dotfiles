@@ -1,12 +1,11 @@
+#TODO: check this section
+# start of ubuntu default crap
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
 # If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+case $- in *i*) ;; *) return;; esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -112,3 +111,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# end of ubuntu default crap

@@ -20,3 +20,7 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+if [ -d "$HOME/Workspace/dotfiles/bin" ] ; then
+    PATH="$HOME/Workspace/dotfiles/bin:$PATH"
+fi

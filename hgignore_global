@@ -3,3 +3,6 @@ syntax:glob
 
 # ignore komodo project files, It's just silly to add them to repo
 *.komodoproject
+
+# ignore python stupid files
+*.pyc

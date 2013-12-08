@@ -113,3 +113,10 @@ if ! shopt -oq posix; then
 fi
 
 # end of ubuntu default crap
+
+# here is some aliases
+alias h="hg"
+
+alias p="python"
+alias p2="python2"
+alias p3="python3"

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+FR_PATH=$HOME/bin/freedom
+java -jar $FR_PATH/freedom.jar --configfile=$FR_PATH/freedom.cfg

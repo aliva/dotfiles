@@ -123,5 +123,5 @@ alias apt="sudo apt-get"
 alias apti="sudo apt-get install"
 alias apty="sudo apt-get update"
 alias aptu="sudo apt-get upgrade"
+alias aptdu="sudo apt-get dist-upgrade"
 alias apts="apt-cache search"
-                                

@@ -118,3 +118,10 @@ fi
 alias p="python"
 alias p2="python2"
 alias p3="python3"
+
+alias apt="sudo apt-get"
+alias apti="sudo apt-get install"
+alias apty="sudo apt-get update"
+alias aptu="sudo apt-get upgrade"
+alias apts="apt-cache search"
+                                

@@ -11,3 +11,6 @@ ignore = ~/.hgignore_global
 [extensions]
 # I like progress bars
 progress =
+# use hg commands for git, yay!
+hgext.bookmarks =
+hggit =

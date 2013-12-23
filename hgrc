@@ -8,6 +8,9 @@ ignore = ~/.hgignore_global
 # at first it looked like a good idea to be verbose, I should say, it's not
 #verbose = True
 
+[alias]
+cm = commit -m
+
 [extensions]
 # I like progress bars
 progress =

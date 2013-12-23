@@ -1,3 +1,4 @@
+#!/bin/bash
 #TODO: check this section
 # start of ubuntu default crap
 # ~/.bashrc: executed by bash(1) for non-login shells.

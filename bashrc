@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# store dotfiles path an a variable, for late uses
+DOTFILES=~/Workspace/dotfiles
+
 #TODO: check this section
 # start of ubuntu default crap
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -135,3 +139,10 @@ alias p8="ping 8.8.8.8"
 
 # for tuneling,
 alias ssha="ssh a 'echo Connected! && cat'"
+
+# extra completion files in dotfile
+for f in $DOTFILES/bash-completion/*.sh
+do
+    source $f
+done
+

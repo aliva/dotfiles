@@ -131,3 +131,6 @@ alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 
 alias p8="ping 8.8.8.8"
+
+# for tuneling,
+alias ssha="ssh a 'echo Connected! && cat'"

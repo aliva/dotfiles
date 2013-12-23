@@ -129,3 +129,5 @@ alias apts="apt-cache search"
 
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
+
+alias p8="ping 8.8.8.8"

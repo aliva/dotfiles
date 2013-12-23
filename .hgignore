@@ -1,0 +1,4 @@
+syntax:glob
+
+# vim related
+vim/doc/*

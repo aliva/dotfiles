@@ -2,4 +2,14 @@
 
 ROOT=`hg root`
 
+# hg bash-autocompltion
 wget http://selenic.com/hg/raw-file/tip/contrib/bash_completion -O $ROOT/bash-completion/mercurial.sh
+
+# hg vim plugin
+wget http://selenic.com/hg/raw-file/tip/contrib/vim -O tmp
+sed -i '/^$/d' tmp
+for f in `cat tmp | awk '{print $3}'`
+do
+    wget http://selenic.com/hg/raw-file/tip/contrib/vim/$f -O $ROOT/vim/plugin/$f
+done
+rm tmp

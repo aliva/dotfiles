@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ROOT=`hg root`
+
+wget http://selenic.com/hg/raw-file/tip/contrib/bash_completion -O $ROOT/bash-completion/mercurial.sh

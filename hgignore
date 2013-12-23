@@ -5,4 +5,5 @@ syntax:glob
 *.komodoproject
 
 # ignore python stupid files
+__pycache__
 *.pyc

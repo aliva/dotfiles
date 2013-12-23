@@ -2,8 +2,8 @@
 # that's me!
 username = aliva <ali.vakilzade@gmail.com>
 
-# I like ignoring globall issues
-ignore = ~/.hgignore_global
+# one ignore file to rule them all
+ignore = ~/.hgignore
 
 # at first it looked like a good idea to be verbose, I should say, it's not
 #verbose = True

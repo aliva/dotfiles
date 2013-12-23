@@ -115,6 +115,7 @@ fi
 # end of ubuntu default crap
 
 # here is some aliases
+alias r="source ~/.bashrc && reset"
 alias p="python"
 alias p2="python2"
 alias p3="python3"

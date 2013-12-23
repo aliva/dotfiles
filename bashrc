@@ -127,4 +127,5 @@ alias aptu="sudo apt-get upgrade"
 alias aptdu="sudo apt-get dist-upgrade"
 alias apts="apt-cache search"
 
-alias cdf="cd ~/Workspace/dotfiles"
+alias cdd="cd ~/Workspace/dotfiles"
+alias cdw="cd ~/Workspace"

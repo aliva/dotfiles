@@ -14,3 +14,7 @@ progress =
 # use hg commands for git, yay!
 hgext.bookmarks =
 hggit =
+
+# hg-git config section
+[git]
+intree = True

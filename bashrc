@@ -121,22 +121,23 @@ fi
 
 # here is some aliases
 alias r="source ~/.bashrc && reset"
+# python
 alias p="python"
 alias p2="python2"
 alias p3="python3"
-
+# apt
 alias apt="sudo apt-get"
 alias apti="sudo apt-get install"
 alias apty="sudo apt-get update"
 alias aptu="sudo apt-get upgrade"
 alias aptdu="sudo apt-get dist-upgrade"
 alias apts="apt-cache search"
-
+# cd
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
-
+# internet
 alias p8="ping 8.8.8.8"
-
+alias axel="axel -a -n 40"
 # for tuneling,
 alias tun="ssh a 'echo Connected! && cat'"
 
@@ -145,4 +146,3 @@ for f in $DOTFILES/bash-completion/*.sh
 do
     source $f
 done
-

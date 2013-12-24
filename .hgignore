@@ -5,3 +5,11 @@ vim/doc/*
 
 # komodoedit crap
 komodoedit/*/*.xmlc
+komodoedit/*/*.xml
+komodoedit/*/*.sqlite
+komodoedit/*/*.tmp
+komodoedit/*/codeintel
+komodoedit/*/XRE
+komodoedit/*/*.log
+komodoedit/*/*.bak
+komodoedit/*/*.lock

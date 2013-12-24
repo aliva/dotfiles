@@ -4,12 +4,13 @@ syntax:glob
 vim/doc/*
 
 # komodoedit crap
-komodoedit/*/*.xmlc
-komodoedit/*/*.xml
-komodoedit/*/*.sqlite
-komodoedit/*/*.tmp
+komodoedit/*/autosave
 komodoedit/*/codeintel
 komodoedit/*/XRE
-komodoedit/*/*.log
 komodoedit/*/*.bak
 komodoedit/*/*.lock
+komodoedit/*/*.log
+komodoedit/*/*.tmp
+komodoedit/*/*.sqlite
+komodoedit/*/*.xml
+komodoedit/*/*.xmlc

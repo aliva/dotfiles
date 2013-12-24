@@ -1,0 +1,18 @@
+{
+  "insertOutput": 0, 
+  "keyboard_shortcut": "", 
+  "name": "hg status", 
+  "parseRegex": "", 
+  "operateOnSelection": 0, 
+  "value": [
+    "hg status %p"
+  ], 
+  "cwd": "", 
+  "version": "1.0.12", 
+  "env": "", 
+  "doNotOpenOutputWindow": 0, 
+  "showParsedOutputList": 0, 
+  "type": "command", 
+  "parseOutput": 0, 
+  "runIn": "command-output-window"
+}

@@ -138,7 +138,7 @@ alias cdw="cd ~/Workspace"
 alias p8="ping 8.8.8.8"
 
 # for tuneling,
-alias ssha="ssh a 'echo Connected! && cat'"
+alias tun="ssh a 'echo Connected! && cat'"
 
 # extra completion files in dotfile
 for f in $DOTFILES/bash-completion/*.sh

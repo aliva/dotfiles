@@ -1,4 +1,7 @@
 syntax:glob
 
-# vim related
+# vim
 vim/doc/*
+
+# komodoedit crap
+komodoedit/*/*.xmlc

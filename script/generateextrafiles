@@ -2,14 +2,27 @@
 
 ROOT=`hg root`
 
+function die {
+    echo "* ERROR *"
+    echo "* $@"
+    exit 1
+}
+
+function get {
+    echo $2
+    wget -q $1 -O $ROOT/$2 || die $1 $2
+}
+
 # hg bash-autocompltion
-wget http://selenic.com/hg/raw-file/tip/contrib/bash_completion -O $ROOT/bash-completion/mercurial.sh
+get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.sh
 
 # hg vim plugin
-wget http://selenic.com/hg/raw-file/tip/contrib/vim -O tmp
+get http://selenic.com/hg/raw-file/tip/contrib/vim script/tmp
 sed -i '/^$/d' tmp
 for f in `cat tmp | awk '{print $3}'`
 do
-    wget http://selenic.com/hg/raw-file/tip/contrib/vim/$f -O $ROOT/vim/plugin/$f
+    get http://selenic.com/hg/raw-file/tip/contrib/vim/$f vim/plugin/$f
 done
 rm tmp
+
+echo "* DONE! *"

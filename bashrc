@@ -133,6 +133,8 @@ alias aptu="sudo apt-get upgrade"
 alias aptdu="sudo apt-get dist-upgrade"
 alias apts="apt-cache search"
 # cd
+alias .="cd"
+alias ..="cd .."
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 # internet

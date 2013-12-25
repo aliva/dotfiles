@@ -148,3 +148,7 @@ for f in $DOTFILES/bash-completion/*.sh
 do
     source $f
 done
+
+#PS1="\e[0;36m\$?\e[m \e[0;33m\w\e[m\n↳\e[m "
+PS1="\e[0;36m↝ \e[0;33m\w \n\e[0;36m✎ \e[m"
+

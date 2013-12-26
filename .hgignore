@@ -1,7 +1,8 @@
 syntax:glob
 
 # vim
-vim/doc/*
+vim/.netrwhist
+vim/doc/
 
 # komodoedit crap
 komodoedit/*/autosave

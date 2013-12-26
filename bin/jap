@@ -1,3 +1,4 @@
 #!/bin/sh
 
+echo Starting up...
 java -jar $HOME/bin/jap/JAP.jar --noSplash $*

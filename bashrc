@@ -179,7 +179,7 @@ function bash_prompt_command {
     # pwd
     pth=`pwd | sed -e "s|^$HOME|~|"`
     # free space on current line of terminal
-    num=`expr $(tput cols) - ${#pth} - 2 - 5`
+    num=`expr $(tput cols) - ${#pth} - 3 - 5`
     
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then
@@ -192,7 +192,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${CYAN}↝ ${YELLOW}${pth}${space} ${CYAN}${ret} \n${CYAN}✎ ${NO_COLOR}"
+        PS1="${CYAN}↝ ${YELLOW}${pth} ${space} ${CYAN}${ret} \n${CYAN}✎ ${NO_COLOR}"
     else
         PS1="${CYAN}↝ ${YELLOW}\w \n${CYAN}✎ ${NO_COLOR}"
     fi

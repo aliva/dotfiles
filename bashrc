@@ -119,7 +119,7 @@ fi
 
 # end of ubuntu default crap
 
-# here is some aliases
+# alias {{{
 alias r="source ~/.bashrc && reset"
 alias q="exit"
 # python
@@ -143,6 +143,7 @@ alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 40"
 # for tuneling,
 alias tun="ssh a 'echo Connected! && cat'"
+# }}}
 
 # extra completion files in dotfile
 for f in $DOTFILES/bash-completion/*.sh
@@ -150,6 +151,32 @@ do
     source $f
 done
 
+# prompt {{{
+function bash_prompt_command {
+    # last command return value
+    ret=$?
+    # pwd
+    pth=`pwd | sed -e "s|^$HOME|~|"`
+    # free space on current line of terminal
+    num=`expr $(tput cols) - ${#pth} - 2 - 5`
+    
+    # if there is space in current line to show last commands ret code
+    if [[ $num -gt 0 ]]; then
+        # if return code is zero instead of -zero- print :)
+        if [[ $ret -eq 0 ]]; then
+            ret=" :)"
+        # if return code is no zero print it - right aligned
+        else
+            ret=`printf '%3d' $ret`
+        fi
+        # somespaces between $pth and $ret
+        space=`printf ' %.0s' $(seq 1 $num)`
+        PS1="\e[0;36m↝ \e[0;33m${pth}${space} ${ret} \n\e[0;36m✎ \e[m"
+    else
+        PS1="\e[0;36m↝ \e[0;33m\w \n\e[0;36m✎ \e[m"
+    fi
+}
 #PS1="\e[0;36m\$?\e[m \e[0;33m\w\e[m\n↳\e[m "
-PS1="\e[0;36m↝ \e[0;33m\w \n\e[0;36m✎ \e[m"
-
+#PS1="\e[0;36m↝ \e[0;33m\w \n\e[0;36m✎ \e[m"
+PROMPT_COMMAND=bash_prompt_command
+# }}}

@@ -1,3 +1,9 @@
+" options
+" 15 tabs and indenting
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " mappings
 " ; => :
 nnoremap ; :

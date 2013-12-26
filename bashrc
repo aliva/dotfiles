@@ -121,6 +121,7 @@ fi
 
 # here is some aliases
 alias r="source ~/.bashrc && reset"
+alias q="exit"
 # python
 alias p="python"
 alias p2="python2"

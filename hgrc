@@ -9,7 +9,8 @@ ignore = ~/.hgignore
 #verbose = True
 
 [alias]
-cm = commit -m
+cm = commit --message
+pullu = pull --update
 
 [extensions]
 # I like progress bars

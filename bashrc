@@ -3,8 +3,7 @@
 # store dotfiles path an a variable, for late uses
 DOTFILES=~/Workspace/dotfiles
 
-#TODO: check this section
-# start of ubuntu default crap
+#TODO: check this section: ubuntu default crap {{{
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -117,8 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# end of ubuntu default crap
-
+# end of ubuntu default crap }}}
 # alias {{{
 alias r="source ~/.bashrc && reset"
 alias q="exit"
@@ -147,15 +145,13 @@ alias axel="axel -a -n 40"
 # for tuneling,
 alias tun="ssh a 'echo Connected! && cat'"
 # }}}
-
-# extra completion files in dotfile
+# completion files in dotfile {{{
 for f in $DOTFILES/bash-completion/*.sh
 do
     source $f
 done
-
+# }}}
 # prompt {{{
-
 # colors {{{
 NO_COLOR="\[\033[00m\]"
 BLACK="\[\033[0;30m\]"
@@ -175,7 +171,6 @@ CYANBOLD="\[\033[1;36m\]"
 WHITE="\[\033[0;37m\]"
 WHITEBOLD="\[\033[1;37m\]"
 # }}}
-
 function bash_prompt_command {
     # last command return value
     ret=$?

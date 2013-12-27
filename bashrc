@@ -126,6 +126,9 @@ alias q="exit"
 alias p="python"
 alias p2="python2"
 alias p3="python3"
+# sudo
+alias s="sudo"
+alias poweroff="sudo poweroff -p"
 # apt
 alias apt="sudo apt-get"
 alias apti="sudo apt-get install"

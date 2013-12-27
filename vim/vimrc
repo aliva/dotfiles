@@ -7,3 +7,6 @@ set expandtab
 " mappings
 " ; => :
 nnoremap ; :
+" fast jump to head and tail of line
+nnoremap H ^
+nnoremap L $

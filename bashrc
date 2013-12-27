@@ -183,7 +183,7 @@ function bash_prompt_command {
     if [[ $num -gt 0 ]]; then
         # if return code is zero instead of -zero- print :)
         if [[ $ret -eq 0 ]]; then
-            ret=" :)"
+            ret="   " # " :)"
         # if return code is no zero print it - right aligned
         else
             ret=`printf '%3d' $ret`

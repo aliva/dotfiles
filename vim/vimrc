@@ -1,5 +1,5 @@
 " general
-synrax on
+syntax on
 " options
 " 15 tabs and indenting
 set tabstop=4

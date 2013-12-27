@@ -3,6 +3,9 @@
 set tabstop=4
 set shiftwidth=4
 set expandtab
+" 16 folding
+set foldcolumn=2 " columns on right side of screen to show fold level
+set foldmethod=marker " {}x3 to fold
 
 " mappings
 " ; => :
@@ -10,3 +13,6 @@ nnoremap ; :
 " fast jump to head and tail of line
 nnoremap H ^
 nnoremap L $
+" fold/unfold with space
+nnoremap <space> za
+vnoremap <space> za

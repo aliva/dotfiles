@@ -9,10 +9,9 @@ set foldmethod=marker " {}x3 to fold
 
 " mappings
 " ; => :
-nnoremap ; :
+map ; :
 " fast jump to head and tail of line
-nnoremap H ^
-nnoremap L $
+map H ^
+map L $
 " fold/unfold with space
-nnoremap <space> za
-vnoremap <space> za
+map <space> za

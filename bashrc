@@ -134,16 +134,17 @@ alias apty="sudo apt-get update"
 alias aptu="sudo apt-get upgrade"
 alias aptdu="sudo apt-get dist-upgrade"
 alias apts="apt-cache search"
-# cd
+# path
 alias c="cd"
 alias ..="cd .."
 alias cdb="cd ~/bin"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
+alias mkdir="mkdir -pv"
 # internet
 alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 40"
-# for tuneling,
+# tuneling,
 alias tun="ssh a 'echo Connected! && cat'"
 # }}}
 # completion files in dotfile {{{

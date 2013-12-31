@@ -1,6 +1,7 @@
-" general
+" general {{{
 syntax on
-" options
+" }}}
+" options {{{
 " 15 tabs and indenting
 set tabstop=4
 set shiftwidth=4
@@ -8,8 +9,8 @@ set expandtab
 " 16 folding
 set foldcolumn=2 " columns on right side of screen to show fold level
 set foldmethod=marker " {}x3 to fold
-
-" mappings
+" }}}
+" mappings {{{
 " ; => :
 map ; :
 " fast jump to head and tail of line
@@ -17,3 +18,4 @@ map H ^
 map L $
 " fold/unfold with space
 map <space> za
+" }}}

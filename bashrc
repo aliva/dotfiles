@@ -137,6 +137,7 @@ alias apts="apt-cache search"
 # cd
 alias c="cd"
 alias ..="cd .."
+alias cdb="cd ~/bin"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 # internet

@@ -20,4 +20,9 @@ map H ^
 map L $
 " fold/unfold with space
 map <space> za
+" toggle line numbers
+nmap <silent> <F1> :set number!<CR>
+imap <silent> <F1> <ESC>:set number!<CR>a
+nmap <silent> <C-F1> :set number!<CR>
+imap <silent> <C-F1> <ESC>:set number!<CR>a
 " }}}

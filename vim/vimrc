@@ -2,6 +2,8 @@
 syntax on
 " }}}
 " options {{{
+"  1 important
+set nocompatible
 " 15 tabs and indenting
 set tabstop=4
 set shiftwidth=4

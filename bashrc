@@ -198,6 +198,6 @@ function bash_prompt_command {
     fi
 }
 #PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
-#PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]↳ \[\033[00m\]'
+# this chars are also good for prompt: ↳↪ 
 PROMPT_COMMAND=bash_prompt_command
 # }}}

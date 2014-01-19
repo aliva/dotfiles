@@ -127,6 +127,7 @@ alias p3="python3"
 # sudo
 alias s="sudo"
 alias poweroff="sudo poweroff -p"
+alias reboot="sudo reboot"
 # apt
 alias apt="sudo apt-get"
 alias apti="sudo apt-get install"

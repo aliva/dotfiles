@@ -130,6 +130,7 @@ alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
 # apt
 alias apt="sudo apt-get"
+alias apt-get="sudo apt-get"
 alias apti="sudo apt-get install"
 alias apty="sudo apt-get update"
 alias aptu="sudo apt-get upgrade"

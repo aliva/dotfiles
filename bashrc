@@ -142,7 +142,7 @@ alias ..="cd .."
 alias cdb="cd ~/bin"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
-alias mkdir="mkdir -pv"
+alias mkdir="mkdir -p"
 # internet
 alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 40"

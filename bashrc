@@ -130,7 +130,7 @@ alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
 # apt
 # if apt-fast is installed prefer apt-fast for downloading packages
-if which apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
+if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
 alias apt="sudo apt-get"
 alias apt-get="sudo apt-get"
 alias apti="sudo $APT_CMD install"

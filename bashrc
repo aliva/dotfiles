@@ -129,12 +129,14 @@ alias s="sudo"
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
 # apt
+# if apt-fast is installed prefer apt-fast for downloading packages
+if which apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
 alias apt="sudo apt-get"
 alias apt-get="sudo apt-get"
-alias apti="sudo apt-get install"
-alias apty="sudo apt-get update"
-alias aptu="sudo apt-get upgrade"
-alias aptdu="sudo apt-get dist-upgrade"
+alias apti="sudo $APT_CMD install"
+alias apty="sudo $APT_CMD update"
+alias aptu="sudo $APT_CMD upgrade"
+alias aptdu="sudo $APT_CMD dist-upgrade"
 alias apts="apt-cache search"
 # path
 alias c="cd"

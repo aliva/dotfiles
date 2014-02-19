@@ -148,6 +148,8 @@ alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 40"
 # tuneling,
 alias tun="ssh a 'echo Connected! && cat'"
+# lang
+alias date="LC_ALL=en_US.UTF-8 date"
 # }}}
 # completion files in dotfile {{{
 for f in $DOTFILES/bash-completion/*.sh

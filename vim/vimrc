@@ -11,7 +11,7 @@ endif
 " 15 tabs and indenting
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set expandtab " convert tab to spaces
 " 16 folding
 set foldcolumn=2 " columns on right side of screen to show fold level
 set foldmethod=marker " {}x3 to fold

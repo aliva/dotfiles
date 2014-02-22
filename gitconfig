@@ -2,6 +2,8 @@
     email = ali.vakilzade@gmail.com
     name = aliva
 
+[alias]
+    st = status
 [core]
     excludesfile = ~/.gitignore
 

@@ -138,6 +138,8 @@ alias apty="sudo $APT_CMD update"
 alias aptu="sudo $APT_CMD upgrade"
 alias aptdu="sudo $APT_CMD dist-upgrade"
 alias apts="apt-cache search"
+# pacman
+alias pacman='LANG=en_US.utf8 sudo pacman'
 # path
 alias c="cd"
 alias ..="cd .."

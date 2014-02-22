@@ -150,6 +150,7 @@ alias mkdir="mkdir -p"
 # internet
 alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 40"
+alias wget="wget -c"
 # tuneling,
 alias tun="ssh a 'echo Connected! && cat'"
 # lang

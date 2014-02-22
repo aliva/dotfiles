@@ -145,6 +145,7 @@ alias c="cd"
 alias ..="cd .."
 alias cdb="cd ~/bin"
 alias cdd="cd ~/Workspace/dotfiles"
+alias cdn="cd ~/Workspace/notes"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
 # internet

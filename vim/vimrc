@@ -33,4 +33,6 @@ nmap <silent> <C-F1> :set number!<CR>
 imap <silent> <C-F1> <ESC>:set number!<CR>a
 " quickly change filetype
 map <leader>ft  :set filetype=
+" sudo write
+cmap W!! w !sudo tee % >/dev/null
 " }}}

@@ -153,7 +153,8 @@ alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 50"
 alias wget="wget -c"
 # tuneling,
-alias tun="ssh a 'echo Connected! && cat'"
+alias tun="ssh a 'echo Connected to a! && cat'"
+alias tunv="ssh v 'echo Connected to v! && cat'"
 # lang
 alias date="LC_ALL=en_US.UTF-8 date"
 # }}}

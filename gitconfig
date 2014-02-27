@@ -10,4 +10,4 @@
 #[http]
 #    proxy = http://127.0.0.1:4001
 
-# vim:set ft=conf:
+# vim:set ft=cfg:

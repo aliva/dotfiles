@@ -1,5 +1,7 @@
 " general {{{
 syntax on
+" leader key
+let mapleader = ","
 " }}}
 " options {{{
 "  1 important
@@ -29,4 +31,6 @@ nmap <silent> <F1> :set number!<CR>
 imap <silent> <F1> <ESC>:set number!<CR>a
 nmap <silent> <C-F1> :set number!<CR>
 imap <silent> <C-F1> <ESC>:set number!<CR>a
+" quickly change filetype
+map <leader>ft  :set filetype=
 " }}}

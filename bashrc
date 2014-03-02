@@ -128,6 +128,7 @@ alias p3="python3"
 alias s="sudo"
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
+alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
 # apt
 # if apt-fast is installed prefer apt-fast for downloading packages
 if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi

@@ -120,6 +120,7 @@ fi
 # alias {{{
 alias r="source ~/.bashrc && reset"
 alias q="exit"
+alias info="info --vi-keys"
 # python
 alias p="python"
 alias p2="python2"

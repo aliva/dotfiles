@@ -1,5 +1,10 @@
 syntax:glob
 
+# fish
+fish/fishd.*
+fish/fish_history
+fish/generated_completions/
+
 # vim
 vim/.netrwhist
 vim/doc/

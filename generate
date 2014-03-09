@@ -21,12 +21,12 @@ tail -n +3 $ROOT/hgignore > $ROOT/gitignore
 get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.sh
 
 # hg vim plugin
-get http://selenic.com/hg/raw-file/tip/contrib/vim script/tmp
-sed -i '/^$/d' tmp
-for f in `cat tmp | awk '{print $3}'`
+get http://selenic.com/hg/raw-file/tip/contrib/vim tmp
+sed -i '/^$/d' $ROOT/tmp
+for f in `cat $ROOT/tmp | awk '{print $3}'`
 do
     get http://selenic.com/hg/raw-file/tip/contrib/vim/$f vim/plugin/$f
 done
-rm tmp
+rm $ROOT/tmp
 
 echo "* DONE! *"

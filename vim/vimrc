@@ -18,6 +18,16 @@ set expandtab " convert tab to spaces
 set foldcolumn=2 " columns on right side of screen to show fold level
 set foldmethod=marker " {}x3 to fold
 " }}}
+" vundle {{{
+filetype off
+set runtimepath+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle "gmarik/vundle"
+" }}}
+" file type plugin {{{
+filetype plugin on
+filetype indent on
+" }}}
 " mappings {{{
 " ; => :
 map ; :

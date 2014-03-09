@@ -50,3 +50,7 @@ map <leader>ft  :set filetype=
 " sudo write
 cmap W!! w !sudo tee % >/dev/null
 " }}}
+" autocmd {{{
+" markdown
+autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
+" }}}

@@ -17,13 +17,6 @@ function get {
 echo gitignore
 tail -n +3 $ROOT/hgignore > $ROOT/gitignore
 
-# vundle
-get https://github.com/gmarik/Vundle.vim/archive/master.zip vundle.zip
-rm -Rf $ROOT/vim/vundle
-unzip -q $ROOT/vundle.zip
-mv $ROOT/Vundle.vim-master $ROOT/vim/vundle
-rm $ROOT/vundle.zip
-
 # hg bash-autocompltion
 get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.sh
 

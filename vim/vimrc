@@ -23,8 +23,10 @@ filetype off
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle "gmarik/vundle"
-" }}}
-" file type plugin {{{
+
+" syntax and other crap for markdown files
+Bundle "plasticboy/vim-markdown"
+
 filetype plugin on
 filetype indent on
 " }}}

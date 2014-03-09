@@ -25,7 +25,7 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 
 " syntax and other crap for markdown files
-Bundle "plasticboy/vim-markdown"
+Bundle "tpope/vim-markdown"
 
 filetype plugin on
 filetype indent on

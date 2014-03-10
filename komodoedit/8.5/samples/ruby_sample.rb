@@ -94,6 +94,5 @@ puts "Finish with #{fs.servings} servings for leftovers"
 #     - Position the cursor over the underline to view the error
 #       or warning message.
 
-"hello there";
 
 

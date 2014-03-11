@@ -24,3 +24,7 @@ fi
 if [ -d "$HOME/Workspace/dotfiles/bin" ] ; then
     PATH="$HOME/Workspace/dotfiles/bin:$PATH"
 fi
+
+if [ -d "/opt/openoffice_beta4/program" ]; then
+	PATH="$PATH:/opt/openoffice_beta4/program"
+fi

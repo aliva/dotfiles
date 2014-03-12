@@ -17,14 +17,17 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
 
-if [ -d "$HOME/Workspace/dotfiles/bin" ] ; then
-    PATH="$HOME/Workspace/dotfiles/bin:$PATH"
-fi
+BIN_PATHES="$HOME/bin \
+$HOME/Workspace/dotfiles/bin \
+/opt/openoffice_beta4/program"
 
-if [ -d "/opt/openoffice_beta4/program" ]; then
-	PATH="$PATH:/opt/openoffice_beta4/program"
-fi
+for p in $BIN_PATHES
+do
+	if [ -d $p ]
+	then
+		PATH="$p:$PATH"
+	fi
+done
+
+echo $PATH

@@ -28,4 +28,3 @@ do
 	fi
 done
 
-echo $PATH

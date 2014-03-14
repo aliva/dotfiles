@@ -2,6 +2,9 @@
 # komodo project files, It's just silly to add them to repo
 *.komodoproject
 
+# eclipse
+.project
+
 # python stupid bytecode files
 __pycache__
 *.pyc

@@ -127,6 +127,7 @@ alias p2="python2"
 alias p3="python3"
 # sudo
 alias s="sudo"
+alias service="sudo service"
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"

@@ -26,7 +26,7 @@ Bundle "gmarik/vundle"
 
 " syntax and other crap for markdown files
 Bundle "tpope/vim-markdown"
-" colorschema
+" colorscheme
 Bundle "veloce/vim-aldmeris"
 
 filetype plugin on
@@ -53,4 +53,9 @@ cmap W!! w !sudo tee % >/dev/null
 " autocmd {{{
 " markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
+" }}}
+" color {{{
+if has("gui_running")
+    colorscheme aldmeris
+endif
 " }}}

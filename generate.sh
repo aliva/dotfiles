@@ -19,7 +19,7 @@ tail -n +3 $ROOT/hgignore > $ROOT/gitignore
 
 # crontab
 echo crontab/root
-sudo crontab -l > crontab/root
+sudo crontab -l > $ROOT/crontab/root
 
 # vudnle
 if ! [ -d $ROOT/vim/bundle/vundle ]

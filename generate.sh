@@ -18,10 +18,8 @@ echo gitignore
 tail -n +3 $ROOT/hgignore > $ROOT/gitignore
 
 # vudnle
-if [ -d $ROOT/vim/bundle/vundle ]
+if ! [ -d $ROOT/vim/bundle/vundle ]
 then
-    echo update vudnle from vim
-else
     git clone https://github.com/gmarik/vundle.git $ROOT/vim/bundle/vundle
 fi
 

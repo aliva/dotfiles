@@ -6,6 +6,7 @@ syntax:glob
 
 # eclipse
 .project
+.pydevproject
 
 # python stupid bytecode files
 __pycache__

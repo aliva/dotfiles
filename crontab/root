@@ -21,6 +21,6 @@
 # 
 # m h  dom mon dow   command
 
-0 7 * * * poweroff -p
+0 7 * * * /sbin/poweroff -p
 
 # vim:set ft=crontab:

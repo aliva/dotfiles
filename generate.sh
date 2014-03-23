@@ -20,6 +20,10 @@ tail -n +3 $ROOT/hgignore > $ROOT/gitignore
 # crontab
 echo crontab/root
 sudo crontab -l > $ROOT/crontab/root
+echo crontab/`whoami`
+crontab -l > $ROOT/crontab/`whoami`
+
+exit
 
 # vudnle
 if ! [ -d $ROOT/vim/bundle/vundle ]

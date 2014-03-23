@@ -23,13 +23,14 @@ sudo crontab -l > $ROOT/crontab/root
 echo crontab/`whoami`
 crontab -l > $ROOT/crontab/`whoami`
 
-exit
-
 # vudnle
 if ! [ -d $ROOT/vim/bundle/vundle ]
 then
     git clone https://github.com/gmarik/vundle.git $ROOT/vim/bundle/vundle
 fi
+
+# do not download these files every time, they don't change often
+exit
 
 # hg bash-autocompltion
 get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.sh

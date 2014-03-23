@@ -2,6 +2,7 @@
 syntax on
 " leader key
 let mapleader = ","
+let maplocalleader = "\\"
 " }}}
 " options {{{
 "  1 important

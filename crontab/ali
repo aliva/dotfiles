@@ -22,4 +22,4 @@
 # m h  dom mon dow   command
 
 5 1 * * * export DISPLAY=:0.0 ;/usr/bin/transmission-gtk
-58 5 * * * killall /usr/bin/transmission-gtk
+58 6 * * * killall /usr/bin/transmission-gtk

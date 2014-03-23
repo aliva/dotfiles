@@ -144,7 +144,6 @@ alias apts="apt-cache search"
 # pacman
 alias pacman='LANG=en_US.utf8 sudo pacman'
 # path
-alias c="cd"
 alias ..="cd .."
 alias cdb="cd ~/bin"
 alias cdd="cd ~/Workspace/dotfiles"

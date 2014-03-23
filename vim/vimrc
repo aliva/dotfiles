@@ -60,3 +60,8 @@ if has("gui_running")
     colorscheme aldmeris
 endif
 " }}}
+" if cwd is ~ change it to ~/Workspace {{{
+if getcwd() == expand('$HOME')
+    cd ~/Workspace
+endif
+" }}}

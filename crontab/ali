@@ -23,3 +23,5 @@
 
 5 1 * * * export DISPLAY=:0.0 ;/usr/bin/transmission-gtk
 58 6 * * * killall /usr/bin/transmission-gtk
+
+# vim:set ft=crontab:

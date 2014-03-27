@@ -36,6 +36,8 @@ filetype indent on
 " mappings {{{
 " ; => :
 map ; :
+" jj => <ESC>
+imap jj <ESC>
 " fast jump to head and tail of line
 map H ^
 map L $

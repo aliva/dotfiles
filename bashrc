@@ -204,7 +204,7 @@ function bash_prompt_command {
         SIGN="✎"
     else
         # root
-        SIGN="$"
+        SIGN="#"
     fi
 
     # if there is space in current line to show last commands ret code

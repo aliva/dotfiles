@@ -162,10 +162,13 @@ alias tunv="ssh v 'echo Connected to v! && cat'"
 alias date="LC_ALL=en_US.UTF-8 date"
 # }}}
 # completion files in dotfile {{{
-for f in $DOTFILES/bash-completion/*.sh
-do
-    source $f
-done
+if [ -d $DOTFILES ]
+then
+    for f in $DOTFILES/bash-completion/*.sh
+    do
+        source $f
+    done
+fi
 # }}}
 # prompt {{{
 # colors {{{

@@ -220,7 +220,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}↝ ${YELLOW}${pth} ${space} ${CYAN}${ret} \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
+        PS1="${PROMPT_COLOR}↝ ${YELLOW}${pth} ${space} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
     fi

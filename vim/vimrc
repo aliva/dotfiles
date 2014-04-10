@@ -9,6 +9,7 @@ let maplocalleader = "\\"
 set nocompatible
 " 10 GUI
 if has('gui_running')
+    set guifont="Source Code Pro 9"
     set guioptions-=T " no toolbar
 endif
 " 15 tabs and indenting

@@ -201,10 +201,12 @@ function bash_prompt_command {
     if [[ $EUID -ne 0 ]]
     then
         # not root
-        SIGN="✎"
+        PROMPT="✎"
+        PROMPT_COLOR=$CYAN
     else
         # root
-        SIGN="#"
+        PROMPT="#"
+        PROMPT_COLOR=$RED
     fi
 
     # if there is space in current line to show last commands ret code
@@ -218,9 +220,9 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${CYAN}↝ ${YELLOW}${pth} ${space} ${CYAN}${ret} \n${CYAN}$SIGN ${NO_COLOR}"
+        PS1="${PROMPT_COLOR}↝ ${YELLOW}${pth} ${space} ${CYAN}${ret} \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
     else
-        PS1="${CYAN}↝ ${YELLOW}\w \n${CYAN}$SIGN ${NO_COLOR}"
+        PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
     fi
 }
 #PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'

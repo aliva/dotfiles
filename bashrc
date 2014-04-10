@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# store dotfiles path an a variable, for late uses
-DOTFILES=~/Workspace/dotfiles
-
 #TODO: check this section: ubuntu default crap {{{
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -162,9 +159,9 @@ alias tunv="ssh v 'echo Connected to v! && cat'"
 alias date="LC_ALL=en_US.UTF-8 date"
 # }}}
 # completion files in dotfile {{{
-if [ -d $DOTFILES ]
+if [ -d ~/Workspace/Dotfiles ]
 then
-    for f in $DOTFILES/bash-completion/*.sh
+    for f in ~/Workspace/Dotfiles/bash-completion/*.sh
     do
         source $f
     done

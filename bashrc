@@ -128,8 +128,7 @@ alias service="sudo service"
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
-# apt
-# if apt-fast is installed prefer apt-fast for downloading packages
+# apt, if apt-fast is installed prefer apt-fast for downloading packages
 if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
 alias apt="sudo apt-get"
 alias apt-get="sudo apt-get"
@@ -155,8 +154,9 @@ alias wget="wget -c"
 alias tun="ssh a 'echo Connected to a! && cat'"
 alias tuna="ssh a 'echo Connected to a! && cat'"
 alias tunv="ssh v 'echo Connected to v! && cat'"
-# lang
+# date
 alias date="LC_ALL=en_US.UTF-8 date"
+alias datey="date +%Y-%m-%d"
 # }}}
 # completion files in dotfile {{{
 if [ -d ~/Workspace/Dotfiles ]

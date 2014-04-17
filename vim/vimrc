@@ -23,6 +23,8 @@ set expandtab " convert tab to spaces
 " 16 folding
 set foldcolumn=2 " columns on right side of screen to show fold level
 set foldmethod=marker " {}x3 to fold
+" 20 the swap file
+set noswapfile
 " }}}
 " vundle {{{
 filetype off

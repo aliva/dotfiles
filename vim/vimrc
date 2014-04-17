@@ -63,6 +63,8 @@ cmap W!! w !sudo tee % >/dev/null
 " autocmd {{{
 " markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
+" autosave on focus lost
+autocmd FocusLost * try | :wa | catch | endtry
 " }}}
 " commands {{{
 command GEDIT execute "!gedit '%:p' &"

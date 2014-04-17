@@ -62,6 +62,9 @@ cmap W!! w !sudo tee % >/dev/null
 " markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
 " }}}
+" commands {{{
+command GEDIT execute "!gedit '%:p' &"
+" }}}
 " color {{{
 if has("gui_running")
     colorscheme aldmeris

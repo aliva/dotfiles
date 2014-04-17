@@ -159,9 +159,9 @@ alias date="LC_ALL=en_US.UTF-8 date"
 alias datey="date +%Y-%m-%d"
 # }}}
 # completion files in dotfile {{{
-if [ -d ~/Workspace/Dotfiles ]
+if [ -d ~/Workspace/dotfiles ]
 then
-    for f in ~/Workspace/Dotfiles/bash-completion/*.sh
+    for f in ~/Workspace/dotfiles/bash-completion/*.sh
     do
         source $f
     done

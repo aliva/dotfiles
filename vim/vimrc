@@ -7,6 +7,10 @@ let maplocalleader = "\\"
 " options {{{
 "  1 important
 set nocompatible
+"  2 moving around, searching and patterns
+set incsearch
+set ignorecase
+set smartcase
 " 10 GUI
 if has('gui_running')
     set guifont="Source Code Pro 9"

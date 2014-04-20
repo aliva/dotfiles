@@ -13,6 +13,8 @@ cm = commit --message
 pullu = pull --update
 
 [extensions]
+# enable convert exension
+hgext.convert =
 # I like progress bars
 progress =
 # use hg commands for git, yay!

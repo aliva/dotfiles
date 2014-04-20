@@ -5,8 +5,10 @@ syntax:glob
 *.komodoproject
 
 # eclipse
+.classpath
 .project
 .pydevproject
+.settings
 
 # python stupid bytecode files
 __pycache__

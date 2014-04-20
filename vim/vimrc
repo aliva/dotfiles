@@ -15,6 +15,7 @@ set smartcase
 if has('gui_running')
     set guifont="Source Code Pro 9"
     set guioptions-=T " no toolbar
+    set guioptions-=m " no menubar
 endif
 " 15 tabs and indenting
 set tabstop=4
@@ -59,6 +60,19 @@ imap <silent> <C-F1> <ESC>:set number!<CR>a
 map <leader>ft  :set filetype=
 " sudo write
 cmap W!! w !sudo tee % >/dev/null
+" toggle toolbar
+if has("gui_running")
+    map <silent> <F10> :call ToggleToolbar()<CR>
+endif
+function! ToggleToolbar()
+    if &guioptions =~# "T"
+        set guioptions-=T
+        set guioptions-=m
+    else
+        set guioptions+=T
+        set guioptions+=m
+    endif
+endfunction
 " }}}
 " autocmd {{{
 " markdown

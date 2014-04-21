@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export DISPLAY=:0.0
+
+thunderbird &
+firefox &
+pidgin &
+rhythmbox &

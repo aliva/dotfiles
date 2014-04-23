@@ -26,6 +26,8 @@ set foldcolumn=2 " columns on right side of screen to show fold level
 set foldmethod=marker " {}x3 to fold
 " 20 the swap file
 set noswapfile
+" 21 command line editing
+set wildmode=longest,list,full
 " }}}
 " vundle {{{
 filetype off

@@ -87,7 +87,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " commands {{{
 command GEDIT execute "!gedit '%:p' &"
 " }}}
-" color {{{
+" colorscheme {{{
 if has("gui_running")
     colorscheme aldmeris
 endif

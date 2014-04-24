@@ -62,6 +62,15 @@ imap <silent> <C-F1> <ESC>:set number!<CR>a
 map <leader>ft  :set filetype=
 " sudo write
 cmap W!! w !sudo tee % >/dev/null
+" no arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 " toggle toolbar
 if has("gui_running")
     map <silent> <F10> :call ToggleToolbar()<CR>

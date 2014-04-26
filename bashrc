@@ -157,7 +157,7 @@ alias tuna="ssh a 'echo Connected to a! && cat'"
 alias tunv="ssh v 'echo Connected to v! && cat'"
 # date
 alias date="LC_ALL=en_US.UTF-8 date"
-alias datey="date +%Y-%m-%d"
+alias ymd="date +%Y-%m-%d"
 # doge
 # http://www.reddit.com/r/linux/comments/23zibr/hey_reddit_linux_users_what_are_your_best_shell/ch265hi
 alias such="hg"

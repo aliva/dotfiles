@@ -158,6 +158,14 @@ alias tunv="ssh v 'echo Connected to v! && cat'"
 # date
 alias date="LC_ALL=en_US.UTF-8 date"
 alias datey="date +%Y-%m-%d"
+# doge
+# http://www.reddit.com/r/linux/comments/23zibr/hey_reddit_linux_users_what_are_your_best_shell/ch265hi
+alias such="hg"
+alias very="hg"
+alias wow="hg status"
+# $ wow
+# $ such commit
+# $ very push
 # }}}
 # completion files in dotfile {{{
 if [ -d ~/Workspace/dotfiles ]
@@ -195,7 +203,7 @@ function bash_prompt_command {
     pth=`pwd | sed -e "s|^$HOME|~|"`
     # free space on current line of terminal
     num=`expr $(tput cols) - ${#pth} - 3 - 5`
-    
+
     if [[ $EUID -ne 0 ]]
     then
         # not root
@@ -224,7 +232,7 @@ function bash_prompt_command {
     fi
 }
 #PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
-# this chars are also good for prompt: ↳↪ 
+# this chars are also good for prompt: ↳↪
 PROMPT_COMMAND=bash_prompt_command
 # }}}
 # fucntions {{{

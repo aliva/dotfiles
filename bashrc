@@ -157,14 +157,9 @@ alias wow="hg status"
 # ls
 alias ls='ls --color=auto'
 # http://www.reddit.com/r/linux/comments/23zibr/hey_reddit_linux_users_what_are_your_best_shell/ch25z3r
-alias ols="ls -lAh --color | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
-alias ll='ls -alF'
+alias ll="ls -lAhF --color | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
 alias la='ls -A'
 alias l='ls -CF'
-
-# $ wow
-# $ such commit
-# $ very push
 # }}}
 # completion files in dotfile {{{
 if [ -d ~/Workspace/dotfiles ]

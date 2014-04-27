@@ -154,6 +154,9 @@ alias ymd="date +%Y-%m-%d"
 alias such="hg"
 alias very="hg"
 alias wow="hg status"
+complete -o default -o nospace -F _hg such
+complete -o default -o nospace -F _hg very
+complete -o default -o nospace -F _hg_status wow
 # ls
 alias ls='ls --color=auto'
 # http://www.reddit.com/r/linux/comments/23zibr/hey_reddit_linux_users_what_are_your_best_shell/ch25z3r

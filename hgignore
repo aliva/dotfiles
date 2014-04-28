@@ -13,9 +13,13 @@ syntax:glob
 # python stupid bytecode files
 __pycache__
 *.pyc
+*.pyo
 
 # vim
 *.swp
 
 # gedit
 *~
+
+# bzr
+bzr-orphans

@@ -9,15 +9,3 @@ fish/generated_completions/
 vim/.netrwhist
 vim/bundle
 vim/doc/
-
-# komodoedit crap
-komodoedit/*/autosave
-komodoedit/*/codeintel
-komodoedit/*/XRE
-komodoedit/*/*.bak
-komodoedit/*/*.lock
-komodoedit/*/*.log
-komodoedit/*/*.tmp
-komodoedit/*/*.sqlite
-komodoedit/*/*.xml
-komodoedit/*/*.xmlc

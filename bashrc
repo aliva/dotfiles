@@ -115,6 +115,7 @@ alias p2="python2"
 alias p3="python3"
 # sudo
 alias s="sudo"
+complete -o default -o nospace -F _root_command s
 alias service="sudo service"
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"

@@ -17,6 +17,10 @@ function get {
 echo gitignore
 tail -n +3 $ROOT/hgignore > $ROOT/gitignore
 
+# regenerate bzri ignore file
+echo bazaar/ignore
+tail -n +3 $ROOT/hgignore > $ROOT/bazaar/ignore
+
 # crontab
 echo crontab/root
 sudo crontab -l > $ROOT/crontab/root

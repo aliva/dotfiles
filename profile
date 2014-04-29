@@ -24,7 +24,7 @@ for p in $BIN_PATHES
 do
 	if [ -d $p ]
 	then
-		PATH="$p:$PATH"
+		PATH="$PATH:$p"
 	fi
 done
 

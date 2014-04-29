@@ -95,6 +95,7 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
+unalias . &> /dev/null
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     source /usr/share/bash-completion/bash_completion
@@ -108,8 +109,8 @@ fi
 alias r="source ~/.bashrc && reset"
 alias q="exit"
 alias info="info --vi-keys"
-# doesn't work as expected, cause "." is bultin and had conflicts
-#alias .="xdg-open"
+# need to unalias before sourcing bash_completion files
+alias .="xdg-open"
 # python
 alias p="python"
 alias p2="python2"

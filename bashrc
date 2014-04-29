@@ -163,7 +163,7 @@ complete -o default -o nospace -F _hg such
 complete -o default -o nospace -F _hg very
 complete -o default -o nospace -F _hg_status wow
 # ls
-alias ls='ls --color=auto'
+alias ls='LC_ALL=en_US.UTF-8 ls --color=auto'
 # http://www.reddit.com/r/linux/comments/23zibr/hey_reddit_linux_users_what_are_your_best_shell/ch25z3r
 alias ll="ls -lAhF --color | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
 alias la='ls -A'

@@ -2,3 +2,6 @@
 set completion-ignore-case on
 # list all possible completion with single tab press
 set show-all-if-ambiguous on
+# tab through available completion options
+TAB: menu-complete
+"\e[Z": "\e-1\C-i"

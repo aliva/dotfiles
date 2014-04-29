@@ -1,0 +1,4 @@
+# ignore case for autocompletion
+set completion-ignore-case on
+# list all possible completion with single tab press
+set show-all-if-ambiguous on

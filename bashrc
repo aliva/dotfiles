@@ -108,7 +108,8 @@ fi
 alias r="source ~/.bashrc && reset"
 alias q="exit"
 alias info="info --vi-keys"
-alias .="xdg-open"
+# doesn't work as expected, cause "." is bultin and had conflicts
+#alias .="xdg-open"
 # python
 alias p="python"
 alias p2="python2"

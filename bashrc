@@ -138,7 +138,6 @@ alias pacman='LANG=en_US.utf8 sudo pacman'
 # path
 alias ~="cd ~"
 alias ..="cd .."
-alias cdb="cd ~/bin"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdn="cd ~/Workspace/notes"
 alias cdw="cd ~/Workspace"

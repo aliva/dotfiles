@@ -1,4 +1,12 @@
 #!/bin/bash
+
+control_c() {
+  echo -en "\n*** Ouch! Exiting ***\n"
+  exit
+}
+
+trap control_c SIGINT
+
 echo -e "\033[2J\033[?25l"
 
 R=`tput lines`

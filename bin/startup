@@ -2,7 +2,11 @@
 
 export DISPLAY=:0.0
 
+echo thunderbird
 thunderbird &
+echo firefox
 firefox &
+echo pidgin
 pidgin &
+echo rhythmbox
 rhythmbox &

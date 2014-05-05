@@ -23,4 +23,5 @@ hggit =
 
 # hg-git config section
 [git]
+# keep .git dir in coverted repo
 intree = True

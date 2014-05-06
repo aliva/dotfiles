@@ -2,11 +2,12 @@
 
 export DISPLAY=:0.0
 
-echo thunderbird
-thunderbird &
-echo firefox
-firefox &
-echo pidgin
-pidgin &
-echo rhythmbox
-rhythmbox &
+function run{
+    echo $1
+    $1 &> /dev/null &
+}
+
+run thunderbird
+run firefox
+run pidgin
+run rhythmbox

@@ -2,7 +2,7 @@
 
 export DISPLAY=:0.0
 
-function run{
+function run(){
     echo $1
     $1 &> /dev/null &
 }

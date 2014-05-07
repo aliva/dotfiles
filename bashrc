@@ -238,6 +238,9 @@ function bash_prompt_command {
 PROMPT_COMMAND=bash_prompt_command
 # }}}
 # fucntions {{{
+function vimall {
+    vim -p `file -ni * | grep 'text/plain' | cut -d: -f1 | tr '\n' ' '`
+}
 function isrunning {
     ps -ef | grep -i $1 | grep -v grep
 }

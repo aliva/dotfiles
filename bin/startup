@@ -4,7 +4,12 @@ export DISPLAY=:0.0
 
 function run(){
     echo $1
-    $1 &> /dev/null &
+    if pgrep $1 &> /dev/null
+    then
+        echo $1 is already running
+    else
+        $1 &> /dev/null &
+    fi
 }
 
 run thunderbird

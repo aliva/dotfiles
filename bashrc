@@ -108,9 +108,11 @@ fi
 # end of ubuntu default crap }}}
 # alias {{{
 alias r="source ~/.bashrc && reset"
-alias q="exit"
 alias info="info --vi-keys"
 alias o="xdg-open"
+alias q="exit"
+alias :q="exit"
+alias ,q="exit"
 # python
 alias p="python"
 alias p2="python2"

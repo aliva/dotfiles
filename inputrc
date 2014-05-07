@@ -8,3 +8,20 @@ set show-all-if-ambiguous on
 #"\e[Z": "\e-1\C-i"
 # use - instead of _
 set completion-map-case on
+
+# vi mode
+# list bindings : bind -P
+set editing-mode vi
+
+$if mode=vi
+    # mapping in normal mode
+    set keymap vi-command
+
+    "H": beginning-of-line
+    "L": beginning-of-line
+
+    # mapping in insert mode
+    set keymap vi-insert
+
+    "jj": vi-movement-mode
+$endif

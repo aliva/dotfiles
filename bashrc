@@ -238,7 +238,7 @@ function bash_prompt_command {
 PROMPT_COMMAND=bash_prompt_command
 # }}}
 # fucntions {{{
-function vimall {
+function editall {
     vim -p `file -ni * | grep 'text/plain' | cut -d: -f1 | tr '\n' ' '`
 }
 function isrunning {

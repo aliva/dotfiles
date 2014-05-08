@@ -201,10 +201,6 @@ WHITEBOLD="\[\033[1;37m\]"
 function bash_prompt_command {
     # last command return value
     ret=$?
-    # pwd
-    pth=`pwd | sed -e "s|^$HOME|~|"`
-    # free space on current line of terminal
-    num=`expr $(tput cols) - ${#pth} - 3 - 5`
 
     if [[ $EUID -ne 0 ]]
     then
@@ -217,6 +213,14 @@ function bash_prompt_command {
         PROMPT_COLOR=$RED
     fi
 
+    RB=`rhythmbox-client --print-playing --no-start 2>/dev/null`
+
+    # pwd
+    pth=`pwd | sed -e "s|^$HOME|~|"`
+
+    # free space on current line of terminal
+    num=`expr $(tput cols) - ${#pth} - 3 - 5 - ${#RB} - 1`
+
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then
         # if return code is zero instead of -zero- print :)
@@ -228,7 +232,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}↝ ${YELLOW}${pth} ${space} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
+        PS1="${PROMPT_COLOR}↝ ${YELLOW}${pth} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
     fi

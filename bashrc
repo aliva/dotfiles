@@ -219,7 +219,7 @@ function bash_prompt_command {
     pth=`pwd | sed -e "s|^$HOME|~|"`
 
     # free space on current line of terminal
-    num=`expr $(tput cols) - ${#pth} - 3 - 5 - ${#RB} - 1`
+    num=`expr $(tput cols) - ${#pth} - 3 - 6 - ${#RB}`
 
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then

@@ -232,9 +232,9 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}↝ ${YELLOW}${pth} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
+        PS1="${PROMPT_COLOR}↝ ${YELLOW}${pth} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     else
-        PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${NO_COLOR}"
+        PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi
 }
 #PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'

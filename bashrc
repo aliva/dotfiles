@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CDPATH=$CDPATH:$HOME/Workspace:$HOME
+export EDITOR=vim
 
 #TODO: check this section: ubuntu default crap {{{
 # ~/.bashrc: executed by bash(1) for non-login shells.

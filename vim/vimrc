@@ -37,6 +37,8 @@ Bundle "gmarik/vundle"
 
 " syntax and other crap for markdown files
 Bundle "tpope/vim-markdown"
+" snipmate
+Bundle "SirVer/ultisnips"
 " colorscheme
 Bundle "veloce/vim-aldmeris"
 

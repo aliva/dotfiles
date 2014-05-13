@@ -3,5 +3,5 @@
 path="$HOME/Pictures/hglolcommit/$(basename $(hg root))"
 file=`date +%Y-%m-%d\ %H-%M-%S`
 mkdir -p $path
-ffmpeg -f video4linux2 -i /dev/video0 -vframes 1 "$path/$file.jpg" &>/dev/null
+ffmpeg -f video4linux2 -i /dev/video0 -vframes 1 "$path/$file $HG_NODE.jpg" &>/dev/null
 

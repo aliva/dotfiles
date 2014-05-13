@@ -39,6 +39,7 @@ Bundle "gmarik/vundle"
 Bundle "tpope/vim-markdown"
 " snipmate
 Bundle "SirVer/ultisnips"
+" Bundle "honza/vim-snippets"
 " colorscheme
 Bundle "veloce/vim-aldmeris"
 
@@ -82,6 +83,12 @@ map <c-h> <c-w>h
 if has("gui_running")
     map <silent> <F10> :call ToggleToolbar()<CR>
 endif
+" plugins
+" UltiSnips
+" disable tab for you complete me
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " }}}
 " autocmd {{{
 " markdown

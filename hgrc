@@ -12,6 +12,9 @@ ignore = ~/.hgignore
 cm = commit --message
 pullu = pull --update
 
+[hooks]
+commit.lol= ~/Workspace/dotfiles/hghooks/hglolcmmit
+
 [extensions]
 # enable convert exension
 hgext.convert =

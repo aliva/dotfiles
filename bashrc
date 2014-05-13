@@ -170,6 +170,8 @@ alias sl="ls"
 alias ll="ls -lAhF --color | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
 alias la='ls -A'
 alias l='ls -CF'
+# id3ren
+alias id3ren="id3ren -template='%a - %s.mp3'"
 # }}}
 # completion files in dotfile {{{
 if [ -d ~/Workspace/dotfiles ]

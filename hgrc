@@ -13,7 +13,7 @@ cm = commit --message
 pullu = pull --update
 
 [hooks]
-commit.lol= ~/Workspace/dotfiles/hghooks/hglolcmmit
+commit.lol= ~/Workspace/dotfiles/hghooks/hglolcommit
 
 [extensions]
 # enable convert exension

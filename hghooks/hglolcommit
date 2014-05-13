@@ -1,7 +1,6 @@
 #!/bin/bash
 
-path="$HOME/Pictures/hgcommit/$(basename $(hg root))"
-echo $path
+path="$HOME/Pictures/hglolcommit/$(basename $(hg root))"
 mkdir -p $path
 ffmpeg -f video4linux2 -i /dev/video0 -vframes 1 $path/$HG_NODE.jpg &>/dev/null
 

@@ -38,6 +38,7 @@ Bundle "gmarik/vundle"
 " syntax and other crap for markdown files
 Bundle "tpope/vim-markdown"
 " snipmate
+" TODO: test something simpler
 Bundle "SirVer/ultisnips"
 " Bundle "honza/vim-snippets"
 " colorscheme
@@ -87,8 +88,8 @@ endif
 " UltiSnips
 " disable tab for you complete me
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " }}}
 " autocmd {{{
 " markdown

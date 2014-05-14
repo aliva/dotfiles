@@ -91,6 +91,10 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " }}}
+" plugin {{{
+" UltiSnips
+let g:UltiSnipsEditSplit="vertical"
+" }}}
 " autocmd {{{
 " markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2

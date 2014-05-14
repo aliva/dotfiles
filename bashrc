@@ -172,6 +172,8 @@ alias la='ls -A'
 alias l='ls -CF'
 # id3ren
 alias id3ren="id3ren -template='%a - %s.mp3'"
+# kill
+alias kilall="killall"
 # }}}
 # completion files in dotfile {{{
 if [ -d ~/Workspace/dotfiles ]

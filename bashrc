@@ -156,6 +156,8 @@ alias tunv="ssh v 'echo Connected to v! && cat'"
 alias date="LC_ALL=en_US.UTF-8 date"
 alias ymd="date +%Y-%m-%d"
 # hg
+alias h="hg"
+complete -o default -o nospace -F _hg h
 alias hd="hg diff"
 alias hs="hg status"
 alias hc="hg commit -m"

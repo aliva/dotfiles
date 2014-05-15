@@ -1,7 +1,9 @@
 #!/bin/bash
 
-CDPATH=$CDPATH:$HOME/Workspace:$HOME
+export CDPATH=$CDPATH:$HOME/Workspace:$HOME
 export EDITOR=vim
+export LANG=en_US.utf8
+export LC_ALL=$LANG
 
 #TODO: check this section: ubuntu default crap {{{
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -134,8 +136,6 @@ alias apty="sudo $APT_CMD update"
 alias aptu="sudo $APT_CMD upgrade"
 alias aptdu="sudo $APT_CMD dist-upgrade"
 alias apts="apt-cache search"
-# pacman
-alias pacman='LANG=en_US.utf8 sudo pacman'
 # path
 alias ~="cd ~"
 alias ..="cd .."
@@ -153,7 +153,6 @@ alias tun="ssh a 'echo Connected to a! && cat'"
 alias tuna="ssh a 'echo Connected to a! && cat'"
 alias tunv="ssh v 'echo Connected to v! && cat'"
 # date
-alias date="LC_ALL=en_US.UTF-8 date"
 alias ymd="date +%Y-%m-%d"
 # hg
 alias h="hg"

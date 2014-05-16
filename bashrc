@@ -184,7 +184,7 @@ alias kilall="killall"
 # completion files in dotfile {{{
 if [ -d ~/Workspace/dotfiles ]
 then
-    for f in ~/Workspace/dotfiles/bash-completion/*.sh
+    for f in ~/Workspace/dotfiles/bash-completion/*.bash
     do
         source $f
     done

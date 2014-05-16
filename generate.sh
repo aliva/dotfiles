@@ -37,7 +37,7 @@ fi
 exit
 
 # hg bash-autocompltion
-get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.sh
+get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.bash
 
 # hg vim plugin
 get http://selenic.com/hg/raw-file/tip/contrib/vim tmp

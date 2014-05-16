@@ -111,6 +111,7 @@ fi
 
 # end of ubuntu default crap }}}
 # alias {{{
+alias dots="vim +:Explore ~/Workspace/dotfiles"
 alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"
 alias o="xdg-open"

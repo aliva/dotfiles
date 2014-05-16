@@ -1,6 +1,8 @@
 #!/bin/bash
 
 export DISPLAY=:0.0
+export LANG=fa_IR.utf8
+export LC_ALL=$LANG
 
 function run(){
     echo $1

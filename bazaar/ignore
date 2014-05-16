@@ -1,10 +1,23 @@
-*.a
-*.o
-*.py[co]
-*.so
-*.sw[nop]
-*~
-.#*
-[#]*#
+
+# komodo project files, It's just silly to add them to repo
+*.komodoproject
+
+# eclipse
+.classpath
+.project
+.pydevproject
+.settings
+
+# python stupid bytecode files
 __pycache__
+*.pyc
+*.pyo
+
+# vim
+*.swp
+
+# gedit
+*~
+
+# bzr
 bzr-orphans

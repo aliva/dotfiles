@@ -39,6 +39,9 @@ exit
 # hg bash-autocompltion
 get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.bash
 
+# pip bash-autocompltion
+get https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip bash-completion/pip.bash
+
 # hg vim plugin
 get http://selenic.com/hg/raw-file/tip/contrib/vim tmp
 sed -i '/^$/d' $ROOT/tmp

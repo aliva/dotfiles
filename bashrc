@@ -1,10 +1,11 @@
 #!/bin/bash
 
+# vars {{{
 export CDPATH=$CDPATH:$HOME/Workspace:$HOME
 export EDITOR=vim
 export LANG=en_US.utf8
 export LC_ALL=$LANG
-
+# }}}
 #TODO: check this section: ubuntu default crap {{{
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)

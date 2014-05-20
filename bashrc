@@ -110,6 +110,10 @@ alias cdt="cd /tmp"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
 # internet
+if [ -f ~/.torrc ]
+then
+    alias tor="tor -f ~/.torrc"
+fi
 alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 50"
 alias wget="wget -c"

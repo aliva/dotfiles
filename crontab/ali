@@ -21,7 +21,7 @@
 #
 # m h  dom mon dow   command
 
-10 1 * * * export DISPLAY=:0.0 ;/usr/bin/transmission-gtk
+5 2 * * * export DISPLAY=:0.0 ;/usr/bin/transmission-gtk
 50 6 * * * killall /usr/bin/transmission-gtk
 
 # vim:set ft=crontab:

@@ -127,9 +127,11 @@ alias ymd="date +%Y-%m-%d"
 # hg
 alias h="hg"
 complete -o default -o nospace -F _hg h
-alias hd="hg diff"
-alias hs="hg status"
+alias ha="hg add"
 alias hc="hg commit -m"
+alias hd="hg diff"
+alias hp="hg push"
+alias hs="hg status"
 # doge
 # http://www.reddit.com/r/linux/comments/23zibr/hey_reddit_linux_users_what_are_your_best_shell/ch265hi
 alias such="hg"

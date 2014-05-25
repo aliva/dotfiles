@@ -111,10 +111,7 @@ alias cdt="cd /tmp"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
 # internet
-if [ -f ~/.torrc ]
-then
-    alias tor="tor -f ~/.torrc"
-fi
+alias tor="tor -f ~/Workspace/dotfiles/torrc"
 alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 50"
 alias wget="wget -c"
@@ -147,8 +144,9 @@ alias sl="ls"
 alias ll="ls -lAhF --color | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
 alias la='ls -A'
 alias l='ls -CF'
-# id3ren
+# mp3
 alias id3ren="id3ren -template='%a - %s.mp3'"
+alias lltag="lltag -F '%a-%t' --sep _"
 # kill
 alias kilall="killall"
 # }}}

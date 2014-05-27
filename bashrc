@@ -229,4 +229,7 @@ function editall {
 function isrunning {
     ps -ef | grep -i $1 | grep -v grep
 }
+function silent(){
+    $* & &>/dev/null
+}
 # }}}

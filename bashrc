@@ -88,11 +88,12 @@ alias p3="python3"
 # sudo
 alias s="sudo"
 complete -o default -o nospace -F _root_command s
-alias service="sudo service"
+alias docker="sudo docker"
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
-alias update-rc.d="sudo update-rc.d"
+alias service="sudo service"
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
+alias update-rc.d="sudo update-rc.d"
 # apt, if apt-fast is installed prefer apt-fast for downloading packages
 if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
 alias apt="sudo apt-get"

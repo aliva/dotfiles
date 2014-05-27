@@ -5,7 +5,7 @@
 [alias]
     st = status
 [core]
-    excludesfile = ~/.gitignore
+    excludesfile = ~/Workspace/dotfiles/gitignore
 
 #[http]
     #proxy = http://127.0.0.1:4001

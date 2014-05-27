@@ -3,7 +3,7 @@
 username = Ali Vakilzade <ali.vakilzade@gmail.com>
 
 # one ignore file to rule them all
-ignore = ~/.hgignore
+ignore = ~/Workspace/dotfiles/hgignore
 
 # at first it looked like a good idea to be verbose, I should say, it's not
 #verbose = True

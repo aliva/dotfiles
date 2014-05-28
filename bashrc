@@ -81,14 +81,16 @@ alias o="xdg-open"
 alias q="exit"
 alias :q="exit"
 alias ,q="exit"
+# docker
+alias docker="sudo docker"
+complete -o default -o nospace -F _docker docker
+alias dl="docker ps --latest=true --quiet=true"
 # python
-alias p="python"
 alias p2="python2"
 alias p3="python3"
 # sudo
 alias s="sudo"
 complete -o default -o nospace -F _root_command s
-alias docker="sudo docker"
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
 alias service="sudo service"

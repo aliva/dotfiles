@@ -1,0 +1,19 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "begin", 
+  "value": [
+    "<% if (ko.snippets.rightOfFirstKeyword()) {%>", 
+    "begin", 
+    "\t[[%tabstop:#code]]", 
+    "end<% } else {", 
+    "\tthrow new ko.snippets.RejectedSnippet(\"not at start of line\");", 
+    "} %>", 
+    "!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "false", 
+  "version": "1.0.12", 
+  "indent_relative": "true", 
+  "type": "snippet", 
+  "treat_as_ejs": "true", 
+  "auto_abbreviation": "true"
+}

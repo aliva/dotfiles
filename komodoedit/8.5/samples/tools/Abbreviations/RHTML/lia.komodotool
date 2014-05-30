@@ -1,0 +1,13 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "lia", 
+  "value": [
+    "<% link_to(\"[[%tabstop:text]]\", :action => \"[[%tabstop:index]]\" %>!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "false", 
+  "version": "1.0.12", 
+  "indent_relative": "true", 
+  "type": "snippet", 
+  "treat_as_ejs": "false", 
+  "auto_abbreviation": "false"
+}

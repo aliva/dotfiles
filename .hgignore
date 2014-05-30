@@ -6,7 +6,15 @@ fish/fish_history
 fish/generated_completions/
 
 # komodo-edit
+komodoedit/*/*.bak
+komodoedit/*/*.lock
+komodoedit/*/*.log
+komodoedit/*/*.sqlite
+komodoedit/*/*.tmp
+komodoedit/*/*.xml
 komodoedit/*/*.xmlc
+komodoedit/*/codeintel
+komodoedit/*/XRE
 
 # vim
 vim/.netrwhist

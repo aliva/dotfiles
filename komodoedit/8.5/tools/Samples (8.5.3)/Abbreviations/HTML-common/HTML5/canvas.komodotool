@@ -1,0 +1,13 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "canvas", 
+  "value": [
+    "<canvas [[%tabstop: id=\"[[%tabstop:canvasID]]\"]][[%tabstop: width=\"[[%tabstop:]]\"]][[%tabstop: height=\"[[%tabstop:]]\"]]>\n[[%tabstop0:]]!@#_currentPos!@#_anchor\n</canvas>"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.12", 
+  "indent_relative": "true", 
+  "type": "snippet", 
+  "treat_as_ejs": "false", 
+  "auto_abbreviation": "false"
+}

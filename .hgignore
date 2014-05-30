@@ -5,6 +5,9 @@ fish/fishd.*
 fish/fish_history
 fish/generated_completions/
 
+# komodo-edit
+komodoedit/*/*.xmlc
+
 # vim
 vim/.netrwhist
 vim/bundle

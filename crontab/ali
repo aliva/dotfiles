@@ -21,7 +21,7 @@
 #
 # m h  dom mon dow   command
 
-5 2 * * * export DISPLAY=:0.0 ;/usr/bin/transmission-gtk
+56 16 * * * /home/ali/Workspace/dotfiles/crontab/nightjob.sh &> /home/ali/Workspace/dotfiles/crontab/log
 50 6 * * * killall /usr/bin/transmission-gtk
 
 # vim:set ft=crontab:

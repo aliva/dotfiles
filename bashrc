@@ -84,7 +84,7 @@ alias ,q="exit"
 # docker
 alias docker="sudo docker"
 complete -o default -o nospace -F _docker docker
-alias dl="docker ps --latest=true --quiet=true"
+alias dl="docker ps -lq"
 # python
 alias p2="python2"
 alias p3="python3"

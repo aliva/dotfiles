@@ -97,7 +97,7 @@ binding cmd_save Ctrl+S
 binding cmd_saveAll Ctrl+Shift+S
 binding cmd_new Ctrl+N
 binding cmd_newTemplate Ctrl+Shift+N
-binding cmd_open Ctrl+O
+binding cmd_open Ctrl+Shift+O
 binding cmd_openProject Ctrl+Shift+J
 binding cmd_bufferClose Ctrl+F4
 binding cmd_bufferClose Ctrl+W
@@ -149,7 +149,7 @@ binding cmd_selectRectHome Alt+Shift+Home
 binding cmd_selectRectEnd Alt+Shift+End
 binding cmd_selectRectPageUp Alt+Shift+Page_Up
 binding cmd_selectRectPageDown Alt+Shift+Page_Down
-binding cmd_goToFile Ctrl+Shift+O
+binding cmd_goToFile Ctrl+O
 binding cmd_invokeHyperlink Ctrl+Shift+G
 binding cmd_invokeTool Ctrl+Shift+K
 binding cmd_addAdditionalCaret Ctrl+K Ctrl+Y

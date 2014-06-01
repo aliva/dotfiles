@@ -84,6 +84,8 @@ alias ,q="exit"
 # docker
 alias docker="sudo docker"
 complete -o default -o nospace -F _docker docker
+alias ducker="sudo docker"
+complete -o default -o nospace -F _docker ducker
 alias dl="docker ps -lq"
 # python
 alias p2="python2"

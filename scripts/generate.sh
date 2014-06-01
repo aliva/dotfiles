@@ -18,7 +18,7 @@ tail -n +3 $ROOT/hgignore > $ROOT/bazaar/ignore
 
 # crontab
 echo crontab/root
-sudo crontab -l > $ROOT/crontab/root
+sudo crontab -l > $ROOT/crontab/root.$HOSTNAME.crontab
 echo crontab/`whoami`
-crontab -l > $ROOT/crontab/`whoami`
+crontab -l > $ROOT/crontab/`whoami`.$HOSTNAME.crontab
 

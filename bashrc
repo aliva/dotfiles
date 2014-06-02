@@ -201,6 +201,9 @@ function bash_prompt_command {
 
     RB=`rhythmbox-client --print-playing --no-start 2>/dev/null`
 
+    user=`whoami`
+    host=$HOSTNAME
+
     # pwd
     pth=`pwd | sed -e "s|^$HOME|~|"`
 
@@ -215,7 +218,7 @@ function bash_prompt_command {
     fi
 
     # free space on current line of terminal
-    num=`expr $(tput cols) - ${#pth} - ${#venv} - 3 - 6 - ${#RB}`
+    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#RB} - 16`
 
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then
@@ -228,13 +231,13 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}↝ ${RED}${venv}${YELLOW}${pth} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${GREEN}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${YELLOW}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi
 }
 #PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
-# this chars are also good for prompt: ↳↪
+# this chars are also good for prompt: ↳↪↝
 PROMPT_COMMAND=bash_prompt_command
 # }}}
 # fucntions {{{

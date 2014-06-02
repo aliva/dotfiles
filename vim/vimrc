@@ -37,6 +37,8 @@ Bundle "gmarik/vundle"
 
 " syntax and other crap for markdown files
 Bundle "tpope/vim-markdown"
+" syntax for Dockerfile
+Bundle "honza/dockerfile.vim"
 " snipmate
 " TODO: test something simpler
 Bundle "SirVer/ultisnips"

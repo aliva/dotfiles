@@ -231,7 +231,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${YELLOW}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${GREEN}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${YELLOW}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

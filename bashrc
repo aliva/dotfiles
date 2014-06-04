@@ -90,6 +90,8 @@ alias dl="docker ps -lq"
 # python
 alias p2="python2"
 alias p3="python3"
+complete -o default -F _pip pip3
+complete -o default -F _pip pip2
 # sudo
 alias s="sudo"
 complete -o default -o nospace -F _root_command s

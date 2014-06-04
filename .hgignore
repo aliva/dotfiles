@@ -20,3 +20,4 @@ komodoedit/*/XRE
 vim/.netrwhist
 vim/bundle
 vim/doc/
+crontab/log

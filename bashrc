@@ -202,7 +202,10 @@ function bash_prompt_command {
         PROMPT_COLOR=$RED
     fi
 
-    RB=`rhythmbox-client --print-playing --no-start 2>/dev/null`
+    if pgrep rhythmbox &>/dev/null
+    then
+        music=`rhythmbox-client --print-playing --no-start 2>/dev/null`
+    fi
 
     user=`whoami`
     host=$HOSTNAME
@@ -221,7 +224,7 @@ function bash_prompt_command {
     fi
 
     # free space on current line of terminal
-    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#RB} - 16`
+    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - 16`
 
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then
@@ -234,7 +237,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${YELLOW}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${RB} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${YELLOW}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

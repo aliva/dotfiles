@@ -16,6 +16,8 @@ pullu = pull --update
 commit.lol= ~/Workspace/dotfiles/hghooks/hglolcommit
 
 [extensions]
+# I like colored terminal
+color =
 # enable convert exension
 hgext.convert =
 # I like progress bars

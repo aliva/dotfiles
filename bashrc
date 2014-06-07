@@ -88,6 +88,10 @@ alias ducker="sudo docker"
 complete -o default -o nospace -F _docker ducker
 alias dl="docker ps -lq"
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+function dipl(){
+    docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
+}
+alias docker-rm-all="docker stop $(docker ps -aq) && docker rm $(docker ps -aq)"
 # python
 alias p2="python2"
 alias p3="python3"

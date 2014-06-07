@@ -84,14 +84,14 @@ alias ,q="exit"
 # docker
 alias docker="sudo docker"
 complete -o default -o nospace -F _docker docker
-alias ducker="sudo docker"
+alias ducker="docker"
 complete -o default -o nospace -F _docker ducker
 alias dl="docker ps -lq"
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 function dipl(){
     docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
 }
-alias docker-rm-all="docker stop $(docker ps -aq) && docker rm $(docker ps -aq)"
+#alias docker-rm-all="docker stop $(docker ps -aq) && docker rm $(docker ps -aq)"
 # python
 alias p2="python2"
 alias p3="python3"

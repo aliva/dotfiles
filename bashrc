@@ -91,6 +91,10 @@ alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 function dipl(){
     docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
 }
+function drml(){
+    docker ps -l
+    docker rm -f $(dl)
+}
 #alias docker-rm-all="docker stop $(docker ps -aq) && docker rm $(docker ps -aq)"
 # python
 alias p2="python2"

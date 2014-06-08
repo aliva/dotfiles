@@ -208,7 +208,7 @@ function bash_prompt_command {
 
     if pgrep rhythmbox &>/dev/null
     then
-        music=`rhythmbox-client --print-playing --no-start 2>/dev/null`
+        music=`timeout 2 rhythmbox-client --print-playing --no-start 2>/dev/null`
     fi
 
     user=`whoami`

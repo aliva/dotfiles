@@ -211,6 +211,15 @@ function bash_prompt_command {
         PROMPT_COLOR=$RED
     fi
 
+    if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
+    then
+        # if connected through ssh
+        host_color=$BLUE
+    else
+        # if not
+        host_color=$YELLOW
+    fi
+
     if pgrep rhythmbox &>/dev/null
     then
         music=`timeout 2 rhythmbox-client --print-playing --no-start 2>/dev/null`
@@ -246,7 +255,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${YELLOW}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

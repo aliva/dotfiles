@@ -127,6 +127,7 @@ alias cdt="cd /tmp"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
 # internet
+alias myip="curl -s icanhazip.com"
 alias tor="tor -f ~/Workspace/dotfiles/torrc"
 alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 50"

@@ -214,7 +214,7 @@ function bash_prompt_command {
     if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
     then
         # if connected through ssh
-        host_color=$RED
+        host_color=$PURPLE
     else
         # if not
         host_color=$YELLOW
@@ -255,7 +255,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${PURPLE}${pth} ${WHITEBOLD}${venv} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth} ${WHITEBOLD}${venv} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

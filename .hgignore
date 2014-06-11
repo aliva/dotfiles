@@ -13,6 +13,7 @@ komodoedit/*/*.sqlite
 komodoedit/*/*.tmp
 komodoedit/*/*.xml
 komodoedit/*/*.xmlc
+komodoedit/*/autosave
 komodoedit/*/codeintel
 komodoedit/*/XRE
 

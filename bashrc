@@ -220,6 +220,7 @@ function bash_prompt_command {
         host_color=$YELLOW
     fi
 
+    music=
     if pgrep rhythmbox &>/dev/null
     then
         music=`timeout 2 rhythmbox-client --print-playing --no-start 2>/dev/null`

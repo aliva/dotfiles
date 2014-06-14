@@ -45,6 +45,9 @@ Bundle "SirVer/ultisnips"
 " Bundle "honza/vim-snippets"
 " colorscheme
 Bundle "veloce/vim-aldmeris"
+" terminal
+Bundle "Shougo/vimshell.vim"
+Bundle "Shougo/vimproc"
 
 filetype plugin on
 filetype indent on

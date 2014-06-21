@@ -35,10 +35,12 @@ set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle "gmarik/vundle"
 
-" syntax and other crap for markdown files
+" markdown files
 Bundle "tpope/vim-markdown"
-" syntax for Dockerfile
+" Dockerfile
 Bundle "honza/dockerfile.vim"
+" go
+Bundle "fatih/vim-go"
 " snipmate
 " TODO: test something simpler
 Bundle "SirVer/ultisnips"
@@ -100,6 +102,8 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " }}}
 " plugin {{{
+" Go
+let g:go_disable_autoinstall = 1
 " UltiSnips
 let g:UltiSnipsEditSplit="vertical"
 " }}}

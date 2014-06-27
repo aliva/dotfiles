@@ -8,6 +8,8 @@ set show-all-if-ambiguous on
 #"\e[Z": "\e-1\C-i"
 # use - instead of _
 set completion-map-case on
+# disable beep sound
+set bell-style visible
 
 # vi mode
 # list bindings : bind -P

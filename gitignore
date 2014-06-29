@@ -8,6 +8,13 @@
 .pydevproject
 .settings
 
+# git
+# why should I ignore git?
+.git
+
+# IntijIdea
+.idea
+
 # python stupid bytecode files
 __pycache__
 *.pyc

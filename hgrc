@@ -28,5 +28,5 @@ hggit =
 
 # hg-git config section
 [git]
-# keep .git dir in coverted repo
-intree = True
+# remove the git damned repo
+intree = False

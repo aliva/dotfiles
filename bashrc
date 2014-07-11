@@ -3,8 +3,8 @@
 # vars {{{
 export CDPATH=$CDPATH:$HOME/Workspace:$HOME
 export EDITOR=vim
-export LANG=en_US.utf8
-export LC_ALL=$LANG
+#export LANG=en_US.utf8
+#export LC_ALL=$LANG
 # }}}
 #TODO: check this section: ubuntu default crap {{{
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -109,6 +109,7 @@ complete -o default -o nospace -F _root_command s
 alias poweroff="sudo poweroff -p"
 alias reboot="sudo reboot"
 alias service="sudo service"
+alias systemctl="sudo systemctl"
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
 alias update-rc.d="sudo update-rc.d"
 # apt, if apt-fast is installed prefer apt-fast for downloading packages
@@ -120,6 +121,16 @@ alias apty="sudo $APT_CMD update"
 alias aptu="sudo $APT_CMD upgrade"
 alias aptdu="sudo $APT_CMD dist-upgrade"
 alias apts="apt-cache search"
+# pacman
+function pacman(){
+    if echo $1 | grep "^\-.*S" &>/dev/null && [[ $1 != "-Ss" ]]
+    then
+        has_sudo="sudo"
+    else
+        has_sudo=
+    fi
+    LANG=en_US.utf-8 $has_sudo /usr/bin/pacman $@
+}
 # path
 alias ~="cd ~"
 alias ..="cd .."

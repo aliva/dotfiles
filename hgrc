@@ -13,7 +13,7 @@ cm = commit --message
 pullu = pull --update
 
 [hooks]
-commit.lol= ~/Workspace/dotfiles/hghooks/hglolcommit
+#commit.lol= ~/Workspace/dotfiles/hghooks/hglolcommit
 
 [extensions]
 # I like colored terminal

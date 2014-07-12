@@ -122,15 +122,15 @@ alias aptu="sudo $APT_CMD upgrade"
 alias aptdu="sudo $APT_CMD dist-upgrade"
 alias apts="apt-cache search"
 # pacman
-function pacman(){
-    if echo $1 | grep "^\-.*S" &>/dev/null && [[ $1 != "-Ss" ]]
-    then
-        has_sudo="sudo"
-    else
-        has_sudo=
-    fi
-    LANG=en_US.utf-8 $has_sudo /usr/bin/pacman $@
-}
+#function pacman(){
+#    if echo $1 | grep "^\-.*S" &>/dev/null && [[ $1 != "-Ss" ]]
+#    then
+#        has_sudo="sudo"
+#    else
+#        has_sudo=
+#    fi
+#    LANG=en_US.utf-8 $has_sudo /usr/bin/pacman $@
+#}
 # path
 alias ~="cd ~"
 alias ..="cd .."

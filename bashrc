@@ -216,7 +216,7 @@ function bash_prompt_command {
     if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
     then
         # if connected through ssh
-        host_color=$PURPLE
+        host_color=$RED
     else
         # if not
         host_color=$YELLOW

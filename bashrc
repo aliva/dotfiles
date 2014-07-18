@@ -129,7 +129,7 @@ function pacman(){
 #    else
 #        has_sudo=
 #    fi
-    LANG=en_US.utf-8 $has_sudo /usr/bin/pacman $@
+    LANG=en_US.utf-8 /usr/bin/pacman $@
 }
 # path
 alias ~="cd ~"

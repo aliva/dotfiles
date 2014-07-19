@@ -1,0 +1,34 @@
+#!/bin/bash
+
+function deadbeef_fun() {
+    if ! pgrep deadbeef &>/dev/null
+    then
+        return
+    fi
+    deadbeef --$1
+}
+
+case $1 in
+    next)
+        echo next
+        deadbeef_fun next
+        ;;
+    prev)
+        echo prev
+        deadbeef_fun prev
+        ;;
+    play)
+        echo play
+        deadbeef_fun play-pause
+        ;;
+    pause)
+        echo pause
+        deadbeef_fun play-pause
+        ;;
+    stop)
+        echo stop
+        deadbeef_fun stop
+        ;;
+    *)
+        echo What? $1
+esac

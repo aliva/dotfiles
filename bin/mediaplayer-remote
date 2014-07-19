@@ -5,6 +5,12 @@ function deadbeef_fun() {
     then
         return
     fi
+
+    if [[ $1 == "info" ]]
+    then
+        deadbeef --nowplaying "%t - %a"  2>/dev/null
+        return
+    fi
     deadbeef --$1
 }
 
@@ -28,6 +34,10 @@ case $1 in
     stop)
         echo stop
         deadbeef_fun stop
+        ;;
+    info)
+        echo info
+        echo "DeaDBeeF : $(deadbeef_fun info)"
         ;;
     *)
         echo What? $1

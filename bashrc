@@ -139,6 +139,7 @@ alias cdn="cd ~/Workspace/notes"
 alias cdt="cd /tmp"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
+alias countfiles="ls -l | wc -l"
 # internet
 alias myip="curl -s icanhazip.com"
 alias tor="tor -f ~/Workspace/dotfiles/torrc"

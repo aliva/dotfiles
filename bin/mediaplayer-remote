@@ -22,6 +22,8 @@ function clementine_fun() {
 
     if [[ $1 == "info" ]]
     then
+        qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata \
+            | sort -r | egrep "^(title:|artist:)" | sed -e "s/^.*: //g" | sed -e ':a;N;$!ba;s/\n/ - /g'
         return
     fi
     clementine --$1

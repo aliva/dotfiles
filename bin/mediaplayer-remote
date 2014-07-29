@@ -14,30 +14,49 @@ function deadbeef_fun() {
     deadbeef --$1
 }
 
+function clementine_fun() {
+    if ! pgrep clementine &>/dev/null
+    then
+        return
+    fi
+
+    if [[ $1 == "info" ]]
+    then
+        return
+    fi
+    clementine --$1
+}
+
 case $1 in
     next)
         echo next
         deadbeef_fun next
+        clementine_fun next
         ;;
     prev)
         echo prev
         deadbeef_fun prev
+        clementine_fun prev
         ;;
     play)
         echo play
         deadbeef_fun play-pause
+        clementine_fun play-pause
         ;;
     pause)
         echo pause
         deadbeef_fun play-pause
+        clementine_fun play-pause
         ;;
     stop)
         echo stop
         deadbeef_fun stop
+        clementine_fun stop
         ;;
     info)
         echo info
         echo "DeaDBeeF : $(deadbeef_fun info)"
+        echo "Clementine : $(clementine_fun info)"
         ;;
     *)
         echo What? $1

@@ -234,11 +234,7 @@ function bash_prompt_command {
         host_color=$YELLOW
     fi
 
-    music=
-    if pgrep rhythmbox &>/dev/null
-    then
-        music=`timeout 1 rhythmbox-client --print-playing --no-start 2>/dev/null`
-    fi
+    music=`mediaplayer-remote info | sed -e "s/^.*: //g" | sed -e "/^$/d" | sed -e ':a;N;$!ba;s/\n/ - /g'`
 
     user=`whoami`
     host=$HOSTNAME

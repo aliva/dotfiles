@@ -56,9 +56,8 @@ case $1 in
         clementine_fun stop
         ;;
     info)
-        echo info
-        echo "DeaDBeeF : $(deadbeef_fun info)"
-        echo "Clementine : $(clementine_fun info)"
+        echo "DeaDBeeF: $(deadbeef_fun info)"
+        echo "Clementine: $(clementine_fun info)"
         ;;
     *)
         echo What? $1

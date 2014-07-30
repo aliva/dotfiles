@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# $1 - player name
-# $2 - action
+TIMEOUT=1
 
 function do_action(){
     player=$1
@@ -40,7 +39,7 @@ function do_action(){
 
     fi
 
-    $player --$action
+    timeout $TIMEOUT $player --$action
 }
 
 if [ -z $1 ]

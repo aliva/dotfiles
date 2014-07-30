@@ -17,6 +17,7 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 BIN_PATHES="$HOME/bin \
+$HOME/.local/bin \
 $HOME/Workspace/dotfiles/bin \
 /opt/openoffice_beta4/program"
 

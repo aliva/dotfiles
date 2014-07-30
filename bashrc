@@ -234,7 +234,7 @@ function bash_prompt_command {
         host_color=$YELLOW
     fi
 
-    music=`mediaplayer-remote info | sed -e "s/^.*: //g" | sed -e "/^$/d" | sed -e ':a;N;$!ba;s/\n/ - /g'`
+    music=`mediaplayer-remote info 2>/dev/null | sed -e "s/^.*: //g" | sed -e "/^$/d" | sed -e ':a;N;$!ba;s/\n/ - /g'`
 
     user=`whoami`
     host=$HOSTNAME

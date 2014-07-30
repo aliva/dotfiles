@@ -29,35 +29,55 @@ function clementine_fun() {
     clementine --$1
 }
 
+function rhythmbox_fun() {
+    if ! pgrep rhythmbox &>/dev/null
+    then
+        return
+    fi
+
+    if [[ $1 == "info" ]]
+    then
+        rhythmbox-client --print-playing
+        return
+    fi
+    rhythmbox-client --$1
+}
+
 case $1 in
     next)
         echo next
         deadbeef_fun next
         clementine_fun next
+        rhythmbox_fun next
         ;;
     prev)
         echo prev
         deadbeef_fun prev
         clementine_fun prev
+        rhythmbox_fun prev
         ;;
     play)
         echo play
         deadbeef_fun play-pause
         clementine_fun play-pause
+        rhythmbox_fun play-pause
         ;;
     pause)
         echo pause
         deadbeef_fun play-pause
         clementine_fun play-pause
+        rhythmbox_fun play-pause
         ;;
     stop)
         echo stop
         deadbeef_fun stop
         clementine_fun stop
+        rhythmbox_fun stop
         ;;
     info)
         echo "DeaDBeeF: $(deadbeef_fun info)"
         echo "Clementine: $(clementine_fun info)"
+        echo "Rhythmbox: $(rhythmbox_fun info)"
         ;;
     *)
         echo What? $1

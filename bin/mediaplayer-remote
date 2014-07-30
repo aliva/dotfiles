@@ -18,6 +18,11 @@ function do_action(){
             dbus-send --print-reply=literal --session --dest=org.mpris.MediaPlayer2.rhythmbox  /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
             return
         fi
+        if [[ $action == "prev" ]]
+        then
+            action="previous"
+        fi
+
         player="rhythmbox-client"
     fi
 

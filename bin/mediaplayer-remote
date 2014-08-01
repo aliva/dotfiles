@@ -37,7 +37,7 @@ function do_action(){
     then
         case $action in
             prev)
-                action="previuos"
+                action="previous"
                 ;;
             play-pause)
                 action="PlayPause"

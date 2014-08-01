@@ -33,7 +33,7 @@ function do_action(){
                 action="--nowplaying '%t - %a'  2>/dev/null"
                 ;;
             rhythmbox-client)
-                action="print-playing"
+                action='print-playing-format=%tt by %ta'
                 ;;
             clementine)
                 qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata \
@@ -44,7 +44,7 @@ function do_action(){
 
     fi
 
-    timeout $TIMEOUT $player --$action
+    timeout $TIMEOUT $player "--$action"
 }
 
 if [ -z $1 ]

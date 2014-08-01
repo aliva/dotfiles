@@ -20,8 +20,8 @@ function do_action(){
                 deadbeef --nowplaying '%t - %a'  2>/dev/null
                 return
                 ;;
-            rhythmbox-client)
-                rhythmbox-client print-playing-format=%tt by %ta
+            rhythmbox)
+                rhythmbox-client --print-playing-format="%tt by %ta"
                 return
                 ;;
             clementine)

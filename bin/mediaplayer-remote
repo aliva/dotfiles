@@ -25,6 +25,26 @@ function do_action(){
 
         player="rhythmbox-client"
     fi
+    if [[ $player == "vlc" ]]
+    then
+        case $action in
+            prev)
+                action="previuos"
+                ;;
+            play-pause)
+                action="PlayPause"
+                ;;
+            info)
+                # TODO
+                return
+                ;;
+        esac
+
+        action="${action^}"
+
+        dbus-send --print-reply=literal --session --dest=org.mpris.MediaPlayer2.$player  /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.$action
+        return
+    fi
 
     if [[ $action == "info" ]]
     then
@@ -53,10 +73,15 @@ then
     exit
 fi
 
-players="deadbeef clementine rhythmbox"
-for player in $players
-do
-    do_action $player $1
-done
+players="deadbeef clementine rhythmbox vlc"
+if [ -z $2 ]
+then
+    for player in $players
+    do
+        do_action $player $1
+    done
+else
+    do_action $1 $2
+fi
 
 

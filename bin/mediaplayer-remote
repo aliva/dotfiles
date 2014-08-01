@@ -6,26 +6,34 @@ function do_action(){
     player=$1
     action=$2
 
+    # check if player is running
     if ! pgrep $player &>/dev/null
     then
         return
     fi
 
-    if [[ $player == "rhythmbox" ]]
+    # if it wants some crappy info
+    if [[ $action == "info" ]]
     then
-        if [[ $action == "stop" ]]
-        then
-            dbus-send --print-reply=literal --session --dest=org.mpris.MediaPlayer2.rhythmbox  /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
-            return
-        fi
-        if [[ $action == "prev" ]]
-        then
-            action="previous"
-        fi
-
-        player="rhythmbox-client"
+        case $player in
+            deadbeef)
+                deadbeef --nowplaying '%t - %a'  2>/dev/null
+                return
+                ;;
+            rhythmbox-client)
+                rhythmbox-client print-playing-format=%tt by %ta
+                return
+                ;;
+            clementine)
+                qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata \
+                    | sort -r | egrep "^(title:|artist:)" | sed -e "s/^.*: //g" | sed -e ':a;N;$!ba;s/\n/ - /g'
+                return
+                ;;
+        esac
     fi
-    if [[ $player == "vlc" ]]
+
+    # MPRIS seems cool
+    if [[ $player == "vlc" ]] || [[ $player == "rhythmbox" ]] || [[ $player == "clementine" ]]
     then
         case $action in
             prev)
@@ -46,25 +54,8 @@ function do_action(){
         return
     fi
 
-    if [[ $action == "info" ]]
-    then
-        case $player in
-            deadbeef)
-                action="--nowplaying '%t - %a'  2>/dev/null"
-                ;;
-            rhythmbox-client)
-                action='print-playing-format=%tt by %ta'
-                ;;
-            clementine)
-                qdbus org.mpris.clementine /Player org.freedesktop.MediaPlayer.GetMetadata \
-                    | sort -r | egrep "^(title:|artist:)" | sed -e "s/^.*: //g" | sed -e ':a;N;$!ba;s/\n/ - /g'
-                return
-                ;;
-        esac
-
-    fi
-
-    timeout $TIMEOUT $player "--$action"
+    # deadbeef
+    $TIMEOUT $player "--$action"
 }
 
 if [ -z $1 ]

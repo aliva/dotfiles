@@ -104,6 +104,7 @@ alias p3="python3"
 complete -o default -F _pip pip3
 complete -o default -F _pip pip2
 # sudo
+alias sudo="sudo -E"
 alias s="sudo"
 complete -o default -o nospace -F _root_command s
 alias poweroff="sudo poweroff -p"

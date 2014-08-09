@@ -187,4 +187,8 @@
 ## address manually to your friends, uncomment this line:
 #PublishServerDescriptor 0
 
-ServerTransportPlugin obfs2,obfs3 exec /usr/bin/obfsproxy managed
+#ServerTransportPlugin obfs2,obfs3 exec /usr/bin/obfsproxy managed
+UseBridges 1
+bridge 194.132.208.168:18552 43225be322984a45875a0885a042b21b442e16ab
+bridge 194.132.209.178:24981 fb5014a0d271df4051bf61a0454483a63b33a66e
+bridge 189.226.231.234:443 993661d2fafefeadc15aada3183dac18764b41a0

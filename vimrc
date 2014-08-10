@@ -120,8 +120,6 @@ command GEDIT execute "!gedit '%:p' &"
 " }}}
 " colorscheme {{{
 set t_Co=256
-set t_AB=^[[48;5;%dm
-set t_AF=^[[38;5;%dm
 if has("gui_running")
     colorscheme aldmeris
 endif

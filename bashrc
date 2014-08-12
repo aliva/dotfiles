@@ -73,6 +73,12 @@ if ! shopt -oq posix; then
 fi
 
 # end of ubuntu default crap }}}
+# auto jump {{{
+if [ -f /usr/share/autojump/autojump.sh ]
+then
+    . /usr/share/autojump/autojump.sh
+fi
+# }}}
 # alias {{{
 alias dots="vim +:Explore ~/Workspace/dotfiles"
 alias r="source ~/.bashrc && reset"
@@ -215,6 +221,10 @@ function bash_prompt_command {
     # last command return value
     ret=$?
 
+    # autojump update db
+    autojump_add_to_database
+
+    # if root
     if [[ $EUID -ne 0 ]]
     then
         # not root
@@ -226,6 +236,7 @@ function bash_prompt_command {
         PROMPT_COLOR=$RED
     fi
 
+    # if connected through ssh
     if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
     then
         # if connected through ssh
@@ -235,15 +246,20 @@ function bash_prompt_command {
         host_color=$YELLOW
     fi
 
-    music=`timeout 1 mediaplayer-remote info 2>/dev/null | sed -e "s/^.*: //g" | sed -e "/^$/d" | sed -e ':a;N;$!ba;s/\n/ - /g'`
+    # media player info
+    #music=`timeout 1 mediaplayer-remote info 2>/dev/null | sed -e "s/^.*: //g" | sed -e "/^$/d" | sed -e ':a;N;$!ba;s/\n/ - /g'`
+    music=`timeout 1 mediaplayer-remote info 2>/dev/null`
 
+    # current user
     user=`whoami`
+
+    # hostname of current system
     host=$HOSTNAME
 
     # pwd
     pth=`pwd | sed -e "s|^$HOME|~|"`
 
-    # Get Virtual Env
+    # if vurtualenv
     if [[ $VIRTUAL_ENV != "" ]]
     then
         # Strip out the path and just leave the env name
@@ -253,7 +269,7 @@ function bash_prompt_command {
         venv=""
     fi
 
-    # free space on current line of terminal
+    # how many spaces should I print?
     num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - 16`
 
     # if there is space in current line to show last commands ret code

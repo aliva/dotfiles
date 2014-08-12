@@ -25,5 +25,5 @@ $if mode=vi
     # mapping in insert mode
     set keymap vi-insert
 
-    "jj": vi-movement-mode
+    #"jj": vi-movement-mode
 $endif

@@ -6,7 +6,8 @@
     st = status
 [core]
     excludesfile = ~/Workspace/dotfiles/gitignore
-
+[push]
+    default = simple
 #[http]
     #proxy = http://127.0.0.1:4001
 

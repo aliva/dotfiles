@@ -1,5 +1,3 @@
-syntax:glob
-
 # fish
 fish/fishd.*
 fish/fish_history

@@ -28,3 +28,6 @@ __pycache__
 
 # bzr
 bzr-orphans
+
+# node
+node_modules

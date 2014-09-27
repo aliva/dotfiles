@@ -88,9 +88,7 @@ alias q="exit"
 alias :q="exit"
 alias ,q="exit"
 # docker
-function docker(){
-    sudo `which docker.io` $@
-}
+alias docker="sudo docker"
 complete -o default -o nospace -F _docker docker
 alias ducker="docker"
 complete -o default -o nospace -F _docker ducker

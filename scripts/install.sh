@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT=`hg root`
+ROOT=`git rev-parse --show-toplevel`
 
 function die {
     echo "* ERROR *"

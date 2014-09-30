@@ -257,7 +257,11 @@ function bash_prompt_command {
     host=$HOSTNAME
 
     # pwd
-    pth=`pwd | sed -e "s|^$HOME|~|"`
+    pth=`pwd | sed -e "s|^$HOME\/|~\/|"`
+    if [[ $pth = $HOME ]]
+    then
+       pth="~"
+    fi
 
     # if vurtualenv
     if [[ $VIRTUAL_ENV != "" ]]

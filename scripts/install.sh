@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT=`hg root`
+ROOT=`git rev-parse --show-toplevel`
 
 function die {
     echo "* ERROR *"
@@ -26,12 +26,12 @@ get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/m
 get https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip bash-completion/pip.bash
 
 # hg vim plugin
-get http://selenic.com/hg/raw-file/tip/contrib/vim tmp
-sed -i '/^$/d' $ROOT/tmp
-for f in `cat $ROOT/tmp | awk '{print $3}'`
-do
-    get http://selenic.com/hg/raw-file/tip/contrib/vim/$f vim/plugin/$f
-done
-rm $ROOT/tmp
+#get http://selenic.com/hg/raw-file/tip/contrib/vim tmp
+#sed -i '/^$/d' $ROOT/tmp
+#for f in `cat $ROOT/tmp | awk '{print $3}'`
+#do
+#    get http://selenic.com/hg/raw-file/tip/contrib/vim/$f vim/plugin/$f
+#done
+#rm $ROOT/tmp
 
 echo "* DONE! *"

@@ -294,15 +294,3 @@ function bash_prompt_command {
 # this chars are also good for prompt: ↳↪↝✎
 PROMPT_COMMAND=bash_prompt_command
 # }}}
-# fucntions {{{
-function any {
-    ps -ef | grep -i $1 | grep -v grep
-}
-function editall {
-    vim -p `file -ni * | grep 'text/plain' | cut -d: -f1 | tr '\n' ' '`
-}
-function silent(){
-    $* & &>/dev/null
-}
-# }}}
-

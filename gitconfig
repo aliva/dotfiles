@@ -1,14 +1,9 @@
 [user]
     email = ali@vakilzade.ir
     name = Ali Vakilzade
-
 [alias]
     st = status
 [core]
     excludesfile = ~/Workspace/dotfiles/gitignore
-[push]
-    default = matching
-#[http]
-    #proxy = http://127.0.0.1:4001
 
 # vim:set ft=cfg:

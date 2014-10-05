@@ -18,8 +18,7 @@ fi
 
 BIN_PATHES="$HOME/bin \
 $HOME/.local/bin \
-$HOME/Workspace/dotfiles/bin \
-/opt/openoffice_beta4/program"
+$HOME/Workspace/dotfiles/bin"
 
 for p in $BIN_PATHES
 do

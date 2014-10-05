@@ -12,9 +12,6 @@ ignore = ~/Workspace/dotfiles/hgignore
 cm = commit --message
 pullu = pull --update
 
-[hooks]
-#commit.lol= ~/Workspace/dotfiles/hghooks/hglolcommit
-
 [extensions]
 # I like colored terminal
 color =

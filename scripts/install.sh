@@ -16,6 +16,7 @@ function get {
 # vudnle
 if ! [ -d $ROOT/vim/bundle/vundle ]
 then
+    mkdir -p $ROOT/vim/bundle/vundle
     git clone https://github.com/gmarik/vundle.git $ROOT/vim/bundle/vundle
 fi
 
@@ -24,14 +25,5 @@ get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/m
 
 # pip bash-autocompltion
 get https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip bash-completion/pip.bash
-
-# hg vim plugin
-#get http://selenic.com/hg/raw-file/tip/contrib/vim tmp
-#sed -i '/^$/d' $ROOT/tmp
-#for f in `cat $ROOT/tmp | awk '{print $3}'`
-#do
-#    get http://selenic.com/hg/raw-file/tip/contrib/vim/$f vim/plugin/$f
-#done
-#rm $ROOT/tmp
 
 echo "* DONE! *"

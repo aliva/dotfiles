@@ -1,33 +1,21 @@
-
-# komodo project files, It's just silly to add them to repo
-*.komodoproject
-
+# bzr
+bzr-orphans
 # eclipse
 .classpath
 .project
 .pydevproject
 .settings
-
-# git
-# why should I ignore git?
-.git
-
+# gedit
+*~
 # IntijIdea
 .idea
-
-# python stupid bytecode files
+# komodo project files, It's just silly to add them to repo
+*.komodoproject
+# node
+node_modules
+# python
 __pycache__
 *.pyc
 *.pyo
-
 # vim
 *.swp
-
-# gedit
-*~
-
-# bzr
-bzr-orphans
-
-# node
-node_modules

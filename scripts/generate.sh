@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT=`hg root`
+ROOT=`git rev-parse --show-toplevel`
 
 function die {
     echo "* ERROR *"
@@ -9,12 +9,9 @@ function die {
 }
 
 # regenerate gitignore file
-echo gitignore
-tail -n +3 $ROOT/hgignore > $ROOT/gitignore
-
-# regenerate bzri ignore file
-echo bazaar/ignore
-tail -n +3 $ROOT/hgignore > $ROOT/bazaar/ignore
+echo hgignore
+echo syntax:glob > $ROOT/hgignore
+cat $ROOT/gitignore >> $ROOT/hgignore
 
 # crontab
 echo crontab/root

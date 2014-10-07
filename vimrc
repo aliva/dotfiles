@@ -35,21 +35,7 @@ set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle "gmarik/vundle"
 
-" markdown files
-Bundle "tpope/vim-markdown"
-" Dockerfile
-Bundle "honza/dockerfile.vim"
-" go
-Bundle "fatih/vim-go"
-" snipmate
-" TODO: test something simpler
-Bundle "SirVer/ultisnips"
-" Bundle "honza/vim-snippets"
-" colorscheme
-Bundle "veloce/vim-aldmeris"
-" terminal
-Bundle "Shougo/vimshell.vim"
-Bundle "Shougo/vimproc"
+"TODO: install plugin
 
 filetype plugin on
 filetype indent on
@@ -95,38 +81,28 @@ if has("gui_running")
     map <silent> <F10> :call ToggleToolbar()<CR>
 endif
 " plugins
-" UltiSnips
-" disable tab for you complete me
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " }}}
 " plugin {{{
-" Go
-let g:go_disable_autoinstall = 1
-" UltiSnips
-let g:UltiSnipsEditSplit="vertical"
 " }}}
 " autocmd {{{
-" markdown
-autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
 " autosave on focus lost
 autocmd FocusLost * try | :wa | catch | endtry
 " remove trailing white space
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+" if cwd is ~ change it to ~/Workspace
+if getcwd() == expand('$HOME')
+    cd ~/Workspace
+endif
 " }}}
-" commands {{{
-command GEDIT execute "!gedit '%:p' &"
+" filetypes {{{
+" markdown {{{
+autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
+" }}}
 " }}}
 " colorscheme {{{
 set t_Co=256
 if has("gui_running")
     colorscheme aldmeris
-endif
-" }}}
-" if cwd is ~ change it to ~/Workspace {{{
-if getcwd() == expand('$HOME')
-    cd ~/Workspace
 endif
 " }}}
 " functions {{{

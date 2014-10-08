@@ -35,7 +35,10 @@ set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle "gmarik/vundle"
 
-"TODO: install plugin
+" snipmate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
 
 filetype plugin on
 filetype indent on

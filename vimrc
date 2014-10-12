@@ -62,6 +62,7 @@ nmap <silent> <C-F1> :set number!<CR>
 imap <silent> <C-F1> <ESC>:set number!<CR>a
 " quickly change filetype
 map <leader>ft  :set filetype=
+map <leader>ftjs  :set filetype=javascript<CR>
 " sudo write
 cmap W!! w !sudo tee % >/dev/null
 " no arrow keys

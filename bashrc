@@ -60,6 +60,9 @@ function drml(){
     docker rm -f $(dl)
 }
 # }}}
+# git {{{
+alias gitg="gitg &>/dev/null"
+# }}}
 # grep {{{
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

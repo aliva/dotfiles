@@ -61,6 +61,9 @@ function drml(){
 }
 # }}}
 # git {{{
+alias gd="git diff"
+alias gc="git commit -m"
+alias gs="git status"
 alias gitg="gitg &>/dev/null"
 # }}}
 # grep {{{

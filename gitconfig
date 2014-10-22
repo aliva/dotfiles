@@ -5,5 +5,7 @@
     st = status
 [core]
     excludesfile = ~/Workspace/dotfiles/gitignore
+[push]
+    default = simple
 
 # vim:set ft=cfg:

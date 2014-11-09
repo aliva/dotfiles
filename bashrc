@@ -51,13 +51,13 @@ complete -o default -o nospace -F _docker docker
 alias ducker="docker"
 complete -o default -o nospace -F _docker ducker
 alias dl="docker ps -lq"
-alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-function dipl(){
-    docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
-}
-function drml(){
-    docker ps -l
-    docker rm -f $(dl)
+function dip(){
+    if [ -z $1 ]
+    then
+        docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
+    else
+        docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
+    fi
 }
 # }}}
 # git {{{

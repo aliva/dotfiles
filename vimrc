@@ -41,6 +41,8 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 " syntax
 Bundle "elzr/vim-json"
+"Bundle "honza/dockerfile.vim"
+Bundle "ekalinin/Dockerfile.vim"
 
 filetype plugin on
 filetype indent on

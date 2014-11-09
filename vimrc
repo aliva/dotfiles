@@ -43,6 +43,8 @@ Bundle "garbas/vim-snipmate"
 Bundle "elzr/vim-json"
 "Bundle "honza/dockerfile.vim"
 Bundle "ekalinin/Dockerfile.vim"
+" color
+Bundle "sickill/vim-monokai"
 
 filetype plugin on
 filetype indent on
@@ -113,8 +115,9 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 " colorscheme {{{
 set t_Co=256
 if has("gui_running")
-    colorscheme aldmeris
+    colorscheme monokai
 endif
+colorscheme monokai
 " }}}
 " functions {{{
 function! <SID>StripTrailingWhitespaces()

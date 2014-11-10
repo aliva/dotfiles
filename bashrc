@@ -47,10 +47,10 @@ alias ymd="date +%Y-%m-%d"
 # }}}
 # docker {{{
 alias docker="sudo docker"
-complete -o default -o nospace -F _docker docker
-alias ducker="docker"
-complete -o default -o nospace -F _docker ducker
+alias di="docker images"
 alias dl="docker ps -lq"
+alias dps="docker ps"
+alias drm="docker rm"
 function dip(){
     if [ -z $1 ]
     then
@@ -59,7 +59,7 @@ function dip(){
         docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
     fi
 }
-alias dps="docker ps"
+complete -o default -o nospace -F _docker docker
 # }}}
 # git {{{
 alias gd="git diff"

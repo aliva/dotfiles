@@ -117,7 +117,6 @@ set t_Co=256
 if has("gui_running")
     colorscheme monokai
 endif
-colorscheme monokai
 " }}}
 " functions {{{
 function! <SID>StripTrailingWhitespaces()

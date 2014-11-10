@@ -59,6 +59,7 @@ function dip(){
         docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
     fi
 }
+alias dps="docker ps"
 # }}}
 # git {{{
 alias gd="git diff"

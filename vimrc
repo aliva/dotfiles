@@ -86,6 +86,8 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
+" cd to file path
+nmap <silent> <leader>cd :cd %:p:h<CR>:pwd<CR>
 " toggle toolbar
 if has("gui_running")
     map <silent> <F10> :call ToggleToolbar()<CR>

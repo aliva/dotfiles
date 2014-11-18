@@ -201,6 +201,11 @@ git_prompt(){
         STATUS="!$STATUS"
     fi
 
+    if `git status | head -n 2 | tail -n 1 | grep ahead &>/dev/null`
+    then
+        STATUS="↑$STATUS"
+    fi
+
     echo -n $STATUS
 }
 bash_prompt_command() {

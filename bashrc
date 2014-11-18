@@ -188,7 +188,7 @@ function bash_prompt_command {
     if [[ $EUID -ne 0 ]]
     then
         # not root
-        PROMPT="$"
+        PROMPT="✎"
         PROMPT_COLOR=$CYAN
     else
         # root

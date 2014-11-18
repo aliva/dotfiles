@@ -178,9 +178,8 @@ WHITE="\[\033[0;37m\]"
 WHITEBOLD="\[\033[1;37m\]"
 # }}}
 git_prompt(){
-    #from https://bitbucket.org/sjl/dotfiles
-    INDEX=$(git status --porcelain 2> /dev/null)
     STATUS=""
+    INDEX=$(git status --porcelain 2> /dev/null)
 
     if [[ $? -ne 0 ]]
     then
@@ -204,6 +203,13 @@ git_prompt(){
     if `git status | head -n 2 | tail -n 1 | grep ahead &>/dev/null`
     then
         STATUS="↑$STATUS"
+    fi
+
+    gitsym=`git symbolic-ref HEAD`
+    branch="${gitsym##refs/heads/}"
+    if [ ! -z $branch ]
+    then
+        STATUS="on ${branch}${STATUS}"
     fi
 
     echo -n $STATUS
@@ -275,7 +281,7 @@ bash_prompt_command() {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth}${WHITEBOLD}${venv}${git_status} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth}${WHITEBOLD}${venv} ${WHITE}${git_status} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

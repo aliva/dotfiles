@@ -177,7 +177,6 @@ CYANBOLD="\[\033[1;36m\]"
 WHITE="\[\033[0;37m\]"
 WHITEBOLD="\[\033[1;37m\]"
 # }}}
-function bash_prompt_command {
 bash_prompt_command() {
     # last command return value
     ret=$?

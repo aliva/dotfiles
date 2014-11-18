@@ -257,7 +257,7 @@ bash_prompt_command() {
 
     git_status=`git_prompt`
     # how many spaces should I print?
-    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - 16`
+    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - ${#git_status} - 16`
 
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then
@@ -270,7 +270,7 @@ bash_prompt_command() {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth} ${WHITEBOLD}${venv} ${git_status} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth}${WHITEBOLD}${venv}${git_status} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

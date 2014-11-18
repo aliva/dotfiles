@@ -177,6 +177,32 @@ CYANBOLD="\[\033[1;36m\]"
 WHITE="\[\033[0;37m\]"
 WHITEBOLD="\[\033[1;37m\]"
 # }}}
+git_prompt(){
+    #from https://bitbucket.org/sjl/dotfiles
+    INDEX=$(git status --porcelain 2> /dev/null)
+    STATUS=""
+
+    if [[ $? -ne 0 ]]
+    then
+        return
+    fi
+
+    if $(echo "$INDEX" | grep '^UU ' &> /dev/null); then
+        STATUS="C$STATUS"
+    fi
+
+    if $(echo "$INDEX" | grep '^.[MD] ' &> /dev/null); then
+        STATUS="?$STATUS"
+    elif $(echo "$INDEX" | grep '^?? ' &> /dev/null); then
+        STATUS="?$STATUS"
+    fi
+
+    if $(echo "$INDEX" | grep '^[AMDR]. ' &> /dev/null); then
+        STATUS="!$STATUS"
+    fi
+
+    echo -n $STATUS
+}
 bash_prompt_command() {
     # last command return value
     ret=$?
@@ -229,6 +255,7 @@ bash_prompt_command() {
         venv="(${VIRTUAL_ENV##*/}) "
     fi
 
+    git_status=`git_prompt`
     # how many spaces should I print?
     num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - 16`
 
@@ -243,7 +270,7 @@ bash_prompt_command() {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth} ${WHITEBOLD}${venv} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth} ${WHITEBOLD}${venv} ${git_status} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

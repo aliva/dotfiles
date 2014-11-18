@@ -178,6 +178,7 @@ WHITE="\[\033[0;37m\]"
 WHITEBOLD="\[\033[1;37m\]"
 # }}}
 function bash_prompt_command {
+bash_prompt_command() {
     # last command return value
     ret=$?
 
@@ -199,10 +200,8 @@ function bash_prompt_command {
     # if connected through ssh
     if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
     then
-        # if connected through ssh
         host_color=$RED
     else
-        # if not
         host_color=$YELLOW
     fi
 
@@ -224,13 +223,11 @@ function bash_prompt_command {
     fi
 
     # if vurtualenv
+    venv=""
     if [[ $VIRTUAL_ENV != "" ]]
     then
         # Strip out the path and just leave the env name
         venv="(${VIRTUAL_ENV##*/}) "
-    else
-        # In case you don't have one activated
-        venv=""
     fi
 
     # how many spaces should I print?

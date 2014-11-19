@@ -151,7 +151,7 @@ then
     . /usr/share/autojump/autojump.sh
 fi
 # }}}
-# completion files {{{
+# completion files and scripts {{{
 if ! shopt -oq posix; then
     if [ -f /usr/share/bash-completion/bash_completion ]; then
         source /usr/share/bash-completion/bash_completion
@@ -161,7 +161,7 @@ if ! shopt -oq posix; then
 
     if [ -d ~/Workspace/dotfiles ]
     then
-        for f in ~/Workspace/dotfiles/bash-completion/*.bash
+        for f in ~/Workspace/dotfiles/bash-scripts/*.bash
         do
             source $f
         done

@@ -120,6 +120,7 @@ alias mkdir="mkdir -p"
 # python {{{
 alias p2="python2"
 alias p3="python3"
+alias "get-pip"="echo https://bootstrap.pypa.io/get-pip.py"
 complete -o default -F _pip pip3
 complete -o default -F _pip pip2
 # }}}

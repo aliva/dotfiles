@@ -11,6 +11,11 @@
     excludesfile = ~/Workspace/dotfiles/gitignore
 [push]
     default = simple
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
 
 # vim:set ft=cfg:
 

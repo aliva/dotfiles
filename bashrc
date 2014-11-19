@@ -31,6 +31,12 @@ alias o="xdg-open"
 alias q="exit"
 alias countfiles="ls -l | wc -l"
 # }}}
+# ack {{{
+if command -v ack-grep >/dev/null
+then
+    alias ack="ack-grep"
+fi
+# }}}
 # apt {{{
 # if apt-fast is installed prefer apt-fast for downloading packages
 if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi

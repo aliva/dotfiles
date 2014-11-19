@@ -3,6 +3,10 @@
     name = Ali Vakilzade
 [alias]
     st = status
+
+    # simply cd to root of project
+    # cd `git root`
+    root = rev-parse --show-toplevel
 [core]
     excludesfile = ~/Workspace/dotfiles/gitignore
 [push]

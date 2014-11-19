@@ -133,6 +133,11 @@ alias tun="ssh a 'echo Connected to a! && cat'"
 alias tuna="ssh a 'echo Connected to a! && cat'"
 alias tunv="ssh v 'echo Connected to v! && cat'"
 # }}}
+# vim {{{
+gvim(){
+    command gvim --remote-tab-silent "$@" || command gvim "$@"
+}
+# }}}
 # }}}
 # auto jump {{{
 if [ -f /usr/share/autojump/autojump.sh ]

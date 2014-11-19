@@ -182,7 +182,44 @@ CYANBOLD="\[\033[1;36m\]"
 WHITE="\[\033[0;37m\]"
 WHITEBOLD="\[\033[1;37m\]"
 # }}}
-function bash_prompt_command {
+git_prompt(){
+    STATUS=""
+    INDEX=$(git status --porcelain 2> /dev/null)
+
+    if [[ $? -ne 0 ]]
+    then
+        return
+    fi
+
+    if $(echo "$INDEX" | grep '^UU ' &> /dev/null); then
+        STATUS="C$STATUS"
+    fi
+
+    if $(echo "$INDEX" | grep '^.[MD] ' &> /dev/null); then
+        STATUS="?$STATUS"
+    elif $(echo "$INDEX" | grep '^?? ' &> /dev/null); then
+        STATUS="?$STATUS"
+    fi
+
+    if $(echo "$INDEX" | grep '^[AMDR]. ' &> /dev/null); then
+        STATUS="!$STATUS"
+    fi
+
+    if `git status | head -n 2 | tail -n 1 | grep ahead &>/dev/null`
+    then
+        STATUS="↑$STATUS"
+    fi
+
+    gitsym=`git symbolic-ref HEAD`
+    branch="${gitsym##refs/heads/}"
+    if [ ! -z $branch ]
+    then
+        STATUS="on ${branch}${STATUS}"
+    fi
+
+    echo -n $STATUS
+}
+bash_prompt_command() {
     # last command return value
     ret=$?
 
@@ -193,7 +230,7 @@ function bash_prompt_command {
     if [[ $EUID -ne 0 ]]
     then
         # not root
-        PROMPT="$"
+        PROMPT="✎"
         PROMPT_COLOR=$CYAN
     else
         # root
@@ -204,10 +241,8 @@ function bash_prompt_command {
     # if connected through ssh
     if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
     then
-        # if connected through ssh
         host_color=$RED
     else
-        # if not
         host_color=$YELLOW
     fi
 
@@ -229,17 +264,16 @@ function bash_prompt_command {
     fi
 
     # if vurtualenv
+    venv=""
     if [[ $VIRTUAL_ENV != "" ]]
     then
         # Strip out the path and just leave the env name
         venv="(${VIRTUAL_ENV##*/}) "
-    else
-        # In case you don't have one activated
-        venv=""
     fi
 
+    git_status=`git_prompt`
     # how many spaces should I print?
-    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - 16`
+    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - ${#git_status} - 16`
 
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then
@@ -252,7 +286,7 @@ function bash_prompt_command {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth} ${WHITEBOLD}${venv} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth}${WHITEBOLD}${venv} ${WHITE}${git_status} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

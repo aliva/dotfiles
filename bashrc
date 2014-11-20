@@ -31,6 +31,12 @@ alias o="xdg-open"
 alias q="exit"
 alias countfiles="ls -l | wc -l"
 # }}}
+# ack {{{
+if command -v ack-grep >/dev/null
+then
+    alias ack="ack-grep"
+fi
+# }}}
 # apt {{{
 # if apt-fast is installed prefer apt-fast for downloading packages
 if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
@@ -115,6 +121,7 @@ alias mkdir="mkdir -p"
 # python {{{
 alias p2="python2"
 alias p3="python3"
+alias "get-pip"="echo https://bootstrap.pypa.io/get-pip.py"
 complete -o default -F _pip pip3
 complete -o default -F _pip pip2
 # }}}
@@ -134,6 +141,11 @@ alias tun="ssh a 'echo Connected to a! && cat'"
 alias tuna="ssh a 'echo Connected to a! && cat'"
 alias tunv="ssh v 'echo Connected to v! && cat'"
 # }}}
+# vim {{{
+gvim(){
+    command gvim --remote-tab-silent "$@" || command gvim "$@"
+}
+# }}}
 # }}}
 # auto jump {{{
 if [ -f /usr/share/autojump/autojump.sh ]
@@ -141,7 +153,7 @@ then
     . /usr/share/autojump/autojump.sh
 fi
 # }}}
-# completion files {{{
+# completion files and scripts {{{
 if ! shopt -oq posix; then
     if [ -f /usr/share/bash-completion/bash_completion ]; then
         source /usr/share/bash-completion/bash_completion
@@ -151,7 +163,7 @@ if ! shopt -oq posix; then
 
     if [ -d ~/Workspace/dotfiles ]
     then
-        for f in ~/Workspace/dotfiles/bash-completion/*.bash
+        for f in ~/Workspace/dotfiles/bash-scripts/*.bash
         do
             source $f
         done
@@ -159,26 +171,7 @@ if ! shopt -oq posix; then
 fi
 # }}}
 # prompt {{{
-# colors {{{
-NO_COLOR="\[\033[00m\]"
-BLACK="\[\033[0;30m\]"
-BLACKBOLD="\[\033[1;30m\]"
-RED="\[\033[0;31m\]"
-REDBOLD="\[\033[1;31m\]"
-GREEN="\[\033[0;32m\]"
-GREENBOLD="\[\033[1;32m\]"
-YELLOW="\[\033[0;33m\]"
-YELLOWBOLD="\[\033[1;33m\]"
-BLUE="\[\033[0;34m\]"
-BLUEBOLD="\[\033[1;34m\]"
-PURPLE="\[\033[0;35m\]"
-PURPLEBOLD="\[\033[1;35m\]"
-CYAN="\[\033[0;36m\]"
-CYANBOLD="\[\033[1;36m\]"
-WHITE="\[\033[0;37m\]"
-WHITEBOLD="\[\033[1;37m\]"
-# }}}
-git_prompt(){
+git_get_status(){
     STATUS=""
     INDEX=$(git status --porcelain 2> /dev/null)
 
@@ -206,14 +199,12 @@ git_prompt(){
         STATUS="↑$STATUS"
     fi
 
-    gitsym=`git symbolic-ref HEAD`
-    branch="${gitsym##refs/heads/}"
-    if [ ! -z $branch ]
-    then
-        STATUS="on ${branch}${STATUS}"
-    fi
-
     echo -n $STATUS
+}
+git_get_branch(){
+    gitsym=`git symbolic-ref HEAD 2>/dev/null`
+    branch="${gitsym##refs/heads/}"
+    echo -n $branch
 }
 bash_prompt_command() {
     # last command return value
@@ -227,19 +218,19 @@ bash_prompt_command() {
     then
         # not root
         PROMPT="✎"
-        PROMPT_COLOR=$CYAN
+        PROMPT_COLOR=$Cyan
     else
         # root
         PROMPT="#"
-        PROMPT_COLOR=$RED
+        PROMPT_COLOR=$Red
     fi
 
     # if connected through ssh
     if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]
     then
-        host_color=$RED
+        host_color=$Red
     else
-        host_color=$YELLOW
+        host_color=$Yellow
     fi
 
     # media player info
@@ -264,12 +255,14 @@ bash_prompt_command() {
     if [[ $VIRTUAL_ENV != "" ]]
     then
         # Strip out the path and just leave the env name
-        venv="(${VIRTUAL_ENV##*/}) "
+        venv="(${VIRTUAL_ENV##*/})"
     fi
 
-    git_status=`git_prompt`
+    git_status=`git_get_status`
+    git_branch=`git_get_branch`
+
     # how many spaces should I print?
-    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - ${#git_status} - 16`
+    num=`expr $(tput cols) - ${#user} - ${#host} - ${#pth} - ${#venv} - ${#music} - ${#git_status} - ${#git_branch} - 18`
 
     # if there is space in current line to show last commands ret code
     if [[ $num -gt 0 ]]; then
@@ -282,7 +275,12 @@ bash_prompt_command() {
         fi
         # somespaces between $pth and $ret
         space=`printf ' %.0s' $(seq 1 $num)`
-        PS1="${PROMPT_COLOR}${user} ${WHITE}at ${host_color}$host ${WHITE}in ${GREEN}${pth}${WHITEBOLD}${venv} ${WHITE}${git_status} ${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${WHITE}"
+        PS1="${PROMPT_COLOR}${user} ${White}at ${host_color}$host ${White}in ${Green}${pth}${Blue}${venv}"
+        if [ ! -z $git_branch ]
+        then
+            PS1=$PS1" ${White}on ${Magenta}${git_branch}${git_status}"
+        fi
+        PS1=$PS1"${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${White}"
     else
         PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
     fi

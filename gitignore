@@ -13,6 +13,7 @@ bzr-orphans
 *.komodoproject
 # node
 node_modules
+npm-debug.log
 # python
 __pycache__
 *.pyc

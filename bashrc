@@ -58,6 +58,7 @@ alias dl="docker ps -lq"
 alias dps="docker ps"
 alias drm="docker rm"
 alias drmi="docker rmi"
+alias docker_remove_untagged_images='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 function dip(){
     if [ -z $1 ]
     then

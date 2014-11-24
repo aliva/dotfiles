@@ -45,6 +45,7 @@ Bundle "elzr/vim-json"
 Bundle "ekalinin/Dockerfile.vim"
 " color
 Bundle "sickill/vim-monokai"
+Bundle "gosukiwi/vim-atom-dark"
 
 filetype plugin on
 filetype indent on
@@ -117,7 +118,8 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 " colorscheme {{{
 set t_Co=256
 if has("gui_running")
-    colorscheme monokai
+    "colorscheme monokai
+    colorscheme atom-dark
 endif
 " }}}
 " functions {{{

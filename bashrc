@@ -173,7 +173,7 @@ fi
 # prompt {{{
 git_get_status(){
     STATUS=""
-    INDEX=$(git status --porcelain 2> /dev/null)
+    INDEX=$(timeout 0.5s git status --porcelain 2> /dev/null)
 
     if [[ $? -ne 0 ]]
     then
@@ -202,7 +202,7 @@ git_get_status(){
     echo -n $STATUS
 }
 git_get_branch(){
-    gitsym=`git symbolic-ref HEAD 2>/dev/null`
+    gitsym=`timeout 0.5s git symbolic-ref HEAD 2>/dev/null`
     branch="${gitsym##refs/heads/}"
     echo -n $branch
 }

@@ -194,7 +194,7 @@ git_get_status(){
         STATUS="!$STATUS"
     fi
 
-    if `git status | head -n 2 | tail -n 1 | grep ahead &>/dev/null`
+    if `timeout 0.5 git status | head -n 2 | tail -n 1 | grep ahead &>/dev/null`
     then
         STATUS="↑$STATUS"
     fi

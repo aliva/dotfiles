@@ -15,6 +15,7 @@ bzr-orphans
 node_modules
 npm-debug.log
 # python
+python*_modules
 __pycache__
 *.pyc
 *.pyo

@@ -111,9 +111,6 @@ endif
 " markdown {{{
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
 " }}}
-" javascript {{{
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
-" }}}
 " }}}
 " colorscheme {{{
 set t_Co=256

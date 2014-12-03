@@ -96,9 +96,6 @@ alias p8="ping 8.8.8.8"
 alias axel="axel -a -n 50"
 alias wget="wget -c"
 # }}}
-# Java {{{
-JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
-# }}}
 # kill {{{
 alias kilall="killall"
 # }}}

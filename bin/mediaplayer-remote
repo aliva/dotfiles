@@ -64,7 +64,8 @@ then
     exit
 fi
 
-players="deadbeef clementine rhythmbox vlc"
+#players="deadbeef clementine rhythmbox vlc"
+players="clementine rhythmbox"
 if [ -z $2 ]
 then
     for player in $players

@@ -53,22 +53,27 @@ alias apts="apt-cache search"
 alias ymd="date +%Y-%m-%d"
 # }}}
 # docker {{{
-alias docker="sudo docker"
-alias di="docker images"
-alias dl="docker ps -lq"
-alias dps="docker ps"
-alias drm="docker rm"
-alias drmi="docker rmi"
-alias docker_remove_untagged_images="docker images -q --filter 'dangling=true' | xargs sudo docker rmi"
-function dip(){
-    if [ -z $1 ]
-    then
-        docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
-    else
-        docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
-    fi
-}
-complete -o default -o nospace -F _docker docker
+if command -v docker.io >/dev/null; then
+    alias docker="sudo docker"
+fi
+if command -v docker >/dev/null; then
+    alias di="docker images"
+    alias dl="docker ps -lq"
+    alias dps="docker ps"
+    alias drm="docker rm"
+    alias drmi="docker rmi"
+    alias docker_remove_untagged_images="docker images -q --filter 'dangling=true' | xargs sudo docker rmi"
+    function dip(){
+        if [ -z $1 ]
+        then
+            docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
+        else
+            docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
+        fi
+    }
+
+    complete -o default -o nospace -F _docker docker
+fi
 # }}}
 # git {{{
 alias gd="git diff"

@@ -24,6 +24,7 @@ shopt -s checkwinsize
 # }}}
 # alias and functions {{{
 # what {{{
+alias any="ps -ef | grep -v grep | grep"
 alias dots="vim +:Explore ~/Workspace/dotfiles"
 alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"

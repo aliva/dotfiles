@@ -54,9 +54,10 @@ alias ymd="date +%Y-%m-%d"
 # }}}
 # docker {{{
 if command -v docker.io >/dev/null; then
-    alias docker="sudo docker"
+    alias docker="docker.io"
 fi
 if command -v docker >/dev/null; then
+    alias docker="sudo docker"
     alias di="docker images"
     alias dl="docker ps -lq"
     alias dps="docker ps"

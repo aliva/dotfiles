@@ -22,6 +22,7 @@ apt-fast -y upgrade
 apt-fast -y dist-upgrade
 apt-fast -y install clementine tor git mercurial gitg python-pip python-gpgme guake nautilus nautilus-open-terminal gedit gnome-terminal bumblebee tlp tlp-rdw ubuntu-restricted-extras libavcodec-extra vlc openjdk-8-jdk vim-gnome wine mongodb
 apt-get -y autoremove
+
 pip install shadowsocks
 
 service mongodb stop

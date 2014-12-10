@@ -17,17 +17,16 @@ apt-add-repository -y ppa:saiarcot895/myppa
 add-apt-repository -y ppa:linrunner/tlp
 
 apt-get update
-
 apt-get install -y apt-fast
-
-apt-get -y purge gimp* gmusicbrowser
-apt-get -y autoremove
-
+apt-get -y purge gimp gmusicbrowser parole abiword gnumeric
 apt-fast -y upgrade
 apt-fast -y dist-upgrade
-apt-fast -y install clementine tor git mercurial gitg python-pip python-gpgme guake nautilus nautilus-open-terminal bumblebee tlp tlp-rdw ubuntu-restricted-extras libavcodec-extra vlc openjdk-8-jdk vim-gnome wine
-
+apt-fast -y install clementine tor git mercurial gitg python-pip python-gpgme guake nautilus nautilus-open-terminal bumblebee tlp tlp-rdw ubuntu-restricted-extras libavcodec-extra vlc openjdk-8-jdk vim-gnome wine mongodb
+apt-get -y autoremove
 pip install shadowsocks
+
+service mongodb stop
+update-rc.d -f mongodb remove
 
 cp ../torrc /etc/tor/torrc
 service tor restart

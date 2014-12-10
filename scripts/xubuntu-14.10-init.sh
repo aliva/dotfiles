@@ -5,10 +5,9 @@ cp /etc/default/locale /etc/default/locale.back
 sed -i 's/en_US/fa_IR/g' /etc/default/locale
 
 # enable partners
-cp /etc/apt/sources.list /etc/apt/sources.list.back1
+cp /etc/apt/sources.list /etc/apt/sources.list.back
 sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
 # disable src repos
-cp /etc/apt/sources.list /etc/apt/sources.list.back2
 sed -i '/^deb-src/s/^/#/' /etc/apt/sources.list
 
 # apt-fast

@@ -34,4 +34,5 @@ cp ../torrc /etc/tor/torrc
 service tor restart
 
 # bug report
+service apport stop
 update-rc.d -f apport remove

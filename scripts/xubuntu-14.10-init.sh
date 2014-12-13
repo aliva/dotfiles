@@ -25,8 +25,13 @@ apt-get -y autoremove
 
 pip install shadowsocks
 
+# mongo
 service mongodb stop
 update-rc.d -f mongodb remove
 
+# tor
 cp ../torrc /etc/tor/torrc
 service tor restart
+
+# bug report
+update-rc.d -f apport remove

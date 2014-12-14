@@ -42,7 +42,7 @@ fi
 # if apt-fast is installed prefer apt-fast for downloading packages
 if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
 alias apt="sudo apt-get"
-alias apt-get="sudo apt-get"
+alias apt-get="sudo $APT_CMD"
 alias apti="sudo $APT_CMD install"
 alias apty="sudo $APT_CMD update"
 alias aptu="sudo $APT_CMD upgrade"

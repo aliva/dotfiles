@@ -67,9 +67,9 @@ if command -v docker >/dev/null; then
     function dip(){
         if [ -z $1 ]
         then
-            docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
+            sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
         else
-            docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
+            sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
         fi
     }
 

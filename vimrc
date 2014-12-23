@@ -55,6 +55,7 @@ Bundle "gosukiwi/vim-atom-dark"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "bling/vim-airline"
 Bundle 'airblade/vim-gitgutter'
+Bundle "mhinz/vim-startify"
 
 filetype plugin on
 filetype indent on

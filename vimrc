@@ -107,6 +107,8 @@ endfunction
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+" neosnippet
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 " }}}
 " plugin {{{
 " {{{ neocomplete
@@ -116,8 +118,9 @@ let g:neocomplete#auto_completion_start_length = 2
 let g:neocomplete#manual_completion_start_length = 1
 let g:neocomplete#enable_smart_case = 1
 " }}}
-" snipmate {{{
-let g:snips_author="Ali Vakilzade <ali.vakilzade@gmail.com>"
+" neosnippet {{{
+let g:neosnippet#enable_snipmate_compatibility = 1
+let g:neosnippet#snippets_directory='~/.vim/snippets'
 " }}}
 " }}}
 " autocmd {{{

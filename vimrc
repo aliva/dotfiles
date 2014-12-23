@@ -48,6 +48,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle "elzr/vim-json"
 Bundle "ekalinin/Dockerfile.vim"
 " color
+Bundle "altercation/vim-colors-solarized"
 Bundle "sickill/vim-monokai"
 Bundle "gosukiwi/vim-atom-dark"
 
@@ -159,7 +160,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 set t_Co=256
 if has("gui_running")
     "colorscheme monokai
-    colorscheme atom-dark
+    "colorscheme atom-dark
+    set background=dark
+    colorscheme solarized
 endif
 " }}}
 " functions {{{

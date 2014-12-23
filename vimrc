@@ -42,6 +42,8 @@ Bundle "Shougo/neocomplete.vim"
 Bundle "Shougo/neosnippet.vim"
 Bundle "Shougo/vimfiler.vim"
 Bundle "Shougo/vimshell.vim"
+" git
+Bundle 'airblade/vim-gitgutter'
 " syntax
 Bundle "elzr/vim-json"
 Bundle "ekalinin/Dockerfile.vim"

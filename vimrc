@@ -11,6 +11,8 @@ set nocompatible
 set incsearch
 set ignorecase
 set smartcase
+"  6 multiple windows
+set laststatus=2
 " 10 GUI
 if has('gui_running')
     set guifont="Source Code Pro 9"
@@ -49,8 +51,9 @@ Bundle "ekalinin/Dockerfile.vim"
 Bundle "altercation/vim-colors-solarized"
 Bundle "sickill/vim-monokai"
 Bundle "gosukiwi/vim-atom-dark"
-"
+" other
 Bundle "nathanaelkane/vim-indent-guides"
+Bundle "bling/vim-airline"
 Bundle 'airblade/vim-gitgutter'
 
 filetype plugin on

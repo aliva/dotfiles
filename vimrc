@@ -36,8 +36,12 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 
 " Shougo
+Bundle "Shougo/unite.vim"
+Bundle "Shougo/vimproc.vim"
 Bundle "Shougo/neocomplete.vim"
 Bundle "Shougo/neosnippet.vim"
+Bundle "Shougo/vimfiler.vim"
+Bundle "Shougo/vimshell.vim"
 " syntax
 Bundle "elzr/vim-json"
 Bundle "ekalinin/Dockerfile.vim"
@@ -106,17 +110,17 @@ inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 " }}}
 " plugin {{{
-" {{{ neocomplete
+" neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#max_list = 100
 let g:neocomplete#auto_completion_start_length = 2
 let g:neocomplete#manual_completion_start_length = 1
 let g:neocomplete#enable_smart_case = 1
-" }}}
-" neosnippet {{{
+" neosnippet
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/snippets'
-" }}}
+" vimfiler
+let g:vimfiler_as_default_explorer = 1
 " }}}
 " autocmd {{{
 " autosave on focus lost

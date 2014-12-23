@@ -110,6 +110,11 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " neosnippet
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+" gitgutter
+nmap <Leader>ggn <Plug>GitGutterNextHunk
+nmap <Leader>ggN <Plug>GitGutterPrevHunk
+nmap <Leader>gga <Plug>GitGutterStageHunk
+nmap <Leader>ggr <Plug>GitGutterRevertHunk
 " }}}
 " plugin {{{
 " neocomplete

@@ -42,8 +42,6 @@ Bundle "Shougo/neocomplete.vim"
 Bundle "Shougo/neosnippet.vim"
 Bundle "Shougo/vimfiler.vim"
 Bundle "Shougo/vimshell.vim"
-" git
-Bundle 'airblade/vim-gitgutter'
 " syntax
 Bundle "elzr/vim-json"
 Bundle "ekalinin/Dockerfile.vim"
@@ -53,6 +51,7 @@ Bundle "sickill/vim-monokai"
 Bundle "gosukiwi/vim-atom-dark"
 "
 Bundle "nathanaelkane/vim-indent-guides"
+Bundle 'airblade/vim-gitgutter'
 
 filetype plugin on
 filetype indent on

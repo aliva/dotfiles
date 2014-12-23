@@ -160,9 +160,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 set t_Co=256
 if has("gui_running")
     "colorscheme monokai
-    "colorscheme atom-dark
+    colorscheme atom-dark
+    "colorscheme solarized
     set background=dark
-    colorscheme solarized
 endif
 " }}}
 " functions {{{

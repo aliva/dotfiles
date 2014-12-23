@@ -96,6 +96,9 @@ endif
 " plugins
 " }}}
 " plugin {{{
+" snipmate {{{
+let g:snips_author="Ali Vakilzade <ali.vakilzade@gmail.com>"
+" }}}
 " }}}
 " autocmd {{{
 " autosave on focus lost

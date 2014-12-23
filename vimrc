@@ -35,16 +35,11 @@ set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle "gmarik/vundle"
 
-" autocomplete
+" Shougo
 Bundle "Shougo/neocomplete.vim"
-" snipmate
-"Bundle "MarcWeber/vim-addon-mw-utils"
-"Bundle "tomtom/tlib_vim"
-"Bundle "garbas/vim-snipmate"
 Bundle "Shougo/neosnippet.vim"
 " syntax
 Bundle "elzr/vim-json"
-"Bundle "honza/dockerfile.vim"
 Bundle "ekalinin/Dockerfile.vim"
 " color
 Bundle "sickill/vim-monokai"

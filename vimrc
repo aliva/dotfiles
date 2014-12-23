@@ -51,6 +51,8 @@ Bundle "ekalinin/Dockerfile.vim"
 Bundle "altercation/vim-colors-solarized"
 Bundle "sickill/vim-monokai"
 Bundle "gosukiwi/vim-atom-dark"
+"
+Bundle "nathanaelkane/vim-indent-guides"
 
 filetype plugin on
 filetype indent on
@@ -118,6 +120,9 @@ nmap <Leader>gga <Plug>GitGutterStageHunk
 nmap <Leader>ggr <Plug>GitGutterRevertHunk
 " }}}
 " plugin {{{
+" indentguide
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_default_mapping = 0
 " neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#max_list = 100

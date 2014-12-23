@@ -95,11 +95,26 @@ nmap <silent> <leader>cd :cd %:p:h<CR>:pwd<CR>
 if has("gui_running")
     map <silent> <F10> :call ToggleToolbar()<CR>
 endif
-" plugins
+" OmniComplete
+" enter key fix
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+    "return neocomplete#close_popup() . "\<CR>"
+    " For no inserting <CR> key.
+    return pumvisible() ? neocomplete#close_popup() : "\<CR>"
+endfunction
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " }}}
 " plugin {{{
 " {{{ neocomplete
 let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#max_list = 100
+let g:neocomplete#auto_completion_start_length = 2
+let g:neocomplete#manual_completion_start_length = 1
+let g:neocomplete#enable_smart_case = 1
 " }}}
 " snipmate {{{
 let g:snips_author="Ali Vakilzade <ali.vakilzade@gmail.com>"
@@ -116,9 +131,19 @@ if getcwd() == expand('$HOME')
 endif
 " }}}
 " filetypes {{{
-" markdown {{{
+" css
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+" html
+autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+" javascript
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+" markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
-" }}}
+autocmd FileType markdown setlocal omnifunc=htmlcomplete#CompleteTags
+" python
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+" xml
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " }}}
 " colorscheme {{{
 set t_Co=256

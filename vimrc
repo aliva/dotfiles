@@ -35,6 +35,8 @@ set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle "gmarik/vundle"
 
+" autocomplete
+Bundle "Shougo/neocomplete.vim"
 " snipmate
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
@@ -96,6 +98,9 @@ endif
 " plugins
 " }}}
 " plugin {{{
+" {{{ neocomplete
+let g:neocomplete#enable_at_startup = 1
+" }}}
 " snipmate {{{
 let g:snips_author="Ali Vakilzade <ali.vakilzade@gmail.com>"
 " }}}

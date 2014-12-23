@@ -30,6 +30,7 @@ alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"
 alias o="xdg-open"
 alias q="exit"
+alias serve_dir="python3 -m http.server"
 alias countfiles="ls -l | wc -l"
 # }}}
 # ack {{{

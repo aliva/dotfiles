@@ -38,9 +38,10 @@ Bundle "gmarik/vundle"
 " autocomplete
 Bundle "Shougo/neocomplete.vim"
 " snipmate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
+"Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "garbas/vim-snipmate"
+Bundle "Shougo/neosnippet.vim"
 " syntax
 Bundle "elzr/vim-json"
 "Bundle "honza/dockerfile.vim"

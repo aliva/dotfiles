@@ -47,6 +47,7 @@ Bundle "Shougo/vimshell.vim"
 " syntax
 Bundle "elzr/vim-json"
 Bundle "ekalinin/Dockerfile.vim"
+Bundle "mitsuhiko/vim-jinja"
 " color
 Bundle "altercation/vim-colors-solarized"
 Bundle "sickill/vim-monokai"

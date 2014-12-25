@@ -158,6 +158,7 @@ autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 " javascript
 autocmd FileType js setlocal filetype=javascript
 autocmd FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
+autocmd FileType javascript setlocal dictionary+=$HOME/.vim/dict/node.dict
 " markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
 autocmd FileType markdown setlocal omnifunc=htmlcomplete#CompleteTags

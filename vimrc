@@ -120,7 +120,7 @@ imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 " gitgutter
 nmap <Leader>ggn <Plug>GitGutterNextHunk
 nmap <Leader>ggN <Plug>GitGutterPrevHunk
-nmap <Leader>gga <Plug>GitGutterStageHunk
+nmap <Leader>ggs <Plug>GitGutterStageHunk
 nmap <Leader>ggr <Plug>GitGutterRevertHunk
 " }}}
 " plugin {{{

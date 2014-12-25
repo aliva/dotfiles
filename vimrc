@@ -57,6 +57,7 @@ Bundle "nathanaelkane/vim-indent-guides"
 Bundle "bling/vim-airline"
 Bundle 'airblade/vim-gitgutter'
 Bundle "mhinz/vim-startify"
+Bundle "ahayman/vim-nodejs-complete"
 
 filetype plugin on
 filetype indent on
@@ -156,7 +157,7 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 " javascript
 autocmd FileType js setlocal filetype=javascript
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
 " markdown
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
 autocmd FileType markdown setlocal omnifunc=htmlcomplete#CompleteTags

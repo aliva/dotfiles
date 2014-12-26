@@ -140,6 +140,9 @@ let g:neosnippet#snippets_directory='~/.vim/snippets'
 " vimfiler
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_ignore_pattern = '^\%(\..*\|\.git\|\.DS_Store\|.*\~\|.*\.pyc\|__pycache__\)$'
+" vim shell
+let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
+let g:vimshell_prompt =  '$ '
 " }}}
 " autocmd {{{
 " autosave on focus lost

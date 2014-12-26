@@ -17,7 +17,7 @@ add-apt-repository -y ppa:linrunner/tlp
 
 apt-get update
 apt-get install -y apt-fast
-apt-get -y purge gimp gmusicbrowser parole gnumeric
+apt-get -y purge gimp gmusicbrowser parole
 apt-fast -y upgrade
 apt-fast -y dist-upgrade
 apt-fast -y install clementine tor git git-extras mercurial gitg python-pip python-gpgme guake nautilus nautilus-open-terminal gedit gnome-terminal gnome-system-monitor bumblebee tlp tlp-rdw ubuntu-restricted-extras libavcodec-extra vlc openjdk-8-jdk vim-gnome wine mongodb tmux axel curl synaptic autojump

@@ -52,12 +52,14 @@ Bundle "mitsuhiko/vim-jinja"
 Bundle "altercation/vim-colors-solarized"
 Bundle "sickill/vim-monokai"
 Bundle "gosukiwi/vim-atom-dark"
+" completion
+Bundle "ahayman/vim-nodejs-complete"
 " other
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "bling/vim-airline"
 Bundle 'airblade/vim-gitgutter'
 Bundle "mhinz/vim-startify"
-Bundle "ahayman/vim-nodejs-complete"
+Bundle 'zhaocai/GoldenView.Vim'
 
 filetype plugin on
 filetype indent on
@@ -125,6 +127,8 @@ nmap <Leader>ggs <Plug>GitGutterStageHunk
 nmap <Leader>ggr <Plug>GitGutterRevertHunk
 " }}}
 " plugin {{{
+" goldenview
+let g:goldenview__enable_default_mapping = 1
 " indentguide
 let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_default_mapping = 0
@@ -137,10 +141,10 @@ let g:neocomplete#enable_smart_case = 1
 " neosnippet
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/snippets'
-" vimfiler
+" filer
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_ignore_pattern = '^\%(\..*\|\.git\|\.DS_Store\|.*\~\|.*\.pyc\|__pycache__\)$'
-" vim shell
+" shell
 let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
 let g:vimshell_prompt =  '$ '
 " }}}

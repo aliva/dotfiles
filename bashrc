@@ -126,6 +126,7 @@ alias cdn="cd ~/Workspace/notes"
 alias cdt="cd /tmp"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
+alias pcp="rsync -ah --progress"
 # }}}
 # python {{{
 alias p2="python2"

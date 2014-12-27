@@ -57,6 +57,7 @@ Bundle "ahayman/vim-nodejs-complete"
 " python
 Bundle "klen/python-mode"
 " other
+Bundle "vim-scripts/taglist.vim"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "bling/vim-airline"
 Bundle 'airblade/vim-gitgutter'

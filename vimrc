@@ -54,6 +54,8 @@ Bundle "sickill/vim-monokai"
 Bundle "gosukiwi/vim-atom-dark"
 " completion
 Bundle "ahayman/vim-nodejs-complete"
+" python
+Bundle "klen/python-mode"
 " other
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "bling/vim-airline"
@@ -141,6 +143,8 @@ let g:neocomplete#enable_smart_case = 1
 " neosnippet
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/snippets'
+" pymode
+let g:pymode_folding = 1
 " filer
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_ignore_pattern = '^\%(\..*\|\.git\|\.DS_Store\|.*\~\|.*\.pyc\|__pycache__\)$'

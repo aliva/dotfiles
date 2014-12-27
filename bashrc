@@ -80,6 +80,7 @@ fi
 # git {{{
 alias gd="git diff"
 alias gc="git commit -m"
+alias gca="git commit -a -m"
 alias gs="git status"
 alias gitg="gitg &>/dev/null"
 # }}}

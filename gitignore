@@ -19,5 +19,7 @@ python*_modules
 __pycache__
 *.pyc
 *.pyo
+# python-rope
+.ropeproject
 # vim
 *.swp

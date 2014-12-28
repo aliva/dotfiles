@@ -82,6 +82,8 @@ alias gd="git diff"
 alias gc="git commit -m"
 alias gca="git commit -a -m"
 alias gs="git status"
+alias gps="git push"
+alias gpl="git pull"
 alias gitg="gitg &>/dev/null"
 # }}}
 # grep {{{

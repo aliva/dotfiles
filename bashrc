@@ -148,6 +148,7 @@ alias service="sudo service"
 alias systemctl="sudo systemctl"
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
 alias update-rc.d="sudo update-rc.d"
+alias supervisorctl="sudo supervisorctl"
 # }}}
 # tunel {{{
 alias tun="ssh a 'echo Connected to a! && cat'"

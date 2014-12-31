@@ -63,6 +63,7 @@ Bundle "bling/vim-airline"
 Bundle 'airblade/vim-gitgutter'
 Bundle "mhinz/vim-startify"
 Bundle 'zhaocai/GoldenView.Vim'
+Bundle "dbakker/vim-projectroot"
 
 filetype plugin on
 filetype indent on
@@ -162,6 +163,17 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 if getcwd() == expand('$HOME')
     cd ~/Workspace
 endif
+" project root
+autocmd BufEnter * call <SID>AutoProjectRootCD()
+function! <SID>AutoProjectRootCD()
+  try
+    if &ft != 'help'
+      ProjectRootCD
+    endif
+  catch
+    " Silently ignore invalid buffers
+  endtry
+endfunction
 " }}}
 " filetypes {{{
 " css

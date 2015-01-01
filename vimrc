@@ -62,7 +62,7 @@ Bundle "nathanaelkane/vim-indent-guides"
 Bundle "bling/vim-airline"
 Bundle 'airblade/vim-gitgutter'
 Bundle "mhinz/vim-startify"
-Bundle 'zhaocai/GoldenView.Vim'
+"Bundle 'zhaocai/GoldenView.Vim'
 Bundle "dbakker/vim-projectroot"
 
 filetype plugin on

@@ -24,7 +24,10 @@ shopt -s checkwinsize
 # }}}
 # alias and functions {{{
 # what {{{
-alias any="ps -ef | grep -v grep | grep -i"
+any(){
+    # http://www.commandlinefu.com/commands/view/13950
+    ps aux | grep -E "[${1:0:1}]${1:1}|^USER";
+}
 alias dots="vim +:Explore ~/Workspace/dotfiles"
 alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"

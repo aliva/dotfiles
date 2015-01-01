@@ -32,6 +32,10 @@ alias o="xdg-open"
 alias q="exit"
 alias serve_dir="python3 -m http.server"
 alias countfiles="ls -l | wc -l"
+history_off(){
+    # http://www.commandlinefu.com/commands/view/13948
+    export HISTFILE=/dev/null
+}
 # }}}
 # ack {{{
 if command -v ack-grep >/dev/null

@@ -165,15 +165,15 @@ if getcwd() == expand('$HOME')
     cd ~/Workspace
 endif
 " project root
-autocmd BufEnter * call <SID>AutoProjectRootCD()
+"autocmd BufEnter * call <SID>AutoProjectRootCD()
 function! <SID>AutoProjectRootCD()
-  try
-    if &ft != 'help'
-      ProjectRootCD
-    endif
-  catch
-    " Silently ignore invalid buffers
-  endtry
+    try
+        if &ft != 'help'
+            ProjectRootCD
+        endif
+    catch
+        " Silently ignore invalid buffers
+    endtry
 endfunction
 " }}}
 " filetypes {{{

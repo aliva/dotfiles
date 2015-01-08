@@ -13,13 +13,6 @@ function get {
     wget -q $1 -O $ROOT/$2 || die $1 $2
 }
 
-# vudnle
-if ! [ -d $ROOT/vim/bundle/vundle ]
-then
-    mkdir -p $ROOT/vim/bundle/vundle
-    git clone https://github.com/gmarik/vundle.git $ROOT/vim/bundle/vundle
-fi
-
 # hg bash-autocompltion
 get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.bash
 

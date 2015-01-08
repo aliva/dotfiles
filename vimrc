@@ -31,42 +31,38 @@ set noswapfile
 " 21 command line editing
 set wildmode=longest,list,full
 " }}}
-" vundle {{{
-filetype off
-set runtimepath+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle "gmarik/vundle"
+" Plug {{{
+call plug#begin('~/.vim/plugged')
 
 " Shougo
-Bundle "Shougo/unite.vim"
-Bundle "Shougo/vimproc.vim"
-Bundle "Shougo/neocomplete.vim"
-Bundle "Shougo/neosnippet.vim"
-Bundle "Shougo/vimfiler.vim"
-Bundle "Shougo/vimshell.vim"
+Plug  'Shougo/unite.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug  'Shougo/neocomplete.vim'
+Plug  'Shougo/neosnippet.vim'
+Plug  'Shougo/vimfiler.vim'
+Plug  'Shougo/vimshell.vim'
 " syntax
-Bundle "elzr/vim-json"
-Bundle "ekalinin/Dockerfile.vim"
-Bundle "mitsuhiko/vim-jinja"
+Plug 'elzr/vim-json'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'mitsuhiko/vim-jinja'
 " color
-Bundle "altercation/vim-colors-solarized"
-Bundle "sickill/vim-monokai"
-Bundle "gosukiwi/vim-atom-dark"
+Plug 'altercation/vim-colors-solarized'
+Plug 'sickill/vim-monokai'
+Plug 'gosukiwi/vim-atom-dark'
 " completion
-Bundle "ahayman/vim-nodejs-complete"
+Plug 'ahayman/vim-nodejs-complete'
 " python
-Bundle "klen/python-mode"
+Plug 'klen/python-mode'
 " other
-Bundle "vim-scripts/taglist.vim"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "bling/vim-airline"
-Bundle 'airblade/vim-gitgutter'
-Bundle "mhinz/vim-startify"
+Plug 'vim-scripts/taglist.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'bling/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-startify'
 "Bundle 'zhaocai/GoldenView.Vim'
-Bundle "dbakker/vim-projectroot"
+Plug 'dbakker/vim-projectroot'
 
-filetype plugin on
-filetype indent on
+call plug#end()
 " }}}
 " mappings {{{
 " ; => :

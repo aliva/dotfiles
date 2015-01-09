@@ -35,12 +35,12 @@ set wildmode=longest,list,full
 call plug#begin('~/.vim/plugged')
 
 " Shougo
-Plug  'Shougo/unite.vim'
+Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug  'Shougo/neocomplete.vim'
-Plug  'Shougo/neosnippet.vim'
-Plug  'Shougo/vimfiler.vim'
-Plug  'Shougo/vimshell.vim'
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/vimfiler.vim'
+Plug 'Shougo/vimshell.vim'
 " syntax
 Plug 'elzr/vim-json'
 Plug 'ekalinin/Dockerfile.vim'

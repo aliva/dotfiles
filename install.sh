@@ -15,12 +15,12 @@ function get {
 
 # vim-plug
 mkdir -p vim/autoload
-get https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim/autoload/
+get https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim/autoload/plug.vim
 
 # hg bash-autocompltion
-get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.bash
+get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-scripts/mercurial.bash
 
 # pip bash-autocompltion
-get https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip bash-completion/pip.bash
+get https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip bash-scripts/pip.bash
 
 echo "* DONE! *"

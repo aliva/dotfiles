@@ -16,8 +16,9 @@ komodoedit/*/codeintel
 komodoedit/*/XRE
 
 # vim
-vim/.netrwhist
-vim/bundle
-vim/doc/
-crontab/log
-vim/plugged/
+/vim/autoload/plug.vim
+/vim/.netrwhist
+/vim/bundle
+/vim/doc/
+/crontab/log
+/vim/plugged/

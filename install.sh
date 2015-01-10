@@ -13,6 +13,10 @@ function get {
     wget -q $1 -O $ROOT/$2 || die $1 $2
 }
 
+# vim-plug
+mkdir -p vim/autoload
+get https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim vim/autoload/
+
 # hg bash-autocompltion
 get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-completion/mercurial.bash
 

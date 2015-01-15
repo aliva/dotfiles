@@ -61,6 +61,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
 "Bundle 'zhaocai/GoldenView.Vim'
 Plug 'dbakker/vim-projectroot'
+Plug 'ap/vim-templates'
 
 call plug#end()
 " }}}

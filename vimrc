@@ -45,6 +45,7 @@ Plug 'Shougo/vimshell.vim'
 Plug 'elzr/vim-json'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'mitsuhiko/vim-jinja'
+Plug 'ap/vim-css-color'
 " color
 Plug 'altercation/vim-colors-solarized'
 Plug 'sickill/vim-monokai'

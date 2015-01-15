@@ -13,6 +13,7 @@ set ignorecase
 set smartcase
 "  6 multiple windows
 set laststatus=2
+set hidden
 " 10 GUI
 if has('gui_running')
     set guifont="Source Code Pro 9"
@@ -63,6 +64,7 @@ Plug 'mhinz/vim-startify'
 "Bundle 'zhaocai/GoldenView.Vim'
 Plug 'dbakker/vim-projectroot'
 Plug 'ap/vim-templates'
+Plug 'ap/vim-buftabline'
 
 call plug#end()
 " }}}

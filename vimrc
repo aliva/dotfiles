@@ -65,6 +65,7 @@ Plug 'mhinz/vim-startify'
 Plug 'dbakker/vim-projectroot'
 Plug 'ap/vim-templates'
 Plug 'ap/vim-buftabline'
+Plug 'itchyny/screensaver.vim'
 
 call plug#end()
 " }}}

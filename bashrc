@@ -67,7 +67,6 @@ fi
 if command -v docker >/dev/null; then
     alias docker="sudo docker"
     alias di="docker images"
-    alias dl="docker ps -lq"
     alias dps="docker ps"
     alias drm="docker rm"
     alias drmi="docker rmi"

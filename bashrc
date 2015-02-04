@@ -28,10 +28,8 @@ any(){
     # http://www.commandlinefu.com/commands/view/13950
     ps aux | grep -E "[${1:0:1}]${1:1}|^USER";
 }
-alias dots="vim +:Explore ~/Workspace/dotfiles"
 alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"
-alias o="xdg-open"
 alias q="exit"
 alias serve_dir="python3 -m http.server"
 alias countfiles="ls -l | wc -l"

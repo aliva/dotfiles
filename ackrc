@@ -1,7 +1,7 @@
 # Always color
 --color
 
---pager=less
+--pager=less -r
 
 --ignore-dir=venv/
 --ignore-dir=node_modules/

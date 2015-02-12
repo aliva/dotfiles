@@ -1,0 +1,10 @@
+# Always color
+--color
+
+--pager=less -r
+
+--ignore-dir=venv/
+--ignore-dir=node_modules/
+--ignore-dir=.ropeproject/
+
+--type-set=json=.json

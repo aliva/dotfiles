@@ -9,7 +9,7 @@ bzr-orphans
 *~
 # IntijIdea
 .idea
-# komodo project files, It's just silly to add them to repo
+# komodo project files
 *.komodoproject
 # node
 node_modules

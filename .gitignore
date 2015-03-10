@@ -1,6 +1,7 @@
 # bash-scripts
 /bash-scripts/mercurial.bash
 /bash-scripts/pip.bash
+/bash-scripts/django.bash
 
 # fish
 fish/fishd.*

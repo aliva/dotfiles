@@ -23,4 +23,7 @@ get http://selenic.com/hg/raw-file/tip/contrib/bash_completion bash-scripts/merc
 # pip bash-autocompltion
 get https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip bash-scripts/pip.bash
 
+# django-autocompltion
+get https://github.com/django/django/raw/master/extras/django_bash_completion bash-scripts/django.bash
+
 echo "* DONE! *"

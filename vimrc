@@ -154,8 +154,9 @@ let g:neocomplete#enable_smart_case = 1
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/snippets'
 " pymode
-let g:pymode_folding = 1
 let g:pymode_lint_ignore="E501"
+let g:pymode_rope = 0
+let g:pymode_folding = 1
 " filer
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_ignore_pattern = '^\%(\..*\|\.git\|\.DS_Store\|.*\~\|.*\.pyc\|__pycache__\)$'

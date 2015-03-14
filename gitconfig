@@ -17,6 +17,9 @@
     diff = auto
     interactive = auto
     status = auto
+[format]
+    pretty = oneline
+
 
 # vim:set ft=cfg:
 

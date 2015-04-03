@@ -1,8 +1,3 @@
-# bash-scripts
-/bash-scripts/mercurial.bash
-/bash-scripts/pip.bash
-/bash-scripts/django.bash
-
 # fish
 fish/fishd.*
 fish/fish_history
@@ -21,7 +16,6 @@ komodoedit/*/codeintel
 komodoedit/*/XRE
 
 # vim
-/vim/autoload/plug.vim
 /vim/.netrwhist
 /vim/bundle
 /vim/doc/

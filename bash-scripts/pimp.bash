@@ -41,12 +41,14 @@ pimp(){
         echo "there should be a venv directory in current path or project root"
         return 1
     fi
+    PIMP_PROJECT_NAME="${PIMP_PROJECT_ROOT##*/}"
 
     case $1 in
     "activate")
         source $PIMP_PROJECT_ROOT/venv/bin/activate
         ;;
     "deactivate")
+        PIMP_PROJECT_NAME=
         deactivate
         ;;
     "shell")

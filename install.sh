@@ -26,4 +26,7 @@ get https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip ba
 # django-autocompltion
 get https://github.com/django/django/raw/master/extras/django_bash_completion bash-scripts/django.bash
 
+# pimp
+get https://github.com/aliva/pimp/raw/master/pimp.sh bash-scripts/pimp.bash
+
 echo "* DONE! *"

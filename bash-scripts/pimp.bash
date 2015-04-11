@@ -15,7 +15,16 @@ pimp(){
 
     if [[ $1 = "init" ]]
     then
-        pyvenv --without-pip $PIMP_PROJECT_ROOT/venv || return 1
+        if command -v pyvenv >/dev/null ;then
+            PIMP_VENV_COMMAND="pyvenv"
+        elif command -v pyvenv-3.4 >/dev/null ;then
+            PIMP_VENV_COMMAND="pyvenv-3.4"
+        else
+            echo "could not run pyvenv (did you install it globally?)"
+            die
+            return 1
+        fi
+        $PIMP_VENV_COMMAND --without-pip $PIMP_PROJECT_ROOT/venv || return 1
         cd $PIMP_PROJECT_ROOT/venv
         source bin/activate
         if ! ls bin/pip &>/dev/null
@@ -89,3 +98,4 @@ _pimp(){
     fi
 }
 complete -o default -F _pimp pimp
+

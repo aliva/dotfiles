@@ -17,9 +17,11 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-BIN_PATHES="$HOME/bin \
-$HOME/.local/bin \
-$HOME/Workspace/dotfiles/bin"
+BIN_PATHES="$HOME/bin
+$HOME/.local/bin
+$HOME/Workspace/dotfiles/bin
+$HOME/bin/android-sdk-linux/tools
+$HOME/bin/android-studio/bin"
 
 for p in $BIN_PATHES
 do

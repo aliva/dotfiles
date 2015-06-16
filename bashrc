@@ -46,9 +46,10 @@ fi
 # }}}
 # apt {{{
 # if apt-fast is installed prefer apt-fast for downloading packages
-if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
-alias apt="sudo apt-get"
-alias apt-get="sudo $APT_CMD"
+#if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
+APT_CMD=apt-get
+alias apt-get="sudo apt-get"
+alias apt="apt-get"
 alias apti="sudo $APT_CMD install"
 alias apty="sudo $APT_CMD update"
 alias aptu="sudo $APT_CMD upgrade"
@@ -107,7 +108,7 @@ alias hs="hg status"
 # internet {{{
 alias myip="curl -s icanhazip.com"
 alias tor="tor -f ~/Workspace/dotfiles/torrc"
-alias p8="ping 8.8.8.8"
+alias p8="ping 8.8.8.8 -i 3"
 alias axel="axel -a -n 50"
 alias wget="wget -c"
 # }}}

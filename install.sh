@@ -29,4 +29,7 @@ get https://github.com/django/django/raw/master/extras/django_bash_completion ba
 # pimp
 get https://github.com/aliva/pimp/raw/master/pimp.sh bash-scripts/pimp.bash
 
+# invoke
+get https://raw.githubusercontent.com/pyinvoke/invoke/master/completion/bash bash-scripts/invoke.bash
+
 echo "* DONE! *"

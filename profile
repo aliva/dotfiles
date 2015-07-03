@@ -21,7 +21,8 @@ BIN_PATHES="$HOME/bin
 $HOME/.local/bin
 $HOME/Workspace/dotfiles/bin
 $HOME/bin/android-sdk-linux/tools
-$HOME/bin/android-studio/bin"
+$HOME/bin/android-studio/bin
+$HOME/bin/genymotion"
 
 for p in $BIN_PATHES
 do

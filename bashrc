@@ -165,6 +165,10 @@ gvim(){
     command gvim --remote-tab-silent "$@" || command gvim "$@"
 }
 # }}}
+# wine {{{
+export WINEPREFIX=$HOME/.config/wine/
+export WINEARCH=win32
+# }}}
 # }}}
 # auto jump {{{
 if [ -f /usr/share/autojump/autojump.sh ]

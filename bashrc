@@ -166,7 +166,7 @@ gvim(){
 }
 # }}}
 # wine {{{
-export WINEPREFIX=$HOME/.config/wine/
+#export WINEPREFIX=$HOME/.config/wine/
 export WINEARCH=win32
 # }}}
 # }}}

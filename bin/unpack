@@ -1,0 +1,23 @@
+#!/bin/env bash
+
+die (){
+    echo "ERROR on ${filename}"
+    exit
+}
+
+for filename in $@
+do
+    case $filename in
+        *.zip)
+            echo "+++" $filename
+            output_dir=`echo $filename | sed -s 's/\.zip$//g'`
+            unzip "${filename}" -d "${output_dir}" || die
+            ;;
+        *.rar)
+            echo "+++" $filename
+            unrar x "${filename}" || die
+            ;;
+        *)
+            ;;
+    esac
+done

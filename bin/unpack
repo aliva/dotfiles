@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/bash
 
 die (){
     echo "ERROR on ${filename}"
@@ -8,6 +8,12 @@ die (){
 for filename in $@
 do
     case $filename in
+        *.tar.bz2)
+            echo "+++" $filename
+            output_dir=`echo $filename | sed -s 's/\.tar\.bz2$//g'`
+            mkdir -p "${output_dir}"
+            tar xf "${filename}" -C "${output_dir}" --verbose
+            ;;
         *.zip)
             echo "+++" $filename
             output_dir=`echo $filename | sed -s 's/\.zip$//g'`

@@ -5,6 +5,9 @@ die (){
     exit
 }
 
+# ignore case for case
+shopt -s nocasematch
+
 for filename in $@
 do
     case $filename in

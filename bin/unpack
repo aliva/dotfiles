@@ -10,13 +10,13 @@ do
     case $filename in
         *.tar.bz2)
             echo "+++" $filename
-            output_dir=`echo $filename | sed -s 's/\.tar\.bz2$//Ig'`
+            output_dir=`echo "${filename}" | sed -s 's/\.tar\.bz2$//Ig'`
             mkdir -p "${output_dir}"
             tar xf "${filename}" -C "${output_dir}" --verbose || die
             ;;
         *.zip)
             echo "+++" $filename
-            output_dir=`echo $filename | sed -s 's/\.zip$//Ig'`
+            output_dir=`echo "${filename}" | sed -s 's/\.zip$//Ig'`
             unzip "${filename}" -d "${output_dir}" || die
             ;;
         *.rar)

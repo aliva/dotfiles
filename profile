@@ -26,9 +26,9 @@ $HOME/bin/genymotion"
 
 for p in $BIN_PATHES
 do
-	if [ -d $p ]
-	then
+	#if [ -d $p ]
+	#then
 		PATH="$PATH:$p"
-	fi
+	#fi
 done
 

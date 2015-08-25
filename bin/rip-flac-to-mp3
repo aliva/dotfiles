@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# apt-get install lame flac shnsplit cuetools
+
+# create temp dir
+rm -rf flac_to_mp3_tmp
+mkdir -p flac_to_mp3_tmp
+
+if [[ `ls *.flac | wc -l ` == 1 ]]
+then
+    # if there is only one file it should be splited
+    shnslit -d flac_to_mp3_tmp -o flac -f *.cue -t "%n - %t" *.flac
+else
+    # if there is more than one flac file in current dir
+    # assume it's already splitted
+    cp *.flac flac_to_mp3_tmp --verbose
+fi
+
+# convert to mp3
+cd flac_to_mp3_tmp
+for f in *.flac
+do
+    flac -cd "$f" | lame -b 320 - "${f%.*}".mp3
+done
+cd ..
+
+# add tags to mp3 files
+cuetag *.cue flac_to_mp3_tmp/*.mp3
+
+# move mp3 file to root dir
+mv flac_to_mp3_tmp/*.mp3 .
+
+# remove tmp dir
+rm -rf flac_to_mp3_tmp

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import os
+import sys
 from subprocess import check_output
 from urllib.request import urlopen
 
@@ -38,16 +39,17 @@ print ("HOME %s" % HOME)
 # GENRATE
 with open(os.path.join(ROOT, "gitignore"), "r") as git:
     print ("GENERATING hgignore")
-    with open(os.path.join(ROOT, "gitignore"), "w") as hg:
+    with open(os.path.join(ROOT, "hgignore"), "w") as hg:
         hg.write("syntax:glob\n")
         hg.write(git.read())
         
 # DOWNLOAD
-for file in downloads:
-    print("DOWNLOADING '%s'" % file)
-    response = urlopen(downloads[file])
-    with open(os.path.join(ROOT, file), "w") as output:
-        output.write(response.read().decode("utf-8"))
+if "--get" in sys.argv:
+    for file in downloads:
+        print("DOWNLOADING '%s'" % file)
+        response = urlopen(downloads[file])
+        with open(os.path.join(ROOT, file), "w") as output:
+            output.write(response.read().decode("utf-8"))
 
 # LINK        
 for link in links:

@@ -10,13 +10,18 @@ bzr-orphans
 *~
 # IntijIdea
 .idea
-# komodo project files, It's just silly to add them to repo
+# komodo project files
 *.komodoproject
 # node
 node_modules
+npm-debug.log
 # python
 __pycache__
 *.pyc
 *.pyo
+venv
+venv-*
+# python-rope
+.ropeproject
 # vim
 *.swp

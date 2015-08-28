@@ -23,5 +23,7 @@ venv
 venv-*
 # python-rope
 .ropeproject
+# vagrant
+.vagrant
 # vim
 *.swp

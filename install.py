@@ -3,7 +3,10 @@
 import os
 import sys
 from subprocess import check_output
-from urllib.request import urlopen
+try:
+    from urllib.request import urlopen
+except ImportError:
+    from urllib import urlopen
 
 links = {
     "ackrc": 0,

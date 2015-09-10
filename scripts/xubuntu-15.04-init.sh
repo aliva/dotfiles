@@ -20,5 +20,5 @@ apt-get update
 apt-get -y purge gimp gmusicbrowser parole apport*
 apt-get -y upgrade
 apt-get -y dist-upgrade
-apt-get -y install clementine git mercurial gitg python-pip python3-pip python-gpgme guake gedit gnome-terminal bumblebee tlp tlp-rdw ubuntu-restricted-extras libavcodec-extra vlc vim-gnome wine tmux axel curl synaptic autojump nemo shadowsocks
+apt-get -y install clementine git mercurial gitg python-pip python3-pip python-gpgme guake gedit gnome-terminal bumblebee tlp tlp-rdw ubuntu-restricted-extras libavcodec-extra vlc vim-gnome tmux axel curl synaptic nemo shadowsocks
 apt-get -y autoremove

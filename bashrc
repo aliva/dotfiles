@@ -58,6 +58,7 @@ alias apts="apt-cache search"
 # }}}
 # date {{{
 alias ymd="date +%Y-%m-%d"
+alias jymd="jdate +%Y-%m-%d"
 # }}}
 # docker {{{
 if command -v docker.io >/dev/null; then

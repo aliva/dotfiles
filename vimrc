@@ -16,7 +16,7 @@ set laststatus=2
 set hidden
 " 10 GUI
 if has('gui_running')
-    set guifont="Source Code Pro 9"
+    set guifont="Source Code Pro 11"
     set guioptions-=T " no toolbar
     set guioptions-=m " no menubar
 endif
@@ -31,11 +31,6 @@ set foldmethod=marker " {}x3 to fold
 set noswapfile
 " 21 command line editing
 set wildmode=longest,list,full
-" }}}
-" Plug {{{
-call plug#begin('~/.vim/plugged')
-
-call plug#end()
 " }}}
 " mappings {{{
 " ; => :
@@ -104,7 +99,4 @@ endfunction
 if getcwd() == expand('$HOME')
     cd ~/Workspace
 endif
-" }}}
-" colorscheme {{{
-set t_Co=256
 " }}}

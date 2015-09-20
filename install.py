@@ -30,11 +30,12 @@ downloads = {
     "bash-scripts/django.bash" : "https://github.com/django/django/raw/master/extras/django_bash_completion",    
     "bash-scripts/invoke.bash" : "https://raw.githubusercontent.com/pyinvoke/invoke/master/completion/bash",
     # mine
-    "bash-scripts/pimp.bash": "https://github.com/aliva/pimp/raw/master/pimp.sh",
+    "bash-scripts/pimp.bash":
+        "https://github.com/aliva/pimp/raw/master/pimp.sh",
     "bin/rip-flac-to-mp3":
-        "https://gist.githubusercontent.com/aliva/1038a42c779b0f69c471/raw/d4d8d9ea3eeed0cc7c7f86a0c6f3cc25910a9703/rip-flac-to-mp3",
+        "https://gist.githubusercontent.com/aliva/1038a42c779b0f69c471/raw/rip-flac-to-mp3",
     "bin/hiweb":
-        "https://gist.githubusercontent.com/aliva/d6380cda9e1561190f7c/raw/c6b8a35d1bd2a16c5444ec4d87e4f8e6259de3d0/hiweb",
+        "https://gist.githubusercontent.com/aliva/d6380cda9e1561190f7c/raw/hiweb",
 }
 
 ROOT = check_output("git rev-parse --show-toplevel".split(" ")).decode("utf-8").strip()

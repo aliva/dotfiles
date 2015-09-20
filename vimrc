@@ -35,39 +35,6 @@ set wildmode=longest,list,full
 " Plug {{{
 call plug#begin('~/.vim/plugged')
 
-" Shougo
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/vimfiler.vim'
-Plug 'Shougo/vimshell.vim'
-" syntax
-Plug 'elzr/vim-json'
-Plug 'ekalinin/Dockerfile.vim'
-"Plug 'mitsuhiko/vim-jinja'
-Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'ap/vim-css-color'
-" color
-Plug 'altercation/vim-colors-solarized'
-Plug 'sickill/vim-monokai'
-Plug 'gosukiwi/vim-atom-dark'
-" completion
-Plug 'ahayman/vim-nodejs-complete'
-" python
-Plug 'klen/python-mode'
-" other
-Plug 'vim-scripts/taglist.vim'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'bling/vim-airline'
-Plug 'airblade/vim-gitgutter'
-Plug 'mhinz/vim-startify'
-"Bundle 'zhaocai/GoldenView.Vim'
-Plug 'dbakker/vim-projectroot'
-Plug 'ap/vim-templates'
-Plug 'ap/vim-buftabline'
-Plug 'itchyny/screensaver.vim'
-
 call plug#end()
 " }}}
 " mappings {{{
@@ -101,117 +68,18 @@ imap <right> <nop>
 " move in wrapped lines
 map j gj
 map k gk
-" switch windows
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
 " cd to file path
 nmap <silent> <leader>cd :cd %:p:h<CR>:pwd<CR>
 " toggle toolbar
 if has("gui_running")
     map <silent> <F10> :call ToggleToolbar()<CR>
 endif
-" OmniComplete
-" enter key fix
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-    "return neocomplete#close_popup() . "\<CR>"
-    " For no inserting <CR> key.
-    return pumvisible() ? neocomplete#close_popup() : "\<CR>"
-endfunction
-" <TAB>: completion.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>
-"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-" neosnippet
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-" gitgutter
-nmap <Leader>ggn <Plug>GitGutterNextHunk
-nmap <Leader>ggN <Plug>GitGutterPrevHunk
-nmap <Leader>ggs <Plug>GitGutterStageHunk
-nmap <Leader>ggr <Plug>GitGutterRevertHunk
-" }}}
-" plugin {{{
-" goldenview
-let g:goldenview__enable_default_mapping = 1
-" indentguide
-let g:indent_guides_enable_on_vim_startup = 0
-let g:indent_guides_default_mapping = 0
-" neocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#max_list = 100
-let g:neocomplete#auto_completion_start_length = 2
-let g:neocomplete#manual_completion_start_length = 1
-let g:neocomplete#enable_smart_case = 1
-" neosnippet
-let g:neosnippet#enable_snipmate_compatibility = 1
-let g:neosnippet#snippets_directory='~/.vim/snippets'
-" pymode
-let g:pymode_lint_ignore="E501"
-let g:pymode_rope = 0
-let g:pymode_folding = 1
-" filer
-let g:vimfiler_as_default_explorer = 1
-let g:vimfiler_ignore_pattern = '^\%(\..*\|\.git\|\.DS_Store\|.*\~\|.*\.pyc\|__pycache__\)$'
-" shell
-let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
-let g:vimshell_prompt =  '$ '
 " }}}
 " autocmd {{{
 " autosave on focus lost
 autocmd FocusLost * try | :wa | catch | endtry
 " remove trailing white space
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-" if cwd is ~ change it to ~/Workspace
-if getcwd() == expand('$HOME')
-    cd ~/Workspace
-endif
-" project root
-"autocmd BufEnter * call <SID>AutoProjectRootCD()
-function! <SID>AutoProjectRootCD()
-    try
-        if &ft != 'help'
-            ProjectRootCD
-        endif
-    catch
-        " Silently ignore invalid buffers
-    endtry
-endfunction
-" }}}
-" filetypes {{{
-" css
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-" html
-autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
-" javascript
-autocmd FileType js setlocal filetype=javascript
-autocmd FileType javascript setlocal omnifunc=nodejscomplete#CompleteJS
-autocmd FileType javascript setlocal dictionary+=$HOME/.vim/dict/node.dict
-" markdown
-autocmd FileType markdown setlocal shiftwidth=2 tabstop=2
-autocmd FileType markdown setlocal omnifunc=htmlcomplete#CompleteTags
-" python
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-" xml
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-" }}}
-" colorscheme {{{
-set t_Co=256
-if has("gui_running")
-    "colorscheme monokai
-    colorscheme atom-dark
-    "colorscheme solarized
-    set background=dark
-endif
-" }}}
-" functions {{{
 function! <SID>StripTrailingWhitespaces()
     " save last search, and cursor position.
     let _s=@/
@@ -232,4 +100,11 @@ function! ToggleToolbar()
         set guioptions+=m
     endif
 endfunction
+" if cwd is ~ change it to ~/Workspace
+if getcwd() == expand('$HOME')
+    cd ~/Workspace
+endif
+" }}}
+" colorscheme {{{
+set t_Co=256
 " }}}

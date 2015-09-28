@@ -1,17 +1,7 @@
 #!/bin/sh
 
 pimp(){
-    PIMP_PROJECT_ROOT=`pwd`
-    if [ ! -d `pwd`/venv ]
-    then
-        if git rev-parse --show-toplevel &>/dev/null
-        then
-            PIMP_PROJECT_ROOT=`git rev-parse --show-toplevel`
-        elif hg root &>/dev/null
-        then
-            PIMP_PROJECT_ROOT=`hg root`
-        fi
-    fi
+    pimp_guess_project_root
 
     if [[ $1 = "init" ]]
     then
@@ -86,6 +76,23 @@ pimp(){
     esac
 }
 
+pimp_guess_project_root(){
+    PIMP_PROJECT_ROOT=`pwd`
+    if [ ! -d `pwd`/venv ]
+    then
+        if git rev-parse --show-toplevel &>/dev/null
+        then
+            PIMP_PROJECT_ROOT=`git rev-parse --show-toplevel`
+        elif hg root &>/dev/null
+        then
+            PIMP_PROJECT_ROOT=`hg root`
+        fi
+    fi
+    echo $PIMP_PROJECT_ROOT
+}
+
+
+# bash autocompletion
 _pimp(){
     cur="${COMP_WORDS[COMP_CWORD]}"
     prev="${COMP_WORDS[COMP_CWORD-1]}"

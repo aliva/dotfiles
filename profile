@@ -22,8 +22,8 @@ $HOME/Workspace/dotfiles/bin
 $HOME/bin/android-sdk-linux/tools
 $HOME/bin/android-studio/bin
 $HOME/bin/genymotion
-$HOME/pypy/bin
-$HOME/pypy3/bin"
+$HOME/bin/pypy/bin
+$HOME/bin/pypy3/bin"
 
 for p in $BIN_PATHES
 do

@@ -17,18 +17,15 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-BIN_PATHES="$HOME/bin
-$HOME/.local/bin
+BIN_PATHES="$HOME/.local/bin
 $HOME/Workspace/dotfiles/bin
 $HOME/bin/android-sdk-linux/tools
 $HOME/bin/android-studio/bin
-$HOME/bin/genymotion"
+$HOME/bin/genymotion
+$HOME/pypy/bin
+$HOME/pypy3/bin"
 
 for p in $BIN_PATHES
 do
-	#if [ -d $p ]
-	#then
-		PATH="$PATH:$p"
-	#fi
+    PATH="$PATH:$p"
 done
-

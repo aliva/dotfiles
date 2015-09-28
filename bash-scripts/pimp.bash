@@ -1,36 +1,11 @@
 #!/bin/sh
 
 pimp(){
-    pimp_guess_project_root
+    _pimp_guess_project_root
 
     if [[ $1 = "init" ]]
     then
-        if command -v pyvenv >/dev/null ;then
-            PIMP_VENV_COMMAND="pyvenv"
-        elif command -v pyvenv-3.4 >/dev/null ;then
-            PIMP_VENV_COMMAND="pyvenv-3.4"
-        else
-            echo "could not run pyvenv (did you install it globally?)"
-            die
-            return 1
-        fi
-        $PIMP_VENV_COMMAND --without-pip $PIMP_PROJECT_ROOT/venv || return 1
-        cd $PIMP_PROJECT_ROOT/venv
-        source bin/activate
-        if ! ls bin/pip &>/dev/null
-        then
-            wget https://bootstrap.pypa.io/get-pip.py || return 1
-            python get-pip.py || return 1
-        fi
-        cd $PIMP_PROJECT_ROOT
-        touch requirements.txt
-        if git rev-parse --show-toplevel &>/dev/null || ! hg root &>/dev/null
-        then
-            git init
-            echo "/venv/" >> .gitignore
-        fi
-        deactivate
-        echo "DONE!"
+        _pimp_init
         return
     fi
 
@@ -76,7 +51,10 @@ pimp(){
     esac
 }
 
-pimp_guess_project_root(){
+# this function tries to find the venv directory for current project
+# it should be in current path
+# or project root (based on git or hg)
+_pimp_guess_project_root(){
     PIMP_PROJECT_ROOT=`pwd`
     if [ ! -d `pwd`/venv ]
     then
@@ -88,9 +66,41 @@ pimp_guess_project_root(){
             PIMP_PROJECT_ROOT=`hg root`
         fi
     fi
-    echo $PIMP_PROJECT_ROOT
 }
 
+# init virtualenv
+_pimp_init(){
+    # find pyvenv command
+    if command -v pyvenv >/dev/null
+    then
+        PIMP_VENV_COMMAND="pyvenv"
+    elif command -v pyvenv-3.4 >/dev/null
+    then
+        PIMP_VENV_COMMAND="pyvenv-3.4"
+    else
+        echo "ERR: could not run pyvenv (did you install it globally?)"
+    fi
+    
+    # run pyvenv
+    $PIMP_VENV_COMMAND $PIMP_PROJECT_ROOT/venv || return 1
+    
+    # create requirements.txt
+    touch requirements.txt
+    
+    # create git repo if doesn't exists
+    # add /venv/ to gitignore
+    if ! git rev-parse --show-toplevel &>/dev/null && ! hg root &>/dev/null
+    then
+        git init
+        
+        if ! `grep ^\/venv\/$ .gitignore &>/dev/null`
+        then
+            echo "/venv/" >> .gitignore
+        fi
+    fi
+    
+    echo "DONE!"
+}
 
 # bash autocompletion
 _pimp(){

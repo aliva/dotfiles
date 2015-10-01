@@ -258,10 +258,6 @@ bash_prompt_command() {
         host_color=$Yellow
     fi
 
-    # media player info
-    #music=`timeout 1 mediaplayer-remote info 2>/dev/null | sed -e "s/^.*: //g" | sed -e "/^$/d" | sed -e ':a;N;$!ba;s/\n/ - /g'`
-    #music=`timeout 1 mediaplayer-remote info 2>/dev/null`
-
     # current user
     user=$USER
 

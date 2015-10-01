@@ -235,7 +235,8 @@ bash_prompt_command() {
     ret=$?
 
     # autojump update db
-    autojump_add_to_database &>/dev/null
+    # never used autojump
+    #autojump_add_to_database &>/dev/null
 
     # if root
     if [[ $EUID -ne 0 ]]

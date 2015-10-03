@@ -28,6 +28,7 @@ downloads = {
     "bash-scripts/pip.bash" : "https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip",
     "bash-scripts/django.bash" : "https://github.com/django/django/raw/master/extras/django_bash_completion",
     "bash-scripts/invoke.bash" : "https://raw.githubusercontent.com/pyinvoke/invoke/master/completion/bash",
+    "bash-scripts/celery.bash" : "https://raw.githubusercontent.com/celery/celery/master/extra/bash-completion/celery.bash",
     # mine
     "bash-scripts/pimp.bash":
         "https://github.com/aliva/pimp/raw/master/pimp.sh",

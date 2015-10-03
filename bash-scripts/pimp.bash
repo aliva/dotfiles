@@ -99,6 +99,10 @@ _pimp_init(){
         fi
     fi
     
+    # upgrade pip
+    source $PIMP_PROJECT_ROOT/venv/bin/activate
+    pip install pip --upgrade
+
     echo "DONE!"
 }
 

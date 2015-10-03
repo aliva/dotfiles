@@ -24,7 +24,7 @@ downloads = {
     # vim plug
     #"vim/autoload/plug.vim" : "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim",
     # bash autocompleion
-    "bash-scripts/mercurial.bash" : "http://selenic.com/hg/raw-file/tip/contrib/bash_completion",
+    "bash-scripts/mercurial.bash" : "http://www.selenic.com/hg/raw-file/tip/contrib/bash_completion",
     "bash-scripts/pip.bash" : "https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip",
     "bash-scripts/django.bash" : "https://github.com/django/django/raw/master/extras/django_bash_completion",
     "bash-scripts/invoke.bash" : "https://raw.githubusercontent.com/pyinvoke/invoke/master/completion/bash",

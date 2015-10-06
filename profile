@@ -27,5 +27,5 @@ $HOME/bin/pypy3/bin"
 
 for p in $BIN_PATHES
 do
-    PATH="$PATH:$p"
+    PATH="$p:$PATH"
 done

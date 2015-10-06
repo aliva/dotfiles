@@ -9,6 +9,12 @@ pimp(){
         return
     fi
 
+    if [[ $1 = "deactivate" ]]
+    then
+        PIMP_PROJECT_NAME=
+        deactivate
+    fi
+    
     if [ ! -d $PIMP_PROJECT_ROOT/venv ]
     then
         echo "could not find venv dir"
@@ -20,10 +26,6 @@ pimp(){
     case $1 in
     "activate")
         source $PIMP_PROJECT_ROOT/venv/bin/activate
-        ;;
-    "deactivate")
-        PIMP_PROJECT_NAME=
-        deactivate
         ;;
     "shell")
         source $PIMP_PROJECT_ROOT/venv/bin/activate

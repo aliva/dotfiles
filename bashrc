@@ -171,12 +171,6 @@ gvim(){
 export WINEARCH=win32
 # }}}
 # }}}
-# auto jump {{{
-if [ -f /usr/share/autojump/autojump.sh ]
-then
-    . /usr/share/autojump/autojump.sh
-fi
-# }}}
 # completion files and scripts {{{
 if ! shopt -oq posix; then
     if [ -f /usr/share/bash-completion/bash_completion ]; then

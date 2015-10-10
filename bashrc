@@ -309,3 +309,9 @@ bash_prompt_command() {
 # this chars are also good for prompt: ↳↪↝✎
 PROMPT_COMMAND=bash_prompt_command
 # }}}
+# local bashrc {{{
+if [[ -f ~/Workspace/dotfiles/bashrc.local ]]
+then
+    source ~/Workspace/dotfiles/bashrc.local
+fi
+# }}}

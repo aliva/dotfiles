@@ -32,17 +32,9 @@ alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"
 alias q="exit"
 alias serve_dir="python3 -m http.server"
-alias countfiles="ls -l | wc -l"
-history_off(){
-    # http://www.commandlinefu.com/commands/view/13948
-    export HISTFILE=/dev/null
-}
 # }}}
 # ack {{{
-if command -v ack-grep >/dev/null
-then
-    alias ack="ack-grep"
-fi
+alias ack="ack-grep"
 # }}}
 # apt {{{
 # if apt-fast is installed prefer apt-fast for downloading packages
@@ -61,27 +53,20 @@ alias ymd="date +%Y-%m-%d"
 alias jymd="jdate +%Y-%m-%d"
 # }}}
 # docker {{{
-if command -v docker.io >/dev/null; then
-    alias docker="docker.io"
-fi
-if command -v docker >/dev/null; then
-    alias docker="sudo docker"
-    alias di="docker images"
-    alias dps="docker ps"
-    alias drm="docker rm"
-    alias drmi="docker rmi"
-    alias docker_remove_untagged_images="docker images -q --filter 'dangling=true' | xargs sudo docker rmi"
-    function dip(){
-        if [ -z $1 ]
-        then
-            sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
-        else
-            sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
-        fi
-    }
-
-    complete -o default -o nospace -F _docker docker
-fi
+alias docker="sudo docker"
+alias di="docker images"
+alias dps="docker ps"
+alias drm="docker rm"
+alias drmi="docker rmi"
+alias docker_remove_untagged_images="docker images -q --filter 'dangling=true' | xargs sudo docker rmi"
+function dip(){
+    if [ -z $1 ]
+    then
+        sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' `docker ps -lq`
+    else
+        sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
+    fi
+}
 # }}}
 # git {{{
 alias gd="git diff"
@@ -99,7 +84,6 @@ alias egrep='egrep --color=auto'
 # }}}
 # hg {{{
 alias h="hg"
-complete -o default -o nospace -F _hg h
 alias ha="hg add"
 alias hc="hg commit -m"
 alias hd="hg diff"
@@ -108,7 +92,6 @@ alias hs="hg status"
 # }}}
 # internet {{{
 alias myip="curl -s icanhazip.com"
-alias tor="tor -f ~/Workspace/dotfiles/torrc"
 alias p8="ping 8.8.8.8 -i 3"
 alias axel="axel -a -n 50"
 alias wget="wget -c"
@@ -131,18 +114,14 @@ alias l='ls -CF'
 alias ~="cd ~"
 alias ..="cd .."
 alias cdd="cd ~/Workspace/dotfiles"
-alias cdn="cd ~/Workspace/notes"
 alias cdt="cd /tmp"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
-alias pcp="rsync -ah --progress"
 # }}}
 # python {{{
 alias p2="python2"
 alias p3="python3"
 alias "get-pip"="echo https://bootstrap.pypa.io/get-pip.py"
-complete -o default -F _pip pip3
-complete -o default -F _pip pip2
 # }}}
 # sudo {{{
 alias sudo="sudo -E"
@@ -157,14 +136,8 @@ alias update-rc.d="sudo update-rc.d"
 alias supervisorctl="sudo supervisorctl"
 # }}}
 # tunel {{{
-alias tun="ssh a 'echo Connected to a! && cat'"
-alias tuna="ssh a 'echo Connected to a! && cat'"
-alias tunv="ssh v 'echo Connected to v! && cat'"
 # }}}
 # vim {{{
-gvim(){
-    command gvim --remote-tab-silent "$@" || command gvim "$@"
-}
 # }}}
 # wine {{{
 #export WINEPREFIX=$HOME/.config/wine/

@@ -21,3 +21,6 @@ komodoedit/*/XRE
 /vim/doc/
 /crontab/log
 /vim/plugged/
+
+# local
+*.local

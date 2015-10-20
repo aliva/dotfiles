@@ -32,6 +32,7 @@ alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"
 alias q="exit"
 alias serve_dir="python3 -m http.server"
+alias cb="xclip -selection clipboard"
 # }}}
 # ack {{{
 alias ack="ack-grep"
@@ -147,12 +148,20 @@ export WINEARCH=win32
 # }}}
 # completion files and scripts {{{
 if ! shopt -oq posix; then
+    # global
     if [ -f /usr/share/bash-completion/bash_completion ]; then
         source /usr/share/bash-completion/bash_completion
     elif [ -f /etc/bash_completion ]; then
         source /etc/bash_completion
     fi
 
+    # other
+    if [ -f $HOME/.local/etc/bash_completion.d/youtube-dl.bash-completion ]
+    then
+        source $HOME/.local/etc/bash_completion.d/youtube-dl.bash-completion
+    fi
+
+    # in repo
     if [ -d ~/Workspace/dotfiles ]
     then
         for f in ~/Workspace/dotfiles/bash-scripts/*.bash

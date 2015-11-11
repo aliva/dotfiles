@@ -18,6 +18,7 @@ links = {
     "profile": 0,
     #"vim": 0,
     "vimrc": 0,
+    "torrc": 0,
 }
 
 downloads = {

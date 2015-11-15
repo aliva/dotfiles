@@ -23,7 +23,7 @@ shopt -s histappend
 shopt -s checkwinsize
 # }}}
 # alias and functions {{{
-# what {{{
+# other {{{
 any(){
     # http://www.commandlinefu.com/commands/view/13950
     ps aux | grep -E "[${1:0:1}]${1:1}|^USER";
@@ -33,6 +33,7 @@ alias info="info --vi-keys"
 alias q="exit"
 alias serve_dir="python3 -m http.server"
 alias cb="xclip -selection clipboard"
+alias picme="streamer -f jpeg -o `date +%H-%m`.jpeg -j 80 -s 2560x1440"
 # }}}
 # ack {{{
 alias ack="ack-grep"
@@ -137,8 +138,6 @@ alias systemctl="sudo systemctl"
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
 alias update-rc.d="sudo update-rc.d"
 alias supervisorctl="sudo supervisorctl"
-# }}}
-# tunel {{{
 # }}}
 # vim {{{
 # }}}

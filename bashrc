@@ -33,7 +33,6 @@ alias info="info --vi-keys"
 alias q="exit"
 alias serve_dir="python3 -m http.server"
 alias cb="xclip -selection clipboard"
-alias picme="streamer -f jpeg -o `date +%H-%m`.jpeg -j 80 -s 2560x1440"
 # }}}
 # ack {{{
 alias ack="ack-grep"

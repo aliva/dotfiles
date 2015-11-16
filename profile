@@ -20,10 +20,7 @@ fi
 BIN_PATHES="$HOME/.local/bin
 $HOME/Workspace/dotfiles/bin
 $HOME/bin/android-sdk-linux/tools
-$HOME/bin/android-studio/bin
-$HOME/bin/genymotion
-$HOME/bin/pypy/bin
-$HOME/bin/pypy3/bin"
+$HOME/bin/android-studio/bin"
 
 for p in $BIN_PATHES
 do

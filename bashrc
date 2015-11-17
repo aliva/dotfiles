@@ -284,7 +284,7 @@ bash_prompt_command() {
         fi
         PS1=$PS1"${space} ${music} ${PROMPT_COLOR}${ret} \n${PROMPT_COLOR}$PROMPT ${White}"
     else
-        PS1="${PROMPT_COLOR}↝ ${YELLOW}\w \n${PROMPT_COLOR}$PROMPT ${GREEN}"
+        PS1="${Cyan}↝ ${Green}\w \n${Cyan}$PROMPT ${GREEN}"
     fi
 }
 #PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'

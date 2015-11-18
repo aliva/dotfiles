@@ -140,6 +140,13 @@ alias supervisorctl="sudo supervisorctl"
 # }}}
 # vim {{{
 # }}}
+# virtualenvwrapper {{{
+export WORKON_HOME=$HOME/.config/virtualenvs
+export PROJECT_HOME=$HOME/Workspace
+export VIRTUALENVWRAPPER_WORKON_CD=1
+export VIRTUALENVWRAPPER_HOOK_DIR="$HOME/Workspace/dotfiles/virtualenvwrapper-hooks"
+export VIRTUALENV_PYTHON=`command -v python3`
+# }}}
 # wine {{{
 #export WINEPREFIX=$HOME/.config/wine/
 export WINEARCH=win32

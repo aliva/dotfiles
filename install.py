@@ -31,8 +31,8 @@ downloads = {
     "bash-scripts/invoke.bash" : "https://raw.githubusercontent.com/pyinvoke/invoke/master/completion/bash",
     "bash-scripts/celery.bash" : "https://raw.githubusercontent.com/celery/celery/master/extra/bash-completion/celery.bash",
     # mine
-    "bash-scripts/pimp.bash":
-        "https://github.com/aliva/pimp/raw/master/pimp.sh",
+    # "bash-scripts/pimp.bash":
+    #     "https://github.com/aliva/pimp/raw/master/pimp.sh",
     "bin/rip-flac-to-mp3":
         "https://gist.githubusercontent.com/aliva/1038a42c779b0f69c471/raw/rip-flac-to-mp3",
     "bin/hiweb":

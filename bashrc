@@ -258,13 +258,7 @@ bash_prompt_command() {
     venv=""
     if [[ $VIRTUAL_ENV != "" ]]
     then
-        # Strip out the path and just leave the env name
-        if [[ $PIMP_PROJECT_NAME != "" ]]
-        then
-            venv="(${PIMP_PROJECT_NAME})"
-        else
-            venv="(${VIRTUAL_ENV##*/})"
-        fi
+        venv="(${VIRTUAL_ENV##*/})"
     fi
 
     git_status=`git_get_status`

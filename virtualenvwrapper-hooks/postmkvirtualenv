@@ -1,3 +1,5 @@
 #!/bin/bash
 # This hook is sourced after a new virtualenv is activated.
 
+# update pip
+pip install pip -U

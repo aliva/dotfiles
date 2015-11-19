@@ -1,5 +1,6 @@
 #!/bin/bash
 # This hook is sourced after a new virtualenv is activated.
 
-# update pip
+# update pip stuff
 pip install pip -U
+pip install `pip list | cut -d " " -f 1` -U

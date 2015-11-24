@@ -6,7 +6,7 @@ from subprocess import check_output
 try:
     from urllib.request import urlopen
 except ImportError:
-    from urllib import urlopen
+    from urllib2 import urlopen
 
 links = {
     "ackrc": 0,
@@ -50,10 +50,14 @@ print ("HOME %s" % HOME)
 if "--get" in sys.argv:
     for file in downloads:
         print("DOWNLOADING '%s'" % file)
-        response = urlopen(downloads[file])
-        with open(os.path.join(ROOT, file), "w") as output:
-            output.write(response.read().decode("utf-8"))
-
+        try:
+            response = urlopen(downloads[file], timeout=5)
+            with open(os.path.join(ROOT, file), "w") as output:
+                output.write(response.read().decode("utf-8"))
+        except Exception as e:
+            print("ERROR: %s" % str(e))
+            continue
+        
 # GENRATE
 with open(os.path.join(ROOT, "gitignore"), "r") as git:
     print ("GENERATING hgignore")

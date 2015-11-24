@@ -46,13 +46,6 @@ HOME = os.path.expanduser("~")
 print ("ROOT %s" % ROOT)
 print ("HOME %s" % HOME)
 
-# GENRATE
-with open(os.path.join(ROOT, "gitignore"), "r") as git:
-    print ("GENERATING hgignore")
-    with open(os.path.join(ROOT, "hgignore"), "w") as hg:
-        hg.write("syntax:glob\n")
-        hg.write(git.read())
-
 # DOWNLOAD
 if "--get" in sys.argv:
     for file in downloads:
@@ -60,6 +53,13 @@ if "--get" in sys.argv:
         response = urlopen(downloads[file])
         with open(os.path.join(ROOT, file), "w") as output:
             output.write(response.read().decode("utf-8"))
+
+# GENRATE
+with open(os.path.join(ROOT, "gitignore"), "r") as git:
+    print ("GENERATING hgignore")
+    with open(os.path.join(ROOT, "hgignore"), "w") as hg:
+        hg.write("syntax:glob\n")
+        hg.write(git.read())
 
 # LINK
 for link in links:

@@ -33,6 +33,7 @@ alias info="info --vi-keys"
 alias q="exit"
 alias serve_dir="python3 -m http.server"
 alias cb="xclip -selection clipboard"
+alias random_string="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 # }}}
 # ack {{{
 alias ack="ack-grep"

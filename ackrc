@@ -8,3 +8,4 @@
 --ignore-dir=.ropeproject/
 
 --type-set=json=.json
+--type-set=ini=.ini

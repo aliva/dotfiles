@@ -54,6 +54,9 @@ alias apts="apt-cache search"
 alias ymd="date +%Y-%m-%d"
 alias jymd="jdate +%Y-%m-%d"
 # }}}
+# dd {{{
+alias dd_status="sudo kill -USR1 $(pgrep ^dd)"
+# }}}
 # docker {{{
 alias docker="sudo docker"
 alias di="docker images"

@@ -44,6 +44,7 @@ function do_action(){
                 ;;
             info)
                 # TODO
+                echo "TODO!"
                 return
                 ;;
         esac
@@ -60,12 +61,12 @@ function do_action(){
 
 if [ -z $1 ]
 then
-    echo "[play|pause|stop|next|prev|info]"
+    echo "[play-pause|stop|next|prev|info]"
     exit
 fi
 
 #players="deadbeef clementine rhythmbox vlc"
-players="clementine rhythmbox"
+players="quodlibet clementine vlc"
 if [ -z $2 ]
 then
     for player in $players

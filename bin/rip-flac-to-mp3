@@ -9,7 +9,7 @@ mkdir -p flac_to_mp3_tmp
 if [[ `ls *.flac | wc -l ` == 1 ]]
 then
     # if there is only one file it should be splited
-    shnslit -d flac_to_mp3_tmp -o flac -f *.cue -t "%n - %t" *.flac
+    shnsplit -d flac_to_mp3_tmp -o flac -f *.cue -t "%n - %t" *.flac
 else
     # if there is more than one flac file in current dir
     # assume it's already splitted

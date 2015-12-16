@@ -19,6 +19,7 @@ links = {
     "vimrc": 0,
     "torrc": 0,
     "aria2.conf": "aria2/aria2.conf",
+    "cow.rc": "cow/rc",
 }
 
 downloads = {

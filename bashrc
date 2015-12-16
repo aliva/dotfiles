@@ -10,7 +10,8 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=-1
 export HISTFILESIZE=$HISTSIZE
 # cdpath
-export CDPATH=$CDPATH:$HOME/Workspace:$HOME
+# on some systems caused slow autocompletion or hanging session
+# export CDPATH=$CDPATH:$HOME/Workspace:$HOME
 # I kinda like vim
 export EDITOR=vim
 # I had some conflicts while system locale was fa_IR

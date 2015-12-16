@@ -10,7 +10,6 @@ except ImportError:
 
 links = {
     "ackrc": 0,
-    "aria2": 0,
     "bashrc": 0,
     "gitconfig": 0,
     "hgrc": 0,
@@ -19,6 +18,7 @@ links = {
     #"vim": 0,
     "vimrc": 0,
     "torrc": 0,
+    "aria2.conf": "aria2/aria2.conf",
 }
 
 downloads = {
@@ -71,7 +71,14 @@ for link in links:
     if links[link] == 0:
         dest = ".%s" % link
     else:
-        dest = links[link]
+        dest = ".%s" % links[link]
+        
+        if dest.find("/"):
+            head, tail = os.path.split(dest)
+            conf_dir = os.path.join(HOME, head)
+            if not os.path.exists(conf_dir):
+                os.makedirs(conf_dir)
+            
     dest = os.path.join(HOME, dest)
 
     if os.path.exists(dest):

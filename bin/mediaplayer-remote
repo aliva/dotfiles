@@ -32,31 +32,31 @@ function do_action(){
         esac
     fi
 
-    # MPRIS seems cool
-    if [[ $player == "vlc" ]] || [[ $player == "rhythmbox" ]] || [[ $player == "clementine" ]]
+    if [[ $player == "deadbeef" ]]
     then
-        case $action in
-            prev)
-                action="previous"
-                ;;
-            play-pause)
-                action="PlayPause"
-                ;;
-            info)
-                # TODO
-                echo "TODO!"
-                exit
-                ;;
-        esac
-
-        action="${action^}"
-
-        dbus-send --print-reply=literal --session --dest=org.mpris.MediaPlayer2.$player  /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.$action
+        # deadbeef
+        $TIMEOUT $player "--$action"
         exit
     fi
+    
+    case $action in
+        prev)
+            action="previous"
+            ;;
+        play-pause)
+            action="PlayPause"
+            ;;
+        info)
+            # TODO
+            echo "TODO!"
+            ;;
+    esac
 
-    # deadbeef
-    $TIMEOUT $player "--$action"
+    action="${action^}"
+
+    dbus-send --print-reply=literal --session --dest=org.mpris.MediaPlayer2.$player  /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.$action
+    
+    exit
 }
 
 if [ -z $1 ]
@@ -66,7 +66,7 @@ then
 fi
 
 #players="deadbeef clementine rhythmbox vlc"
-players="quodlibet clementine vlc"
+players="quodlibet clementine vlc rhythmbox"
 if [ -z $2 ]
 then
     for player in $players
@@ -76,5 +76,4 @@ then
 else
     do_action $1 $2
 fi
-
 

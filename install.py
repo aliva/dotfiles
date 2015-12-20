@@ -19,7 +19,7 @@ links = {
     "vimrc": 0,
     "torrc": 0,
     "aria2.conf": "aria2/aria2.conf",
-    "cow.rc": "cow/rc",
+    "cow": 0,
 }
 
 downloads = {
@@ -58,7 +58,7 @@ if "--get" in sys.argv:
         except Exception as e:
             print("ERROR: %s" % str(e))
             continue
-        
+
 # GENRATE
 with open(os.path.join(ROOT, "gitignore"), "r") as git:
     print ("GENERATING hgignore")
@@ -73,13 +73,13 @@ for link in links:
         dest = ".%s" % link
     else:
         dest = ".%s" % links[link]
-        
+
         if dest.find("/"):
             head, tail = os.path.split(dest)
             conf_dir = os.path.join(HOME, head)
             if not os.path.exists(conf_dir):
                 os.makedirs(conf_dir)
-            
+
     dest = os.path.join(HOME, dest)
 
     if os.path.exists(dest):

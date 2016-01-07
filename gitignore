@@ -23,6 +23,7 @@ venv-*
 .tox
 .ropeproject
 .coverage
+*.egg-info
 # vagrant
 .vagrant
 # vim

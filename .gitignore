@@ -26,5 +26,4 @@ komodoedit/*/XRE
 *.local
 
 # cow
-cow/stat
-cow/stat.bak
+cow/stat*

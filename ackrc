@@ -7,5 +7,7 @@
 --ignore-dir=node_modules/
 --ignore-dir=.ropeproject/
 
+--ignore-file=ext:po
+
 --type-set=json=.json
 --type-set=ini=.ini

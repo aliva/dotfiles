@@ -1,3 +1,8 @@
 #!/bin/bash
 # This hook is sourced after every virtualenv is activated.
 
+if [ -f $HOME/Workspace/dotfiles/virtualenvwrapper-hooks/.no_pyc ]
+then
+    export _PYTHONDONTWRITEBYTECODE=$PYTHONDONTWRITEBYTECODE
+    export PYTHONDONTWRITEBYTECODE=1
+fi

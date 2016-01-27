@@ -22,6 +22,9 @@ komodoedit/*/XRE
 /crontab/log
 /vim/plugged/
 
+# virtualenvwrapper
+/virtualenvwrapper-hooks/.no_pyc
+
 # local
 *.local
 

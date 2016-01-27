@@ -21,8 +21,10 @@ __pycache__
 *.pyo
 venv
 venv-*
-# python-rope
+.tox
 .ropeproject
+.coverage
+*.egg-info
 # vagrant
 .vagrant
 # vim

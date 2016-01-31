@@ -51,10 +51,6 @@ alias aptu="sudo $APT_CMD upgrade"
 alias aptdu="sudo $APT_CMD dist-upgrade"
 alias apts="apt-cache search"
 # }}}
-# date {{{
-alias ymd="date +%Y-%m-%d"
-alias jymd="jdate +%Y-%m-%d"
-# }}}
 # dd {{{
 alias dd_status="sudo kill -USR1 $(pgrep ^dd)"
 # }}}
@@ -121,7 +117,6 @@ alias l='ls -CF'
 # path {{{
 alias ~="cd ~"
 alias ..="cd .."
-alias cdd="cd ~/Workspace/dotfiles"
 alias cdt="cd /tmp"
 alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"

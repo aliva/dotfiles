@@ -3,9 +3,13 @@
 
 --pager=less -r
 
+# python
 --ignore-dir=venv/
---ignore-dir=node_modules/
 --ignore-dir=.ropeproject/
+--ignore-dir=.tox/
+--ignore-dir=htmlcov/
+# nodejs
+--ignore-dir=node_modules/
 
 --ignore-file=ext:po
 

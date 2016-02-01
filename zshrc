@@ -48,7 +48,9 @@ export VIRTUALENV_PYTHON=`command -v python3`
 # }}}
 # plugins {{{
 plugins=(
+    autojump
     git
+    sudo
     pip
     virtualenvwrapper
 )

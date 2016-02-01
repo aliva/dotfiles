@@ -1,0 +1,5 @@
+#compdef apti
+
+_apt_aliases () {
+    _apt-get "install $@";;
+}

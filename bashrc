@@ -36,21 +36,8 @@ alias serve_dir="python3 -m http.server"
 alias cb="xclip -selection clipboard"
 alias random_string="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 # }}}
-# ack {{{
+# ack
 alias ack="ack-grep"
-# }}}
-# apt {{{
-# if apt-fast is installed prefer apt-fast for downloading packages
-#if command -v apt-fast > /dev/null; then APT_CMD=apt-fast; else APT_CMD=apt-get; fi
-APT_CMD=apt-get
-alias apt-get="sudo apt-get"
-alias apt="apt-get"
-alias apti="sudo $APT_CMD install"
-alias apty="sudo $APT_CMD update"
-alias aptu="sudo $APT_CMD upgrade"
-alias aptdu="sudo $APT_CMD dist-upgrade"
-alias apts="apt-cache search"
-# }}}
 # dd {{{
 alias dd_status="sudo kill -USR1 $(pgrep ^dd)"
 # }}}
@@ -69,15 +56,6 @@ function dip(){
         sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' $1
     fi
 }
-# }}}
-# git {{{
-alias gd="git diff"
-alias gc="git commit -m"
-alias gca="git commit -a -m"
-alias gs="git status"
-alias gps="git push"
-alias gpl="git pull"
-alias gitg="gitg &>/dev/null"
 # }}}
 # grep {{{
 alias grep='grep --color=auto'

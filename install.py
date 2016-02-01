@@ -11,15 +11,16 @@ except ImportError:
 links = {
     "ackrc": 0,
     "bashrc": 0,
+    "cow": 0,
     "gitconfig": 0,
     "hgrc": 0,
     "inputrc": 0,
     "profile": 0,
+    #"torrc": 0,
     #"vim": 0,
     "vimrc": 0,
-    "torrc": 0,
+    "zshrc": 0,
     "aria2.conf": "aria2/aria2.conf",
-    "cow": 0,
 }
 
 downloads = {

@@ -51,6 +51,8 @@ plugins=(
     git
     pip
     virtualenvwrapper
+    # custom plugins
+    invoke
 )
 # }}}
 

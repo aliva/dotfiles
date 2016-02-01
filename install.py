@@ -33,6 +33,8 @@ downloads = {
     "bash-scripts/invoke.bash" : "https://raw.githubusercontent.com/pyinvoke/invoke/master/completion/bash",
     "bash-scripts/celery.bash" : "https://raw.githubusercontent.com/celery/celery/master/extra/bash-completion/celery.bash",
     "bash-scripts/go.bash" : "https://github.com/kura/go-bash-completion/raw/master/etc/bash_completion.d/go",
+    # zsh
+    "zsh/plugins/invoke/invoke.plugin.zsh": "https://github.com/pyinvoke/invoke/raw/master/completion/zsh",
     # mine
     # "bash-scripts/pimp.bash":
     #     "https://github.com/aliva/pimp/raw/master/pimp.sh",

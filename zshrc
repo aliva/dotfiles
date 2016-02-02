@@ -50,6 +50,7 @@ export VIRTUALENV_PYTHON=`command -v python3`
 plugins=(
     autojump
     git
+    mosh
     sudo
     pip
     virtualenvwrapper

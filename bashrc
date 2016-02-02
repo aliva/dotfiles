@@ -70,14 +70,6 @@ alias hd="hg diff"
 alias hp="hg push"
 alias hs="hg status"
 # }}}
-# internet {{{
-alias myip="curl -s icanhazip.com"
-alias p8="ping 8.8.8.8 -i 3"
-alias axel="axel -a -n 50"
-alias wget="wget -c"
-alias aria2c="aria2c --dir=$HOME/Downloads/aria2c"
-alias tor="tor -f $HOME/.torrc"
-# }}}
 # kill {{{
 alias kilall="killall"
 # }}}

@@ -3,7 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
 
 #ZSH_THEME="random"
-ZSH_THEME="sonicradish"
+#ZSH_THEME="sonicradish"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

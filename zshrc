@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
+export DEFAULT_USER="ali"
 
 #ZSH_THEME="random"
 #ZSH_THEME="sonicradish"

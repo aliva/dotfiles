@@ -18,6 +18,7 @@ links = {
     "profile": 0,
     #"torrc": 0,
     #"vim": 0,
+    "tmux.conf": 0,
     "vimrc": 0,
     "zshrc": 0,
     "aria2.conf": "aria2/aria2.conf",

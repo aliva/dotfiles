@@ -42,7 +42,6 @@ alias ack="ack-grep"
 alias dd_status="sudo kill -USR1 $(pgrep ^dd)"
 # }}}
 # docker {{{
-alias docker="sudo docker"
 alias di="docker images"
 alias dps="docker ps"
 alias drm="docker rm"
@@ -100,13 +99,7 @@ alias "get-pip"="echo https://bootstrap.pypa.io/get-pip.py"
 alias sudo="sudo -E"
 alias s="sudo"
 complete -o default -o nospace -F _root_command s
-alias poweroff="sudo poweroff -p"
-alias reboot="sudo reboot"
-alias service="sudo service"
-alias systemctl="sudo systemctl"
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
-alias update-rc.d="sudo update-rc.d"
-alias supervisorctl="sudo supervisorctl"
 # }}}
 # vim {{{
 # }}}

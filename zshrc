@@ -2,10 +2,13 @@
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
 export DEFAULT_USER="ali"
+export TERM="xterm-256color"
+export POWERLEVEL9K_MODE='awesome-fontconfig'
 
 #ZSH_THEME="random"
 #ZSH_THEME="sonicradish"
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

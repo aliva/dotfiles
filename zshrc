@@ -6,7 +6,7 @@ export TERM="xterm-256color"
 # powerlevel9k
 export POWERLEVEL9K_MODE='awesome-fontconfig'
 export POWERLEVEL9K_SHORTEN_DIR_LENGTH=10
-export POWERLEVEL9K_SHORTEN_DELIMITER=""
+export POWERLEVEL9K_SHORTEN_DELIMITER="…"
 export POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 export POWERLEVEL9K_OK_ICON=''
 export POWERLEVEL9K_PROMPT_ON_NEWLINE=true

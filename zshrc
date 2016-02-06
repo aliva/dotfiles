@@ -19,7 +19,7 @@ then
     export POWERLEVEL9K_FAIL_ICON=$'\u2718'
 fi
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status battery)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 
 #ZSH_THEME="random"
 #ZSH_THEME="sonicradish"

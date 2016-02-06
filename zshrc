@@ -4,9 +4,12 @@ export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
 export DEFAULT_USER="ali"
 export TERM="xterm-256color"
 export POWERLEVEL9K_MODE='awesome-fontconfig'
-POWERLEVEL9K_OK_ICON=''
+export POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+export POWERLEVEL9K_SHORTEN_DELIMITER=""
+export POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+export POWERLEVEL9K_OK_ICON=''
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status battery)
 
 #ZSH_THEME="random"
 #ZSH_THEME="sonicradish"

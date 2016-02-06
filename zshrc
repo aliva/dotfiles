@@ -4,6 +4,7 @@ export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
 export DEFAULT_USER="ali"
 export TERM="xterm-256color"
 export POWERLEVEL9K_MODE='awesome-fontconfig'
+export POWERLEVEL9K_OK_ICON=''
 
 #ZSH_THEME="random"
 #ZSH_THEME="sonicradish"

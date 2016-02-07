@@ -124,22 +124,6 @@ if ! shopt -oq posix; then
     elif [ -f /etc/bash_completion ]; then
         source /etc/bash_completion
     fi
-
-    # other
-    if [ -f $HOME/.local/etc/bash_completion.d/youtube-dl.bash-completion ]
-    then
-        source $HOME/.local/etc/bash_completion.d/youtube-dl.bash-completion
-    fi
-
-    # in repo
-    if [ -d ~/Workspace/dotfiles ]
-    then
-        for f in ~/Workspace/dotfiles/bash-scripts/*.bash
-        do
-            source $f
-        done
-    fi
-fi
 # }}}
 PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
 # local bashrc {{{

@@ -19,4 +19,5 @@ alias wget="wget -c"
 alias aria2c="aria2c --dir=$HOME/Downloads/aria2c"
 # path
 alias cdd="cd ~/Workspace/dotfiles"
+alias cdw="cd ~/Workspace"
 alias cdt="cd /tmp"

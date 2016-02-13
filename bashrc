@@ -124,6 +124,7 @@ if ! shopt -oq posix; then
     elif [ -f /etc/bash_completion ]; then
         source /etc/bash_completion
     fi
+fi
 # }}}
 PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
 # local bashrc {{{

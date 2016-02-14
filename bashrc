@@ -6,8 +6,7 @@ case $- in *i*) ;; *) return;; esac
 
 # don't put duplicate lines or lines starting with space in the history.
 export HISTCONTROL=ignoreboth
-# no limit!
-export HISTSIZE=-1
+export HISTSIZE=1000
 export HISTFILESIZE=$HISTSIZE
 # cdpath
 # on some systems caused slow autocompletion or hanging session
@@ -31,10 +30,8 @@ any(){
 }
 alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"
-alias q="exit"
 alias serve_dir="python3 -m http.server"
 alias cb="xclip -selection clipboard"
-alias random_string="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 # }}}
 # ack
 alias ack="ack-grep"
@@ -86,8 +83,6 @@ alias l='ls -CF'
 # path {{{
 alias ~="cd ~"
 alias ..="cd .."
-alias cdt="cd /tmp"
-alias cdw="cd ~/Workspace"
 alias mkdir="mkdir -p"
 # }}}
 # python {{{
@@ -100,8 +95,6 @@ alias sudo="sudo -E"
 alias s="sudo"
 complete -o default -o nospace -F _root_command s
 alias swapflush="echo swapoff && sudo swapoff -a && echo swapon && sudo swapon -a && echo done"
-# }}}
-# vim {{{
 # }}}
 # virtualenvwrapper {{{
 #export WORKON_HOME=$HOME/.config/virtualenvs

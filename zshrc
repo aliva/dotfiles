@@ -62,12 +62,12 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 
-# virtualenvwrapper {{{
+# virtualenvwrapper
 export WORKON_HOME="$HOME/.virtualenvs"
 export VIRTUALENVWRAPPER_HOOK_DIR="$HOME/Workspace/dotfiles/virtualenvwrapper-hooks"
 export VIRTUALENV_PYTHON=`command -v python3`
-# }}}
-# plugins {{{
+export PROJECT_HOME="$HOME/Workspace/"
+# plugins
 plugins=(
     autojump
     git
@@ -78,7 +78,6 @@ plugins=(
     # custom plugins
     invoke
 )
-# }}}
 
 
 # User configuration

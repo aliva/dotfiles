@@ -39,6 +39,15 @@ function do_action(){
         exit
     fi
     
+    if [[ $player == "nightingale" ]]
+    then
+        if [[ $action == "play-pause" ]]
+        then
+            action="pause"
+        fi
+        $TIMEOUR $player "-$action"
+    fi
+    
     case $action in
         prev)
             action="previous"
@@ -66,7 +75,7 @@ then
 fi
 
 #players="deadbeef clementine rhythmbox vlc"
-players="quodlibet clementine vlc rhythmbox"
+players="quodlibet clementine vlc rhythmbox nightingale"
 if [ -z $2 ]
 then
     for player in $players

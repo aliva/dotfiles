@@ -20,6 +20,5 @@
 [format]
     pretty = oneline
 
-
-# vim:set ft=cfg:
+# vim:set ft=gitconfig:
 

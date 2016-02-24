@@ -21,3 +21,5 @@ alias aria2c="aria2c --dir=$HOME/Downloads/aria2c"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 alias cdt="cd /tmp"
+# virtuelanvwrapper
+alias lsvirtualenv="lsvirtualenv -b"

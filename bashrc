@@ -24,10 +24,6 @@ shopt -s checkwinsize
 # }}}
 # alias and functions {{{
 # other {{{
-any(){
-    # http://www.commandlinefu.com/commands/view/13950
-    ps aux | grep -E "[${1:0:1}]${1:1}|^USER";
-}
 alias r="source ~/.bashrc && reset"
 alias info="info --vi-keys"
 alias serve_dir="python3 -m http.server"

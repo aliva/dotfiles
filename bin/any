@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # http://www.commandlinefu.com/commands/view/13950
-ps aux | grep -E "[${1:0:1}]${1:1}|^USER"
+ps aux | grep -E "[${1:0:1}]${1:1}|^USER" | grep -v "any $1"

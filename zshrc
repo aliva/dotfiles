@@ -70,10 +70,15 @@ export PROJECT_HOME="$HOME/Workspace/"
 # plugins
 plugins=(
     autojump
+    command-not-found
+    django
     git
+    git-extras
     mosh
+    python
     sudo
     pip
+    vagrant
     virtualenvwrapper
     # custom plugins
     invoke

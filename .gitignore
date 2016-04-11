@@ -1,3 +1,14 @@
+# atom
+atom/blob-store
+atom/compile-cache
+atom/dev
+atom/nohup.out
+atom/packages
+atom/storage
+atom/.apm
+atom/.npm
+atom/.node-gyp
+
 # fish
 fish/fishd.*
 fish/fish_history

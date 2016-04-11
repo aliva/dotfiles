@@ -1,0 +1,4 @@
+activate-power-mode@0.4.1
+atom-jinja2@0.5.0
+minimap@4.21.0
+

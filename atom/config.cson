@@ -1,0 +1,38 @@
+"*":
+  "activate-power-mode":
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake:
+      enabled: false
+  autosave:
+    enabled: true
+  core:
+    autoHideMenuBar: true
+    ignoredNames: [
+      ".git"
+      ".vagrant"
+      "node_modules"
+    ]
+    projectHome: "/home/ali/Workspace"
+  editor:
+    invisibles: {}
+    showLineNumbers: false
+    softWrap: true
+    tabLength: 4
+  "linter-ansible-linting": {}
+  "linter-ansible-syntax": {}
+  "markdown-preview": {}
+  minimap:
+    displayPluginsControls: false
+  "tree-view":
+    autoReveal: true
+    focusOnReveal: false
+    hideIgnoredNames: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+".source.yaml":
+  editor:
+    tabLength: 2

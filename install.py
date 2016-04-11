@@ -9,6 +9,7 @@ except ImportError:
     from urllib2 import urlopen
 
 links = {
+    "atom": 0,
     "ackrc": 0,
     "bashrc": 0,
     "cow": 0,

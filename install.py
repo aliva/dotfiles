@@ -17,7 +17,6 @@ links = {
     "hgrc": 0,
     "inputrc": 0,
     "profile": 0,
-    #"torrc": 0,
     #"vim": 0,
     "tmux.conf": 0,
     "vimrc": 0,
@@ -26,22 +25,10 @@ links = {
 }
 
 downloads = {
-    # vim plug
-    #"vim/autoload/plug.vim" : "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim",
-
-    # bash autocompleion
-    # "bash-scripts/mercurial.bash" : "http://www.selenic.com/hg/raw-file/tip/contrib/bash_completion",
-    # "bash-scripts/pip.bash" : "https://raw.githubusercontent.com/ekalinin/pip-bash-completion/master/pip",
-    # "bash-scripts/django.bash" : "https://github.com/django/django/raw/master/extras/django_bash_completion",
-    # "bash-scripts/invoke.bash" : "https://raw.githubusercontent.com/pyinvoke/invoke/master/completion/bash",
-    # "bash-scripts/celery.bash" : "https://raw.githubusercontent.com/celery/celery/master/extra/bash-completion/celery.bash",
-    # "bash-scripts/go.bash" : "https://github.com/kura/go-bash-completion/raw/master/etc/bash_completion.d/go",
-
     # zsh
     "zsh/plugins/invoke/invoke.plugin.zsh": "https://github.com/pyinvoke/invoke/raw/master/completion/zsh",
 
     # mine
-    # "bash-scripts/pimp.bash": "https://github.com/aliva/pimp/raw/master/pimp.sh",
     "bin/rip-flac-to-mp3": "https://gist.githubusercontent.com/aliva/1038a42c779b0f69c471/raw/rip-flac-to-mp3",
     "bin/hiweb": "https://gist.githubusercontent.com/aliva/d6380cda9e1561190f7c/raw/hiweb",
 }

@@ -1,4 +1,21 @@
 activate-power-mode@0.4.1
+atom-fuzzy-grep@0.13.0
 atom-jinja2@0.5.0
+auto-detect-indentation@1.0.0
+autocomplete-python@1.7.2
+expose@0.11.1
+file-icons@1.7.1
+git-plus@5.13.4
+git-time-machine@1.4.1
+highlight-selected@0.11.2
+linter@1.11.4
+linter-flake8@1.13.0
+linter-pep8@1.2.1
 minimap@4.21.0
+minimap-highlight-selected@4.4.0
+pigments@0.26.0
+project-manager@2.9.7
+tab-numbers@0.3.0
+todo-show@1.4.0
+vim-mode@0.65.0
 

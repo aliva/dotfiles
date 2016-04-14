@@ -1,6 +1,7 @@
 # atom
 atom/blob-store
 atom/compile-cache
+atom/projects.*.cson
 atom/dev
 atom/nohup.out
 atom/packages

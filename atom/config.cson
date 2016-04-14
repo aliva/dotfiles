@@ -6,14 +6,28 @@
       totalCount: {}
     screenShake:
       enabled: false
+  "atom-fuzzy-grep": {}
+  "autocomplete-python": {}
   autosave:
     enabled: true
   core:
     autoHideMenuBar: true
+    disabledPackages: [
+      "vim-mode"
+    ]
     ignoredNames: [
       ".git"
       ".vagrant"
       "node_modules"
+      ".tox"
+      ".idea"
+      ".coverage"
+      ".coverage.*"
+    ]
+    packagesWithKeymapsDisabled: [
+      "project-manager"
+      "expose"
+      "fuzzy-finder"
     ]
     projectHome: "/home/ali/Workspace"
   editor:
@@ -21,16 +35,28 @@
     showLineNumbers: false
     softWrap: true
     tabLength: 4
+  "fuzzy-finder": {}
+  "git-diff": {}
+  "git-plus": {}
   "linter-ansible-linting": {}
   "linter-ansible-syntax": {}
+  "linter-flake8": {}
+  "linter-pep8": {}
   "markdown-preview": {}
   minimap:
     displayPluginsControls: false
+  "project-manager":
+    closeCurrent: true
+    environmentSpecificProjects: true
+    showPath: false
+    sortBy: "last modified"
+  "todo-show": {}
   "tree-view":
     autoReveal: true
     focusOnReveal: false
     hideIgnoredNames: true
     squashDirectoryNames: true
+  "vim-mode": {}
   welcome:
     showOnStartup: false
 ".source.yaml":

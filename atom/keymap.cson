@@ -29,3 +29,27 @@
 'atom-text-editor:not([mini])':
   'ctrl-d': 'editor:delete-line'
   'f1': 'line-numbers:toggle'
+
+'.platform-linux':
+  'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-b': 'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-shift-B': 'fuzzy-finder:toggle-git-status-finder'
+  'ctrl-shift-P': 'project-manager:list-projects'
+  'ctrl-shift-E': 'expose:toggle'
+
+'.platform-linux, .platform-linux .command-palette atom-text-editor':
+  'ctrl-p': 'command-palette:toggle'
+
+'.expose-view':
+  '1': 'expose:activate-1'
+  '2': 'expose:activate-2'
+  '3': 'expose:activate-3'
+  '4': 'expose:activate-4'
+  '5': 'expose:activate-5'
+  '6': 'expose:activate-6'
+  '7': 'expose:activate-7'
+  '8': 'expose:activate-8'
+  '9': 'expose:activate-9'
+
+'.fuzzy-finder atom-text-editor[mini]':
+  'shift-enter': 'fuzzy-finder:invert-confirm'

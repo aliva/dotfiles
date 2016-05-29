@@ -15,7 +15,6 @@ minimap@4.24.3
 minimap-highlight-selected@4.4.0
 pigments@0.27.1
 project-manager@2.9.7
-python-tools@0.6.7
 racer@0.20.0
 tab-numbers@0.3.0
 todo-show@1.6.0

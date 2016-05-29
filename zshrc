@@ -82,6 +82,7 @@ plugins=(
     virtualenvwrapper
     # custom plugins
     invoke
+    zsh-autosuggestions
 )
 
 

@@ -6,8 +6,10 @@
       totalCount: {}
     screenShake:
       enabled: false
+  "advanced-open-file": {}
   "atom-fuzzy-grep": {}
-  "autocomplete-python": {}
+  "autocomplete-python":
+    pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python;"
   autosave:
     enabled: true
   core:
@@ -23,33 +25,50 @@
       ".idea"
       ".coverage"
       ".coverage.*"
+      "__pycache__"
+      "*.pyc"
     ]
     packagesWithKeymapsDisabled: [
       "project-manager"
       "expose"
       "fuzzy-finder"
+      "git-time-machine"
+      "activate-power-mode"
     ]
     projectHome: "/home/ali/Workspace"
   editor:
+    fontSize: 11
     invisibles: {}
-    showLineNumbers: false
     softWrap: true
     tabLength: 4
+  "exception-reporting":
+    userId: "e3348356-51b5-f3a4-ec36-f97868c0e4d9"
   "fuzzy-finder": {}
   "git-diff": {}
   "git-plus": {}
+  linter:
+    alwaysTakeMinimumSpace: false
+    errorPanelHeight: 100
+    gutterPosition: "Left"
+    showErrorPanel: false
+    statusIconPosition: "Right"
   "linter-ansible-linting": {}
   "linter-ansible-syntax": {}
   "linter-flake8": {}
+  "linter-jshint": {}
   "linter-pep8": {}
+  "linter-rust": {}
   "markdown-preview": {}
   minimap:
     displayPluginsControls: false
+  "pretty-json": {}
   "project-manager":
     closeCurrent: true
     environmentSpecificProjects: true
     showPath: false
     sortBy: "last modified"
+  "python-tools": {}
+  racer: {}
   "todo-show": {}
   "tree-view":
     autoReveal: true
@@ -59,6 +78,12 @@
   "vim-mode": {}
   welcome:
     showOnStartup: false
+".console.python.text":
+  editor:
+    tabLength: 4
+".python.text.traceback":
+  editor:
+    tabLength: 4
 ".source.yaml":
   editor:
     tabLength: 2

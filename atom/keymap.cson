@@ -26,6 +26,9 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
+'body':
+  'ctrl-q': 'unset!'
+
 'atom-text-editor:not([mini])':
   'ctrl-d': 'editor:delete-line'
   'f1': 'line-numbers:toggle'

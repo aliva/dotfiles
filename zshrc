@@ -75,6 +75,8 @@ plugins=(
     git
     git-extras
     mosh
+    node
+    npm
     python
     sudo
     pip
@@ -86,10 +88,28 @@ plugins=(
 )
 
 
-# User configuration
-
-export PATH="$HOME/.bin/android-studio/bin:$HOME/.bin/android-sdk-linux/tools:$HOME/Workspace/dotfiles/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-# export MANPATH="/usr/local/man:$MANPATH"
+PATHES=(
+    $HOME/.local/bin
+    $HOME/Workspace/dotfiles/bin
+    $HOME/.bin/android-studio/bin
+    $HOME/.bin/android-sdk-linux/tools
+    $HOME/.cargo/bin
+    /usr/local/sbin
+    /usr/local/bin
+    /usr/sbin
+    /usr/bin
+    /sbin
+    /bin
+    /usr/games
+    /usr/local/games
+)
+unset PATH
+for p in $PATHES
+do
+    PATH="$PATH:$p"
+done
+export PATH
+unset PATHES
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +128,5 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export RUST_SRC_PATH=/home/ali/Workspace/src/rust/src/

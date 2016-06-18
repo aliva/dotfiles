@@ -1,6 +1,6 @@
 [ui]
 # that's me!
-username = Ali Vakilzade <ali@vakilzade.ir>
+username = Ali Vakilzade <ali@vakilzade.com>
 
 # one ignore file to rule them all
 ignore = ~/Workspace/dotfiles/hgignore

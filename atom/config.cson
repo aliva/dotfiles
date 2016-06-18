@@ -27,20 +27,24 @@
       ".coverage.*"
       "__pycache__"
       "*.pyc"
+      "._*"
+      "htmlcov"
     ]
     packagesWithKeymapsDisabled: [
-      "project-manager"
       "expose"
       "fuzzy-finder"
       "git-time-machine"
       "activate-power-mode"
+      "project-manager"
     ]
     projectHome: "/home/ali/Workspace"
   editor:
     fontSize: 11
     invisibles: {}
+    showIndentGuide: true
     softWrap: true
     tabLength: 4
+    zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "e3348356-51b5-f3a4-ec36-f97868c0e4d9"
   "fuzzy-finder": {}
@@ -57,7 +61,8 @@
   "linter-flake8": {}
   "linter-jshint": {}
   "linter-pep8": {}
-  "linter-rust": {}
+  "linter-rust":
+    cargoCommand: "clippy"
   "markdown-preview": {}
   minimap:
     displayPluginsControls: false
@@ -66,9 +71,11 @@
     closeCurrent: true
     environmentSpecificProjects: true
     showPath: false
-    sortBy: "last modified"
+    sortBy: "title"
   "python-tools": {}
-  racer: {}
+  racer:
+    racerBinPath: "/home/ali/.cargo/bin/racer"
+    rustSrcPath: "/home/ali/Workspace/src/rust/src/"
   "todo-show": {}
   "tree-view":
     autoReveal: true

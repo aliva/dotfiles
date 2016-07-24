@@ -1,3 +1,21 @@
 "*":
+  "activate-power-mode":
+    screenShake:
+      enabled: false
+  core:
+    autoHideMenuBar: true
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "__pycache__"
+      "Thumbs.db"
+    ]
+    projectHome: "/home/ali/Workspace"
+  editor:
+    softWrap: true
+    tabLength: 4
   welcome:
     showOnStartup: false

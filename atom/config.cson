@@ -2,6 +2,9 @@
   "activate-power-mode":
     screenShake:
       enabled: false
+  "autocomplete-python":
+    pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python;"
+    showTooltips: true
   core:
     autoHideMenuBar: true
     ignoredNames: [

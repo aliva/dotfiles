@@ -3,8 +3,7 @@
     screenShake:
       enabled: false
   "autocomplete-python":
-    pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python;"
-    showTooltips: true
+    pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python;/usr/bin/python3"
   core:
     autoHideMenuBar: true
     ignoredNames: [
@@ -13,26 +12,38 @@
       ".svn"
       ".DS_Store"
       "._*"
-      "__pycache__"
-      "Thumbs.db"
+      "Thumbs.d"
+      "*.pyc"
+    ]
+    packagesWithKeymapsDisabled: [
+      "highlight-selected"
     ]
     projectHome: "/home/ali/Workspace/"
   editor:
     fontSize: 12
+    scrollPastEnd: true
+    showIndentGuide: true
     softWrap: true
-    tabLength: 4
+    zoomFontWhenCtrlScrolling: false
+  linter:
+    showErrorPanel: false
   minimap:
     plugins:
       bookmarks: true
       bookmarksDecorationsZIndex: 0
       cursorline: true
       cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
       "git-diff": true
       "git-diffDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
+    scrollAnimation: true
+  "minimap-git-diff":
+    useGutterDecoration: true
   "project-plus":
     projectHome: " /home/ali/Workspace/"
     showPath: true

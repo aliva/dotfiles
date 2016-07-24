@@ -91,6 +91,7 @@ plugins=(
 PATHES=(
     $HOME/.local/bin
     $HOME/Workspace/dotfiles/bin
+    $HOME/.config/pythonuserbase/bin/
     $HOME/.bin/android-studio/bin
     $HOME/.bin/android-sdk-linux/tools
     $HOME/.cargo/bin
@@ -130,3 +131,4 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export RUST_SRC_PATH=/home/ali/Workspace/src/rust/src/
+export PYTHONUSERBASE=/home/ali/.config/pythonuserbase/

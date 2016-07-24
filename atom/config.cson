@@ -16,9 +16,25 @@
       "__pycache__"
       "Thumbs.db"
     ]
-    projectHome: "/home/ali/Workspace"
+    projectHome: "/home/ali/Workspace/"
   editor:
+    fontSize: 12
     softWrap: true
     tabLength: 4
+  minimap:
+    plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+  "project-plus":
+    projectHome: " /home/ali/Workspace/"
+    showPath: true
   welcome:
     showOnStartup: false

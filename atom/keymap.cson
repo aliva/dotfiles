@@ -1,5 +1,6 @@
 '.platform-linux':
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-shift-p': 'project-plus:toggle-project-finder'
 
 'atom-text-editor:not([mini])':
   'ctrl-d': 'editor:delete-line'

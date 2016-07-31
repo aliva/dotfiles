@@ -20,6 +20,9 @@
       ".coverage"
       "__pycache__"
       "*.pyc"
+      ".eggs"
+      ".idea"
+      "*.egg-info"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"

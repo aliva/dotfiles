@@ -5,3 +5,7 @@
 'atom-text-editor:not([mini])':
   'ctrl-d': 'editor:delete-line'
   'f1': 'line-numbers:toggle'
+
+'.tree-view':
+  'ctrl-h': 'tree-view:toggle-vcs-ignored-files'
+  'left': 'tree-view:recursive-collapse-directory'

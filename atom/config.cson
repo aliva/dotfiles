@@ -23,6 +23,7 @@
       ".eggs"
       ".idea"
       "*.egg-info"
+      "node_modules"
     ]
     packagesWithKeymapsDisabled: [
       "highlight-selected"
@@ -34,8 +35,8 @@
     showIndentGuide: true
     softWrap: true
     zoomFontWhenCtrlScrolling: false
-  linter:
-    showErrorPanel: false
+  linter: {}
+  "linter-jshint": {}
   minimap:
     plugins:
       bookmarks: true
@@ -57,5 +58,6 @@
     showPath: true
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

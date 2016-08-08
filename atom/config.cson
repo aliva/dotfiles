@@ -35,7 +35,8 @@
     showIndentGuide: true
     softWrap: true
     zoomFontWhenCtrlScrolling: false
-  linter: {}
+  linter:
+    showErrorPanel: false
   "linter-jshint": {}
   minimap:
     plugins:

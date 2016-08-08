@@ -4,7 +4,7 @@
   'ctrl-shift-p': 'project-plus:toggle-project-finder'
 
 'atom-text-editor:not([mini])':
-  'ctrl-d': 'editor:delete-line'
+  # 'ctrl-d': 'editor:delete-line'
   'f1': 'line-numbers:toggle'
 
 '.tree-view':

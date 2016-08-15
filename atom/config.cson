@@ -55,10 +55,10 @@
     scrollAnimation: true
   "minimap-git-diff": {}
   "project-plus":
+    newWindow: true
     projectHome: " /home/ali/Workspace/"
     showPath: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

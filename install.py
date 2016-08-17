@@ -15,7 +15,6 @@ links = {
     "cow": 0,
     "gitconfig": 0,
     "hgrc": 0,
-    "inputrc": 0,
     "isort.cfg": 0,
     "profile": 0,
     #"vim": 0,

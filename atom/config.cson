@@ -2,6 +2,10 @@
   "activate-power-mode":
     screenShake:
       enabled: false
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    useCoreMovementCommands: false
   "autocomplete-python":
     pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python;/usr/bin/python3"
   autosave:
@@ -35,6 +39,8 @@
     showIndentGuide: true
     softWrap: true
     zoomFontWhenCtrlScrolling: false
+  "git-plus":
+    splitPane: "Right"
   linter:
     showErrorPanel: false
   "linter-jshint": {}
@@ -54,6 +60,8 @@
       linterDecorationsZIndex: 0
     scrollAnimation: true
   "minimap-git-diff": {}
+  "project-manager":
+    sortBy: "last modified"
   "project-plus":
     newWindow: true
     projectHome: " /home/ali/Workspace/"

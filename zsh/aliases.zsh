@@ -1,11 +1,11 @@
 # ack
 alias ack="ack-grep"
 # apt
-alias apti="sudo apt-get install"
-alias apty="sudo apt-get update"
-alias aptu="sudo apt-get upgrade"
-alias aptdu="sudo apt-get dist-upgrade"
-alias apts="apt-cache search"
+alias apti="sudo apt install"
+alias apty="sudo apt update"
+alias aptu="sudo apt upgrade"
+alias aptdu="sudo apt dist-upgrade"
+alias apts="apt search"
 # date
 alias ymd="date +%Y-%m-%d"
 alias jymd="jdate +%Y-%m-%d"

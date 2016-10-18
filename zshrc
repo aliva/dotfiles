@@ -74,6 +74,8 @@ plugins=(
     django
     git
     git-extras
+    go
+    golang
     mosh
     node
     npm
@@ -95,6 +97,7 @@ PATHES=(
     $HOME/.bin/android-studio/bin
     $HOME/.bin/android-sdk-linux/tools
     $HOME/.cargo/bin
+    $HOME/.config/gopath/bin/
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin
@@ -132,3 +135,4 @@ source $ZSH/oh-my-zsh.sh
 
 export RUST_SRC_PATH=/home/ali/Workspace/src/rust/src/
 export PYTHONUSERBASE=/home/ali/.config/pythonuserbase/
+export GOPATH=/home/ali/.config/gopath

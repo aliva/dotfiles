@@ -1,7 +1,11 @@
 "*":
   "activate-power-mode":
+    comboMode:
+      enabled: false
     screenShake:
       enabled: false
+  "atom-autocomplete-php":
+    binComposer: "/usr/bin/composer"
   "autocomplete-plus":
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
@@ -33,6 +37,11 @@
       "highlight-selected"
     ]
     projectHome: "/home/ali/Workspace/"
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
   editor:
     fontSize: 12
     scrollPastEnd: true
@@ -41,9 +50,18 @@
     zoomFontWhenCtrlScrolling: false
   "git-plus":
     splitPane: "Right"
+  "go-config":
+    gopath: "/home/ali/.config/gopath"
+  "go-plus":
+    currentPanelHeight: "28.645833333333332vh"
+    panelDisplayMode: "closed"
+  gofmt:
+    formatOnSave: false
+    formatTool: "gofmt"
   linter:
     showErrorPanel: false
   "linter-jshint": {}
+  "linter-php": {}
   minimap:
     plugins:
       bookmarks: true
@@ -58,15 +76,39 @@
       "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
     scrollAnimation: true
   "minimap-git-diff": {}
+  "new-tab":
+    position: "Center"
   "project-manager":
     sortBy: "last modified"
   "project-plus":
     newWindow: true
     projectHome: " /home/ali/Workspace/"
     showPath: true
+  "python-iresolve": {}
+  "seti-syntax":
+    themeColor: "Steel"
+  "seti-ui":
+    compactView: true
+    fileIcons: false
+    font: "Default Atom Font"
+    themeColor: "Steel"
+  "symbols-tree-view":
+    autoHide: true
+    autoToggle: true
+    scrollAnimation: false
+  "terminal-plus":
+    core: {}
+    toggles:
+      autoClose: true
   "tree-view":
     hideIgnoredNames: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
+".go.source":
+  editor:
+    softWrap: true

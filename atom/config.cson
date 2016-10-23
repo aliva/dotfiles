@@ -83,6 +83,7 @@
   "new-tab":
     position: "Center"
   "project-manager":
+    alwaysOpenInSameWindow: true
     sortBy: "last modified"
   "project-plus":
     newWindow: true

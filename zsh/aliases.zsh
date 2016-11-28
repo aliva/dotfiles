@@ -4,7 +4,6 @@ alias ack="ack-grep"
 alias apti="sudo apt install"
 alias apty="sudo apt update"
 alias aptu="sudo apt upgrade"
-alias aptdu="sudo apt dist-upgrade"
 alias apts="apt search"
 # date
 alias ymd="date +%Y-%m-%d"

@@ -1,3 +1,5 @@
+# vim:set ft=gitconfig:
+
 [user]
     email = ali@vakilzade.com
     name = Ali Vakilzade
@@ -19,6 +21,5 @@
     status = auto
 [format]
     pretty = oneline
-
-# vim:set ft=gitconfig:
-
+[commit]
+    gpgsign = true

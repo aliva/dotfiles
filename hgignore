@@ -10,11 +10,12 @@ bzr-orphans
 *~
 # IntijIdea
 .idea
-# komodo project files
+# komodo
 *.komodoproject
 # node
 node_modules
 npm-debug.log
+yarn.lock
 # python
 __pycache__
 *.pyc
@@ -29,3 +30,6 @@ venv-*
 .vagrant
 # vim
 *.swp
+# vs
+code
+.vscode

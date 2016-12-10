@@ -9,19 +9,20 @@ except ImportError:
     from urllib2 import urlopen
 
 links = {
-    "atom": 0,
     "ackrc": 0,
+    "aria2.conf": "aria2/aria2.conf",
+    "atom": 0,
     "bashrc": 0,
     "cow": 0,
+    "editorconfig": 0,
     "gitconfig": 0,
     "hgrc": 0,
     "isort.cfg": 0,
     "profile": 0,
-    #"vim": 0,
     "tmux.conf": 0,
     "vimrc": 0,
     "zshrc": 0,
-    "aria2.conf": "aria2/aria2.conf",
+    # "vim": 0,
 }
 
 downloads = {
@@ -36,8 +37,8 @@ downloads = {
 ROOT = check_output("git rev-parse --show-toplevel".split(" ")).decode("utf-8").strip()
 HOME = os.path.expanduser("~")
 
-print ("ROOT %s" % ROOT)
-print ("HOME %s" % HOME)
+print("ROOT %s" % ROOT)
+print("HOME %s" % HOME)
 
 # DOWNLOAD
 if "--get" in sys.argv:
@@ -53,14 +54,14 @@ if "--get" in sys.argv:
 
 # GENRATE
 with open(os.path.join(ROOT, "gitignore"), "r") as git:
-    print ("GENERATING hgignore")
+    print("GENERATING hgignore")
     with open(os.path.join(ROOT, "hgignore"), "w") as hg:
         hg.write("syntax:glob\n")
         hg.write(git.read())
 
 # LINK
 for link in links:
-    print ("LINKING '%s'" % link)
+    print("LINKING '%s'" % link)
     if links[link] == 0:
         dest = ".%s" % link
     else:

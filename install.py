@@ -21,6 +21,7 @@ links = {
     "profile": 0,
     "tmux.conf": 0,
     "vimrc": 0,
+    "vscode": "config/Code/User",
     "zshrc": 0,
     # "vim": 0,
 }

@@ -1,0 +1,60 @@
+[
+  /* quick open */
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenNavigatePrevious",
+    "when": "inQuickOpen"
+  },
+  /* command box */
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.showCommands"
+  },
+  /* next item in auto complte */
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  /* toggle sidebar */
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  /* sort lines */
+  {
+    "key": "f5",
+    "command": "editor.action.sortLinesAscending",
+    "when": "editorTextFocus"
+  },
+  /* python plugin - isort */
+  {
+    "key": "ctrl+alt+s",
+    "command": "python.sortImports",
+    "when": "editorTextFocus"
+  },
+  /* git plugin - list projects */
+  {
+    "key": "ctrl+shift+p",
+    "command": "gitProjectManager.openProject"
+  }
+]

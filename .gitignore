@@ -11,6 +11,9 @@ atom/.apm
 atom/.npm
 atom/.node-gyp
 
+# cow
+cow/stat*
+
 # fish
 fish/fishd.*
 fish/fish_history
@@ -28,6 +31,9 @@ komodoedit/*/autosave
 komodoedit/*/codeintel
 komodoedit/*/XRE
 
+# local
+*.local
+
 # vim
 /vim/.netrwhist
 /vim/bundle
@@ -38,8 +44,7 @@ komodoedit/*/XRE
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
 
-# local
-*.local
 
-# cow
-cow/stat*
+# vscode
+/vscode/workspaceStorage
+/vscode/gpm*

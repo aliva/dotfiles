@@ -85,7 +85,6 @@ plugins=(
     vagrant
     virtualenvwrapper
     # custom plugins
-    invoke
     zsh-autosuggestions
 )
 

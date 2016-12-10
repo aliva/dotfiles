@@ -27,15 +27,13 @@ links = {
 }
 
 downloads = {
-    # zsh
-    "zsh/plugins/invoke/invoke.plugin.zsh": "https://github.com/pyinvoke/invoke/raw/master/completion/zsh",
-
-    # mine
-    "bin/rip-flac-to-mp3": "https://gist.githubusercontent.com/aliva/1038a42c779b0f69c471/raw/rip-flac-to-mp3",
-    "bin/hiweb": "https://gist.githubusercontent.com/aliva/d6380cda9e1561190f7c/raw/hiweb",
 }
 
-ROOT = check_output("git rev-parse --show-toplevel".split(" ")).decode("utf-8").strip()
+ROOT = check_output(
+    "git rev-parse --show-toplevel".split(" ")
+).decode(
+    "utf-8"
+).strip()
 HOME = os.path.expanduser("~")
 
 print("ROOT %s" % ROOT)

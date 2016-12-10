@@ -1,5 +1,0 @@
-#!/bin/sh
-
-curl panel.hiweb.ir/panel.php 2>/dev/null | grep "400px.*warning" | \
-    sed -e 's/<[^>]*>//g' | sed -e 's/اعتبار باقیمانده شما//g' | \
-    sed -e 's/مگابایت/M/' | sed -e 's/گیگابایت/G/' | sed -e 's/^\s*//'

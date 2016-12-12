@@ -12,14 +12,15 @@
   "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/__pycache__": true,
-    "**/*.egg-info": true,
     "**/.DS_Store": true,
-    "**/*.pyc": true,
     "**/.git": true,
     "**/.hg": true,
+    "**/.idea": true,
     "**/.svn": true,
     "**/.vagrant": true,
-    "**/.vscode": true
+    "**/.vscode": true,
+    "**/*.egg-info": true,
+    "**/*.pyc": true
   },
   "files.trimTrailingWhitespace": true,
   /* python plugin */

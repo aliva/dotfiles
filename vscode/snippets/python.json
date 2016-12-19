@@ -18,7 +18,7 @@
     "prefix": "template",
     "body": [
       "#!/usr/bin/env python",
-      "# vim: ts=4: sw=4: et",
+      "# vim: ts=4 sw=4 et",
       "",
           "__author__ = \"Ali Vakilzade <ali@vakilzade.com>\"",
       "",
@@ -28,7 +28,7 @@
   "pudb" : {
     "prefix": "pudb",
     "body": [
-      "import pdb; pdb.set_trace()$1"
+      "import pudb; pudb.set_trace()$1"
     ]
   }
 }

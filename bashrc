@@ -13,9 +13,6 @@ export HISTFILESIZE=$HISTSIZE
 # export CDPATH=$CDPATH:$HOME/Workspace:$HOME
 # I kinda like vim
 export EDITOR=vim
-# I had some conflicts while system locale was fa_IR
-#export LANG=en_US.utf8
-#export LC_ALL=$LANG
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -115,7 +112,7 @@ if ! shopt -oq posix; then
     fi
 fi
 # }}}
-PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
+# PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
 # local bashrc {{{
 if [[ -f ~/Workspace/dotfiles/bashrc.local ]]
 then

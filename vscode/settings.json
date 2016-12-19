@@ -22,6 +22,7 @@
     "**/*.egg-info": true,
     "**/*.pyc": true
   },
+  "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   /* python plugin */
   "python.linting.pylintEnabled": false,

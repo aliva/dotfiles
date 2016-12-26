@@ -13,7 +13,6 @@ links = {
     "aria2.conf": "aria2/aria2.conf",
     "atom": 0,
     "bashrc": 0,
-    "cow": 0,
     "editorconfig": 0,
     "gitconfig": 0,
     "hgrc": 0,

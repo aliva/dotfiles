@@ -21,6 +21,7 @@ links = {
     "tmux.conf": 0,
     "vimrc": 0,
     "vscode": "config/Code/User",
+    "Xmodmap": 0,
     "zshrc": 0,
     # "vim": 0,
 }

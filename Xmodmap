@@ -1,0 +1,37 @@
+! https://www.emacswiki.org/emacs/SwapControlAltAndCapsLock#toc8
+! output taken from:
+! xmodmap -pke | egrep '(Control|Super|Alt|Menu)'
+! Use to set keycodes correctly below. List reordered to match
+! keys from left to right.
+
+! keycode  37 = Control_L NoSymbol Control_L
+! keycode 133 = Super_L NoSymbol Super_L
+! keycode  64 = Alt_L Meta_L Alt_L Meta_L
+! keycode 108 = Alt_R Meta_R Alt_R Meta_R
+! keycode 135 = Menu
+! keycode 105 = Control_R NoSymbol Control_R
+! keycode 134 = Super_R NoSymbol Super_R
+! keycode  66 = CapsLock
+
+! First clear all modifiers, caps lock & control
+clear lock
+clear control
+clear mod1
+clear mod4
+
+keycode  37 = Super_L
+keycode 133 = Alt_L Meta_L
+keycode  64 = Control_L
+keycode 108 = Control_R
+keycode 135 = Alt_R Meta_R
+keycode 105 = Menu
+keycode 134 = Alt_R Meta_R
+! keycode  66 = BackSpace
+! keycode  66 = Alt_R Meta_R
+keycode  66 = Return
+
+! We need to set keycodes first, as some programs (emacs!) read
+! the key names and seem to ignore what's below.
+add mod1    = Alt_R Alt_L Meta_R Meta_L
+add mod4    = Super_R Super_L Menu
+add control = Control_R Control_L

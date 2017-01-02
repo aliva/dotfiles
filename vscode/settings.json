@@ -30,6 +30,7 @@
   "python.linting.flake8Enabled": true,
   "python.workspaceSymbols.tagFilePath": "${workspaceRoot}/.vscode/tags",
   /* git project manager plugin */
+  "git.confirmSync": false,
   "gitProjectManager.baseProjectsFolders": [
     "/home/ali/Workspace/"
   ],

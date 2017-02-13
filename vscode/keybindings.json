@@ -1,4 +1,9 @@
 [
+  /* command box */
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.showCommands"
+  },
   /* quick open */
   {
     "key": "ctrl+o",
@@ -18,11 +23,6 @@
     "key": "ctrl+p",
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
-  },
-  /* command box */
-  {
-    "key": "ctrl+p",
-    "command": "workbench.action.showCommands"
   },
   /* next item in auto complte */
   {

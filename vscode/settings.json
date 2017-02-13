@@ -6,6 +6,7 @@
   /* show a ruler for col 80 for python */
   "editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 13,
+  "editor.lineNumbers": "off",
   "editor.renderIndentGuides": true,
   "editor.rulers": [80],
   /* hide these files in file manager */

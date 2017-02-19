@@ -1,40 +1,44 @@
 // Place your settings in this file to overwrite the default settings
 {
-  /* do not collect data */
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  /* show a ruler for col 80 for python */
-  "editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
-  "editor.fontSize": 13,
-  "editor.lineNumbers": "off",
-  "editor.renderIndentGuides": true,
-  "editor.rulers": [80],
-  /* hide these files in file manager */
-  "files.autoSave": "onFocusChange",
-  "files.exclude": {
-    "**/__pycache__": true,
-    "**/.DS_Store": true,
-    "**/.git": true,
-    "**/.hg": true,
-    "**/.idea": true,
-    "**/.svn": true,
-    "**/.vagrant": true,
-    "**/.vscode": true,
-    "**/*.egg-info": true,
-    "**/*.pyc": true
-  },
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  /* python plugin */
-  "python.linting.pylintEnabled": false,
-  "python.linting.pep8Enabled": false,
-  "python.linting.flake8Enabled": true,
-  "python.workspaceSymbols.tagFilePath": "${workspaceRoot}/.vscode/tags",
-  /* git project manager plugin */
-  "git.confirmSync": false,
-  "gitProjectManager.baseProjectsFolders": [
-    "/home/ali/Workspace/"
-  ],
-  "gitProjectManager.maxDepthRecursion": 1,
-  "gitProjectManager.storeRepositoriesBetweenSessions": true
+/* do not collect data */
+"telemetry.enableCrashReporter": false,
+"telemetry.enableTelemetry": false,
+/* show a ruler for col 80 for python */
+"editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+"editor.fontSize": 13,
+"editor.lineNumbers": "off",
+"editor.renderIndentGuides": true,
+"editor.rulers": [80],
+/* hide these files in file manager */
+"files.autoSave": "onFocusChange",
+"files.exclude": {
+  "**/__pycache__": true,
+  "**/.DS_Store": true,
+  "**/.git": true,
+  "**/.hg": true,
+  "**/.idea": true,
+  "**/.svn": true,
+  "**/.vagrant": true,
+  "**/.vscode": true,
+  "**/*.egg-info": true,
+  "**/*.pyc": true
+},
+"files.insertFinalNewline": true,
+"files.trimTrailingWhitespace": true,
+/* windows */
+"window.zoomLevel": 0,
+/* workbench */
+"workbench.welcome.enabled": false,
+/* python plugin */
+"python.linting.pylintEnabled": false,
+"python.linting.pep8Enabled": false,
+"python.linting.flake8Enabled": true,
+"python.workspaceSymbols.tagFilePath": "${workspaceRoot}/.vscode/tags",
+/* git project manager plugin */
+"git.confirmSync": false,
+"gitProjectManager.baseProjectsFolders": [
+  "/home/ali/Workspace/"
+],
+"gitProjectManager.maxDepthRecursion": 1,
+"gitProjectManager.storeRepositoriesBetweenSessions": true
 }

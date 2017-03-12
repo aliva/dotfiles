@@ -3,4 +3,4 @@
 
 # update pip stuff
 pip install pip -U
-pip install `pip list | cut -d " " -f 1` -U
+pip install `pip list --format=freeze | cut -d "=" -f 1` -U

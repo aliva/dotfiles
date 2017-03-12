@@ -132,6 +132,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export RUST_SRC_PATH=/home/ali/Workspace/src/rust/src/
-export PYTHONUSERBASE=/home/ali/.config/pythonuserbase/
-export GOPATH=/home/ali/.config/gopath
+export RUST_SRC_PATH=%HOME/Workspace/src/rust/src/
+export PYTHONUSERBASE=$HOME/.config/pythonuserbase/
+export PYTHONSTARTUP=$HOME/.pythonrc
+export GOPATH=$HOME/.config/gopath

@@ -7,6 +7,7 @@
 "editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
 "editor.lineNumbers": "off",
+"editor.minimap.enabled": true,
 "editor.renderIndentGuides": true,
 "editor.rulers": [80],
 /* hide these files in file manager */
@@ -28,17 +29,18 @@
 /* windows */
 "window.zoomLevel": 0,
 /* workbench */
+"workbench.iconTheme": "vscode-great-icons",
 "workbench.welcome.enabled": false,
 /* python plugin */
-"python.linting.pylintEnabled": false,
-"python.linting.pep8Enabled": false,
 "python.linting.flake8Enabled": true,
-"python.workspaceSymbols.tagFilePath": "${workspaceRoot}/.vscode/tags",
+"python.linting.pep8Enabled": false,
+"python.linting.pylintEnabled": false,
+"python.venvPath": "~/.virtualenvs/",
 /* git project manager plugin */
-"git.confirmSync": false,
 "gitProjectManager.baseProjectsFolders": [
-  "/home/ali/Workspace/"
+  "~/Workspace/"
 ],
+"git.confirmSync": false,
 "gitProjectManager.maxDepthRecursion": 1,
 "gitProjectManager.storeRepositoriesBetweenSessions": true
 }

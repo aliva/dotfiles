@@ -22,7 +22,8 @@
   "**/.vagrant": true,
   "**/.vscode": true,
   "**/*.egg-info": true,
-  "**/*.pyc": true
+  "**/*.pyc": true,
+  "**/node_modules": true
 },
 "files.insertFinalNewline": true,
 "files.trimTrailingWhitespace": true,

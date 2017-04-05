@@ -29,6 +29,7 @@
 /* windows */
 "window.zoomLevel": 0,
 /* workbench */
+"workbench.colorTheme": "Visual Studio Dark",
 "workbench.iconTheme": "vscode-great-icons",
 "workbench.welcome.enabled": false,
 /* python plugin */
@@ -41,6 +42,5 @@
   "~/Workspace/"
 ],
 "git.confirmSync": false,
-"gitProjectManager.maxDepthRecursion": 1,
-"gitProjectManager.storeRepositoriesBetweenSessions": true
+"gitProjectManager.maxDepthRecursion": 1
 }

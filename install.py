@@ -11,7 +11,6 @@ except ImportError:
 links = {
     "ackrc": 0,
     "aria2.conf": "aria2/aria2.conf",
-    "atom": 0,
     "bashrc": 0,
     "editorconfig": 0,
     "gitconfig": 0,

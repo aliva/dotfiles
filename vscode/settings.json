@@ -27,6 +27,7 @@
 "files.insertFinalNewline": true,
 "files.trimTrailingWhitespace": true,
 /* windows */
+"window.menuBarVisibility": "toggle",
 "window.zoomLevel": 0,
 /* workbench */
 "workbench.colorTheme": "Visual Studio Dark",

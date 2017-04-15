@@ -56,5 +56,9 @@
   {
     "key": "ctrl+shift+p",
     "command": "gitProjectManager.openProject"
+  },
+  {
+    "key": "f1",
+    "command": "settings.cycle.editor.lineNumbers"
   }
 ]

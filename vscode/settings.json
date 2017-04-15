@@ -43,5 +43,19 @@
   "~/Workspace/"
 ],
 "git.confirmSync": false,
-"gitProjectManager.maxDepthRecursion": 1
+"gitProjectManager.maxDepthRecursion": 1,
+/* cycle plugin */
+"settings.cycle": [
+  {
+    "id": "editor.lineNumbers",
+    "values": [
+      {
+        "editor.lineNumbers": "on"
+      },
+      {
+        "editor.lineNumbers": "off"
+      }
+    ]
+  }
+]
 }

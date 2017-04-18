@@ -21,5 +21,6 @@ alias pc="proxychains"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 alias cdt="cd /tmp"
-# virtuelanvwrapper
+# python
+alias pip-freeze='pip freeze | egrep -v "^(appdirs|packaging|pkg-resources|pyparsing|six)=="'
 alias lsvirtualenv="lsvirtualenv -b"

@@ -33,6 +33,8 @@
 "workbench.colorTheme": "Visual Studio Dark",
 "workbench.iconTheme": "vscode-great-icons",
 "workbench.welcome.enabled": false,
+/* git */
+"git.confirmSync": false,
 /* python plugin */
 "python.linting.flake8Enabled": true,
 "python.linting.pep8Enabled": false,
@@ -42,8 +44,8 @@
 "gitProjectManager.baseProjectsFolders": [
   "~/Workspace/"
 ],
-"git.confirmSync": false,
-"gitProjectManager.maxDepthRecursion": 1,
+"gitProjectManager.maxDepthRecursion": 4,
+"gitProjectManager.searchInsideProjects": false,
 /* cycle plugin */
 "settings.cycle": [
   {

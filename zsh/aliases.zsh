@@ -1,5 +1,3 @@
-# ack
-alias ack="ack-grep"
 # apt
 alias apti="sudo apt install"
 alias apty="sudo apt update"

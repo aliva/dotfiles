@@ -7,6 +7,7 @@
 "editor.fontSize": 13,
 "editor.lineNumbers": "off",
 "editor.minimap.enabled": true,
+"editor.multiCursorModifier": "ctrlCmd",
 "editor.renderIndentGuides": true,
 "editor.rulers": [80],
 /* hide these files in file manager */

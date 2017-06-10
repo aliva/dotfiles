@@ -34,6 +34,7 @@
 "workbench.welcome.enabled": false,
 /* git */
 "git.confirmSync": false,
+"git.enableSmartCommit": true,
 /* python plugin */
 "python.linting.flake8Enabled": true,
 "python.linting.pep8Enabled": false,
@@ -49,14 +50,7 @@
 "settings.cycle": [
   {
     "id": "editor.lineNumbers",
-    "values": [
-      {
-        "editor.lineNumbers": "on"
-      },
-      {
-        "editor.lineNumbers": "off"
-      }
-    ]
+    "values": [{"editor.lineNumbers": "on"},{"editor.lineNumbers": "off"}]
   }
 ]
 }

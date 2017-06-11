@@ -9,7 +9,7 @@
 "editor.minimap.enabled": true,
 "editor.multiCursorModifier": "ctrlCmd",
 "editor.renderIndentGuides": true,
-"editor.rulers": [80],
+"editor.rulers": [80, 120],
 /* hide these files in file manager */
 "files.autoSave": "onFocusChange",
 "files.exclude": {

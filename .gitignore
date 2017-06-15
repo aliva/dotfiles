@@ -1,49 +1,8 @@
-# atom
-atom/blob-store
-atom/compile-cache
-atom/projects.*.cson
-atom/projects.cson
-atom/dev
-atom/nohup.out
-atom/packages
-atom/storage
-atom/.apm
-atom/.npm
-atom/.node-gyp
-
-# cow
-cow/stat*
-
-# fish
-fish/fishd.*
-fish/fish_history
-fish/generated_completions/
-
-# komodo-edit
-komodoedit/*/*.bak
-komodoedit/*/*.lock
-komodoedit/*/*.log
-komodoedit/*/*.sqlite
-komodoedit/*/*.tmp
-komodoedit/*/*.xml
-komodoedit/*/*.xmlc
-komodoedit/*/autosave
-komodoedit/*/codeintel
-komodoedit/*/XRE
-
 # local
 *.local
 
-# vim
-/vim/.netrwhist
-/vim/bundle
-/vim/doc/
-/crontab/log
-/vim/plugged/
-
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
-
 
 # vscode
 /vscode/workspaceStorage

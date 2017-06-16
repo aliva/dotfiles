@@ -1,19 +1,34 @@
 "*":
+  "autocomplete-python":
+    pythonPaths: "$PROJECT/venv/bin/python;/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;/usr/bin/python3"
   core:
     autoHideMenuBar: true
     closeDeletedFileTabs: true
     closeEmptyWindows: false
     ignoredNames: [
       ".git"
+      ".idea"
+      ".vscode"
+    ]
+    packagesWithKeymapsDisabled: [
+      "command-palette"
     ]
     projectHome: "/home/ali/Workspace"
     telemetryConsent: "no"
     themes: [
-      "atom-light-ui"
-      "atom-light-syntax"
+      "one-light-ui"
+      "one-light-syntax"
     ]
+  editor:
+    fontFamily: "Sauce Code Pro"
+    fontSize: 12
   "exception-reporting":
     userId: "404ce4e6-bb6b-4e1d-86e2-0faa50339c29"
+  "linter-python": {}
+  "linter-ui-default":
+    panelHeight: 159
+    showPanel: true
+    showTooltip: false
   minimap:
     plugins:
       bookmarks: true

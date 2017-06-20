@@ -27,6 +27,8 @@
 },
 "files.insertFinalNewline": true,
 "files.trimTrailingWhitespace": true,
+/* search */
+"search.quickOpen.includeSymbols": true,
 /* windows */
 "window.menuBarVisibility": "toggle",
 "window.zoomLevel": 0,

@@ -10,8 +10,9 @@
 --ignore-dir=htmlcov/
 # nodejs
 --ignore-dir=node_modules/
-
+# po files
 --ignore-file=ext:po
 
+# custom file tyeps
 --type-set=json=.json
 --type-set=ini=.ini

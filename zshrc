@@ -81,6 +81,7 @@ plugins=(
     npm
     python
     sudo
+    tmuxinator
     pip
     vagrant
     virtualenvwrapper
@@ -135,3 +136,4 @@ source $ZSH/oh-my-zsh.sh
 export RUST_SRC_PATH=%HOME/Workspace/src/rust/src/
 export PYTHONUSERBASE=$HOME/.config/pythonuserbase/
 export PYTHONSTARTUP=$HOME/.pythonrc
+export EDITOR=vim

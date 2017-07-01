@@ -9,6 +9,8 @@
       ".git"
       ".idea"
       ".vscode"
+      "*.pyc"
+      "__pycache__"
     ]
     packagesWithKeymapsDisabled: [
       "command-palette"
@@ -27,7 +29,6 @@
   "linter-python": {}
   "linter-ui-default":
     panelHeight: 159
-    showPanel: true
     showTooltip: false
   minimap:
     plugins:

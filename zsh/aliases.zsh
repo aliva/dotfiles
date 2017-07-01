@@ -20,5 +20,6 @@ alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 alias cdt="cd /tmp"
 # python
-alias pip-freeze='pip freeze | egrep -v "^(appdirs|packaging|pkg-resources|pyparsing|six)=="'
 alias lsvirtualenv="lsvirtualenv -b"
+# tmux
+alias mux="tmuxinator"

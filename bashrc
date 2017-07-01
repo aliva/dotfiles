@@ -112,7 +112,6 @@ if ! shopt -oq posix; then
     fi
 fi
 # }}}
-# PS1='\[\033[00;36m\]↝ \[\033[00;33m\]\w \n\[\033[00;36m\]✎ \[\033[00m\]'
 # local bashrc {{{
 if [[ -f ~/Workspace/dotfiles/bashrc.local ]]
 then

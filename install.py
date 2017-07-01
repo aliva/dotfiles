@@ -16,14 +16,14 @@ links = {
     "gitconfig": 0,
     "hgrc": 0,
     "isort.cfg": 0,
-    "pythonrc": 0,
     "profile": 0,
+    "pythonrc": 0,
     "tmux.conf": 0,
     "vimrc": 0,
     "vscode": "config/Code/User",
-    "Xmodmap": 0,
     "zshrc": 0,
     # "vim": 0,
+    # "Xmodmap": 0,
 }
 
 downloads = {

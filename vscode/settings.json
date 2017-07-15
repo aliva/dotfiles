@@ -3,6 +3,7 @@
 "telemetry.enableCrashReporter": false,
 "telemetry.enableTelemetry": false,
 /* show a ruler for col 80 for python */
+"editor.autoIndent": true,
 "editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
 "editor.lineNumbers": "off",
@@ -14,6 +15,7 @@
 "files.autoSave": "onFocusChange",
 "files.exclude": {
   "**/__pycache__": true,
+  "**/.coverage": true,
   "**/.DS_Store": true,
   "**/.git": true,
   "**/.hg": true,
@@ -32,8 +34,9 @@
 /* windows */
 "window.menuBarVisibility": "toggle",
 "window.zoomLevel": 0,
+/* workbench */
 "workbench.iconTheme": "vscode-great-icons",
-"workbench.welcome.enabled": false,
+"workbench.startupEditor": "none",
 /* git */
 "git.confirmSync": false,
 "git.enableSmartCommit": true,

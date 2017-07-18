@@ -1,29 +1,7 @@
 [ui]
-# that's me!
 username = Ali Vakilzade <ali@vakilzade.com>
-
-# one ignore file to rule them all
 ignore = ~/Workspace/dotfiles/hgignore
 
-# at first it looked like a good idea to be verbose, I should say, it's not
-#verbose = True
-
-[alias]
-cm = commit --message
-pullu = pull --update
-
 [extensions]
-# I like colored terminal
 color =
-# enable convert exension
-hgext.convert =
-# I like progress bars
 progress =
-# use hg commands for git, yay!
-#hgext.bookmarks =
-#hggit =
-
-# hg-git config section
-[git]
-# remove the git damned repo
-intree = False

@@ -41,21 +41,25 @@
 "git.confirmSync": false,
 "git.enableSmartCommit": true,
 /* python plugin */
+"python.formatting.provider": "autopep8",
 "python.linting.flake8Enabled": true,
 "python.linting.pep8Enabled": false,
 "python.linting.pylintEnabled": false,
 "python.venvPath": "~/.virtualenvs/",
+/* cycle plugin */
+"settings.cycle": [
+  {
+    "id": "editor.lineNumbers",
+    "values": [
+      {"editor.lineNumbers": "on"},
+      {"editor.lineNumbers": "off"}
+    ]
+  }
+],
 /* git project manager plugin */
 "gitProjectManager.baseProjectsFolders": [
   "~/Workspace/"
 ],
 "gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false,
-/* cycle plugin */
-"settings.cycle": [
-  {
-    "id": "editor.lineNumbers",
-    "values": [{"editor.lineNumbers": "on"},{"editor.lineNumbers": "off"}]
-  }
-]
+"gitProjectManager.searchInsideProjects": false
 }

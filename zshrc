@@ -22,9 +22,10 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 
 #ZSH_THEME="random"
-#ZSH_THEME="sonicradish"
+ZSH_THEME='dollar/dollar'
+# ZSH_THEME="sonicradish"
 # ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -70,6 +71,7 @@ export PROJECT_HOME="$HOME/Workspace/"
 # plugins
 plugins=(
     autojump
+    battery
     command-not-found
     django
     git

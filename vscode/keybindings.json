@@ -67,5 +67,13 @@
     "key": "ctrl+f",
     "command": "-workbench.action.terminal.focusFindWidget",
     "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+[Backquote]",
+    "command": "workbench.action.terminal.toggleTerminal"
   }
 ]

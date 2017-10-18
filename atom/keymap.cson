@@ -1,4 +1,0 @@
-'.platform-linux':
-  'ctrl-p': 'command-palette:toggle'
-  'ctrl-o': 'fuzzy-finder:toggle-file-finder'
-  'ctrl-t': 'unset!' # fuzzy-finder:toggle-file-finder

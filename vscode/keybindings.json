@@ -1,79 +1,21 @@
 [
-  /* command box */
-  {
-    "key": "ctrl+p",
-    "command": "workbench.action.showCommands"
-  },
-  /* quick open */
-  {
-    "key": "ctrl+o",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+o",
-    "command": "workbench.action.quickOpenNavigateNext",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "workbench.action.quickOpenNavigateNext",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "workbench.action.quickOpenNavigatePrevious",
-    "when": "inQuickOpen"
-  },
-  /* next item in auto complte */
-  {
-    "key": "ctrl+n",
-    "command": "selectNextSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "selectPrevSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-  },
-  /* toggle sidebar */
-  {
-    "key": "ctrl+\\",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  /* sort lines */
-  {
-    "key": "f5",
-    "command": "editor.action.sortLinesAscending",
-    "when": "editorTextFocus"
-  },
-  /* python plugin - isort */
-  {
-    "key": "ctrl+alt+s",
-    "command": "python.sortImports",
-    "when": "editorTextFocus"
-  },
-  /* git plugin - list projects */
-  {
-    "key": "ctrl+shift+p",
-    "command": "gitProjectManager.openProject"
-  },
-  /* disable help */
+  /* toggle line numbers with f1 */
   {
     "key": "f1",
     "command": "settings.cycle.editor.lineNumbers"
   },
-  /* integrated termninal */
+  /* quick open */
   {
-    "key": "ctrl+f",
-    "command": "-workbench.action.terminal.focusFindWidget",
-    "when": "terminalFocus"
+    "command": "workbench.action.quickOpen",
+    "key": "ctrl+shift-r"
+  },
+  /* show commands */
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.showCommands"
   },
   {
     "key": "ctrl+shift+p",
     "command": "-workbench.action.showCommands"
-  },
-  {
-    "key": "ctrl+[Backquote]",
-    "command": "workbench.action.terminal.toggleTerminal"
   }
 ]

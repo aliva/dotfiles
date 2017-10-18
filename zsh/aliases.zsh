@@ -19,6 +19,7 @@ alias pc="proxychains"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 alias cdt="cd /tmp"
+alias cdp="cd ~/Workspace/pushe"
 # python
 alias lsvirtualenv="lsvirtualenv -b"
 # tmux

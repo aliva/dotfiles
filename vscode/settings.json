@@ -6,7 +6,7 @@
 "editor.autoIndent": true,
 "editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
-"editor.lineNumbers": "off",
+"editor.lineNumbers": "on",
 "editor.minimap.enabled": true,
 "editor.multiCursorModifier": "ctrlCmd",
 "editor.renderIndentGuides": true,
@@ -29,14 +29,14 @@
 },
 "files.insertFinalNewline": true,
 "files.trimTrailingWhitespace": true,
-/* search */
-"search.quickOpen.includeSymbols": true,
 /* windows */
 "window.menuBarVisibility": "toggle",
 "window.zoomLevel": 0,
 /* workbench */
+"workbench.colorTheme": "Default Light+",
 "workbench.iconTheme": "vscode-great-icons",
 "workbench.startupEditor": "none",
+
 /* git */
 "git.confirmSync": false,
 "git.enableSmartCommit": true,
@@ -62,6 +62,5 @@
   "~/Workspace/"
 ],
 "gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false,
-"workbench.colorTheme": "Default Light+"
+"gitProjectManager.searchInsideProjects": false
 }

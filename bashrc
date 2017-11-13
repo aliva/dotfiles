@@ -111,6 +111,10 @@ if ! shopt -oq posix; then
         source /etc/bash_completion
     fi
 fi
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
 # }}}
 # local bashrc {{{
 if [[ -f ~/Workspace/dotfiles/bashrc.local ]]

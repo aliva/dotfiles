@@ -6,7 +6,7 @@
 "editor.autoIndent": true,
 "editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
-"editor.lineNumbers": "on",
+"editor.lineNumbers": "off",
 "editor.minimap.enabled": true,
 "editor.multiCursorModifier": "ctrlCmd",
 "editor.renderIndentGuides": true,
@@ -32,8 +32,6 @@
 /* windows */
 "window.menuBarVisibility": "toggle",
 "window.zoomLevel": 0,
-/* workbench */
-"workbench.colorTheme": "Default Light+",
 "workbench.iconTheme": "vscode-great-icons",
 "workbench.startupEditor": "none",
 

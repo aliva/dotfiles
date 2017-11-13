@@ -5,7 +5,7 @@ function virtualenv_info {
 }
 
 function git_branch {
-    branch=`git symbolic-ref --short HEAD 2>/dev/null`
+    branch=`current_branch`
     if [[ $! -ne 0 ]]
     then
         echo " $branch"

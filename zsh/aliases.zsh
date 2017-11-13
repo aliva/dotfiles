@@ -22,5 +22,3 @@ alias cdt="cd /tmp"
 alias cdp="cd ~/Workspace/pushe"
 # python
 alias lsvirtualenv="lsvirtualenv -b"
-# tmux
-alias mux="tmuxinator"

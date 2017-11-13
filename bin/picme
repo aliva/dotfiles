@@ -1,6 +1,0 @@
-#!/bin/bash
-
-mkdir -p $HOME/Pictures/picme
-cd $HOME/Pictures/picme
-streamer -f jpeg -o `date +%Y-%m-%d_%H-%M-%S`.jpeg -j 80 -s 2560x1440
-

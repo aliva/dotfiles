@@ -16,6 +16,17 @@
   },
   {
     "key": "ctrl+shift+p",
-    "command": "-workbench.action.showCommands"
+    "command": "gitProjectManager.openProject"
+  },
+  /* disable shortcuts in terminal */
+  {
+    "key": "ctrl+p",
+    "when": "terminalFocus",
+    "command": ""
+  },
+  {
+    "key": "ctrl+f",
+    "when": "terminalFocus",
+    "command": ""
   }
 ]

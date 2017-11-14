@@ -6,8 +6,6 @@ alias apts="apt search"
 # date
 alias ymd="date +%Y-%m-%d"
 alias jymd="jdate +%Y-%m-%d"
-# git
-alias gitg="gitg &>/dev/null"
 # internet
 alias myip="curl -s icanhazip.com"
 alias p8="ping 8.8.8.8 -i 3"
@@ -22,3 +20,8 @@ alias cdt="cd /tmp"
 alias cdp="cd ~/Workspace/pushe"
 # python
 alias lsvirtualenv="lsvirtualenv -b"
+# youtube-dl
+if [ -f ~/.bin/youtube-dl/bin/youtube-dl ]
+then
+    alias youtube-dl="~/.bin/youtube-dl/bin/youtube-dl"
+fi

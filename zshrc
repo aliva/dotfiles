@@ -23,6 +23,7 @@ ZSH_THEME='dollar/dollar'
 plugins=(
     autojump
     django
+    dnf
     git
     mosh
     npm

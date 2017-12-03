@@ -1,4 +1,4 @@
-# Zsh
+# zsh
 export DEFAULT_USER="ali"
 export EDITOR=vim
 export TERM="xterm-256color"
@@ -10,6 +10,7 @@ export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc
 export PYTHONUSERBASE=$HOME/.config/pythonuserbase/
 export VIRTUALENV_PYTHON=`command -v python3`
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
 export VIRTUALENVWRAPPER_HOOK_DIR="$HOME/Workspace/dotfiles/virtualenvwrapper-hooks"
 export WORKON_HOME="$HOME/.virtualenvs"
 
@@ -22,6 +23,7 @@ ZSH_THEME='dollar/dollar'
 # plugins
 plugins=(
     autojump
+    command-not-found
     django
     dnf
     git
@@ -39,11 +41,6 @@ plugins=(
 PATHES=(
     $HOME/.local/bin
     $HOME/Workspace/dotfiles/bin
-    $HOME/.config/pythonuserbase/bin/
-    $HOME/.bin/android-studio/bin
-    $HOME/.bin/android-sdk-linux/tools
-    $HOME/.cargo/bin
-    $HOME/.config/gopath/bin/
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin

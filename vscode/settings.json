@@ -60,5 +60,6 @@
   "~/Workspace/"
 ],
 "gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false
+"gitProjectManager.searchInsideProjects": false,
+"workbench.colorTheme": "Solarized Light"
 }

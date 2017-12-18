@@ -25,3 +25,8 @@ if [ -f ~/.bin/youtube-dl/bin/youtube-dl ]
 then
     alias youtube-dl="~/.bin/youtube-dl/bin/youtube-dl"
 fi
+# tldr
+if [ -f ~/.bin/tldr/node_modules/.bin/tldr ]
+then
+    alias tldr="~/.bin/tldr/node_modules/.bin/tldr"
+fi

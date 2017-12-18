@@ -1,9 +1,16 @@
+# Atom
+/atom/.apm/
+/atom/.node-gyp/
+/atom/compile-cache/
+/atom/blob-store/
+/atom/packages/
+/atom/nohub/
+/atom/storage/
+/atom/nohup.out
 # local
 *.local
-
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
-
 # vscode
 /vscode/workspaceStorage
 /vscode/gpm*

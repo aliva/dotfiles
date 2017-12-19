@@ -1,4 +1,6 @@
 "*":
+  "autocomplete-python":
+    pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python3;/usr/bin/python3"
   core:
     autoHideMenuBar: true
     ignoredNames: [
@@ -33,6 +35,13 @@
       "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
+  "platformio-ide-terminal":
+    core:
+      mapTerminalsTo: "Folder"
+    style:
+      theme: "inverse"
+    toggles:
+      autoClose: true
   "tree-view":
     hideIgnoredNames: true
   welcome:

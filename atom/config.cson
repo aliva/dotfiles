@@ -1,4 +1,8 @@
 "*":
+  "atom-autocomplete-php":
+    binComposer: "/usr/bin/composer"
+  "autoclose-html":
+    makeNeverCloseSelfClosing: false
   "autocomplete-python":
     pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python3;/usr/bin/python3"
   core:
@@ -12,6 +16,7 @@
       "Thumbs.db"
       "desktop.ini"
       ".vscode"
+      ".idea"
     ]
     telemetryConsent: "no"
     themes: [
@@ -19,11 +24,19 @@
       "one-light-syntax"
     ]
   editor:
+    fontFamily: "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'"
+    preferredLineLength: 120
     showLineNumbers: false
   "exception-reporting":
     userId: "0d138809-a3b5-475b-8f22-573ff21cb51d"
   github: {}
+  "linter-flake8":
+    executablePath: "/usr/bin/flake8"
+    maxLineLength: 120
+  "linter-ui-default":
+    showPanel: true
   minimap:
+    displayPluginsControls: false
     plugins:
       cursorline: true
       cursorlineDecorationsZIndex: 0
@@ -46,3 +59,6 @@
     hideIgnoredNames: true
   welcome:
     showOnStartup: false
+".python.regexp.source":
+  editor:
+    preferredLineLength: 120

@@ -1,0 +1,6 @@
+'.platform-win32, .platform-linux':
+  'ctrl-shift-R': 'fuzzy-finder:toggle-file-finder'
+  'f1': 'line-numbers:toggle'
+
+'.platform-linux, .platform-linux .command-palette atom-text-editor':
+  'ctrl-shift-A': 'command-palette:toggle'

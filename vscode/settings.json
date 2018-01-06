@@ -4,7 +4,7 @@
 "telemetry.enableTelemetry": false,
 /* show a ruler for col 80 for python */
 "editor.autoIndent": true,
-"editor.fontFamily": "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+"editor.fontFamily": "'Source Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
 "editor.lineNumbers": "off",
 "editor.minimap.enabled": true,
@@ -32,9 +32,10 @@
 /* windows */
 "window.menuBarVisibility": "toggle",
 "window.zoomLevel": 0,
-"workbench.iconTheme": "vscode-great-icons",
+/* workbench */
+"workbench.iconTheme": "simple-icons",
 "workbench.startupEditor": "none",
-
+"workbench.colorTheme": "Default Light+",
 /* git */
 "git.confirmSync": false,
 "git.enableSmartCommit": true,
@@ -60,6 +61,5 @@
   "~/Workspace/"
 ],
 "gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false,
-"workbench.colorTheme": "Default Light+"
+"gitProjectManager.searchInsideProjects": false
 }

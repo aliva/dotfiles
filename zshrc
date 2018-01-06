@@ -14,6 +14,9 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
 export VIRTUALENVWRAPPER_HOOK_DIR="$HOME/Workspace/dotfiles/virtualenvwrapper-hooks"
 export WORKON_HOME="$HOME/.virtualenvs"
 
+# go
+export GOPATH="$HOME/.config/go-lang/"
+
 # Theme
 ZSH_THEME='dollar/dollar'
 # ZSH_THEME="random"

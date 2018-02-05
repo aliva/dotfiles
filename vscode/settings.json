@@ -4,7 +4,7 @@
 "telemetry.enableTelemetry": false,
 /* show a ruler for col 80 for python */
 "editor.autoIndent": true,
-"editor.fontFamily": "'Source Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+"editor.fontFamily": "'Source Code Pro', 'Roboto', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
 "editor.lineNumbers": "off",
 "editor.minimap.enabled": true,

@@ -7,8 +7,6 @@
 /atom/nohub/
 /atom/storage/
 /atom/nohup.out
-# local
-*.local
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
 # vscode

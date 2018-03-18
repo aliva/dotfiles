@@ -10,7 +10,7 @@ export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc
 export PYTHONUSERBASE=$HOME/.config/pythonuserbase/
 export VIRTUALENV_PYTHON=`command -v python3`
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_HOOK_DIR="$HOME/Workspace/dotfiles/virtualenvwrapper-hooks"
 export WORKON_HOME="$HOME/.virtualenvs"
 

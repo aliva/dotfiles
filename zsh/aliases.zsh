@@ -1,8 +1,8 @@
 # apt
-alias apti="sudo apt install"
-alias apty="sudo apt update"
-alias aptu="sudo apt upgrade"
-alias apts="apt search"
+# alias apti="sudo apt install"
+# alias apty="sudo apt update"
+# alias aptu="sudo apt upgrade"
+# alias apts="apt search"
 # date
 alias ymd="date +%Y-%m-%d"
 alias jymd="jdate +%Y-%m-%d"

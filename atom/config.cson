@@ -1,12 +1,7 @@
 "*":
-  "atom-autocomplete-php":
-    binComposer: "/usr/bin/composer"
-  "autoclose-html":
-    makeNeverCloseSelfClosing: false
-  "autocomplete-python":
-    pythonPaths: "/home/ali/.virtualenvs/$PROJECT_NAME/bin/python;$PROJECT/venv/bin/python3;/usr/bin/python3"
   core:
     autoHideMenuBar: true
+    closeDeletedFileTabs: true
     ignoredNames: [
       ".git"
       ".hg"
@@ -15,29 +10,26 @@
       "._*"
       "Thumbs.db"
       "desktop.ini"
-      ".vscode"
       ".idea"
+      ".vscode"
+      "*.pyc"
     ]
+    projectHome: "/home/ali/Workspace"
     telemetryConsent: "no"
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
   editor:
-    fontFamily: "'Sauce Code Pro', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'"
-    preferredLineLength: 120
     showLineNumbers: false
   "exception-reporting":
-    userId: "0d138809-a3b5-475b-8f22-573ff21cb51d"
-  github: {}
-  "linter-flake8":
-    executablePath: "/usr/bin/flake8"
-    maxLineLength: 120
-  "linter-ui-default":
-    showPanel: true
+    userId: "3edcb281-a15f-445f-87f4-4637de4f075d"
+  "file-icons": {}
+  "linter-ui-default": {}
   minimap:
-    displayPluginsControls: false
     plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
       cursorline: true
       cursorlineDecorationsZIndex: 0
       "find-and-replace": true
@@ -48,17 +40,9 @@
       "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
-  "platformio-ide-terminal":
-    core:
-      mapTerminalsTo: "Folder"
-    style:
-      theme: "inverse"
-    toggles:
-      autoClose: true
+      selection: true
+      selectionDecorationsZIndex: 0
   "tree-view":
     hideIgnoredNames: true
   welcome:
     showOnStartup: false
-".python.regexp.source":
-  editor:
-    preferredLineLength: 120

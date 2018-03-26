@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "atom/.apm": true,
+    "atom/.node-gyp": true,
+    "atom/blob-store": true,
+    "atom/compile-cache": true,
+    "atom/packages": true,
+    "atom/recovery": true,
+    "atom/storage": true,
+    "atom/nohup.out": true,
+    "vscode/workspaceStorage": true,
+    "vscode/gpm*": true,
+    "**/.vscode": false
+  }
+}

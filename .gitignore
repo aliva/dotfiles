@@ -12,3 +12,4 @@
 # vscode
 /vscode/workspaceStorage
 /vscode/gpm*
+!/.vscode

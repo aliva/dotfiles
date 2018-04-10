@@ -48,6 +48,7 @@ PATHES=(
     /usr/local/bin
     /usr/sbin
     /usr/bin
+    /usr/bin/vendor_perl
     /sbin
     /bin
     /usr/games

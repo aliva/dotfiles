@@ -44,5 +44,6 @@
       selectionDecorationsZIndex: 0
   "tree-view":
     hideIgnoredNames: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false

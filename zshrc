@@ -10,7 +10,7 @@ export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc
 export PYTHONUSERBASE=$HOME/.config/pythonuserbase/
 export VIRTUALENV_PYTHON=`command -v python3`
-if [ `lsb_release -i -s` = "Ubuntu" ]
+    if [ `lsb_release -i -s` = "Ubuntu" ]
 then
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
 else

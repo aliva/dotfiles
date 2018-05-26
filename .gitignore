@@ -13,3 +13,5 @@
 /vscode/workspaceStorage
 /vscode/gpm*
 !/.vscode
+# zsh
+/zsh/local.zsh

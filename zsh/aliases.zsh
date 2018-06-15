@@ -30,3 +30,5 @@ if [ -f ~/.bin/tldr/node_modules/.bin/tldr ]
 then
     alias tldr="~/.bin/tldr/node_modules/.bin/tldr"
 fi
+# clipboard
+alias clip='xclip -selection clipboard -i'

@@ -10,6 +10,7 @@
 "editor.fontSize": 13,
 "editor.fontLigatures": true,
 "editor.lineNumbers": "off",
+"editor.fontLigatures": true,
 "editor.minimap.enabled": true,
 "editor.multiCursorModifier": "ctrlCmd",
 "editor.renderIndentGuides": true,

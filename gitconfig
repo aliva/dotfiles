@@ -2,7 +2,7 @@
 
 [user]
     email = ali@vakilzade.com
-    name = Ali Vakilzade
+	name = Ali Vakilzade
 [alias]
     # cd `git root`
     root = rev-parse --show-toplevel
@@ -18,9 +18,9 @@
 [format]
     pretty = oneline
 [commit]
-    gpgsign = true
+    gpgsign = false
 [gpg]
-    program = gpg2
+    program = /usr/bin/gpg2
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f

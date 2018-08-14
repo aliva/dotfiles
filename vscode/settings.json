@@ -8,7 +8,6 @@
 "editor.autoIndent": true,
 "editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Roboto', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
-"editor.fontLigatures": true,
 "editor.lineNumbers": "off",
 "editor.fontLigatures": true,
 "editor.minimap.enabled": true,

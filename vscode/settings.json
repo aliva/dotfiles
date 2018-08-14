@@ -2,6 +2,8 @@
 /* do not collect data */
 "telemetry.enableCrashReporter": false,
 "telemetry.enableTelemetry": false,
+/* breadcrumbs */
+"breadcrumbs.enabled": true,
 /* show a ruler for col 80 for python */
 "editor.autoIndent": true,
 "editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Roboto', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
@@ -26,7 +28,6 @@
   "**/.vscode": true,
   "**/*.egg-info": true,
   "**/*.pyc": true,
-  "**/node_modules": true
 },
 "files.insertFinalNewline": true,
 "files.trimTrailingWhitespace": true,
@@ -43,6 +44,7 @@
 "git.autofetch": true,
 /* python plugin */
 "python.formatting.provider": "autopep8",
+"python.jediEnabled": false,
 "python.linting.flake8Enabled": true,
 "python.linting.flake8Path": "/usr/bin/flake8",
 "python.linting.pep8Enabled": false,

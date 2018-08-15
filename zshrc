@@ -20,7 +20,7 @@ export VIRTUALENVWRAPPER_HOOK_DIR="$HOME/Workspace/dotfiles/virtualenvwrapper-ho
 export WORKON_HOME="$HOME/.virtualenvs"
 
 # go
-export GOPATH="$HOME/.config/go-lang/"
+export GOPATH="$HOME/Workspace/go"
 
 # Theme
 ZSH_THEME='dollar/dollar'
@@ -68,3 +68,6 @@ export PATH
 unset PATHES
 
 source $ZSH/oh-my-zsh.sh
+
+# added by pipsi (https://github.com/mitsuhiko/pipsi)
+export PATH="/home/ali/.local/bin:$PATH"

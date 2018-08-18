@@ -68,6 +68,3 @@ export PATH
 unset PATHES
 
 source $ZSH/oh-my-zsh.sh
-
-# added by pipsi (https://github.com/mitsuhiko/pipsi)
-export PATH="/home/ali/.local/bin:$PATH"

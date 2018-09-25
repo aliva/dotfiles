@@ -35,6 +35,7 @@ plugins=(
     django
     dnf
     git
+    minikube
     mosh
     npm
     python

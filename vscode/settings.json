@@ -6,7 +6,6 @@
 "breadcrumbs.enabled": true,
 /* show a ruler for col 80 for python */
 "editor.autoIndent": true,
-"editor.fontFamily": "'Fira Code', 'Source Code Pro', 'Roboto', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
 "editor.fontSize": 13,
 "editor.lineNumbers": "off",
 "editor.fontLigatures": true,

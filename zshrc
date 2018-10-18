@@ -8,7 +8,6 @@ export ZSH=$HOME/.oh-my-zsh
 # virtualenvwrapper
 export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc
-export PYTHONUSERBASE=$HOME/.config/pythonuserbase/
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_HOOK_DIR="$HOME/Workspace/dotfiles/virtualenvwrapper-hooks"
 export WORKON_HOME="$HOME/.virtualenvs"

@@ -12,7 +12,7 @@ export WORKON_HOME="$HOME/.virtualenvs"
 # Go
 export GOPATH="$HOME/Workspace/go"
 # Theme
-ZSH_THEME='dollar/dollar'
+ZSH_THEME='dollar'
 # Plugins
 plugins=(
     autojump

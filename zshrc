@@ -4,41 +4,29 @@ export EDITOR=vim
 export TERM="xterm-256color"
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
 export ZSH=$HOME/.oh-my-zsh
-
-# virtualenvwrapper
+# VirtualEnvWrapper
 export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
-
-# go
+# Go
 export GOPATH="$HOME/Workspace/go"
-
 # Theme
 ZSH_THEME='dollar/dollar'
-# ZSH_THEME="random"
-# ZSH_THEME="sonicradish"
-# ZSH_THEME="agnoster"
-
-# plugins
+# Plugins
 plugins=(
     autojump
+    celery
+    colored-man-pages
     command-not-found
     django
-    dnf
-    git
-    minikube
-    mosh
+    git-prompt
     npm
     python
-    sudo
-    pip
+    thefuck
     virtualenvwrapper
-    # custom plugins
-    zsh-autosuggestions
 )
-
-
+# Path
 PATHES=(
     $HOME/.local/bin
     $HOME/Workspace/dotfiles/bin
@@ -61,3 +49,8 @@ export PATH
 unset PATHES
 
 source $ZSH/oh-my-zsh.sh
+
+if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]
+then
+    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi

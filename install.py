@@ -19,7 +19,6 @@ links = {
     "npmrc": 0,
     "profile": 0,
     "pythonrc": 0,
-    "tmux.conf": 0,
     "vimrc": 0,
     "vscode": "config/Code/User",
     "vscode": "config/Code - OSS/User",

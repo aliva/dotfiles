@@ -118,10 +118,3 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-#
-# local bashrc
-if [[ -f ~/Workspace/dotfiles/bashrc.local ]]
-then
-    source ~/Workspace/dotfiles/bashrc.local
-fi
-#

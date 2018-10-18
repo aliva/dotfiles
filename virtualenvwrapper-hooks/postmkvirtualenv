@@ -1,6 +1,0 @@
-#!/bin/bash
-# This hook is sourced after a new virtualenv is activated.
-
-# update pip stuff
-# pip install pip -U
-# pip install `pip list --format=freeze | cut -d "=" -f 1` -U

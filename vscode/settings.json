@@ -36,7 +36,6 @@
 /* workbench */
 "workbench.iconTheme": "simple-icons",
 "workbench.startupEditor": "none",
-"workbench.colorTheme": "Default Light+",
 /* git */
 "git.confirmSync": false,
 "git.enableSmartCommit": true,
@@ -64,5 +63,6 @@
   "~/Workspace/"
 ],
 "gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false
+"gitProjectManager.searchInsideProjects": false,
+"workbench.colorTheme": "Default Light+"
 }

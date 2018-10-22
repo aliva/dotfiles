@@ -24,7 +24,7 @@ plugins=(
     git-prompt
     npm
     python
-    thefuck
+    sudo
     virtualenvwrapper
 )
 # Path

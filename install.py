@@ -1,15 +1,11 @@
 #!/usr/bin/python3
 
 import os
-import sys
 from subprocess import check_output
-try:
-    from urllib.request import urlopen
-except ImportError:
-    from urllib2 import urlopen
 
 links = {
     "ackrc": 0,
+    "atom": 0,
     "aria2.conf": "aria2/aria2.conf",
     "bashrc": 0,
     "editorconfig": 0,
@@ -23,11 +19,6 @@ links = {
     "vscode": "config/Code/User",
     "vscode": "config/Code - OSS/User",
     "zshrc": 0,
-    # "vim": 0,
-    # "Xmodmap": 0,
-}
-
-downloads = {
 }
 
 ROOT = check_output(
@@ -39,18 +30,6 @@ HOME = os.path.expanduser("~")
 
 print("ROOT %s" % ROOT)
 print("HOME %s" % HOME)
-
-# DOWNLOAD
-if "--get" in sys.argv:
-    for file in downloads:
-        print("DOWNLOADING '%s'" % file)
-        try:
-            response = urlopen(downloads[file], timeout=5)
-            with open(os.path.join(ROOT, file), "w") as output:
-                output.write(response.read().decode("utf-8"))
-        except Exception as e:
-            print("ERROR: %s" % str(e))
-            continue
 
 # GENRATE
 with open(os.path.join(ROOT, "gitignore"), "r") as git:

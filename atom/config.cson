@@ -1,7 +1,6 @@
 "*":
   core:
     autoHideMenuBar: true
-    closeDeletedFileTabs: true
     ignoredNames: [
       ".git"
       ".hg"
@@ -12,24 +11,15 @@
       "desktop.ini"
       ".idea"
       ".vscode"
-      "*.pyc"
+      "node_modules"
     ]
-    projectHome: "/home/ali/Workspace"
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
   editor:
     showLineNumbers: false
   "exception-reporting":
-    userId: "3edcb281-a15f-445f-87f4-4637de4f075d"
-  "file-icons": {}
-  "linter-ui-default": {}
+    userId: "6bd52030-1f42-47e4-8376-31e9e620798a"
   minimap:
     plugins:
-      bookmarks: true
-      bookmarksDecorationsZIndex: 0
       cursorline: true
       cursorlineDecorationsZIndex: 0
       "find-and-replace": true
@@ -42,8 +32,13 @@
       linterDecorationsZIndex: 0
       selection: true
       selectionDecorationsZIndex: 0
+  "platformio-ide-terminal":
+    style:
+      animationSpeed: 100
+      fontSize: "10"
+    toggles:
+      autoClose: true
   "tree-view":
     hideIgnoredNames: true
-    squashDirectoryNames: true
   welcome:
     showOnStartup: false

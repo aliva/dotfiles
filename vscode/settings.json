@@ -64,5 +64,6 @@
 ],
 "gitProjectManager.maxDepthRecursion": 4,
 "gitProjectManager.searchInsideProjects": false,
-"workbench.colorTheme": "Default Light+"
+"workbench.colorTheme": "Default Light+",
+"terminal.integrated.rendererType": "dom"
 }

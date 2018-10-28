@@ -19,6 +19,7 @@ links = {
     "vscode": "config/Code/User",
     "vscode": "config/Code - OSS/User",
     "zshrc": 0,
+    "tmux.conf": 0,
 }
 
 ROOT = check_output(

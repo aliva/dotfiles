@@ -13,6 +13,8 @@ if has('gui_running')
     set guioptions-=T " no toolbar
     set guioptions-=m " no menubar
 endif
+" 13 selecting text
+set clipboard=unnamedplus
 " 15 tabs and indenting
 set tabstop=4
 set shiftwidth=4

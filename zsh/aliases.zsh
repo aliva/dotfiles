@@ -15,3 +15,7 @@ alias cdt="cd /tmp"
 alias lsvirtualenv="lsvirtualenv -b"
 # clipboard
 alias clip='xclip -selection clipboard -i'
+# vim
+if type nvim > /dev/null 2>&1; then
+    alias vim='nvim'
+fi

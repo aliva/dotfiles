@@ -1,0 +1,15 @@
+#!/bin/bash
+
+export TMUX_BIN=/usr/sbin/tmux
+export SESSION_NAME=main
+
+
+if $TMUX_BIN ls | grep $SESSION_NAME 2>&1 >/dev/null
+then
+    echo 'hi'
+    $TMUX_BIN new-window -a -t $SESSION_NAME
+    $TMUX_BIN attach -d -t $SESSION_NAME
+else
+    echo 'no'
+    $TMUX_BIN new-session -AD -s $SESSION_NAME
+fi

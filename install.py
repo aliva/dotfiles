@@ -15,9 +15,8 @@ links = {
     "npmrc": 0,
     "profile": 0,
     "pythonrc": 0,
-    "vimrc": 0,
-    "vscode": "config/Code/User",
-    "vscode": "config/Code - OSS/User",
+    "vimrc": [0, "config/nvim/init.vim"],
+    "vscode": ["config/Code/User", "config/Code - OSS/User"],
     "zshrc": 0,
     "tmux.conf": 0,
 }
@@ -40,22 +39,26 @@ with open(os.path.join(ROOT, "gitignore"), "r") as git:
         hg.write(git.read())
 
 # LINK
-for link in links:
-    print("LINKING '%s'" % link)
-    if links[link] == 0:
-        dest = ".%s" % link
-    else:
-        dest = ".%s" % links[link]
+for from_file, to_files in links.items():
+    if type(to_files) != list:
+        to_files = [to_files, ]
 
-        if dest.find("/"):
-            head, tail = os.path.split(dest)
-            conf_dir = os.path.join(HOME, head)
-            if not os.path.exists(conf_dir):
-                os.makedirs(conf_dir)
+    for to_file in to_files:
+        if to_file == 0:
+            dest = ".%s" % from_file
+        else:
+            dest = ".%s" % to_file
 
-    dest = os.path.join(HOME, dest)
+            if dest.find("/"):
+                head, tail = os.path.split(dest)
+                conf_dir = os.path.join(HOME, head)
+                if not os.path.exists(conf_dir):
+                    os.makedirs(conf_dir)
 
-    if os.path.exists(dest):
-        os.remove(dest)
+        dest = os.path.join(HOME, dest)
 
-    os.symlink(os.path.join(ROOT, link), dest)
+        if os.path.exists(dest):
+            os.remove(dest)
+
+        print("LINKING '%s' to '%s'" % (from_file, dest))
+        os.symlink(os.path.join(ROOT, from_file), dest)

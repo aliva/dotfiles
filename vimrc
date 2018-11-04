@@ -7,6 +7,8 @@ set nocompatible
 set incsearch
 set ignorecase
 set smartcase
+" 5 syntax, highlighting and spelling
+set cursorline
 " 10 GUI
 if has('gui_running')
     set guifont="Source Code Pro 11"

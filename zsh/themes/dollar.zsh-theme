@@ -18,7 +18,7 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" "
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=""
 
-PROMPT='%{$fg[green]%}$%{$reset_color%} '
+PROMPT='%{$fg[cyan]%}$%{$reset_color%} '
 
 RPROMPT='%{$fg[green]%}%~%{$fg[yellow]%}$(virtualenv_info)%{$fg[blue]%}$(git_super_status)%{$reset_color%}'
 

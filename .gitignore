@@ -7,6 +7,8 @@
 /atom/nohub/
 /atom/storage/
 /atom/nohup.out
+# fish
+/fish/fishd.*
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
 # vscode

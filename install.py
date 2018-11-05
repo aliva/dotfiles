@@ -9,6 +9,7 @@ links = {
     "aria2.conf": "aria2/aria2.conf",
     "bashrc": 0,
     "editorconfig": 0,
+    "fish": "config/fish",
     "gitconfig": 0,
     "hgrc": 0,
     "isort.cfg": 0,

@@ -1,3 +1,5 @@
+# vim: set ft=zsh:
+
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 function virtualenv_info {
@@ -19,3 +21,4 @@ ZSH_THEME_GIT_PROMPT_SEPARATOR=""
 PROMPT='%{$fg[green]%}$%{$reset_color%} '
 
 RPROMPT='%{$fg[green]%}%~%{$fg[yellow]%}$(virtualenv_info)%{$fg[blue]%}$(git_super_status)%{$reset_color%}'
+

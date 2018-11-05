@@ -62,3 +62,4 @@ for from_file, to_files in links.items():
 
         print("LINKING '%s' to '%s'" % (from_file, dest))
         os.symlink(os.path.join(ROOT, from_file), dest)
+

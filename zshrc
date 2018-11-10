@@ -4,7 +4,6 @@ export EDITOR=vim
 export TERM="xterm-256color"
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
 export ZSH=$HOME/.oh-my-zsh
-# Zsh Auto Suggestion
 # VirtualEnvWrapper
 export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc

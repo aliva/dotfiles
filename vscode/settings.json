@@ -7,7 +7,7 @@
 /* show a ruler for col 80 for python */
 "editor.autoIndent": true,
 "editor.fontSize": 13,
-"editor.lineNumbers": "off",
+"editor.lineNumbers": "on",
 "editor.fontLigatures": true,
 "editor.minimap.enabled": true,
 "editor.multiCursorModifier": "ctrlCmd",

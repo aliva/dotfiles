@@ -22,6 +22,7 @@ plugins=(
     django
     git-prompt
     npm
+    pyenv
     python
     sudo
     virtualenvwrapper

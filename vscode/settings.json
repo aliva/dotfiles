@@ -32,14 +32,18 @@
 "files.trimTrailingWhitespace": true,
 /* windows */
 "window.menuBarVisibility": "toggle",
+"window.titleBarStyle": "custom",
 "window.zoomLevel": 0,
 /* workbench */
 "workbench.iconTheme": "simple-icons",
 "workbench.startupEditor": "none",
+// "workbench.colorTheme": "Default Light+",
 /* git */
 "git.confirmSync": false,
 "git.enableSmartCommit": true,
 "git.autofetch": true,
+/* terminal */
+"terminal.integrated.rendererType": "dom",
 /* python plugin */
 "python.formatting.provider": "autopep8",
 "python.jediEnabled": false,
@@ -63,7 +67,5 @@
   "~/Workspace/"
 ],
 "gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false,
-"workbench.colorTheme": "Default Light+",
-"terminal.integrated.rendererType": "dom"
+"gitProjectManager.searchInsideProjects": false
 }

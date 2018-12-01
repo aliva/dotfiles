@@ -35,6 +35,7 @@
 "window.titleBarStyle": "custom",
 "window.zoomLevel": 0,
 /* workbench */
+"workbench.colorTheme": "Dracula",
 "workbench.iconTheme": "simple-icons",
 "workbench.startupEditor": "none",
 // "workbench.colorTheme": "Default Light+",

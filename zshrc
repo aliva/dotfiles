@@ -24,6 +24,7 @@ plugins=(
     helm
     kubectl
     npm
+    nvm
     pyenv
     python
     sudo

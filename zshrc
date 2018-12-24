@@ -34,6 +34,7 @@ plugins=(
 PATHES=(
     $HOME/.local/bin
     $HOME/Workspace/dotfiles/bin
+    $GOPATH/bin
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin

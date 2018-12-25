@@ -68,5 +68,9 @@
   "~/Workspace/"
 ],
 "gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false
+"gitProjectManager.searchInsideProjects": false,
+/* go */
+"go.autocompleteUnimportedPackages": true,
+/* code runner */
+"code-runner.enableAppInsights": false
 }

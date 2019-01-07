@@ -17,7 +17,7 @@ links = {
     "npmrc": 0,
     "profile": 0,
     "pythonrc": 0,
-    "vimrc": [0, "config/nvim/init.vim"],
+    "nvim": "config/nvim",
     "vscode": ["config/Code/User", "config/Code - OSS/User"],
     "zshrc": 0,
     "tmux.conf": 0,

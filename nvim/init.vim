@@ -51,3 +51,8 @@ map k gk
 " autosave on focus lost
 autocmd FocusLost * try | :wa | catch | endtry
 
+call plug#begin()
+Plug 'dracula/vim', { 'as': 'dracula' }
+call plug#end()
+
+color dracula

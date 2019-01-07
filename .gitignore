@@ -9,6 +9,8 @@
 /atom/nohup.out
 # fish
 /fish/fishd.*
+# vim
+nvim/plugged
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
 # vscode

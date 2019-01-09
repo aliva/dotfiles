@@ -11,6 +11,7 @@
 /fish/fishd.*
 # vim
 nvim/plugged
+nvim/.netrwhist
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
 # vscode

@@ -1,2 +1,0 @@
-
-set fish_greeting

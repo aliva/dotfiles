@@ -21,7 +21,7 @@ plugins=(
     command-not-found
     django
     git-prompt
-    helm
+    # helm
     kubectl
     npm
     nvm

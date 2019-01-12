@@ -9,6 +9,7 @@
 /atom/nohup.out
 # fish
 /fish/fishd.*
+/fish/fish_variables
 # vim
 nvim/plugged
 nvim/.netrwhist

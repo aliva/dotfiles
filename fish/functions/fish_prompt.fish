@@ -1,4 +1,4 @@
 function fish_prompt
-    set_color green
+    set_color ffb86c
     echo "\$ "
 end

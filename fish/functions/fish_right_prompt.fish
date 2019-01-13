@@ -14,8 +14,6 @@ function fish_right_prompt
     set_color 8be9fd
     echo (prompt_pwd)
 
-
-
     set_color normal
     echo (__fish_git_prompt ' %s')
 end

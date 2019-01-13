@@ -28,3 +28,5 @@ set -g color_red            ff5555
 set -g color_yellow         f1fa8c
 
 set -g EDITOR vim
+
+eval (python -m virtualfish auto_activation compat_aliases)

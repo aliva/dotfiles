@@ -26,3 +26,5 @@ set -g color_pink           ff79c6
 set -g color_purple         bd93f9
 set -g color_red            ff5555
 set -g color_yellow         f1fa8c
+
+set -g EDITOR vim

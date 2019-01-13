@@ -11,9 +11,20 @@ function fish_right_prompt
         set -g __fish_git_prompt_char_stateseparator ""
     end
 
-    set_color 8be9fd
+    set -g __fish_git_prompt_color_flags --bold $color_cyan
+    set -g __fish_git_prompt_color_branch $color_green
+    set -g __fish_git_prompt_color_dirtystate $color_red
+    set -g __fish_git_prompt_color_stagedstate $color_green
+
+    set_color $color_orange
     echo (prompt_pwd)
 
     set_color normal
     echo (__fish_git_prompt ' %s')
+
+    if test -n "$VIRTUAL_ENV"
+        printf " %s(%s)" (set_color $color_pink) (basename "$VIRTUAL_ENV")
+    end
+
+    set_color normal
 end

@@ -54,6 +54,7 @@ autocmd FocusLost * try | :wa | catch | endtry
 call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'aliva/vim-fish'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 color dracula

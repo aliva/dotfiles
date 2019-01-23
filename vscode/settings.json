@@ -72,5 +72,9 @@
 /* go */
 "go.autocompleteUnimportedPackages": true,
 /* code runner */
-"code-runner.enableAppInsights": false
+"code-runner.enableAppInsights": false,
+"cSpell.userWords": [
+  "Ansible",
+  "kubernetes"
+]
 }

@@ -10,7 +10,7 @@ export PYTHONSTARTUP=$HOME/.pythonrc
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
-export GOPATH="$HOME/Workspace/go"
+export GOPATH="$HOME/.config/gopath"
 # Theme
 ZSH_THEME='dollar'
 # Plugins

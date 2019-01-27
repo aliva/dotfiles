@@ -72,6 +72,13 @@
 /* go */
 "go.autocompleteUnimportedPackages": true,
 /* code runner */
+"code-runner.enableAppInsights": false,
+/* git lends */
 "gitlens.advanced.telemetry.enabled": false,
-"gitlens.currentLine.enabled": false
+"gitlens.currentLine.enabled": false,
+/* spell check */
+"cSpell.userWords": [
+  "Ansible",
+  "kubernetes"
+]
 }

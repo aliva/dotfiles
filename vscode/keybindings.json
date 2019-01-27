@@ -14,6 +14,7 @@
     "key": "ctrl+shift+a",
     "command": "workbench.action.showCommands"
   },
+  /* git project manager */
   {
     "key": "ctrl+shift+p",
     "command": "gitProjectManager.openProject"
@@ -37,5 +38,10 @@
   {
     "key": "alt+right",
     "command": "workbench.action.navigateForward"
+  },
+  /* use this shortcut for code runner */
+  {
+    "key": "ctrl+alt+n",
+    "command": "-gitProjectManager.openProjectNewWindow"
   }
 ]

@@ -72,5 +72,6 @@
 /* go */
 "go.autocompleteUnimportedPackages": true,
 /* code runner */
-"code-runner.enableAppInsights": false
+"gitlens.advanced.telemetry.enabled": false,
+"gitlens.currentLine.enabled": false
 }

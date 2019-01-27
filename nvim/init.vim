@@ -9,31 +9,20 @@ set ignorecase
 set smartcase
 " 5 syntax, highlighting and spelling
 set cursorline
-" 10 GUI
-if has('gui_running')
-    set guifont="Source Code Pro 11"
-    set guioptions-=T " no toolbar
-    set guioptions-=m " no menubar
-endif
-" 13 selecting text
+" 12 selecting text
 set clipboard=unnamedplus
-" 15 tabs and indenting
+" 14 tabs and indenting
 set tabstop=4
 set shiftwidth=4
 set expandtab
-" 20 the swap file
+" 19 the swap file
 set noswapfile
-" 21 command line editing
+" 20 command line editing
 set wildmode=longest,list,full
 " mappings
-" fast jump to head and tail of line
-map H ^
-map L $
 " toggle line numbers
 nmap <silent> <F1> :set number!<CR>
 imap <silent> <F1> <ESC>:set number!<CR>a
-nmap <silent> <C-F1> :set number!<CR>
-imap <silent> <C-F1> <ESC>:set number!<CR>a
 " sudo write
 cmap W!! w !sudo tee % >/dev/null
 " no arrow keys
@@ -55,6 +44,11 @@ call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'aliva/vim-fish'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 color dracula
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif

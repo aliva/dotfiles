@@ -9,6 +9,8 @@ set ignorecase
 set smartcase
 " 5 syntax, highlighting and spelling
 set cursorline
+" 9 using the mouse
+set mouse=nv
 " 12 selecting text
 set clipboard=unnamedplus
 " 14 tabs and indenting
@@ -50,5 +52,10 @@ call plug#end()
 
 color dracula
 
+if ! exists("g:gui_oni")
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+endif
+
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'

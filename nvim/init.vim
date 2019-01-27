@@ -39,8 +39,10 @@ imap <right> <nop>
 " move in wrapped lines
 map j gj
 map k gk
-" autosave on focus lost
-autocmd FocusLost * try | :wa | catch | endtry
+" Plugin settings
+let g:EditorConfig_core_mode='external_command'
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
 
 call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -52,10 +54,5 @@ call plug#end()
 
 color dracula
 
-if ! exists("g:gui_oni")
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-endif
-
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
+" autosave on focus lost
+autocmd FocusLost * try | :wa | catch | endtry

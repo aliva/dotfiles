@@ -41,8 +41,10 @@ map j gj
 map k gk
 " Plugin settings
 let g:EditorConfig_core_mode='external_command'
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeDirArrowExpandable='+'
+let g:NERDTreeDirArrowCollapsible='-'
+let g:NERDTreeQuitOnOpen=1
+let g:deoplete#enable_at_startup=1
 
 call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -50,9 +52,16 @@ Plug 'aliva/vim-fish'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 color dracula
 
 " autosave on focus lost
 autocmd FocusLost * try | :wa | catch | endtry
+
+let mapleader = ","
+nmap <leader>n :NERDTreeToggle<cr>
+

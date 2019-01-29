@@ -45,6 +45,11 @@ let g:NERDTreeDirArrowExpandable='+'
 let g:NERDTreeDirArrowCollapsible='-'
 let g:NERDTreeQuitOnOpen=1
 let g:deoplete#enable_at_startup=1
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:python3_host_prog = '/usr/bin/python'
+let g:python_host_prog = '/usr/bin/python'
+let g:SuperTabMappingForward='<s-tab>'
+let SuperTabMappingBackward='<tab>'
 
 call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -55,6 +60,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
+Plug 'ervandew/supertab'
 call plug#end()
 
 color dracula

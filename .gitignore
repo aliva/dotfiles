@@ -16,6 +16,7 @@ nvim/.netrwhist
 # virtualenvwrapper
 /virtualenvwrapper-hooks/.no_pyc
 # vscode
+/vscode/globalStorage/
 /vscode/workspaceStorage
 /vscode/gpm*
 !/.vscode

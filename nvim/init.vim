@@ -68,6 +68,7 @@ else
 endif
 Plug 'zchee/deoplete-jedi'
 Plug 'ervandew/supertab'
+Plug 'TaDaa/vimade'
 call plug#end()
 
 color dracula

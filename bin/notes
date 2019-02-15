@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gedit $HOME/Documents/notes/notes/index.md
+

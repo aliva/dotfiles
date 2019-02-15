@@ -1,0 +1,7 @@
+# Include ~/Workspace/dotfiles/ssh/blockedhosts
+
+Host bitbucket.org
+    ProxyCommand corkscrew 127.0.0.1 8123 %h %p
+
+Host gitlab.com
+    ProxyCommand corkscrew 127.0.0.1 8123 %h %p

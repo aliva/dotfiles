@@ -1,4 +1,26 @@
 #!/bin/bash
 
+NOTES=$HOME/Documents/notes/
+INDEX=$HOME/Documents/notes/notes/index.md
+
+if [[ -f $INDEX ]]; then
+  echo Notes already mounted
+else
+  export PASS=`zenity --password`
+
+  if [[ $? -ne 0 ]]; then
+    echo No password provided
+    exit 1
+  fi
+
+  cd $NOTES
+  make mount_env
+
+  if [[ $? -ne 0 ]]; then
+    echo Error
+    exit 2
+  fi
+fi
+
 gedit $HOME/Documents/notes/notes/index.md
 

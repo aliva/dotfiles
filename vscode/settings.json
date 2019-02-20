@@ -30,6 +30,10 @@
 },
 "files.insertFinalNewline": true,
 "files.trimTrailingWhitespace": true,
+/* search */
+"search.exclude": {
+  "**/vendor": true
+},
 /* windows */
 "window.menuBarVisibility": "toggle",
 "window.titleBarStyle": "custom",

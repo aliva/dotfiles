@@ -3,9 +3,6 @@
 [user]
     email = ali@vakilzade.com
 	name = Ali Vakilzade
-[alias]
-    # cd `git root`
-    root = rev-parse --show-toplevel
 [core]
     excludesfile = ~/Workspace/dotfiles/gitignore
 [push]

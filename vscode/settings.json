@@ -1,89 +1,78 @@
 {
-/* do not collect data */
-"telemetry.enableCrashReporter": false,
-"telemetry.enableTelemetry": false,
-/* breadcrumbs */
-"breadcrumbs.enabled": true,
-/* show a ruler for col 80 for python */
-"editor.autoIndent": true,
-"editor.fontSize": 13,
-"editor.lineNumbers": "off",
-"editor.fontLigatures": true,
-"editor.minimap.enabled": true,
-"editor.multiCursorModifier": "ctrlCmd",
-"editor.renderIndentGuides": true,
-"editor.rulers": [80, 120],
-/* hide these files in file manager */
-"files.autoSave": "onFocusChange",
-"files.exclude": {
-  "**/__pycache__": true,
-  "**/.coverage": true,
-  "**/.DS_Store": true,
-  "**/.git": true,
-  "**/.hg": true,
-  "**/.idea": true,
-  "**/.svn": true,
-  "**/.vagrant": true,
-  "**/.vscode": true,
-  "**/*.egg-info": true,
-  "**/*.pyc": true,
-},
-"files.insertFinalNewline": true,
-"files.trimTrailingWhitespace": true,
-/* search */
-"search.exclude": {
-  "**/vendor": true
-},
-/* windows */
-"window.menuBarVisibility": "toggle",
-"window.titleBarStyle": "custom",
-"window.zoomLevel": 0,
-/* workbench */
-"workbench.colorTheme": "Dracula",
-"workbench.iconTheme": "simple-icons",
-"workbench.startupEditor": "none",
-// "workbench.colorTheme": "Default Light+",
-/* git */
-"git.confirmSync": false,
-"git.enableSmartCommit": true,
-"git.autofetch": true,
-/* terminal */
-"terminal.integrated.rendererType": "dom",
-/* python plugin */
-"python.formatting.provider": "autopep8",
-"python.jediEnabled": false,
-"python.linting.flake8Enabled": true,
-"python.linting.flake8Path": "/usr/bin/flake8",
-"python.linting.pep8Enabled": false,
-"python.linting.pylintEnabled": false,
-"python.venvPath": "~/.virtualenvs/",
-/* cycle plugin */
-"settings.cycle": [
-  {
-    "id": "editor.lineNumbers",
-    "values": [
-      {"editor.lineNumbers": "on"},
-      {"editor.lineNumbers": "off"}
-    ]
+  "breadcrumbs.enabled": true,
+  "editor.autoIndent": true,
+  "editor.fontSize": 13,
+  "editor.lineNumbers": "off",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderIndentGuides": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.coverage": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/.vagrant": true,
+    "**/.vscode": true,
+    "**/*.egg-info": true,
+    "**/*.pyc": true,
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "search.exclude": {
+    "**/vendor": true
+  },
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.rendererType": "dom",
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "simple-icons",
+  "workbench.startupEditor": "none",
+  "code-runner.enableAppInsights": false,
+  "code-runner.clearPreviousOutput": true,
+  "gitlens.advanced.telemetry.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitProjectManager.baseProjectsFolders": [
+    "~/Workspace/"
+  ],
+  "gitProjectManager.maxDepthRecursion": 4,
+  "gitProjectManager.searchInsideProjects": false,
+  "go.autocompleteUnimportedPackages": true,
+  "python.formatting.provider": "autopep8",
+  "python.jediEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/usr/bin/flake8",
+  "python.linting.pep8Enabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.venvPath": "~/.virtualenvs/",
+  "settings.cycle": [
+    {
+      "id": "editor.lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "on"
+        },
+        {
+          "editor.lineNumbers": "off"
+        }
+      ]
+    }
+  ],
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path": "~/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
   }
-],
-/* git project manager plugin */
-"gitProjectManager.baseProjectsFolders": [
-  "~/Workspace/"
-],
-"gitProjectManager.maxDepthRecursion": 4,
-"gitProjectManager.searchInsideProjects": false,
-/* go */
-"go.autocompleteUnimportedPackages": true,
-/* code runner */
-"code-runner.enableAppInsights": false,
-"code-runner.clearPreviousOutput": true,
-/* git lends */
-"gitlens.advanced.telemetry.enabled": false,
-"gitlens.currentLine.enabled": false,
-/* spell check */
-"cSpell.userWords": [
-  "Ansible",
-  "kubernetes"
-]
 }

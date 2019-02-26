@@ -10,6 +10,7 @@ export PYTHONSTARTUP=$HOME/.pythonrc
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
+export GOPROXY="http://127.0.0.1:8123"
 export GOPATH="$PROJECT_HOME/go"
 # Theme
 ZSH_THEME='dollar'
@@ -36,6 +37,7 @@ PATHES=(
     $HOME/.local/bin
     $HOME/Workspace/dotfiles/bin
     $GOPATH/bin
+    $HOME/.gem/ruby/*/bin
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin
@@ -62,3 +64,6 @@ then
     export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 fi
 
+
+# added by travis gem
+[ -f /home/ali/.travis/travis.sh ] && source /home/ali/.travis/travis.sh

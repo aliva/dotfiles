@@ -57,13 +57,4 @@ export PATH
 unset PATHES
 
 source $ZSH/oh-my-zsh.sh
-
-if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]
-then
-    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-    export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
-fi
-
-
-# added by travis gem
-[ -f /home/ali/.travis/travis.sh ] && source /home/ali/.travis/travis.sh
+source $HOME/Workspace/dotfiles/zsh/thirdparty/*.zsh

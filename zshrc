@@ -10,6 +10,7 @@ export PYTHONSTARTUP=$HOME/.pythonrc
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
+export GOPROXY="http://127.0.0.1:8123"
 export GOPATH="$PROJECT_HOME/go"
 # Theme
 ZSH_THEME='dollar'
@@ -21,6 +22,7 @@ plugins=(
     command-not-found
     django
     git-prompt
+    git-extras
     # helm
     kubectl
     npm
@@ -35,6 +37,7 @@ PATHES=(
     $HOME/.local/bin
     $HOME/Workspace/dotfiles/bin
     $GOPATH/bin
+    $HOME/.gem/ruby/*/bin
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin
@@ -54,10 +57,4 @@ export PATH
 unset PATHES
 
 source $ZSH/oh-my-zsh.sh
-
-if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]
-then
-    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-    export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
-fi
-
+source $HOME/Workspace/dotfiles/zsh/thirdparty/*.zsh

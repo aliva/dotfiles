@@ -52,13 +52,17 @@ let g:SuperTabMappingForward='<s-tab>'
 let SuperTabMappingBackward='<tab>'
 
 call plug#begin()
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'aliva/vim-fish'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
+Plug 'fatih/vim-go'
+Plug 'scrooloose/nerdtree'
+Plug 'TaDaa/vimade'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -67,8 +71,6 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'zchee/deoplete-jedi'
-Plug 'ervandew/supertab'
-Plug 'TaDaa/vimade'
 call plug#end()
 
 color dracula

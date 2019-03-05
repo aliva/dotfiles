@@ -10,7 +10,6 @@ export PYTHONSTARTUP=$HOME/.pythonrc
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
-export GOPROXY="http://127.0.0.1:8123"
 export GOPATH="$PROJECT_HOME/go"
 export GLIDE_HOME="$HOME/.cache/glide"
 # Theme

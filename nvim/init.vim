@@ -21,6 +21,7 @@ set expandtab
 set noswapfile
 " 20 command line editing
 set wildmode=longest,list,full
+set wildignore+=__pycache__/
 " mappings
 " toggle line numbers
 nmap <silent> <F1> :set number!<CR>
@@ -46,6 +47,7 @@ call plug#begin()
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'TaDaa/vimade'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 color dracula
@@ -54,3 +56,7 @@ color dracula
 autocmd FocusLost * try | :wa | catch | endtry
 
 let mapleader = ","
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|__pycache__)$',
+  \ 'file': '\v\.(exe|so|dll|pyc)$',
+  \ }

@@ -1,6 +1,10 @@
 " general
+" =============================================================================
 syntax on
+let mapleader = ","
+
 " options
+" =============================================================================
 " 1 important
 set nocompatible
 " 2 moving around, searching and patterns
@@ -22,7 +26,20 @@ set noswapfile
 " 20 command line editing
 set wildmode=longest,list,full
 set wildignore+=__pycache__/
-" mappings
+
+" Plugins
+" =============================================================================
+call plug#begin()
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
+Plug 'farmergreg/vim-lastplace'
+Plug 'taDaa/vimade'
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
+" Mappings
+" =============================================================================
 " toggle line numbers
 nmap <silent> <F1> :set number!<CR>
 imap <silent> <F1> <ESC>:set number!<CR>a
@@ -40,30 +57,16 @@ imap <right> <nop>
 " move in wrapped lines
 map j gj
 map k gk
-" Plugin settings
-let g:EditorConfig_core_mode='external_command'
+" Quick open files
+nnoremap <silent> <C-S-R> :GFiles<CR>
 
-call plug#begin()
-Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'editorconfig/editorconfig-vim'
-Plug 'ervandew/supertab'
-Plug 'farmergreg/vim-lastplace'
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'taDaa/vimade'
-Plug 'junegunn/fzf.vim'
-call plug#end()
-
-color dracula
-
+" Auto Commands
+" =============================================================================
 " autosave on focus lost
 autocmd FocusLost * try | :wa | catch | endtry
 
-let mapleader = ","
-let g:LanguageClient_serverCommands = {
-  \ 'python': ["/usr/sbin/pyls"]
-  \ }
+" Plugin Configs
+" =============================================================================
+color dracula
 
-nnoremap <silent> <C-S-R> :GFiles<CR>
-
-let g:deoplete#enable_at_startup = 1
+let g:EditorConfig_core_mode='external_command'

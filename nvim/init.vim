@@ -44,10 +44,14 @@ map k gk
 let g:EditorConfig_core_mode='external_command'
 
 call plug#begin()
+Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
-Plug 'TaDaa/vimade'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ervandew/supertab'
+Plug 'farmergreg/vim-lastplace'
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'taDaa/vimade'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 color dracula
@@ -60,3 +64,10 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|__pycache__)$',
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ }
+let g:LanguageClient_serverCommands = {
+  \ 'python': ["/usr/sbin/pyls"]
+  \ }
+
+nnoremap <silent> <C-S-R> :GFiles<CR>
+
+let g:deoplete#enable_at_startup = 1

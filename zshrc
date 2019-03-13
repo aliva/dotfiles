@@ -29,7 +29,7 @@ plugins=(
     nvm
     #pyenv
     python
-    sudo
+    # sudo
     virtualenvwrapper
 )
 # Path

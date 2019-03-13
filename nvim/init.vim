@@ -60,10 +60,6 @@ color dracula
 autocmd FocusLost * try | :wa | catch | endtry
 
 let mapleader = ","
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|__pycache__)$',
-  \ 'file': '\v\.(exe|so|dll|pyc)$',
-  \ }
 let g:LanguageClient_serverCommands = {
   \ 'python': ["/usr/sbin/pyls"]
   \ }

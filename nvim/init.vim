@@ -34,6 +34,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'farmergreg/vim-lastplace'
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'taDaa/vimade'
 Plug 'junegunn/fzf.vim'
 call plug#end()
@@ -70,3 +71,4 @@ autocmd FocusLost * try | :wa | catch | endtry
 color dracula
 
 let g:EditorConfig_core_mode='external_command'
+let g:deoplete#enable_at_startup=1

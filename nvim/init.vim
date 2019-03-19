@@ -17,6 +17,7 @@ set cursorline
 set mouse=nv
 " 12 selecting text
 set clipboard=unnamedplus
+" 13 editing text
 " 14 tabs and indenting
 set tabstop=4
 set shiftwidth=4
@@ -30,6 +31,7 @@ set wildignore+=__pycache__/
 " Plugins
 " =============================================================================
 call plug#begin()
+Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
@@ -70,5 +72,10 @@ autocmd FocusLost * try | :wa | catch | endtry
 " =============================================================================
 color dracula
 
-let g:EditorConfig_core_mode='external_command'
-let g:deoplete#enable_at_startup=1
+let g:EditorConfig_core_mode = 'external_command'
+let g:deoplete#enable_at_startup = 1
+let g:SuperTabMappingForward = '<c-tab>'
+let g:SuperTabMappingBackward = '<tab>'
+let g:SuperTabCrMapping = 1
+let g:python_host_prog = '/usr/sbin/python2'
+let g:python3_host_prog = '/usr/sbin/python'

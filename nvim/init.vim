@@ -32,14 +32,18 @@ set wildignore+=__pycache__/
 " =============================================================================
 call plug#begin()
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'farmergreg/vim-lastplace'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'junegunn/fzf.vim'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'taDaa/vimade'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Mappings
@@ -63,6 +67,8 @@ map j gj
 map k gk
 " Quick open files
 nnoremap <silent> <C-S-R> :GFiles<CR>
+" use ; as :
+nnoremap ; :
 
 " Auto Commands
 " =============================================================================
@@ -80,3 +86,4 @@ let g:SuperTabMappingBackward = '<tab>'
 let g:SuperTabCrMapping = 1
 let g:python_host_prog = '/usr/sbin/python2'
 let g:python3_host_prog = '/usr/sbin/python'
+let g:airline#extensions#ale#enabled = 1

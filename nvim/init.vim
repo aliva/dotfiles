@@ -18,6 +18,7 @@ set mouse=nv
 " 12 selecting text
 set clipboard=unnamedplus
 " 13 editing text
+set completeopt=menu
 " 14 tabs and indenting
 set tabstop=4
 set shiftwidth=4

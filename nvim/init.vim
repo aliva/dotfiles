@@ -19,6 +19,8 @@ set mouse=nv
 set clipboard=unnamedplus
 " 13 editing text
 set completeopt=longest,menu
+set undofile
+set undodir=/tmp/$USER-vim-undo/
 " 14 tabs and indenting
 set tabstop=4
 set shiftwidth=4

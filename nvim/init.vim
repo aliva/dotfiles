@@ -18,7 +18,7 @@ set mouse=nv
 " 12 selecting text
 set clipboard=unnamedplus
 " 13 editing text
-set completeopt=menu
+set completeopt=longest,menu
 " 14 tabs and indenting
 set tabstop=4
 set shiftwidth=4
@@ -70,6 +70,11 @@ map k gk
 nnoremap <silent> <C-S-R> :GFiles<CR>
 " use ; as :
 nnoremap ; :
+" use jj as esc
+imap jj <Esc>
+" keep selection
+vnoremap > >gv
+vnoremap < <gv
 
 " Auto Commands
 " =============================================================================

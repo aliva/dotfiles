@@ -27,7 +27,7 @@ plugins=(
     kubectl
     npm
     nvm
-    #pyenv
+    pyenv
     python
     # sudo
     virtualenvwrapper

@@ -42,11 +42,13 @@ Plug 'ervandew/supertab'
 Plug 'farmergreg/vim-lastplace'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'taDaa/vimade'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
+Plug 'xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 " Mappings
@@ -77,6 +79,8 @@ imap jj <Esc>
 " keep selection
 vnoremap > >gv
 vnoremap < <gv
+" nerdtree
+nnoremap <C-S-E> :NERDTreeToggle<CR>
 
 " Auto Commands
 " =============================================================================
@@ -94,4 +98,5 @@ let g:SuperTabMappingBackward = '<tab>'
 let g:SuperTabCrMapping = 1
 let g:python_host_prog = '/usr/sbin/python2'
 let g:python3_host_prog = '/usr/sbin/python'
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1

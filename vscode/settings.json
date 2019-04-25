@@ -39,7 +39,7 @@
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "none",
   "code-runner.enableAppInsights": false,

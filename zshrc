@@ -37,7 +37,7 @@ PATHES=(
     $HOME/.local/bin
     $HOME/Workspace/dotfiles/bin
     $GOPATH/bin
-    $HOME/.gem/ruby/*/bin
+    #$HOME/.gem/ruby/*/bin
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin

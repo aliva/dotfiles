@@ -14,6 +14,7 @@ links = {
     "gitconfig": 0,
     "hgrc": 0,
     "isort.cfg": 0,
+    "torrc": 0,
     "npmrc": 0,
     "profile": 0,
     "pythonrc": 0,

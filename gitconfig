@@ -5,6 +5,7 @@
 	name = Ali Vakilzade
 [core]
     excludesfile = ~/Workspace/dotfiles/gitignore
+	autocrlf = input
 [push]
     default = simple
 [color]

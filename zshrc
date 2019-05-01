@@ -16,7 +16,7 @@ export GLIDE_HOME="$HOME/.cache/glide"
 ZSH_THEME='dollar'
 # Plugins
 plugins=(
-    autojump
+    # autojump
     celery
     colored-man-pages
     command-not-found

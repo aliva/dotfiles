@@ -55,7 +55,7 @@
   "python.formatting.provider": "autopep8",
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "/usr/bin/flake8",
+  "python.linting.flake8Path": "",
   "python.linting.pep8Enabled": false,
   "python.linting.pylintEnabled": false,
   "python.venvPath": "~/.virtualenvs/",
@@ -80,5 +80,5 @@
     "Kubernetes",
     "Vakilzade"
   ],
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe"
 }

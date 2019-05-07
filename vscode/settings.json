@@ -73,9 +73,6 @@
       ]
     }
   ],
-  "vs-kubernetes": {
-    "vs-kubernetes.minikube-path": "~/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
   "cSpell.userWords": [
     "Ansible",
     "Kubernetes",

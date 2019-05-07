@@ -11,7 +11,7 @@
 /fish/fishd.*
 /fish/fish_variables
 # vim
-nvim/autoload/plug.vim
+nvim/autoload/vim.plug
 nvim/plugged
 nvim/.netrwhist
 # virtualenvwrapper

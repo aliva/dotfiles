@@ -36,6 +36,7 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
@@ -76,6 +77,5 @@
     "Ansible",
     "Kubernetes",
     "Vakilzade"
-  ],
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe"
+  ]
 }

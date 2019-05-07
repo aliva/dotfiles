@@ -47,7 +47,8 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitProjectManager.baseProjectsFolders": [
-    "~/Workspace/"
+    "~/Workspace/",
+    "%HOMEPATH%\\Workspace",
   ],
   "gitProjectManager.maxDepthRecursion": 4,
   "gitProjectManager.searchInsideProjects": false,

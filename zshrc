@@ -7,7 +7,11 @@ export ZSH=$HOME/.oh-my-zsh
 # VirtualEnvWrapper
 export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+if [[ `lsb_release -is` == "Ubuntu" ]]; then
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+else
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+fi
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
 export GOPATH="$PROJECT_HOME/go"

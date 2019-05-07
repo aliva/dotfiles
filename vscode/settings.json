@@ -56,7 +56,6 @@
   "python.formatting.provider": "autopep8",
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "",
   "python.linting.pep8Enabled": false,
   "python.linting.pylintEnabled": false,
   "python.venvPath": "~/.virtualenvs/",

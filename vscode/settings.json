@@ -26,6 +26,7 @@
     "**/*.pyc": true,
   },
   "files.insertFinalNewline": true,
+  "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,

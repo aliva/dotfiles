@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # VirtualEnvWrapper
 export PROJECT_HOME="$HOME/Workspace/"
 export PYTHONSTARTUP=$HOME/.pythonrc
-if [[ `lsb_release -is` == "Ubuntu" ]]; then
+if [ -x "$(command -v lsb_release)" ] &&[[ `lsb_release -is` == "Ubuntu" ]]; then
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 else
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3

@@ -62,3 +62,6 @@ unset PATHES
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/Workspace/dotfiles/zsh/thirdparty/*.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/ali/.local/bin/mc mc

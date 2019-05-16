@@ -12,7 +12,6 @@ alias pc="proxychains"
 alias cdd="cd ~/Workspace/dotfiles"
 alias cdw="cd ~/Workspace"
 alias cdt="cd /tmp"
-alias cdn="cd ~/Documents/notes"
 alias cdir='basename "$PWD"'
 # python
 alias lsvirtualenv="lsvirtualenv -b"

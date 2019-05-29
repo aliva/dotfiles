@@ -14,7 +14,7 @@ else
 fi
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
-export GOPATH="$PROJECT_HOME/go"
+export GOPATH="$HOME/.cache/go"
 export GLIDE_HOME="$HOME/.cache/glide"
 # Theme
 ZSH_THEME='dollar'

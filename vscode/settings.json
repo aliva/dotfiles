@@ -79,5 +79,6 @@
     "Ansible",
     "Kubernetes",
     "Vakilzade"
-  ]
+  ],
+  "python.formatting.autopep8Path": "/usr/sbin/autopep8"
 }

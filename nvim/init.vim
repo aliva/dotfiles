@@ -41,6 +41,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 Plug 'farmergreg/vim-lastplace'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'nlknguyen/papercolor-theme'
 Plug 'scrooloose/nerdtree'
@@ -101,5 +102,5 @@ let g:SuperTabMappingBackward = '<tab>'
 let g:SuperTabCrMapping = 1
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1

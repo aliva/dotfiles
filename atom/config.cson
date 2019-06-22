@@ -9,6 +9,10 @@
   editor:
     showLineNumbers: false
   "exception-reporting":
-    userId: ""
+    userId: "cff91c27-cedd-4bd6-b0cd-52a1efa00ea0"
+  "tree-view":
+    autoReveal: true
+    hideIgnoredNames: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false

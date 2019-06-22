@@ -1,11 +1,5 @@
 # Atom
-/atom/.apm/
-/atom/.node-gyp/
-/atom/compile-cache/
-/atom/blob-store/
-/atom/packages/
-/atom/nohub/
-/atom/storage/
+/atom/.atom-socket-secret-*
 /atom/nohup.out
 # fish
 /fish/fishd.*

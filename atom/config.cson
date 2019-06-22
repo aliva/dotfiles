@@ -10,6 +10,9 @@
     showLineNumbers: false
   "exception-reporting":
     userId: "cff91c27-cedd-4bd6-b0cd-52a1efa00ea0"
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "tree-view":
     autoReveal: true
     hideIgnoredNames: true

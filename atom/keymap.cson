@@ -1,0 +1,5 @@
+'.platform-linux':
+  'ctrl-shift-r': 'fuzzy-finder:toggle-file-finder'
+
+'.editor':
+  'f1': 'line-numbers:toggle'

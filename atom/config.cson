@@ -1,6 +1,13 @@
 "*":
   core:
+    autoHideMenuBar: true
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    showLineNumbers: false
   "exception-reporting":
     userId: ""
   welcome:

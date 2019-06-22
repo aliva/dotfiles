@@ -19,6 +19,7 @@ ln -sf $DOTFILES/npmrc          $HOME/.npmrc
 ln -sf $DOTFILES/profile        $HOME/.profile
 ln -sf $DOTFILES/pythonrc       $HOME/.pythonrc
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
+ln -sf $DOTFILES/torrc          $HOME/.torrc
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
 rm -rf $HOME/.emacs.d

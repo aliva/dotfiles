@@ -7,6 +7,7 @@
       "one-light-syntax"
     ]
   editor:
+    fontFamily: "Fira Code, Menlo, Consolas, DejaVu Sans Mono, monospace"
     showLineNumbers: false
   "exception-reporting":
     userId: "cff91c27-cedd-4bd6-b0cd-52a1efa00ea0"
@@ -23,6 +24,8 @@
       "git-diffDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
   "tree-view":
     autoReveal: true
     hideIgnoredNames: true

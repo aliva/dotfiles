@@ -13,6 +13,16 @@
   "fuzzy-finder":
     scoringSystem: "fast"
     useRipGrep: true
+  "ide-python":
+    python: "/home/ali/.local/venvs/python-language-server/bin/python"
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
   "tree-view":
     autoReveal: true
     hideIgnoredNames: true

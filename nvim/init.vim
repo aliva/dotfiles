@@ -42,8 +42,6 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'nlknguyen/papercolor-theme'
 Plug 'scrooloose/nerdtree'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'taDaa/vimade'
-Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 

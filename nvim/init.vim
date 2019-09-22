@@ -42,6 +42,7 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
+Plug 'scrooloose/nerdtree'
 " autocompletion
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'ervandew/supertab'
@@ -56,7 +57,7 @@ call plug#end()
 nmap <silent> <F1> :set number!<CR>
 imap <silent> <F1> <ESC>:set number!<CR>a
 " sudo completeoptwrite
-cmap W!! w !sudo tee % >/dev/null
+" cmap W!! w !sudo tee % >/dev/null
 " no arrow keys
 map <up> <nop>
 map <down> <nop>
@@ -76,11 +77,15 @@ imap jj <Esc>
 " keep selection
 vnoremap > >gv
 vnoremap < <gv
+" Open NerdTree
+map <c-s-e> :NERDTreeFocus<cr>
 
 " Auto Commands
 " =============================================================================
 " autosave on focus lost
 autocmd FocusLost * try | :wa | catch | endtry
+" Auto open NERDTree
+"autocmd vimenter * NERDTree
 
 " Plugin Configs
 " =============================================================================
@@ -107,3 +112,9 @@ let g:ctrlp_show_hidden = 1
 " suda
 let g:suda#prefix = 'sudo:'
 let g:suda_smart_edit = 1
+" nerdtree
+let NERDTreeRespectWildIgnore = 1
+let NERDTreeMouseMode = 3
+let NERDTreeShowHidden = 1
+let NERDTreeDirArrowCollapsible = '-'
+let NERDTreeDirArrowExpandable = '+'

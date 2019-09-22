@@ -29,7 +29,7 @@ set expandtab
 set noswapfile
 " 20 command line editing
 set wildmode=longest:full,full
-set wildignore+=__pycache__/
+set wildignore+=__pycache__/,
 
 " Plugins
 " =============================================================================
@@ -37,6 +37,8 @@ call plug#begin()
 Plug 'editorconfig/editorconfig-vim'
 Plug 'farmergreg/vim-lastplace'
 Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'lambdalisue/suda.vim'
 " autocompletion
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'ervandew/supertab'
@@ -91,3 +93,6 @@ let g:SuperTabCrMapping = 1
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 let g:airline_powerline_fonts = 1
+let g:ctrlp_map = '<c-s-r>'
+let g:suda#prefix = 'sudo:'
+let g:suda_smart_edit = 1

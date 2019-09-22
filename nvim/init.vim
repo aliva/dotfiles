@@ -88,14 +88,22 @@ autocmd FocusLost * try | :wa | catch | endtry
 set background=light
 colorscheme PaperColor
 
+" editorconfig
 let g:EditorConfig_core_mode = 'external_command'
+" deoplete
 let g:deoplete#enable_at_startup = 1
+" supertab
 let g:SuperTabMappingForward = '<c-tab>'
 let g:SuperTabMappingBackward = '<tab>'
 let g:SuperTabCrMapping = 1
+" python
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
+" airline
 let g:airline_powerline_fonts = 1
+" ctrl-p
 let g:ctrlp_map = '<c-s-r>'
+let g:ctrlp_show_hidden = 1 
+" suda
 let g:suda#prefix = 'sudo:'
 let g:suda_smart_edit = 1

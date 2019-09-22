@@ -11,14 +11,14 @@ set nocompatible
 set incsearch
 set ignorecase
 set smartcase
-" 5 syntax, highlighting and spelling
+" 5 syntax, highlighting and spelling 
 set cursorline
 " 9 using the mouse
-set mouse=nv
+set mouse=a " enable mouse everywhere
 " 12 selecting text
-set clipboard=unnamedplus
+set clipboard=unnamedplus " use system clipboard
 " 13 editing text
-set completeopt=longest,menu
+set completeopt=longest,menuone
 set undofile
 set undodir=/tmp/$USER-vim-undo/
 " 14 tabs and indenting
@@ -28,21 +28,21 @@ set expandtab
 " 19 the swap file
 set noswapfile
 " 20 command line editing
-set wildmode=longest,list,full
+set wildmode=longest:full,full
 set wildignore+=__pycache__/
 
 " Plugins
 " =============================================================================
 call plug#begin()
-Plug 'deoplete-plugins/deoplete-jedi'
-Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'editorconfig/editorconfig-vim'
-Plug 'ervandew/supertab'
 Plug 'farmergreg/vim-lastplace'
-Plug 'nlknguyen/papercolor-theme'
-Plug 'scrooloose/nerdtree'
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
+" autocompletion
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'ervandew/supertab'
+" colorscheme
+Plug 'nlknguyen/papercolor-theme'
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 " Mappings
@@ -50,7 +50,7 @@ call plug#end()
 " toggle line numbers
 nmap <silent> <F1> :set number!<CR>
 imap <silent> <F1> <ESC>:set number!<CR>a
-" sudo write
+" sudo completeoptwrite
 cmap W!! w !sudo tee % >/dev/null
 " no arrow keys
 map <up> <nop>
@@ -64,8 +64,6 @@ imap <right> <nop>
 " move in wrapped lines
 map j gj
 map k gk
-" Quick open files
-nnoremap <silent> <C-S-R> :GFiles<CR>
 " use ; as :
 nnoremap ; :
 " use jj as esc
@@ -73,8 +71,6 @@ imap jj <Esc>
 " keep selection
 vnoremap > >gv
 vnoremap < <gv
-" nerdtree
-nnoremap <C-S-E> :NERDTreeToggle<CR>
 
 " Auto Commands
 " =============================================================================
@@ -95,4 +91,3 @@ let g:SuperTabCrMapping = 1
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#ale#enabled = 1

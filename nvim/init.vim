@@ -30,6 +30,9 @@ set noswapfile
 " 20 command line editing
 set wildmode=longest:full,full
 set wildignore+=__pycache__/,
+" 25 various
+set exrc
+set secure
 
 " Plugins
 " =============================================================================

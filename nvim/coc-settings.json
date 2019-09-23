@@ -1,0 +1,7 @@
+{
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/usr/bin/flake8",
+  "python.linting.enabled": true,
+  "python.jediPath": "~/.local/venvs/python-language-server/lib/python3.7/site-packages/"
+}

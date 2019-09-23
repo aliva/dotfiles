@@ -29,10 +29,13 @@ set expandtab
 set noswapfile
 " 20 command line editing
 set wildmode=longest:full,full
-set wildignore+=__pycache__/,
+set wildignore+=__pycache__,
+set wildignore+=.git,
+set wildignore+=.vscode,
 " 25 various
 set exrc
 set secure
+set signcolumn=yes
 
 " Plugins
 " =============================================================================
@@ -44,7 +47,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'scrooloose/nerdtree'
 " autocompletion
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ervandew/supertab'
 " colorscheme
 Plug 'nlknguyen/papercolor-theme'
@@ -118,3 +122,4 @@ let NERDTreeMouseMode = 3
 let NERDTreeShowHidden = 1
 let NERDTreeDirArrowCollapsible = '-'
 let NERDTreeDirArrowExpandable = '+'
+let NERDTreeMinimalUI = 1

@@ -47,7 +47,6 @@
   "code-runner.enableAppInsights": false,
   "code-runner.clearPreviousOutput": true,
   "gitlens.advanced.telemetry.enabled": false,
-  "gitlens.currentLine.enabled": false,
   "gitProjectManager.baseProjectsFolders": [
     "~/Workspace/",
     "%HOMEPATH%\\Workspace",
@@ -80,5 +79,7 @@
     "Kubernetes",
     "Vakilzade"
   ],
-  "python.formatting.autopep8Path": "/usr/sbin/autopep8"
+  "python.formatting.autopep8Path": "/usr/sbin/autopep8",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line"
 }

@@ -3,5 +3,8 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "/usr/bin/flake8",
   "python.linting.enabled": true,
-  "python.jediPath": "~/.local/venvs/python-language-server/lib/python3.7/site-packages/"
+  "python.jediPath": "~/.local/venvs/python-language-server/lib/python3.7/site-packages/",
+  "python.jediEnabled": false,
+  "python.sortImports.path": "/usr/bin/isort",
+  "python.formatting.autopep8Path": "/usr/bin/autopep8"
 }

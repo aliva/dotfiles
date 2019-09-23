@@ -13,6 +13,7 @@ set ignorecase
 set smartcase
 " 5 syntax, highlighting and spelling 
 set cursorline
+set colorcolumn=80,120
 " 9 using the mouse
 set mouse=a " enable mouse everywhere
 " 12 selecting text
@@ -42,10 +43,14 @@ set signcolumn=yes
 call plug#begin()
 Plug 'editorconfig/editorconfig-vim'
 Plug 'farmergreg/vim-lastplace'
-Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
+" nerdtree
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+" airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " autocompletion
 "Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -60,8 +65,10 @@ call plug#end()
 " toggle line numbers
 nmap <silent> <F1> :set number!<CR>
 imap <silent> <F1> <ESC>:set number!<CR>a
+
 " sudo completeoptwrite
 " cmap W!! w !sudo tee % >/dev/null
+
 " no arrow keys
 map <up> <nop>
 map <down> <nop>
@@ -71,18 +78,49 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
 " move in wrapped lines
 map j gj
 map k gk
+
 " use ; as :
 nnoremap ; :
+
 " use jj as esc
 imap jj <Esc>
-" keep selection
+
+" keep visual selection
 vnoremap > >gv
 vnoremap < <gv
+
 " Open NerdTree
 map <c-s-e> :NERDTreeFocus<cr>
+
+" Use `[g` and `]g` to navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 " Auto Commands
 " =============================================================================

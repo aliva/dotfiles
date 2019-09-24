@@ -126,8 +126,6 @@ endfunction
 " =============================================================================
 " autosave on focus lost
 autocmd FocusLost * try | :wa | catch | endtry
-" Auto open NERDTree
-"autocmd vimenter * NERDTree
 
 " Plugin Configs
 " =============================================================================
@@ -143,7 +141,7 @@ let g:deoplete#enable_at_startup = 1
 let g:SuperTabMappingForward = '<c-tab>'
 let g:SuperTabMappingBackward = '<tab>'
 let g:SuperTabCrMapping = 1
-" python
+" deoplete
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 " airline

@@ -1,6 +1,6 @@
 # zsh
 export DEFAULT_USER="ali"
-export EDITOR=vim
+export EDITOR=nvim
 export TERM="xterm-256color"
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/zsh"
 export ZSH=$HOME/.oh-my-zsh
@@ -59,5 +59,3 @@ unset PATHES
 source $ZSH/oh-my-zsh.sh
 source $HOME/Workspace/dotfiles/zsh/thirdparty/*.zsh
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /home/ali/.local/bin/mc mc

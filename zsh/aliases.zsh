@@ -16,7 +16,11 @@ alias cdir='basename "$PWD"'
 # python
 alias lsvirtualenv="lsvirtualenv -b"
 # clipboard
-alias clip='xclip -selection clipboard -i'
+if [[ `uname -s` == "Darwin" ]]; then
+  alias clip='pbcopy'
+else
+  alias clip='xclip -selection clipboard -i'
+fi
 # vim
 if type nvim > /dev/null 2>&1; then
     alias vim='nvim'

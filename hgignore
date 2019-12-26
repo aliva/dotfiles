@@ -33,3 +33,5 @@ venv-*
 # vs
 code
 .vscode
+# Mac
+.Ds_store

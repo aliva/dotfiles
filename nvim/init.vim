@@ -11,7 +11,7 @@ set nocompatible
 set incsearch
 set ignorecase
 set smartcase
-" 5 syntax, highlighting and spelling 
+" 5 syntax, highlighting and spelling
 set cursorline
 set colorcolumn=80,120
 " 9 using the mouse
@@ -130,8 +130,9 @@ autocmd FocusLost * try | :wa | catch | endtry
 " Plugin Configs
 " =============================================================================
 "color dracula
-set background=light
-colorscheme PaperColor
+"set background=light
+"colorscheme PaperColor
+colorscheme dracula
 
 " editorconfig
 let g:EditorConfig_core_mode = 'external_command'
@@ -145,10 +146,10 @@ let g:SuperTabCrMapping = 1
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 " airline
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 " ctrl-p
 let g:ctrlp_map = '<c-s-r>'
-let g:ctrlp_show_hidden = 1 
+let g:ctrlp_show_hidden = 1
 " suda
 let g:suda#prefix = 'sudo:'
 let g:suda_smart_edit = 1

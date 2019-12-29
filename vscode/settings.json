@@ -41,7 +41,6 @@
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "none",
   "code-runner.enableAppInsights": false,
@@ -58,7 +57,7 @@
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "/usr/bin/flake8",
-  "python.linting.pep8Enabled": false,
+  "python.linting.pycodestyleEnabled": false,
   "python.linting.pylintEnabled": false,
   "python.venvPath": "~/.virtualenvs/",
   "settings.cycle": [

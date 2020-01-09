@@ -6,21 +6,6 @@
   },
   /* quick open */
   {
-    "command": "workbench.action.quickOpen",
-    "key": "ctrl+shift-r"
-  },
-  /* show commands */
-  {
-    "key": "ctrl+shift+a",
-    "command": "workbench.action.showCommands"
-  },
-  /* git project manager */
-  {
-    "key": "ctrl+shift+p",
-    "command": "gitProjectManager.openProject"
-  },
-  /* disable shortcuts in terminal */
-  {
     "key": "ctrl+p",
     "when": "terminalFocus",
     "command": ""
@@ -39,9 +24,9 @@
     "key": "alt+right",
     "command": "workbench.action.navigateForward"
   },
-  /* use this shortcut for code runner */
+  /* terminal on mac */
   {
-    "key": "ctrl+alt+n",
-    "command": "-gitProjectManager.openProjectNewWindow"
+    "key": "ctrl+[IntlBackslash]",
+    "command": "workbench.action.terminal.toggleTerminal"
   }
 ]

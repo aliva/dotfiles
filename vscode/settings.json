@@ -37,22 +37,18 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "none",
-  "code-runner.enableAppInsights": false,
-  "code-runner.clearPreviousOutput": true,
-  "gitlens.advanced.telemetry.enabled": false,
   "gitProjectManager.baseProjectsFolders": [
     "~/Workspace/",
+    "~/code/",
     "%HOMEPATH%\\Workspace",
   ],
   "gitProjectManager.maxDepthRecursion": 4,
   "gitProjectManager.searchInsideProjects": false,
-  "go.autocompleteUnimportedPackages": true,
   "python.formatting.provider": "autopep8",
   "python.jediEnabled": false,
   "python.linting.flake8Enabled": true,
@@ -73,12 +69,8 @@
       ]
     }
   ],
-  "cSpell.userWords": [
-    "Ansible",
-    "Kubernetes",
-    "Vakilzade"
-  ],
   "python.formatting.autopep8Path": "/usr/sbin/autopep8",
+  "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line"
 }

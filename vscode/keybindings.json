@@ -4,7 +4,7 @@
     "key": "f1",
     "command": "settings.cycle.editor.lineNumbers"
   },
-  /* quick open */
+  /* disable shourtcuts in terminal */
   {
     "key": "ctrl+p",
     "when": "terminalFocus",

@@ -2,12 +2,11 @@
 
 [user]
     email = ali@vakilzade.com
-	name = Ali Vakilzade
+    name = Ali Vakilzade
 [core]
     excludesfile = ~/Workspace/dotfiles/gitignore
-	autocrlf = input
 [push]
-    default = simple
+    default = current
 [color]
     branch = auto
     diff = auto

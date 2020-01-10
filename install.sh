@@ -20,6 +20,7 @@ ln -sf $DOTFILES/profile        $HOME/.profile
 ln -sf $DOTFILES/pythonrc       $HOME/.pythonrc
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
+ln -sf $DOTFILES/flake8          $HOME/.config/flake8
 
 rm -rf $HOME/.emacs.d
 ln -sf $DOTFILES/emacs.d        $HOME/.emacs.d

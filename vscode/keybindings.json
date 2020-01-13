@@ -24,9 +24,13 @@
     "key": "alt+right",
     "command": "workbench.action.navigateForward"
   },
-  /* terminal on mac */
+  /* for mac */
   {
     "key": "ctrl+[IntlBackslash]",
     "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
   }
 ]

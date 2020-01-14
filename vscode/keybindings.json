@@ -40,5 +40,13 @@
   {
     "key": "ctrl+shift+n",
     "command": "workbench.action.newWindow"
+  },
+  {
+    "key": "ctrl+cmd+p",
+    "command": "gitProjectManager.openProject"
+  },
+  {
+    "key": "alt+cmd+p",
+    "command": "-gitProjectManager.openProject"
   }
 ]

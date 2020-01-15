@@ -1,9 +1,0 @@
-{
-  "python.linting.pylintEnabled": false,
-  "python.linting.flake8Enabled": true,
-  "python.linting.enabled": true,
-  "python.jediPath": "~/.local/venvs/python-language-server/lib/python3.7/site-packages/",
-  "python.jediEnabled": false,
-  "python.sortImports.path": "/usr/bin/isort",
-  "python.formatting.autopep8Path": "/usr/bin/autopep8"
-}

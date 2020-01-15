@@ -35,9 +35,6 @@ rm -rf $HOME/.config/nvim
 ln -sf $DOTFILES/fish           $HOME/.config/fish
 ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 
-mkdir -p $HOME/.config/coc/extensions
-ln -sf $DOTFILES/nvim/coc-package.json $HOME/.config/coc/extensions/package.json
-
 mkdir -p $HOME/.config/Code/
 
 mkdir -p "$HOME/.config/Code - OSS/"

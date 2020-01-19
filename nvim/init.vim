@@ -45,6 +45,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'farmergreg/vim-lastplace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
+Plug 'airblade/vim-gitgutter'
 " nerdtree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'

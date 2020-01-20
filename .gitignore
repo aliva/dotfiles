@@ -1,7 +1,3 @@
-# Atom
-/atom/.atom-socket-secret-*
-/atom/packages/
-/atom/nohup.out
 # fish
 /fish/fishd.*
 /fish/fish_variables

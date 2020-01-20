@@ -31,6 +31,8 @@ set noswapfile
 " 20 command line editing
 set wildmode=longest:full,full
 set wildignore+=__pycache__,
+set wildignore+=*.pyc,
+set wildignore+=*/env/*,
 set wildignore+=.git,
 set wildignore+=.vscode,
 " 25 various
@@ -45,7 +47,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'farmergreg/vim-lastplace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
+" Git
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 " nerdtree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'

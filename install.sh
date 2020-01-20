@@ -25,9 +25,6 @@ ln -sf $DOTFILES/pythonrc       $HOME/.pythonrc
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
-rm -rf $HOME/.emacs.d
-ln -sf $DOTFILES/emacs.d        $HOME/.emacs.d
-
 mkdir -p $HOME/.aria2/
 ln -sf $DOTFILES/aria2.conf     $HOME/.aria2/aria2.conf
 

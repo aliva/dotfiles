@@ -32,9 +32,7 @@ mkdir -p $HOME/.config/
 
 ln -sf $DOTFILES/flake8          $HOME/.config/flake8
 
-rm -rf $HOME/.config/fish
 rm -rf $HOME/.config/nvim
-ln -sf $DOTFILES/fish           $HOME/.config/fish
 ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 
 mkdir -p $HOME/.config/Code/

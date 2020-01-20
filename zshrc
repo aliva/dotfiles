@@ -7,7 +7,6 @@ export ZSH_CUSTOM="$DOTFILES/zsh"
 export ZSH="$HOME/.oh-my-zsh"
 # VirtualEnvWrapper
 export PROJECT_HOME="$HOME/Workspace/"
-export PYTHONSTARTUP=$HOME/.pythonrc
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
@@ -16,16 +15,15 @@ export GOPATH="$HOME/.bin/go"
 ZSH_THEME='dollar'
 # Plugins
 plugins=(
-    autojump
-    celery
-    colored-man-pages
-    command-not-found
-    django
-    git-prompt
-    git-extras
-    npm
-    python
-    virtualenvwrapper
+  celery
+  colored-man-pages
+  command-not-found
+  django
+  git-prompt
+  git-extras
+  npm
+  python
+  virtualenvwrapper
 )
 # Path
 PATHES=(

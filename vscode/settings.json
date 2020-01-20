@@ -68,7 +68,6 @@
       ]
     }
   ],
-  "python.formatting.autopep8Path": "/usr/sbin/autopep8",
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line"

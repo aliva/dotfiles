@@ -1,7 +1,0 @@
-#!/bin/bash
-
-SELECTED_DICT=quick_eng-persian
-
-sdcv $1 -n -u $SELECTED_DICT | \
-    sed "/${SELECTED_DICT}/d" | sed "/^$/d" | \
-    tail -n +2 | fribidi

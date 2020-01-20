@@ -1,20 +1,20 @@
 # vim:set ft=gitconfig:
 
 [user]
-    email = ali@vakilzade.com
-    name = Ali Vakilzade
+  email = ali@vakilzade.com
+  name = Ali Vakilzade
 [core]
-    excludesfile = ~/Workspace/dotfiles/gitignore
+  excludesfile = ~/Workspace/dotfiles/gitignore
 [push]
-    default = current
+  default = current
 [color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
 [format]
-    pretty = oneline
+  pretty = oneline
 [commit]
-    gpgsign = true
+  gpgsign = true
 [gpg]
-    program = /usr/bin/gpg2
+  program = /usr/bin/gpg2

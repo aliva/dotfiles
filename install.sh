@@ -20,7 +20,6 @@ ln -sf $DOTFILES/hgrc           $HOME/.hgrc
 ln -sf $DOTFILES/isort.cfg      $HOME/.isort.cfg
 ln -sf $DOTFILES/npmrc          $HOME/.npmrc
 ln -sf $DOTFILES/profile        $HOME/.profile
-ln -sf $DOTFILES/pythonrc       $HOME/.pythonrc
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 

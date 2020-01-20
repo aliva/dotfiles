@@ -2,8 +2,6 @@
 nvim/autoload/plug.vim
 nvim/plugged
 nvim/.netrwhist
-# virtualenvwrapper
-/virtualenvwrapper-hooks/.no_pyc
 # vscode
 /vscode/globalStorage/
 /vscode/workspaceStorage

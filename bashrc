@@ -25,8 +25,3 @@ alias egrep='egrep --color=auto'
 alias ls="LC_ALL=en_US.UTF-8 ls --color=auto"
 alias ~="cd ~"
 alias ..="cd .."
-
-# added by travis gem
-[ -f /home/ali/.travis/travis.sh ] && source /home/ali/.travis/travis.sh
-
-complete -C /home/ali/.local/bin/mc mc

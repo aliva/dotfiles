@@ -14,7 +14,6 @@ then
     ln -sf $DOTFILES/gitconfig      $HOME/.gitconfig
 fi
 
-ln -sf $DOTFILES/ackrc          $HOME/.ackrc
 ln -sf $DOTFILES/bashrc         $HOME/.bashrc
 ln -sf $DOTFILES/editorconfig   $HOME/.editorconfig
 ln -sf $DOTFILES/hgrc           $HOME/.hgrc

@@ -20,7 +20,7 @@ set mouse=a " enable mouse everywhere
 set clipboard=unnamedplus " use system clipboard
 " 13 editing text
 set completeopt=longest,menuone
-set undofile
+set noundofile
 set undodir=/tmp/$USER-vim-undo/
 " 14 tabs and indenting
 set tabstop=4
@@ -47,9 +47,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'farmergreg/vim-lastplace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
-" Git
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
 " nerdtree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'

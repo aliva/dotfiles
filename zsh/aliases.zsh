@@ -9,8 +9,8 @@ alias wget="wget -c"
 alias aria2c="aria2c --dir=$HOME/Downloads/aria2c"
 alias pc="proxychains"
 # path
-alias cdd="cd ~/Workspace/dotfiles"
-alias cdw="cd ~/Workspace"
+alias cdd="cd $DOTFILES"
+alias cdw="cd $HOME/Workspace"
 alias cdt="cd /tmp"
 alias cdir='basename "$PWD"'
 # python

@@ -71,5 +71,7 @@
   ],
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line"
+  "gitlens.hovers.currentLine.over": "line",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true
 }

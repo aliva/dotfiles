@@ -71,7 +71,7 @@ imap <silent> <F1> <ESC>:set number!<CR>a
 " no arrow keys
 map <up> <nop>
 map <down> <nop>
-map <left> <nop>
+map <left> :NERDTreeToggle<cr>
 map <right> <nop>
 imap <up> <nop>
 imap <down> <nop>

@@ -48,6 +48,7 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'majutsushi/tagbar'
 " nerdtree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -72,7 +73,7 @@ imap <silent> <F1> <ESC>:set number!<CR>a
 map <up> <nop>
 map <down> <nop>
 map <left> :NERDTreeToggle<cr>
-map <right> <nop>
+map <right> :TagbarToggle<cr>
 imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
@@ -119,3 +120,8 @@ let NERDTreeShowHidden = 1
 let NERDTreeDirArrowCollapsible = '-'
 let NERDTreeDirArrowExpandable = '+'
 let NERDTreeMinimalUI = 1
+" tagbar
+let g:tagbar_case_insensitive = 1
+let g:tagbar_compact = 1
+let g:tagbar_singleclick = 1
+let g:tagbar_iconchars = ['+', '-']

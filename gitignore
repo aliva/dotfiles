@@ -29,6 +29,7 @@ venv-*
 .vagrant
 # vim
 *.swp
+.vim
 # vs
 code
 .vscode

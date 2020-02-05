@@ -32,6 +32,11 @@ ln -sf $DOTFILES/flake8          $HOME/.config/flake8
 
 rm -rf $HOME/.config/nvim
 ln -sf $DOTFILES/nvim           $HOME/.config/nvim
+if [[ `uname -s` == "Darwin" ]]; then
+  ln -sf $DOTFILES/nvim/coc-settings-mac.json $DOTFILES/nvim/coc-settings.json
+else
+  ln -sf $DOTFILES/nvim/coc-settings-linux.json $DOTFILES/nvim/coc-settings.json
+fi
 
 mkdir -p $HOME/.config/Code/
 rm -rf $HOME/.config/Code/User

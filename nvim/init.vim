@@ -125,3 +125,5 @@ let g:tagbar_case_insensitive = 1
 let g:tagbar_compact = 1
 let g:tagbar_singleclick = 1
 let g:tagbar_iconchars = ['+', '-']
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 1

@@ -35,6 +35,7 @@ set wildignore+=*.pyc,
 set wildignore+=*/env/*,
 set wildignore+=.git,
 set wildignore+=.vscode,
+set wildignore+=.DS_Store,
 " 25 various
 set exrc
 set secure

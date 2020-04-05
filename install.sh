@@ -4,43 +4,41 @@ set -e
 
 export DOTFILES=$HOME/Workspace/dotfiles
 
-if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
-    curl -fLo $DOTFILES/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-fi
+rm -rf $HOME/.config/Code/User
+rm -rf $HOME/.config/nvim
 
+mkdir -p $HOME/.config/
+mkdir -p $HOME/.config/Code/
+mkdir -p $HOME/.aria2/
 
-if [ ! -f $DOTFILES/gitconfig ]
-then
-    ln -sf $DOTFILES/gitconfig      $HOME/.gitconfig
-fi
-
+ln -sf $DOTFILES/aria2.conf     $HOME/.aria2/aria2.conf
+ln -sf $DOTFILES/ackrc          $HOME/.ackrc
 ln -sf $DOTFILES/bashrc         $HOME/.bashrc
 ln -sf $DOTFILES/editorconfig   $HOME/.editorconfig
+ln -sf $DOTFILES/flake8         $HOME/.config/flake8
 ln -sf $DOTFILES/hgrc           $HOME/.hgrc
 ln -sf $DOTFILES/isort.cfg      $HOME/.isort.cfg
 ln -sf $DOTFILES/npmrc          $HOME/.npmrc
+ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 ln -sf $DOTFILES/profile        $HOME/.profile
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
+ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
-mkdir -p $HOME/.aria2/
-ln -sf $DOTFILES/aria2.conf     $HOME/.aria2/aria2.conf
-
-mkdir -p $HOME/.config/
-
-ln -sf $DOTFILES/flake8          $HOME/.config/flake8
-
-rm -rf $HOME/.config/nvim
-ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 if [[ `uname -s` == "Darwin" ]]; then
   ln -sf $DOTFILES/nvim/coc-settings-mac.json $DOTFILES/nvim/coc-settings.json
 else
   ln -sf $DOTFILES/nvim/coc-settings-linux.json $DOTFILES/nvim/coc-settings.json
 fi
 
-mkdir -p $HOME/.config/Code/
-rm -rf $HOME/.config/Code/User
-ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
-
 echo "syntax:glob" > $DOTFILES/hgignore
 cat $DOTFILES/gitignore >> $DOTFILES/hgignore
+
+if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
+  curl -fLo $DOTFILES/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
+if [ ! -f $DOTFILES/gitconfig ]; then
+  ln -sf $DOTFILES/gitconfig $HOME/.gitconfig
+fi
+

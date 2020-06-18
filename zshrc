@@ -9,15 +9,13 @@ export ZSH="$HOME/.oh-my-zsh"
 export PROJECT_HOME="$HOME/Workspace/"
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
-# Go
-export GOPATH="$HOME/.bin/go"
 # Theme
 ZSH_THEME='dollar'
 # Plugins
 plugins=(
   celery
   colored-man-pages
-  command-not-found
+  # command-not-found
   django
   git-prompt
   git-extras
@@ -29,7 +27,6 @@ plugins=(
 PATHES=(
     $HOME/.local/bin
     $DOTFILES/bin
-    $GOPATH/bin
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin

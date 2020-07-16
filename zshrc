@@ -9,6 +9,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export PROJECT_HOME="$HOME/Workspace/"
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
+# Go
+export GOPATH="$HOME/Workspace/go"
 # Theme
 ZSH_THEME='dollar'
 # Plugins
@@ -27,6 +29,7 @@ plugins=(
 PATHES=(
     $HOME/.local/bin
     $DOTFILES/bin
+    $GOPATH/bin
     /usr/local/sbin
     /usr/local/bin
     /usr/sbin

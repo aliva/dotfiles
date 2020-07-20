@@ -1,6 +1,7 @@
 {
   "breadcrumbs.enabled": true,
   "editor.autoIndent": true,
+  "editor.fontFamily": "FiraCode-Regular, SourceCodePro-Regular, Monaco, monospace",
   "editor.fontSize": 13,
   "editor.lineNumbers": "off",
   "editor.fontLigatures": true,
@@ -51,6 +52,7 @@
   "gitProjectManager.searchInsideProjects": false,
   "python.formatting.provider": "autopep8",
   "python.jediEnabled": false,
+  "python.languageServer": "Microsoft",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "/usr/bin/flake8",
   "python.linting.pycodestyleEnabled": false,

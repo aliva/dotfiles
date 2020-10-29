@@ -19,6 +19,7 @@ plugins=(
   colored-man-pages
   # command-not-found
   django
+  fzf
   git-prompt
   git-extras
   npm

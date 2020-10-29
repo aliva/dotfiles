@@ -75,5 +75,7 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "go.formatTool": "goimports",
-  "go.useLanguageServer": true
+  "go.useLanguageServer": true,
+  "workbench.colorTheme": "Visual Studio Light",
+  "python.showStartPage": false
 }

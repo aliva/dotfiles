@@ -99,9 +99,9 @@ autocmd FocusLost * try | :wa | catch | endtry
 " Plugin Configs
 " =============================================================================
 "color dracula
-"set background=light
-"colorscheme PaperColor
-colorscheme dracula
+set background=light
+colorscheme PaperColor
+"colorscheme dracula
 
 " editorconfig
 let g:EditorConfig_core_mode = 'external_command'

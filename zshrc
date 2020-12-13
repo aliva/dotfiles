@@ -17,7 +17,7 @@ ZSH_THEME='dollar'
 plugins=(
   celery
   colored-man-pages
-  # command-not-found
+  command-not-found
   django
   fzf
   git-prompt

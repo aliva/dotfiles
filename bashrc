@@ -11,7 +11,7 @@ fi
 export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
 export HISTFILESIZE=$HISTSIZE
-export EDITOR=vim
+export EDITOR=nvim
 
 # append to the history file, don't overwrite it
 shopt -s histappend

@@ -38,6 +38,7 @@
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
+  "workbench.colorTheme": "Visual Studio Dark",
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "none",
   "gitProjectManager.baseProjectsFolders": [
@@ -48,7 +49,7 @@
   "gitProjectManager.searchInsideProjects": false,
   "python.formatting.provider": "autopep8",
   "python.jediEnabled": false,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "/usr/bin/flake8",
   "python.linting.pycodestyleEnabled": false,
@@ -70,6 +71,5 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "workbench.colorTheme": "Visual Studio Light",
   "python.showStartPage": false
 }

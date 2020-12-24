@@ -54,6 +54,7 @@
   "python.linting.flake8Path": "/usr/bin/flake8",
   "python.linting.pycodestyleEnabled": false,
   "python.linting.pylintEnabled": false,
+  "python.showStartPage": false,
   "python.venvPath": "~/.virtualenvs/",
   "settings.cycle": [
     {
@@ -71,5 +72,4 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "python.showStartPage": false
 }

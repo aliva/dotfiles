@@ -41,6 +41,9 @@
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "none",
+  "[rust]": {
+    "editor.formatOnSave": true
+  },
   "gitProjectManager.baseProjectsFolders": [
     "~/Workspace/",
     "~/code/"
@@ -48,7 +51,6 @@
   "gitProjectManager.maxDepthRecursion": 4,
   "gitProjectManager.searchInsideProjects": false,
   "python.formatting.provider": "autopep8",
-  "python.jediEnabled": false,
   "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "/usr/bin/flake8",

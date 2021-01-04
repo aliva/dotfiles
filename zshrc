@@ -58,7 +58,7 @@ do
     fi
   fi
 done
+unset PATHES p
 export PATH
-unset PATHES
 
 source $ZSH/oh-my-zsh.sh

@@ -38,7 +38,7 @@
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "none",
   "[rust]": {

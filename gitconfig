@@ -5,6 +5,7 @@
   name = Ali Vakilzade
 [core]
   excludesfile = ~/Workspace/dotfiles/gitignore
+  pager = delta
 [push]
   default = current
 [color]
@@ -20,3 +21,8 @@
   program = /usr/bin/gpg2
 [pull]
   ff = only
+[delta]
+  side-by-side = true
+  line-numbers = true
+  whitespace-error-style = 22 reverse
+  syntax-theme = Dracula

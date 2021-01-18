@@ -25,6 +25,7 @@ plugins=(
   git-prompt
   git-extras
   npm
+  pyenv
   python
   virtualenvwrapper
 )
@@ -62,3 +63,4 @@ unset PATHES p
 export PATH
 
 source $ZSH/oh-my-zsh.sh
+

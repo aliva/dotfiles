@@ -20,7 +20,6 @@ plugins=(
   celery
   colored-man-pages
   command-not-found
-  django
   fzf
   git-prompt
   git-extras
@@ -61,6 +60,10 @@ do
 done
 unset PATHES p
 export PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 source $ZSH/oh-my-zsh.sh
 

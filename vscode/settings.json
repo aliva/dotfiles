@@ -74,9 +74,6 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,

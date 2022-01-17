@@ -5,6 +5,7 @@ export EDITOR=nvim
 export TERM="xterm-256color"
 export ZSH_CUSTOM="$DOTFILES/zsh"
 export ZSH="$HOME/.oh-my-zsh"
+export DISABLE_UPDATE_PROMPT=true
 # VirtualEnvWrapper
 export PROJECT_HOME="$HOME/Workspace/"
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3

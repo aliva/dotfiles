@@ -1,7 +1,7 @@
 {
   "breadcrumbs.enabled": true,
+  "editor.accessibilitySupport": "off",
   "editor.autoIndent": true,
-  "editor.fontFamily": "FiraCode-Regular, SourceCodePro-Regular, Monaco, monospace",
   "editor.fontSize": 13,
   "editor.lineNumbers": "off",
   "editor.fontLigatures": true,
@@ -41,9 +41,6 @@
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "simple-icons",
   "workbench.startupEditor": "none",
-  "[rust]": {
-    "editor.formatOnSave": true
-  },
   "gitProjectManager.baseProjectsFolders": [
     "~/Workspace/",
     "~/code/"
@@ -74,17 +71,4 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [
-      80
-    ],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
-  },
-  "editor.accessibilitySupport": "off",
 }

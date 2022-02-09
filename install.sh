@@ -26,9 +26,7 @@ ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
 if [[ `uname -s` == "Darwin" ]]; then
-  ln -sf $DOTFILES/nvim/coc-settings-mac.json $DOTFILES/nvim/coc-settings.json
-else
-  ln -sf $DOTFILES/nvim/coc-settings-linux.json $DOTFILES/nvim/coc-settings.json
+  ln -sf $DOTFILES/vscode $HOME/Library/Application\ Support/Code/User
 fi
 
 echo "syntax:glob" > $DOTFILES/hgignore

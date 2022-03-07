@@ -43,7 +43,6 @@
   "workbench.startupEditor": "none",
   "gitProjectManager.baseProjectsFolders": [
     "~/Workspace/",
-    "~/code/"
   ],
   "gitProjectManager.maxDepthRecursion": 4,
   "gitProjectManager.searchInsideProjects": false,

@@ -12,8 +12,6 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
 # Go
 export GOPATH="$HOME/Workspace/go"
-# npm
-export NPM_PACKAGES="${HOME}/.npm-packages"
 # Theme
 ZSH_THEME='dollar'
 # Plugins

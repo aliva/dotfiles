@@ -36,7 +36,7 @@ if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
   curl -fLo $DOTFILES/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-if [ ! -f $DOTFILES/gitconfig ]; then
+if [ ! -f $HOME/gitconfig ]; then
   ln -sf $DOTFILES/gitconfig $HOME/.gitconfig
 fi
 

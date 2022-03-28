@@ -39,10 +39,10 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "simple-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "gitProjectManager.baseProjectsFolders": [
-    "~/Workspace/",
+    "~/Workspace/"
   ],
   "gitProjectManager.maxDepthRecursion": 4,
   "gitProjectManager.searchInsideProjects": false,

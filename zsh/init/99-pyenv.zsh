@@ -1,4 +1,3 @@
-echo "TWO"
 if [ -x "$(command -v pyenv)" ]
 then
     export PYENV_ROOT="$HOME/.pyenv"

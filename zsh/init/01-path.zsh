@@ -1,4 +1,3 @@
-echo "ONE"
 # Path
 PATHES=(
   $HOME/.local/bin

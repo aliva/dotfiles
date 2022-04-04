@@ -63,5 +63,12 @@ done
 unset PATHES p
 export PATH
 
+if [ -x "$(command -v pyenv)" ]
+then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init --path)"
+fi
+
 source $ZSH/oh-my-zsh.sh
 

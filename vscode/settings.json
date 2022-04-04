@@ -1,6 +1,7 @@
 {
   "breadcrumbs.enabled": true,
   "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "Fira Code",
   "editor.autoIndent": true,
   "editor.fontSize": 13,
   "editor.lineNumbers": "off",

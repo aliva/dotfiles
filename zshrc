@@ -28,47 +28,9 @@ plugins=(
   virtualenvwrapper
 )
 
-# Path
-PATHES=(
-  $HOME/.local/bin
-  $DOTFILES/bin
-  $HOME/.cargo/bin
-  $GOPATH/bin
-  $NPM_PACKAGES/bin
-  /usr/local/sbin
-  /usr/local/bin
-  /usr/sbin
-  /usr/bin
-  /usr/bin/vendor_perl
-  /sbin
-  /bin
-  /usr/games
-  /usr/local/games
-)
-
-unset PATH
-for p in $PATHES
-do
-  if [ -d $p ]
-  then
-    if [ -z $PATH ]
-    then
-      PATH=$p
-    else
-      PATH="$PATH:$p"
-    fi
-  fi
+for f in $DOTFILES/zsh/init/*.zsh; do
+   source $f
 done
-
-unset PATHES p
-export PATH
-
-if [ -x "$(command -v pyenv)" ]
-then
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init --path)"
-fi
 
 source $ZSH/oh-my-zsh.sh
 

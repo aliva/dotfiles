@@ -23,7 +23,6 @@
     "**/.idea": true,
     "**/.svn": true,
     "**/.vagrant": true,
-    "**/.vscode": true,
     "**/*.egg-info": true,
     "**/*.pyc": true,
   },
@@ -82,5 +81,8 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
+  },
+  "[terraform]": {
+    "editor.formatOnSave": true
   },
 }

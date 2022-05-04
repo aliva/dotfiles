@@ -1,15 +1,14 @@
 # Path
 PATHES=(
-  $HOME/.local/bin
+  # Custom
   $DOTFILES/bin
-  $HOME/.cargo/bin
-  $GOPATH/bin
-  $NPM_PACKAGES/bin
+  $HOME/Workspace/tools/flutter/bin
+  $HOME/Workspace/tools/npm-packages/bin/
+  # Global
   /usr/local/sbin
   /usr/local/bin
   /usr/sbin
   /usr/bin
-  /usr/bin/vendor_perl
   /sbin
   /bin
   /usr/games

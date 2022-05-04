@@ -1,8 +1,9 @@
 # Path
 PATHES=(
   # Custom
-  $DOTFILES/bin
-  $HOME/Workspace/tools/flutter/bin
+  $DOTFILES/bin/
+  $HOME/Workspace/tools/flutter/bin/
+  $HOME/.pub-cache/bin/
   $HOME/Workspace/tools/npm-packages/bin/
   # Global
   /usr/local/sbin

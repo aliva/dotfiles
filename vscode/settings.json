@@ -5,7 +5,7 @@
   "editor.autoIndent": true,
   "editor.fontSize": 13,
   "editor.lineNumbers": "off",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderIndentGuides": true,

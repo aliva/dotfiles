@@ -2,13 +2,12 @@
   "breadcrumbs.enabled": true,
   "editor.accessibilitySupport": "off",
   "editor.fontFamily": "Fira Code",
-  "editor.autoIndent": true,
+  "editor.autoIndent": "full",
   "editor.fontSize": 13,
   "editor.lineNumbers": "off",
   "editor.fontLigatures": false,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderIndentGuides": true,
   "editor.rulers": [
     80,
     120
@@ -86,4 +85,6 @@
   "[terraform]": {
     "editor.formatOnSave": true
   },
+  "editor.guides.indentation": true,
+  "window.nativeTabs": true,
 }

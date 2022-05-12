@@ -1,6 +1,7 @@
 # Path
 PATHES=(
   # Custom
+  $HOME/.local/bin/
   $DOTFILES/bin/
   $HOME/Workspace/tools/flutter/bin/
   $HOME/.pub-cache/bin/

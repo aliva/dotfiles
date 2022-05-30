@@ -38,7 +38,7 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "window.nativeTabs": true,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "gitProjectManager.baseProjectsFolders": [

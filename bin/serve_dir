@@ -1,3 +1,5 @@
 #!/bin/bash
+# server_dir [port]
+# server_dir --help
 
 python3 -m http.server $@

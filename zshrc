@@ -10,22 +10,15 @@ export DISABLE_UPDATE_PROMPT=true
 export PROJECT_HOME="$HOME/Workspace/"
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME="$HOME/.virtualenvs"
-# NVM
-export NVM_DIR=$HOME/Workspace/tools/nvm
-#export NVM_LAZY=1
-export NVM_AUTOLOAD=1
 # Theme
 ZSH_THEME='dollar'
 # Plugins
 plugins=(
-  celery
   colored-man-pages
   command-not-found
   fzf
-  git-prompt
   git-extras
-  npm
-  nvm
+  git-prompt
   pyenv
   python
   virtualenvwrapper

@@ -1,7 +1,8 @@
 {
   "files.exclude": {
-    "vscode/workspaceStorage": true,
+    "vscode/globalStorage": true,
     "vscode/gpm*": true,
-    "**/.vscode": false
+    "vscode/History": true,
+    "vscode/workspaceStorage": true,
   }
 }

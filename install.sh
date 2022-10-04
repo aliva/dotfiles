@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 export DOTFILES=$HOME/Workspace/dotfiles
 
@@ -11,11 +11,12 @@ mkdir -p $HOME/.config/
 mkdir -p $HOME/.config/Code/
 mkdir -p $HOME/.aria2/
 
-ln -sf $DOTFILES/aria2.conf     $HOME/.aria2/aria2.conf
 ln -sf $DOTFILES/ackrc          $HOME/.ackrc
+ln -sf $DOTFILES/aria2.conf     $HOME/.aria2/aria2.conf
 ln -sf $DOTFILES/bashrc         $HOME/.bashrc
 ln -sf $DOTFILES/editorconfig   $HOME/.editorconfig
 ln -sf $DOTFILES/flake8         $HOME/.config/flake8
+ln -sf $DOTFILES/gitconfig      $HOME/.gitconfig
 ln -sf $DOTFILES/hgrc           $HOME/.hgrc
 ln -sf $DOTFILES/isort.cfg      $HOME/.isort.cfg
 ln -sf $DOTFILES/npmrc          $HOME/.npmrc
@@ -36,7 +37,4 @@ if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
   curl -fLo $DOTFILES/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-if [ ! -f $HOME/gitconfig ]; then
-  ln -sf $DOTFILES/gitconfig $HOME/.gitconfig
-fi
 

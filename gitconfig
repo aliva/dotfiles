@@ -5,7 +5,6 @@
   name = Ali Vakilzade
 [core]
   excludesfile = ~/Workspace/dotfiles/gitignore
-  pager = delta
 [push]
   default = current
 [color]
@@ -16,7 +15,7 @@
 [format]
   pretty = oneline
 [commit]
-  gpgsign = true
+  gpgsign = false
 [gpg]
   program = /usr/bin/gpg2
 [pull]
@@ -28,3 +27,6 @@
   syntax-theme = Dracula
 [init]
   defaultBranch = main
+
+[includeIf "gitdir:~/Workspace/demonware/"]
+  path = ~/Workspace/demonware/dotfiles/gitconfig

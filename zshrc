@@ -29,4 +29,3 @@ for f in $DOTFILES/zsh/init/*.zsh; do
 done
 
 source $ZSH/oh-my-zsh.sh
-

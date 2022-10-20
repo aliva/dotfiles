@@ -19,7 +19,7 @@
 [gpg]
   program = /usr/bin/gpg2
 [pull]
-  ff = only
+  rebase = true
 [delta]
   side-by-side = true
   line-numbers = true

@@ -19,6 +19,7 @@ plugins=(
   fzf
   git-extras
   git-prompt
+  kubectl
   pyenv
   python
   virtualenvwrapper
@@ -29,3 +30,7 @@ for f in $DOTFILES/zsh/init/*.zsh; do
 done
 
 source $ZSH/oh-my-zsh.sh
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/home/avakilzade/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

@@ -13,10 +13,6 @@ alias cdt="cd /tmp"
 alias cdir='basename "$PWD"'
 # python
 alias lsvirtualenv="lsvirtualenv -b"
-# clipboard
-if [[ `uname -s` == "Darwin" ]]; then
-  alias clip='pbcopy'
-else
-  alias clip='xclip -selection clipboard -i'
-fi
-
+# k8s
+alias kctx="kubectl-ctx"
+alias kns="kubectl-ns"

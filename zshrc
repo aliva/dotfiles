@@ -20,6 +20,7 @@ plugins=(
   git-extras
   git-prompt
   kubectl
+  kube-ps1
   pyenv
   python
   virtualenvwrapper

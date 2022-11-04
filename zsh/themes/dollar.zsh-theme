@@ -20,19 +20,19 @@ function _k8s_cluster_short() {
   echo "$1" | cut -d . -f1
 }
 
-function _venv_info {
-    [[ -n "$VIRTUAL_ENV" ]] && echo "%{$fg[yellow]%}py%{$reset_color%}|%{$fg[yellow]%}${VIRTUAL_ENV:t} "
+function _info_prefix {
+    echo "%{$fg[blue]%}$1%{$reset_color%}|"
 }
 
-function _git_info {
-    echo "$(git_super_status) "
+function _venv_info {
+    [[ -n "$VIRTUAL_ENV" ]] && echo "$(_info_prefix py)%{$fg[yellow]%}${VIRTUAL_ENV:t}"
 }
 
 function _dir_info {
-    echo "%{$fg[cyan]%}%~"
+    echo "%{$FG[153]%}%~"
 }
 
 PROMPT='%{$FG[046]%}$%{$reset_color%} '
 
-RPROMPT='$(_venv_info)$(kube_ps1)$(_git_info)$(_dir_info)%{$reset_color%}'
+RPROMPT='$(_venv_info) $(kube_ps1)$(git_super_status) $(_dir_info)%{$reset_color%}'
 

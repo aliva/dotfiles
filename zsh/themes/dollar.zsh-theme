@@ -29,7 +29,7 @@ function _venv_info {
 }
 
 function _dir_info {
-    echo "%{$FG[153]%}%~"
+    echo "%{$FG[153]%}%30<…<%~"
 }
 
 PROMPT='%{$FG[046]%}$%{$reset_color%} '

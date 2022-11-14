@@ -9,7 +9,7 @@ export ZSH_THEME_GIT_PROMPT_SEPARATOR=""
 # k8s
 export KUBE_PS1_SYMBOL_DEFAULT="k8s"
 export KUBE_PS1_PREFIX=""
-export KUBE_PS1_SUFFIX=""
+export KUBE_PS1_SUFFIX=" "
 # export KUBE_PS1_NS_ENABLE="false"
 export KUBE_PS1_CLUSTER_FUNCTION=_k8s_cluster_short
 # kubeoff to disable

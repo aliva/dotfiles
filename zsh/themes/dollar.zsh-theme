@@ -1,12 +1,10 @@
-# vim: set ft=zsh:
-
 # see all colors
 # spectrum_ls
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 # Git
-export ZSH_THEME_GIT_PROMPT_PREFIX=" "
-export ZSH_THEME_GIT_PROMPT_SUFFIX=""
+export ZSH_THEME_GIT_PROMPT_PREFIX=""
+export ZSH_THEME_GIT_PROMPT_SUFFIX=" "
 export ZSH_THEME_GIT_PROMPT_SEPARATOR=""
 # k8s
 export KUBE_PS1_SYMBOL_DEFAULT="k8s"
@@ -25,7 +23,7 @@ function _info_prefix {
 }
 
 function _venv_info {
-    [[ -n "$VIRTUAL_ENV" ]] && echo "$(_info_prefix py)%{$fg[yellow]%}${VIRTUAL_ENV:t}"
+    [[ -n "$VIRTUAL_ENV" ]] && echo "$(_info_prefix py)%{$fg[yellow]%}${VIRTUAL_ENV:t} "
 }
 
 function _dir_info {
@@ -34,5 +32,5 @@ function _dir_info {
 
 PROMPT='%{$FG[046]%}$%{$reset_color%} '
 
-RPROMPT='$(_venv_info) $(kube_ps1)$(git_super_status) $(_dir_info)%{$reset_color%}'
+RPROMPT='$(_venv_info)$(kube_ps1)$(git_super_status)$(_dir_info)%{$reset_color%}'
 

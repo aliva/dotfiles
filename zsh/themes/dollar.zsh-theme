@@ -13,7 +13,7 @@ export KUBE_PS1_PREFIX=""
 export KUBE_PS1_SUFFIX=" "
 export KUBE_PS1_CLUSTER_FUNCTION=_k8s_cluster_short
 
-function _k8s_cluster_short() {
+function _k8s_cluster_short {
     if [[ -n _K8S_PS1_CLUSTER_MAPPING ]] && [[ -n $_K8S_PS1_CLUSTER_MAPPING[$1] ]]
     then
         # declare -A _K8S_PS1_CLUSTER_MAPPING

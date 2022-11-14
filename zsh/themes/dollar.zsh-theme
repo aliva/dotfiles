@@ -14,14 +14,7 @@ export KUBE_PS1_SUFFIX=" "
 export KUBE_PS1_CLUSTER_FUNCTION=_k8s_cluster_short
 
 function _k8s_cluster_short {
-    if [[ -n _K8S_PS1_CLUSTER_MAPPING ]] && [[ -n $_K8S_PS1_CLUSTER_MAPPING[$1] ]]
-    then
-        # declare -A _K8S_PS1_CLUSTER_MAPPING
-        # _K8S_PS1_CLUSTER_MAPPING[key]=value
-        echo "$_K8S_PS1_CLUSTER_MAPPING[$1]"
-    else
-        echo "$1" | cut -d . -f1
-    fi
+    echo "$1" | cut -d . -f1
 }
 
 function _info_prefix {

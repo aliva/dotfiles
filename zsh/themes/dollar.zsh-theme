@@ -7,15 +7,21 @@ export ZSH_THEME_GIT_PROMPT_PREFIX=""
 export ZSH_THEME_GIT_PROMPT_SUFFIX=" "
 export ZSH_THEME_GIT_PROMPT_SEPARATOR=""
 # k8s
+# kubeoff to disable
 export KUBE_PS1_SYMBOL_DEFAULT="k8s"
 export KUBE_PS1_PREFIX=""
 export KUBE_PS1_SUFFIX=" "
-# export KUBE_PS1_NS_ENABLE="false"
 export KUBE_PS1_CLUSTER_FUNCTION=_k8s_cluster_short
-# kubeoff to disable
 
 function _k8s_cluster_short() {
-  echo "$1" | cut -d . -f1
+    if [[ -n _K8S_PS1_CLUSTER_MAPPING ]] && [[ -n $_K8S_PS1_CLUSTER_MAPPING[$1] ]]
+    then
+        # declare -A _K8S_PS1_CLUSTER_MAPPING
+        # _K8S_PS1_CLUSTER_MAPPING[key]=value
+        echo "$_K8S_PS1_CLUSTER_MAPPING[$1]"
+    else
+        echo "$1" | cut -d . -f1
+    fi
 }
 
 function _info_prefix {

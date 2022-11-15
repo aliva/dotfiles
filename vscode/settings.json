@@ -4,7 +4,6 @@
 	"editor.autoIndent": "full",
 	"editor.fontFamily": "Fira Code",
 	"editor.fontLigatures": false,
-	"editor.fontSize": 13,
 	"editor.guides.indentation": true,
 	"editor.lineNumbers": "off",
 	"editor.minimap.enabled": true,
@@ -70,7 +69,7 @@
 	"window.menuBarVisibility": "toggle",
 	"window.nativeTabs": true,
 	"window.titleBarStyle": "custom",
-	"window.zoomLevel": 0,
+	"window.zoomLevel": 1,
 	"workbench.colorTheme": "Dracula",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none"

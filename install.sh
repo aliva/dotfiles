@@ -18,6 +18,7 @@ ln -sf $DOTFILES/editorconfig   $HOME/.editorconfig
 ln -sf $DOTFILES/flake8         $HOME/.config/flake8
 ln -sf $DOTFILES/gitconfig      $HOME/.gitconfig
 ln -sf $DOTFILES/hgrc           $HOME/.hgrc
+ln -sf $DOTFILES/i3             $HOME/.config/i3
 ln -sf $DOTFILES/isort.cfg      $HOME/.isort.cfg
 ln -sf $DOTFILES/npmrc          $HOME/.npmrc
 ln -sf $DOTFILES/nvim           $HOME/.config/nvim

@@ -25,6 +25,7 @@ ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 ln -sf $DOTFILES/profile        $HOME/.profile
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
+ln -sf $DOTFILES/waybar         $HOME/.config/waybar
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
 if [[ `uname -s` == "Darwin" ]]; then

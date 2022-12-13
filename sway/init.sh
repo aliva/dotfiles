@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CONFIG_ROOT=~/.config/i3/
+export CONFIG_ROOT=~/.config/sway/
 
 for f in $CONFIG_ROOT/init/*.sh
 do

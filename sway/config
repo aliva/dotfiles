@@ -212,4 +212,6 @@ bar {
     }
 }
 
+exec_always ~/.config/sway/init.sh
+
 include /etc/sway/config.d/*

@@ -12,7 +12,8 @@ set $term x-terminal-emulator
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu ulauncher-toggle
 
 ### Output configuration
 # swaymsg -t get_outputs
@@ -194,8 +195,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-exec waybar
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 exec_always ~/.config/sway/init.sh
 
+include ~/.config/sway/confs/*.conf
 include /etc/sway/config.d/*

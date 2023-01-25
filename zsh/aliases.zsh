@@ -1,6 +1,7 @@
 # date
 alias ymd="date +%Y-%m-%d"
 alias jymd="jdate +%Y-%m-%d"
+alias ymdcp="ymd | clipcopy"
 # internet
 alias myip="curl -s icanhazip.com"
 alias p8="ping 8.8.8.8"

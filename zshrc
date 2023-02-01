@@ -25,9 +25,9 @@ plugins=(
   python
   virtualenvwrapper
 )
-
+# load init files
 for f in $DOTFILES/zsh/init/*.zsh; do
    source $f
 done
-
+# load omz
 source $ZSH/oh-my-zsh.sh

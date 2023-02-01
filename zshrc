@@ -18,9 +18,9 @@ plugins=(
   command-not-found
   fzf
   git-extras
-  git-prompt
+  git-prompt  # used in theme
   kubectl
-  kube-ps1
+  kube-ps1    # used in theme
   pyenv
   python
   virtualenvwrapper

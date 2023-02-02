@@ -3,45 +3,8 @@
 syntax on
 let mapleader = ","
 
-" options
-" =============================================================================
-" 1 important
-set nocompatible
-" 2 moving around, searching and patterns
-set incsearch
-set ignorecase
-set smartcase
-" 5 syntax, highlighting and spelling
-set cursorline
-set colorcolumn=80,120
-" 9 using the mouse
-set mouse=a " enable mouse everywhere
-" 12 selecting text
-set clipboard=unnamedplus " use system clipboard
-" 13 editing text
-set completeopt=longest,menuone
-set noundofile
-set undodir=/tmp/$USER-vim-undo/
-" 14 tabs and indenting
-set tabstop=4
-set shiftwidth=4
-set expandtab
-" 19 the swap file
-set noswapfile
-" 20 command line editing
-set wildmode=longest:full,full
-set wildignore+=__pycache__,
-set wildignore+=*.pyc,
-set wildignore+=*/env/*,
-set wildignore+=.git,
-set wildignore+=.vscode,
-set wildignore+=.DS_Store,
-" 25 various
-set exrc
-set secure
-set signcolumn=yes
-
 lua require('options')
+
 " Plugins
 " =============================================================================
 call plug#begin()

@@ -41,6 +41,7 @@ set exrc
 set secure
 set signcolumn=yes
 
+lua require('options')
 " Plugins
 " =============================================================================
 call plug#begin()

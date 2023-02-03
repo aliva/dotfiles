@@ -4,6 +4,9 @@ syntax on
 let mapleader = ","
 
 lua require('options')
+lua require('mappings')
+lua require('autocommands')
+lua require('theme')
 
 " Plugins
 " =============================================================================
@@ -26,20 +29,6 @@ Plug 'ervandew/supertab'
 Plug 'nlknguyen/papercolor-theme'
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
-
-lua require('mappings')
-
-" Auto Commands
-" =============================================================================
-" autosave on focus lost
-autocmd FocusLost * try | :wa | catch | endtry
-
-" Plugin Configs
-" =============================================================================
-"color dracula
-"set background=light
-"colorscheme PaperColor
-colorscheme dracula
 
 " editorconfig
 let g:EditorConfig_core_mode = 'external_command'

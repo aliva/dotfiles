@@ -13,7 +13,7 @@ vim.keymap.set({'n', 'i'}, '<left>', '<nop>')
 vim.keymap.set({'n', 'i'}, '<right>', '<nop>')
 
 -- use ; as :
-vim.keymap.set('n', ';', ':')
+vim.keymap.set({'n', 'v'}, ';', ':')
 
 -- move in wrapped lines
 vim.keymap.set('n', 'j', 'gj')

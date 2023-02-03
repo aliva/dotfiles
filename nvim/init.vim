@@ -27,32 +27,7 @@ Plug 'nlknguyen/papercolor-theme'
 Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
-" Mappings
-" =============================================================================
-" toggle line numbers
-nmap <silent> <F1> :set number!<CR>
-imap <silent> <F1> <ESC>:set number!<CR>a
-
-" no arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> :NERDTreeToggle<cr>
-map <right> :TagbarToggle<cr>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
-" move in wrapped lines
-map j gj
-map k gk
-
-" use ; as :
-nnoremap ; :
-
-" keep visual selection
-vnoremap > >gv
-vnoremap < <gv
+lua require('mappings')
 
 " Auto Commands
 " =============================================================================

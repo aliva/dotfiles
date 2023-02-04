@@ -15,6 +15,7 @@ PATHES=(
   /bin
   /usr/games
   /usr/local/games
+  /snap/bin
 )
 
 unset PATH

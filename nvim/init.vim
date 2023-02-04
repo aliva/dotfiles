@@ -44,15 +44,9 @@ set signcolumn=yes
 " Plugins
 " =============================================================================
 call plug#begin()
-Plug 'editorconfig/editorconfig-vim'
 Plug 'farmergreg/vim-lastplace'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'majutsushi/tagbar'
-" nerdtree
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 " airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -72,8 +66,8 @@ imap <silent> <F1> <ESC>:set number!<CR>a
 " no arrow keys
 map <up> <nop>
 map <down> <nop>
-map <left> :NERDTreeToggle<cr>
-map <right> :TagbarToggle<cr>
+map <left> <nop>
+map <right> <nop>
 imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
@@ -102,28 +96,10 @@ autocmd FocusLost * try | :wa | catch | endtry
 "colorscheme PaperColor
 colorscheme dracula
 
-" editorconfig
-let g:EditorConfig_core_mode = 'external_command'
 " supertab
 let g:SuperTabMappingForward = '<c-tab>'
 let g:SuperTabMappingBackward = '<tab>'
 let g:SuperTabCrMapping = 1
-" ctrl-p
-let g:ctrlp_show_hidden = 1
 " suda
 let g:suda#prefix = 'sudo:'
 let g:suda_smart_edit = 1
-" nerdtree
-let NERDTreeRespectWildIgnore = 1
-let NERDTreeMouseMode = 3
-let NERDTreeShowHidden = 1
-let NERDTreeDirArrowCollapsible = '-'
-let NERDTreeDirArrowExpandable = '+'
-let NERDTreeMinimalUI = 1
-" tagbar
-let g:tagbar_case_insensitive = 1
-let g:tagbar_compact = 1
-let g:tagbar_singleclick = 1
-let g:tagbar_iconchars = ['+', '-']
-let g:tagbar_autofocus = 1
-let g:tagbar_sort = 1

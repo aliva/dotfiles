@@ -222,3 +222,7 @@ input * {
     xkb_options "grp:win_space_toggle"
     # xkb_options "grp:alt_shift_toggle"
 }
+
+set $laptop "eDP-1"
+bindswitch --locked --reload lid:on output $laptop disable
+bindswitch --locked --reload lid:off output $laptop enable

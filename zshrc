@@ -14,6 +14,7 @@ export WORKON_HOME="$HOME/.virtualenvs"
 ZSH_THEME='dollar'
 # Plugins
 plugins=(
+  asdf
   colored-man-pages
   command-not-found
   fzf
@@ -21,7 +22,6 @@ plugins=(
   git-prompt  # used in theme
   kubectl
   kube-ps1    # used in theme
-  pyenv
   python
   virtualenvwrapper
 )

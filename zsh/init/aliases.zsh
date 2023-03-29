@@ -11,7 +11,6 @@ alias aria2c="aria2c --dir=$HOME/Downloads/aria2c"
 alias cdd="cd $DOTFILES"
 alias cdw="cd $HOME/Workspace"
 alias cdt="cd /tmp"
-alias cdir='basename "$PWD"'
 # python
 alias lsvirtualenv="lsvirtualenv -b"
 # k8s

@@ -1,7 +1,0 @@
-[ui]
-username = Ali Vakilzade <ali@vakilzade.com>
-ignore = ~/Workspace/dotfiles/hgignore
-
-[extensions]
-color =
-progress =

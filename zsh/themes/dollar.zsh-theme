@@ -29,7 +29,14 @@ function _dir_info {
     echo "%{$FG[153]%}%30<…<%~"
 }
 
+function _kube_ps1 {
+    if _kube_ps1_binary_check "${KUBE_PS1_BINARY}"
+    then
+        echo $(kube_ps1)
+    fi
+}
+
 PROMPT='%{$FG[046]%}$%{$reset_color%} '
 
-RPROMPT='$(_venv_info)$(kube_ps1)$(git_super_status)$(_dir_info)%{$reset_color%}'
+RPROMPT='$(_venv_info)$(_kube_ps1)$(git_super_status)$(_dir_info)%{$reset_color%}'
 

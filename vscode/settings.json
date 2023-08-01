@@ -37,7 +37,6 @@
 	"gitProjectManager.maxDepthRecursion": 4,
 	"gitProjectManager.searchInsideProjects": false,
 	"gitlens.advanced.telemetry.enabled": false,
-	"gitlens.currentLine.enabled": false,
 	"gitlens.hovers.currentLine.over": "line",
 	"python.formatting.provider": "autopep8",
 	"python.languageServer": "Pylance",
@@ -72,5 +71,6 @@
 	"window.zoomLevel": 1,
 	"workbench.colorTheme": "Dracula",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none"
+	"workbench.startupEditor": "none",
+	"gitlens.currentLine.enabled": false
 }

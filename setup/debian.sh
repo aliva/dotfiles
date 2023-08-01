@@ -8,7 +8,8 @@ sudo apt install --yes \
     neovim \
     thunderbird \
     virtualenvwrapper \
-    zsh
+    zsh \
+    zsh-autosuggestions
 
 if [ ! -d $HOME/.oh-my-zsh ]
 then

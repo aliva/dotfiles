@@ -32,7 +32,7 @@ function _dir_info {
 function _kube_ps1 {
     if _kube_ps1_binary_check "${KUBE_PS1_BINARY}"
     then
-        echo $(kube_ps1)
+        echo "$(kube_ps1)"
     fi
 }
 

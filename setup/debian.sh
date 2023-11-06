@@ -5,6 +5,7 @@ sudo apt install --yes \
     curl \
     fzf \
     git \
+    htop \
     neovim \
     thunderbird \
     virtualenvwrapper \

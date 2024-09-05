@@ -10,6 +10,7 @@ rm -rf $HOME/.config/nvim
 mkdir -p $HOME/.aria2/
 mkdir -p $HOME/.config/
 mkdir -p $HOME/.config/Code/
+mkdir -p $HOME/.config/Code\ -\ OSS/
 
 ln -sf $DOTFILES/ackrc          $HOME/.ackrc
 ln -sf $DOTFILES/aria2.conf     $HOME/.aria2/aria2.conf
@@ -23,6 +24,7 @@ ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 ln -sf $DOTFILES/profile        $HOME/.profile
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
+ln -sf $DOTFILES/vscode         $HOME/.config/Code\ -\ OSS/User
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
 if [[ `uname -s` == "Darwin" ]]; then

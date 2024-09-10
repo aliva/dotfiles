@@ -65,7 +65,7 @@
 	"window.nativeTabs": true,
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 1,
-	"workbench.colorTheme": "Dracula",
+	"workbench.colorTheme": "Dracula Theme",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
 	"gitlens.currentLine.enabled": false

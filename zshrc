@@ -18,6 +18,7 @@ plugins=(
   colored-man-pages
   command-not-found
   fzf
+  git
   git-extras
   git-prompt  # used in theme
   kubectl

@@ -6,7 +6,10 @@ sudo apt --yes install \
     curl \
     fzf \
     git \
+    gpaste-2 \
     neovim \
+    pipx \
     ubuntu-gnome-desktop \
     virtualenvwrapper \
-    zsh
+    zsh \
+    zsh-autosuggestions

@@ -1,7 +1,7 @@
 set -e
 
 sudo apt --yes update
-sudo apt --yes upgrade
+# sudo apt --yes upgrade
 sudo apt --yes install \
     curl \
     fzf \
@@ -9,6 +9,8 @@ sudo apt --yes install \
     gpaste-2 \
     neovim \
     pipx \
+    terminator \
+    tmux \
     ubuntu-gnome-desktop \
     virtualenvwrapper \
     zsh \

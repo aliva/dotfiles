@@ -6,6 +6,7 @@ sudo apt --yes update
 # sudo apt --yes upgrade
 sudo apt --yes install \
     curl \
+    flatpak \
     fzf \
     git \
     gpaste-2 \

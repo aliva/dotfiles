@@ -8,7 +8,6 @@ sudo apt --yes install \
     curl \
     dconf-editor \
     flatpak \
-    libfuse2 \
     fzf \
     git \
     gnome-tweaks \
@@ -23,4 +22,4 @@ sudo apt --yes install \
     zsh \
     zsh-autosuggestions
 
-sudo systemctl disable apport.service
+sudo apt --yes purge "apport*"

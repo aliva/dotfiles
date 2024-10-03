@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# bash configs
 # If not running interactively, don't do anything
 case $- in *i*) ;; *) return ;; esac
 
@@ -8,15 +7,19 @@ if [ -f /etc/bash.bashrc ]; then
 	. /etc/bash.bashrc
 fi
 
+# don't put duplicate lines or lines starting with space in the history.
 export HISTCONTROL=ignoreboth
 export HISTSIZE=1000
-export HISTFILESIZE=$HISTSIZE
+export HISTFILESIZE=2000
 export EDITOR=nvim
 
 # append to the history file, don't overwrite it
 shopt -s histappend
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
+
+# Prompt
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # aliases
 alias grep='grep --color=auto'

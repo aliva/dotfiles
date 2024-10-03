@@ -31,8 +31,12 @@ if [[ `uname -s` == "Darwin" ]]; then
   ln -sf $DOTFILES/vscode $HOME/Library/Application\ Support/Code/User
 fi
 
+if [[ ! -d $HOME/.oh-my-zsh ]]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
 if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
   curl -fLo $DOTFILES/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-
+echo "Done."

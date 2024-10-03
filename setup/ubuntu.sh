@@ -9,6 +9,7 @@ sudo apt --yes install \
     gpaste-2 \
     neovim \
     pipx \
+    solaar \
     terminator \
     tmux \
     ubuntu-gnome-desktop \

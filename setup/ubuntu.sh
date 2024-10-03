@@ -6,9 +6,12 @@ sudo apt --yes update
 # sudo apt --yes upgrade
 sudo apt --yes install \
     curl \
+    dconf-editor \
     flatpak \
+    libfuse2 \
     fzf \
     git \
+    gnome-tweaks \
     gpaste-2 \
     neovim \
     pipx \
@@ -19,3 +22,5 @@ sudo apt --yes install \
     virtualenvwrapper \
     zsh \
     zsh-autosuggestions
+
+sudo systemctl disable apport.service

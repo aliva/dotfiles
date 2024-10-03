@@ -22,19 +22,28 @@ ln -sf $DOTFILES/isort.cfg      $HOME/.isort.cfg
 ln -sf $DOTFILES/npmrc          $HOME/.npmrc
 ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 ln -sf $DOTFILES/profile        $HOME/.profile
+ln -sf $DOTFILES/tool-versions  $HOME/.tool-versions
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
 ln -sf $DOTFILES/vscode         $HOME/.config/Code\ -\ OSS/User
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
+# MacOS
 if [[ `uname -s` == "Darwin" ]]; then
   ln -sf $DOTFILES/vscode $HOME/Library/Application\ Support/Code/User
 fi
 
+# asdf
+if [[ ! -d $HOME/.asdf ]]; then
+  git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf
+fi
+
+# oh-my-zsh
 if [[ ! -d $HOME/.oh-my-zsh ]]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
+# vim.plug
 if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
   curl -fLo $DOTFILES/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi

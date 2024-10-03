@@ -14,6 +14,7 @@ sudo apt --yes install \
     gpaste-2 \
     neovim \
     pipx \
+    python3-pip \
     solaar \
     terminator \
     tmux \

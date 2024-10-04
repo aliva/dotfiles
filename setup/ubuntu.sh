@@ -10,11 +10,13 @@ sudo apt --yes install \
     flatpak \
     fzf \
     git \
+    gnome-shell-extension-gpaste \
     gnome-tweaks \
     gpaste-2 \
     neovim \
     pipx \
     python3-pip \
+    python-is-python3 \
     solaar \
     terminator \
     tmux \

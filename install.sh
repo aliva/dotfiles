@@ -50,7 +50,7 @@ if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
 fi
 
 # starship
-if [[ ! -f $HOME/.local/bin/starship  ]]; then
+if ! type starship > /dev/null && [[ ! -f $HOME/.local/bin/starship  ]]; then
   curl -sS https://starship.rs/install.sh | sh -s -- --bin-dir $HOME/.local/bin --yes
 fi
 

@@ -25,6 +25,7 @@ sudo apt --yes install \
     virtualenvwrapper \
     vlc \
     zsh \
-    zsh-autosuggestions
+    zsh-autosuggestions \
+    zsh-syntax-highlighting
 
 sudo apt --yes purge "apport*"

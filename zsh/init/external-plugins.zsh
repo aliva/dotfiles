@@ -1,17 +1,15 @@
-# autosuggestions
-if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]
-then
-  source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-elif [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]
-then
-  source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-elif [ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]
-then
-  source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
+# Function to source a file if it exists
+source_if_exists() {
+  if [ -f "$1" ]; then
+    source "$1"
+  fi
+}
 
-# syntax-highlighting
-if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]
-then
-  source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
+# Autosuggestions
+source_if_exists "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source_if_exists "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source_if_exists "/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+# Syntax Highlighting
+source_if_exists "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source_if_exists "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"

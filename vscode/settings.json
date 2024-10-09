@@ -3,7 +3,7 @@
 	"editor.accessibilitySupport": "off",
 	"editor.autoIndent": "full",
 	"editor.fontFamily": "Fira Code",
-	"editor.fontLigatures": false,
+	"editor.fontLigatures": true,
 	"editor.guides.indentation": true,
 	"editor.lineNumbers": "off",
 	"editor.minimap.enabled": true,
@@ -60,7 +60,7 @@
 	"terminal.integrated.commandsToSkipShell": [
 		"-workbench.action.quickOpen"
 	],
-	"terminal.integrated.rendererType": "dom",
+	"terminal.integrated.rendererType": "auto",
 	"window.menuBarVisibility": "toggle",
 	"window.nativeTabs": true,
 	"window.titleBarStyle": "custom",

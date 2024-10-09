@@ -24,10 +24,11 @@ plugins=(
   fzf
   git
   git-extras
-  git-prompt  # used in theme
+  # git-prompt  # used in theme
   kubectl
-  kube-ps1    # used in theme
+  # kube-ps1    # used in theme
   python
+  starship
   virtualenvwrapper
 )
 

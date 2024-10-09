@@ -22,6 +22,7 @@ ln -sf $DOTFILES/isort.cfg      $HOME/.isort.cfg
 ln -sf $DOTFILES/npmrc          $HOME/.npmrc
 ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 ln -sf $DOTFILES/profile        $HOME/.profile
+ln -sf $DOTFILES/starship.toml  $HOME/.config/starship.toml
 ln -sf $DOTFILES/tool-versions  $HOME/.tool-versions
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
@@ -46,6 +47,11 @@ fi
 # vim.plug
 if [[ ! -f $DOTFILES/nvim/autoload/plug.vim  ]]; then
   curl -fLo $DOTFILES/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
+# starship
+if [[ ! -f $HOME/.local/bin/starship  ]]; then
+  curl -sS https://starship.rs/install.sh | sh -s -- --bin-dir $HOME/.local/bin --yes
 fi
 
 echo "Done."

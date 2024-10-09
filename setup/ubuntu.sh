@@ -18,10 +18,12 @@ sudo apt --yes install \
     python3-pip \
     python-is-python3 \
     solaar \
+    sway \
     terminator \
     tmux \
     ubuntu-gnome-desktop \
     virtualenvwrapper \
+    vlc \
     zsh \
     zsh-autosuggestions
 

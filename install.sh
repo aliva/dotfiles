@@ -7,6 +7,7 @@ export DOTFILES=$HOME/Workspace/dotfiles
 rm -rf $HOME/.config/Code/User
 rm -rf $HOME/.config/nvim
 rm -rf $HOME/.config/sway
+rm -rf $HOME/.config/waybar
 
 mkdir -p $HOME/.aria2/
 mkdir -p $HOME/.config/
@@ -29,6 +30,7 @@ ln -sf $DOTFILES/tool-versions  $HOME/.tool-versions
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/vscode         $HOME/.config/Code/User
 ln -sf $DOTFILES/vscode         $HOME/.config/Code\ -\ OSS/User
+ln -sf $DOTFILES/waybar         $HOME/.config/waybar
 ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
 # MacOS

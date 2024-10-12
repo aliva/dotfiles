@@ -6,6 +6,7 @@ export DOTFILES=$HOME/Workspace/dotfiles
 
 rm -rf $HOME/.config/Code/User
 rm -rf $HOME/.config/nvim
+rm -rf $HOME/.config/sway
 
 mkdir -p $HOME/.aria2/
 mkdir -p $HOME/.config/
@@ -23,6 +24,7 @@ ln -sf $DOTFILES/npmrc          $HOME/.npmrc
 ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 ln -sf $DOTFILES/profile        $HOME/.profile
 ln -sf $DOTFILES/starship.toml  $HOME/.config/starship.toml
+ln -sf $DOTFILES/sway           $HOME/.config/sway
 ln -sf $DOTFILES/tool-versions  $HOME/.tool-versions
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/vscode         $HOME/.config/Code/User

@@ -10,3 +10,6 @@ nvim/.netrwhist
 
 # zsh
 /zsh/local.zsh
+
+# External configs
+/external/

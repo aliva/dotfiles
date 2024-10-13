@@ -47,9 +47,6 @@ fi
 if [[ ! -d $DOTFILES/external/dracula-rofi ]]; then
   git clone https://github.com/dracula/rofi $DOTFILES/external/dracula-rofi
 fi
-if [[ ! -d $DOTFILES/external/dracula-swaylock ]]; then
-  git clone https://github.com/dracula/swaylock $DOTFILES/external/dracula-swaylock
-fi
 
 ln -sf $DOTFILES/ackrc          $HOME/.ackrc
 ln -sf $DOTFILES/aria2.conf     $HOME/.aria2/aria2.conf
@@ -72,7 +69,6 @@ ln -sf $DOTFILES/zshrc          $HOME/.zshrc
 
 # External
 ln -sf $DOTFILES/external/dracula-rofi/theme/config1.rasi $HOME/.config/rofi/config.rasi
-ln -sf $DOTFILES/external/dracula-swaylock/swaylock/config $HOME/.config/swaylock/config
 
 
 echo "Done."

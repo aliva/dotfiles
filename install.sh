@@ -16,7 +16,6 @@ mkdir -p $HOME/.config/
 mkdir -p $HOME/.config/Code/
 mkdir -p $HOME/.config/Code\ -\ OSS/
 mkdir -p $HOME/.config/rofi
-mkdir -p $HOME/.config/swaylock
 
 # MacOS
 if [[ `uname -s` == "Darwin" ]]; then
@@ -60,6 +59,7 @@ ln -sf $DOTFILES/nvim           $HOME/.config/nvim
 ln -sf $DOTFILES/profile        $HOME/.profile
 ln -sf $DOTFILES/starship.toml  $HOME/.config/starship.toml
 ln -sf $DOTFILES/sway           $HOME/.config/sway
+ln -sf $DOTFILES/swaylock       $HOME/.config/swaylock
 ln -sf $DOTFILES/tmux.conf      $HOME/.tmux.conf
 ln -sf $DOTFILES/tool-versions  $HOME/.tool-versions
 ln -sf $DOTFILES/vscode         $HOME/.config/Code/User

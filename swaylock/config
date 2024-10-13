@@ -1,0 +1,9 @@
+daemonize
+show-failed-attempts
+show-keyboard-layout
+indicator-caps-lock
+
+# Black background
+color=000000
+indicator-radius=200
+indicator-thickness=50

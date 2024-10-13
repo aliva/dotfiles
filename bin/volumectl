@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# systemctl enable --user wob.{socket,service}
+
+WOBSOCK=$XDG_RUNTIME_DIR/wob.sock
+
+case "$1" in
+  up)
+    # Increase the volume by 5%
+    pactl set-sink-volume @DEFAULT_SINK@ +5% && pactl get-sink-volume @DEFAULT_SINK@ | awk 'NR==1{print substr($5,1,length($5)-1)}' > $WOBSOCK
+    ;;
+  down)
+    # Decrease the volume by 5%
+    pactl set-sink-volume @DEFAULT_SINK@ -5% && pactl get-sink-volume @DEFAULT_SINK@ | awk 'NR==1{print substr($5,1,length($5)-1)}' > $WOBSOCK
+    ;;
+  toggle)
+    # Toggle mute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle && ( [ "$(pactl get-sink-mute @DEFAULT_SINK@)" = "Mute: yes" ] && echo 0 > $WOBSOCK ) || pactl get-sink-volume @DEFAULT_SINK@ | awk 'NR==1{print substr($5,1,length($5)-1)}' > $WOBSOCK
+    ;;
+  *)
+    echo "Usage: $0 {up|down|toggle}"
+    exit 1
+    ;;
+esac
+
+exit 0

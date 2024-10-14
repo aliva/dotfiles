@@ -24,6 +24,8 @@ sudo apt --yes install \
     ubuntu-gnome-desktop \
     virtualenvwrapper \
     vlc \
+    waybar \
+    wob \
     zsh \
     zsh-autosuggestions \
     zsh-syntax-highlighting

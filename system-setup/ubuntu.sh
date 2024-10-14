@@ -17,6 +17,7 @@ sudo apt --yes install \
     pipx \
     python3-pip \
     python-is-python3 \
+    rofi \
     solaar \
     sway \
     terminator \

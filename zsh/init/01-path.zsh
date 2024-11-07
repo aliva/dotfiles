@@ -3,9 +3,7 @@ PATHES=(
   # Custom
   $HOME/.local/bin/
   $DOTFILES/bin/
-  $HOME/Workspace/tools/flutter/bin/
-  $HOME/.pub-cache/bin/
-  $HOME/Workspace/tools/npm-packages/bin/
+  $HOME/.cargo/bin/
   # Global
   /usr/local/sbin
   /usr/local/bin

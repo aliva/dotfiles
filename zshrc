@@ -36,6 +36,7 @@ plugins=(
 for f in $DOTFILES/zsh/init/*.zsh; do
    source $f
 done
+source $DOTFILES/zsh/local.zsh
 
 # load omz
 source $ZSH/oh-my-zsh.sh

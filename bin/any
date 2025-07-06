@@ -1,4 +1,9 @@
 #!/bin/bash
 
 # http://www.commandlinefu.com/commands/view/13950
+if [ -z "$1" ]; then
+  echo "Usage: $0 PATTERN" >&2
+  exit 1
+fi
+
 ps aux | grep -E "[${1:0:1}]${1:1}|^USER" | grep -v "any $1"

@@ -3,6 +3,7 @@
 sudo pacman -Sy --needed \
     git \
     gst-plugins-ugly \
+    mise \
     starship \
     vlc \
     zsh \

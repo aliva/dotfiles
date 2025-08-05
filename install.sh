@@ -26,12 +26,7 @@ fi
 # Install dependencies if not present
 echo "Checking dependencies..."
 
-if [[ ! -d "$HOME/.asdf" ]]; then
-    echo "Installing asdf..."
-    git clone https://github.com/asdf-vm/asdf.git "$HOME/.asdf"
-fi
-
-if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+if [[ ! -d "$HOME/.oh-my-zsh" ]]; en
     echo "Installing oh-my-zsh..."
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
@@ -54,7 +49,6 @@ ln -sf "$DOTFILES/nvim"           "$CONFIG_DIR/nvim"
 ln -sf "$DOTFILES/profile"        "$HOME/.profile"
 ln -sf "$DOTFILES/starship.toml"  "$CONFIG_DIR/starship.toml"
 ln -sf "$DOTFILES/tmux.conf"      "$HOME/.tmux.conf"
-ln -sf "$DOTFILES/tool-versions"  "$HOME/.tool-versions"
 ln -sf "$DOTFILES/vscode"         "$CONFIG_DIR/Code/User"
 ln -sf "$DOTFILES/zshrc"          "$HOME/.zshrc"
 

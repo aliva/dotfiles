@@ -18,15 +18,15 @@ ZSH_THEME='dollar'
 
 # Plugins
 plugins=(
-  asdf
   colored-man-pages
   command-not-found
   fzf
   git
   git-extras
-  # git-prompt  # used in theme
+  mise
+  # git-prompt  # used in dollar theme
   kubectl
-  # kube-ps1    # used in theme
+  # kube-ps1    # used in dollar theme
   python
   starship
   virtualenvwrapper

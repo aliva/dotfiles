@@ -12,6 +12,7 @@
 		80,
 		120
 	],
+	"explorer.confirmDelete": false,
 	"files.autoSave": "onFocusChange",
 	"files.eol": "\n",
 	"files.exclude": {
@@ -68,5 +69,5 @@
 	"workbench.colorTheme": "Dracula Theme",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
-	"gitlens.currentLine.enabled": false
+	"gitlens.currentLine.enabled": false,
 }

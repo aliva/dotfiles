@@ -4,12 +4,17 @@ sudo pacman -Sy --needed \
     fzf \
     git \
     gst-plugins-ugly \
+    lib32-vulkan-radeon \
     mise \
+    obsidian \
     python-virtualenvwrapper \
+    rustup \
     solaar \
     starship \
-    ttf-firacode-nerd \
+    steam \
+    telegram-desktop \
     terminator \
+    ttf-firacode-nerd \
     vlc \
     zsh \
     zsh-autosuggestions \

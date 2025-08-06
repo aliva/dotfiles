@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Arch Linux setup script
+# Installs essential packages for development and daily use
+
+set -euo pipefail
+
+if ! command -v pacman &> /dev/null; then
+    echo "This script must be run on Arch Linux (pacman not found)." >&2
+    exit 1
+fi
+
 sudo pacman -Sy --needed \
     fzf \
     git \
@@ -18,5 +28,6 @@ sudo pacman -Sy --needed \
     vlc \
     zsh \
     zsh-autosuggestions \
-    zsh-syntax-highlighting \
-    ;
+    zsh-syntax-highlighting
+
+echo "Done!"

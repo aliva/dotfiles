@@ -10,9 +10,15 @@ if ! command -v pacman &> /dev/null; then
     exit 1
 fi
 
-sudo pacman -Sy --needed \
+sudo pacman -Suy --needed \
+    docker \
+    docker-compose \
     fzf \
     git \
+    gitg \
+    gnome-browser-connector \
+    gnome-shell-extensions \
+    gpaste \
     gst-plugins-ugly \
     lib32-vulkan-radeon \
     mise \
@@ -24,10 +30,15 @@ sudo pacman -Sy --needed \
     steam \
     telegram-desktop \
     terminator \
+    ttf-dejavu \
     ttf-firacode-nerd \
+    ttf-roboto \
     vlc \
+    wl-clipboard \
+    yt-dlp \
     zsh \
     zsh-autosuggestions \
-    zsh-syntax-highlighting
+    zsh-syntax-highlighting \
+    ;
 
 echo "Done!"

@@ -33,9 +33,11 @@ plugins=(
 )
 
 # Load init files
-for f in $DOTFILES/zsh/init/*.zsh; do
+for f in $DOTFILES/zsh/init/*.zsh
+do
    source $f
 done
+
 if [ -f $DOTFILES/zsh/local.zsh ]
 then
   source $DOTFILES/zsh/local.zsh

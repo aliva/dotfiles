@@ -20,13 +20,6 @@
   program = /usr/bin/gpg2
 [pull]
   rebase = true
-[delta]
-  side-by-side = true
-  line-numbers = true
-  whitespace-error-style = 22 reverse
-  syntax-theme = Dracula
-[init]
-  defaultBranch = main
 
 [includeIf "gitdir:~/Workspace/demonware/"]
   path = ~/Workspace/demonware/dotfiles/gitconfig

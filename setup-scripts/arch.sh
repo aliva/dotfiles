@@ -11,6 +11,7 @@ if ! command -v pacman &> /dev/null; then
 fi
 
 sudo pacman -Suy --needed \
+    deskflow \
     docker \
     docker-compose \
     fzf \
@@ -24,6 +25,7 @@ sudo pacman -Suy --needed \
     mise \
     obsidian \
     python-virtualenvwrapper \
+    reflector \
     rustup \
     solaar \
     starship \
@@ -34,6 +36,7 @@ sudo pacman -Suy --needed \
     ttf-firacode-nerd \
     ttf-roboto \
     vlc \
+    vlc-plugins-all \
     wl-clipboard \
     yt-dlp \
     zsh \

@@ -70,4 +70,5 @@
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
 	"gitlens.currentLine.enabled": false,
+	"python.analysis.typeCheckingMode": "standard",
 }

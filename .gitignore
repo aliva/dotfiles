@@ -7,6 +7,7 @@ nvim/.netrwhist
 # vscode
 /vscode/*
 !/vscode/*.json
+/vscode/chatLanguageModels.json
 
 # zsh
 /zsh/local.zsh

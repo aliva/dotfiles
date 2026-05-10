@@ -5,6 +5,8 @@
   name = Ali Vakilzade
 [core]
   excludesfile = ~/Workspace/dotfiles/gitignore
+[init]
+	defaultBranch = main
 [push]
   default = current
 [color]

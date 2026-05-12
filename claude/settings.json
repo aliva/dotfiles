@@ -6,5 +6,18 @@
   "attribution": {
     "commit": "",
     "pr": ""
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"SessionStart\", \"additionalContext\": \"IMPORTANT: Before responding to the user, invoke the Skill tool for the using-superpowers skill. Then, before any task, check if another skill applies and invoke it too.\"}}'",
+            "statusMessage": "Activating skills..."
+          }
+        ]
+      }
+    ]
   }
 }

@@ -12,6 +12,7 @@ echo "Starting dotfiles installation..."
 # Remove existing configs that will be replaced
 rm -rf "$CONFIG_DIR/Code/User"
 rm -rf "$CONFIG_DIR/nvim"
+rm -rf "$HOME/.claude"
 
 # Create required directories
 echo "Creating config directories..."
@@ -49,5 +50,6 @@ ln -sf "$DOTFILES/starship.toml"  "$CONFIG_DIR/starship.toml"
 ln -sf "$DOTFILES/tmux.conf"      "$HOME/.tmux.conf"
 ln -sf "$DOTFILES/vscode"         "$CONFIG_DIR/Code/User"
 ln -sf "$DOTFILES/zshrc"          "$HOME/.zshrc"
+ln -sf "$DOTFILES/claude"         "$HOME/.claude"
 
 echo "Installation complete!"

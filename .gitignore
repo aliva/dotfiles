@@ -14,3 +14,8 @@ nvim/.netrwhist
 
 # External configs
 /external/
+
+# Claude
+/claude/*
+!/claude/settings.json
+!/claude/skills

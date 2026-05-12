@@ -71,4 +71,5 @@
 	"workbench.startupEditor": "none",
 	"gitlens.currentLine.enabled": false,
 	"python.analysis.typeCheckingMode": "standard",
+	"claudeCode.preferredLocation": "panel",
 }
